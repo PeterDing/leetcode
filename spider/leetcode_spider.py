@@ -14,6 +14,8 @@ import html
 
 from hide_problem import get_hide_problems
 
+from util import to_format
+
 
 DATA_FILE = '../data/leetcode_problems.json'
 OUT_FILE = '../data/leetcode_problems.txt'
@@ -28,7 +30,7 @@ class LeetcodeProblems(object):
         else:
             self.problem_infos = {}
 
-        self.hide_problems = get_hide_problems()
+        self.hide_problems = get_hide_problems(set(self.problem_infos.keys()))
 
     def _save_data(self):
         with open(DATA_FILE, 'w') as g:
@@ -89,7 +91,9 @@ class LeetcodeProblems(object):
                 'level': level,
                 'question_id': question_id,
                 'description': description,
-                'tags': tags
+                'tags': tags,
+                'url': problem_url,
+                'slug': uri,
             }
             self.problem_infos[question_id] = problem
 
@@ -118,7 +122,8 @@ class LeetcodeProblems(object):
         text = ''
         for info in infos:
             if self.args.rm_blank:
-                info['description'] = re.sub(r'[\n\r]+', r'\n', info['description'])
+                desc = to_format(info['description'])
+                info['description'] = desc
             text += text_template.format(**info)
 
         with open(OUT_FILE, 'w') as g:

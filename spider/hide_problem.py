@@ -10,7 +10,7 @@ import html2text
 URL = 'http://www.cnblogs.com/grandyang/p/4606334.html'
 
 
-def collect_problems():
+def collect_problems(no_hided_ids):
     problems = {}
 
     html = requests.get(URL).text
@@ -24,6 +24,9 @@ def collect_problems():
             continue
 
         key = int(ids[i])
+
+        if key in no_hided_ids:
+            continue
 
         mod = re.search(r'"(http://www\.cnblogs\.com/grandyang/.+?)"', trs[i])
         if not mod:
@@ -47,14 +50,12 @@ def search_problems(cn):
         ls.append(chunk)
     html = ''.join(ls)
 
-    html = html.replace('<br>', '')
-    desc = html2text.unescape(html2text.html2text(html)).replace('\r', '')
-    desc = re.sub(r' *\n+', '\n', desc)
-    desc = re.sub(r'\n+', '\n', desc)
+    desc = html2text.unescape(html2text.html2text(html))
+    desc = re.sub(r' +\n+', '\n', desc)
     desc = desc.strip()
     return desc
 
 
-def get_hide_problems():
-    problems = collect_problems()
+def get_hide_problems(no_hided_ids):
+    problems = collect_problems(no_hided_ids)
     return problems
