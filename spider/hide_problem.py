@@ -6,7 +6,6 @@ import re
 import requests
 import html2text
 
-
 URL = 'http://www.cnblogs.com/grandyang/p/4606334.html'
 
 
@@ -41,7 +40,8 @@ def collect_problems(no_hided_ids):
 
 
 def search_problems(cn):
-    _, t = cn.split('<div id="cnblogs_post_body">', 1)
+    _, t = cn.split('id="cnblogs_post_body"', 1)
+    t = t[t.find('>') + 1:]
     ls = []
     chunks = t.split('\n')
     for chunk in chunks:
