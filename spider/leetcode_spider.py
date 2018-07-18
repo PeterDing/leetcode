@@ -51,13 +51,16 @@ class LeetcodeProblems(object):
             title = info['stat']['question__title']
             level = info['difficulty']['level']
             question_id = info['stat']['question_id']
+            paid_only = info['paid_only']
 
             if question_id in self.problem_infos:
+                if 'paid_only' not in self.problem_infos[question_id]:
+                    self.problem_infos[question_id]['paid_only'] = paid_only
                 continue
 
             uri = info['stat']['question__title_slug'] or info['stat']['question__article__slug']
             problem_url = 'https://leetcode.com/problems/{}/description/'.format(uri)
-            if info['paid_only']:
+            if paid_only:
                 if question_id in self.hide_problems:
                     description = self.hide_problems[question_id]
                     tags = []
@@ -94,6 +97,7 @@ class LeetcodeProblems(object):
                 'tags': tags,
                 'url': problem_url,
                 'slug': uri,
+                'paid_only': paid_only,
             }
             self.problem_infos[question_id] = problem
 
