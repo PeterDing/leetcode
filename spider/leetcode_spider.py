@@ -4,13 +4,10 @@
 
 import json
 import sys
-import re
 import os
 import argparse
 import requests
-from lxml import html as lxml_html
-
-import html
+import html2text
 
 from hide_problem import get_hide_problems
 
@@ -20,6 +17,22 @@ from util import to_format
 DATA_FILE = '../data/leetcode_problems.json'
 OUT_FILE = '../data/leetcode_problems.txt'
 
+API_URL = 'https://leetcode.com/graphql'
+DATA = "{\"operationName\":\"question\",\"variables\":{\"titleSlug\":\"%s\"},\"query\":\"query question($titleSlug: String!) {\\n  question(titleSlug: $titleSlug) {\\n    questionId\\n    questionFrontendId\\n    boundTopicId\\n    title\\n    content\\n    translatedTitle\\n    translatedContent\\n    isPaidOnly\\n    difficulty\\n    likes\\n    dislikes\\n    isLiked\\n    similarQuestions\\n    contributors {\\n      username\\n      profileUrl\\n      avatarUrl\\n      __typename\\n    }\\n    langToValidPlayground\\n    topicTags {\\n      name\\n      slug\\n      translatedName\\n      __typename\\n    }\\n    companyTagStats\\n    codeSnippets {\\n      lang\\n      langSlug\\n      code\\n      __typename\\n    }\\n    stats\\n    hints\\n    solution {\\n      canSeeDetail\\n      __typename\\n    }\\n    status\\n    sampleTestCase\\n    metaData\\n    judgerAvailable\\n    judgeType\\n    mysqlSchemas\\n    enableRunCode\\n    enableTestMode\\n    envInfo\\n    __typename\\n  }\\n}\\n\"}"
+
+HEADERS = {
+    'origin': 'https://leetcode.com',
+    'accept-encoding': 'gzip',
+    'accept-language': 'en-US,en;q=0.9,zh-CN;q=0.8,zh-TW;q=0.7,zh;q=0.6,ja;q=0.5',
+    'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+    'x-csrftoken': 'kwiXPuqb3rhiFaiult7L86wJfgfWfbhBiDlvCkVNwPyh0tJh6sgEmqArbgKiWHuo',
+    'content-type': 'application/json',
+    'accept': '*/*',
+    'referer': 'https://leetcode.com/problems/super-palindromes/description/',
+    'authority': 'leetcode.com',
+    'cookie': 'csrftoken=kwiXPuqb3rhiFaiult7L86wJfgfWfbhBiDlvCkVNwPyh0tJh6sgEmqArbgKiWHuo; _gat=1',
+
+}
 
 class LeetcodeProblems(object):
 
@@ -60,6 +73,10 @@ class LeetcodeProblems(object):
 
             uri = info['stat']['question__title_slug'] or info['stat']['question__article__slug']
             problem_url = 'https://leetcode.com/problems/{}/description/'.format(uri)
+            data = DATA % uri
+            headers = dict(HEADERS)
+            headers['referer'] = problem_url
+
             if paid_only:
                 if question_id in self.hide_problems:
                     description = self.hide_problems[question_id]
@@ -69,7 +86,7 @@ class LeetcodeProblems(object):
                     continue
             else:
                 try:
-                    res = requests.get(problem_url)
+                    res = requests.post(API_URL, headers=headers, data=data)
                 except Exception:
                     self._save_data()
                     continue
@@ -79,15 +96,13 @@ class LeetcodeProblems(object):
                     self._save_data()
                     continue
 
-                tree = lxml_html.fromstring(res.text)
+                info = res.json()
+                description = html2text.html2text(info['data']['question']['content']).strip()
 
-                description = tree.xpath('//meta[@name="description"]/@content')
-                if description:
-                    description = description[0]
-                else:
-                    description = tree.xpath('//meta[@property="og:description"]/@content')[0]
-                description = html.unescape(description.strip())
-                tags = tree.xpath('//div[@id="tags-topics"]/a/text()')
+                tags = []
+                if info['data']['question']['topicTags']:
+                    for item in info['data']['question']['topicTags']:
+                        tags.append(item['name'])
 
             problem = {
                 'title': title,
