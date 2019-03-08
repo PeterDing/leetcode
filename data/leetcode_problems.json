@@ -5133,6 +5133,16 @@
         "title": "Longest Repeating Character Replacement",
         "url": "https://leetcode.com/problems/longest-repeating-character-replacement/description/"
     },
+    "425": {
+        "description": "Given a set of words (without duplicates), find all [word\nsquares](https://en.wikipedia.org/wiki/Word_square) you can build from them.\n\nA sequence of words forms a valid word square if the  _k_ th row and column\nread the exact same string, where 0 ≤  _k_  < max(numRows, numColumns).\n\nFor example, the word sequence `[\"ball\",\"area\",\"lead\",\"lady\"]` forms a word\nsquare because each word reads the same both horizontally and vertically.\n\n\n\n    b a l l\ra r e a\rl e a d\rl a d y\r\n\nNote:\n\n  1. There are at least 1 and at most 1000 words.\n  2. All words will have the exact same length.\n  3. Word length is at least 1 and at most 5.\n  4. Each word contains only lowercase English alphabet `a-z`.\n\n\n\nExample 1:\n\n\n\n    Input:\r[\"area\",\"lead\",\"wall\",\"lady\",\"ball\"]\r\rOutput:\r[\r  [ \"wall\",\r    \"area\",\r    \"lead\",\r    \"lady\"\r  ],\r  [ \"ball\",\r    \"area\",\r    \"lead\",\r    \"lady\"\r  ]\r]\r\rExplanation:\rThe output consists of two word squares. The order of output does not matter (just the order of words in each word square matters).\r\n\n\n\nExample 2:\n\n\n\n    Input:\r[\"abat\",\"baba\",\"atan\",\"atal\"]\r\rOutput:\r[\r  [ \"baba\",\r    \"abat\",\r    \"baba\",\r    \"atan\"\r  ],\r  [ \"baba\",\r    \"abat\",\r    \"baba\",\r    \"atal\"\r  ]\r]\r\rExplanation:\rThe output consists of two word squares. The order of output does not matter (just the order of words in each word square matters).",
+        "level": 3,
+        "paid_only": true,
+        "question_id": 425,
+        "slug": "word-squares",
+        "tags": [],
+        "title": "Word Squares",
+        "url": "https://leetcode.com/problems/word-squares/description/"
+    },
     "432": {
         "description": "Implement a data structure supporting the following operations:\r\n\r\n\r\n\r\nInc(Key) - Inserts a new key  with value 1. Or increments an existing key by 1. Key is guaranteed to be a non-empty string.\r\nDec(Key) - If Key's value is 1, remove it from the data structure. Otherwise decrements an existing key by 1. If the key does not exist, this function does nothing. Key is guaranteed to be a non-empty string.\r\nGetMaxKey() - Returns one of the keys with maximal value. If no element exists, return an empty string \"\".\r\nGetMinKey() - Returns one of the keys with minimal value. If no element exists, return an empty string \"\".\r\n\r\n\r\n\r\n\r\nChallenge: Perform all these in O(1) time complexity.",
         "level": 3,
@@ -6548,6 +6558,16 @@
         "title": "Maximum Vacation Days",
         "url": "https://leetcode.com/problems/maximum-vacation-days/description/"
     },
+    "569": {
+        "description": "LeetCode wants to give one of its best employees the option to travel among N\ncities to collect algorithm problems. But all work and no play makes Jack a\ndull boy, you could take vacations in some particular cities and weeks. Your\njob is to schedule the traveling to maximize the number of vacation days you\ncould take, but there are certain rules and restrictions you need to follow.\n\nRules and restrictions:\n\n  1. You can only travel among N cities, represented by indexes from 0 to N-1. Initially, you are in the city indexed 0 on Monday.\n  2. The cities are connected by flights. The flights are represented as a N*N matrix (not necessary symmetrical), called flights representing the airline status from the city i to the city j. If there is no flight from the city i to the city j, flights[i][j] = 0; Otherwise, flights[i][j] = 1. Also, flights[i][i] = 0 for all i.\n  3. You totally have K weeks (each week has 7 days) to travel. You can only take flights at most once per day and can only take flights on each week's Monday morning. Since flight time is so short, we don't consider the impact of flight time.\n  4. For each city, you can only have restricted vacation days in different weeks, given an N*K matrix called days representing this relationship. For the value of days[i][j], it represents the maximum days you could take vacation in the city i in the week j.\n\n\n\nYou're given the flights matrix and days matrix, and you need to output the\nmaximum vacation days you could take during K weeks.\n\nExample 1:\n\n\n\n    Input:flights = [[0,1,1],[1,0,1],[1,1,0]], days = [[1,3,1],[6,0,3],[3,3,3]]\rOutput: 12\rExplanation:\n    Ans = 6 + 3 + 3 = 12.\n    \rOne of the best strategies is:\r1st week : fly from city 0 to city 1 on Monday, and play 6 days and work 1 day.\n    (Although you start at city 0, we could also fly to and start at other cities since it is Monday.) \r2nd week : fly from city 1 to city 2 on Monday, and play 3 days and work 4 days.\r3rd week : stay at city 2, and play 3 days and work 4 days.\r\n\n\n\nExample 2:\n\n\n\n    Input:flights = [[0,0,0],[0,0,0],[0,0,0]], days = [[1,1,1],[7,7,7],[7,7,7]]\rOutput: 3\rExplanation:\n    Ans = 1 + 1 + 1 = 3.\n    \rSince there is no flights enable you to move to another city, you have to stay at city 0 for the whole 3 weeks.\n    For each week, you only have one day to play and six days to work.\n    So the maximum number of vacation days is 3.\r\n\n\n\nExample 3:\n\n\n\n    Input:flights = [[0,1,1],[1,0,1],[1,1,0]], days = [[7,0,0],[0,7,0],[0,0,7]]\rOutput: 21\rExplanation:\n    Ans = 7 + 7 + 7 = 21\n    \rOne of the best strategies is:\r1st week : stay at city 0, and play 7 days. \r2nd week : fly from city 0 to city 1 on Monday, and play 7 days.\r3rd week : fly from city 1 to city 2 on Monday, and play 7 days.\r\n\n\n\nNote:\n\n  1. N and K are positive integers, which are in the range of [1, 100].\n  2. In the matrix flights, all the values are integers in the range of [0, 1].\n  3. In the matrix days, all the values are integers in the range [0, 7].\n  4. You could stay at a city beyond the number of vacation days, but you should work on the extra days, which won't be counted as vacation days.\n  5. If you fly from the city A to the city B and take the vacation on that day, the deduction towards vacation days will count towards the vacation days of city B in that week.\n  6. We don't consider the impact of flight hours towards the calculation of vacation days.",
+        "level": 3,
+        "paid_only": true,
+        "question_id": 569,
+        "slug": "median-employee-salary",
+        "tags": [],
+        "title": "Median Employee Salary",
+        "url": "https://leetcode.com/problems/median-employee-salary/description/"
+    },
     "572": {
         "description": "Given two non-empty binary trees s and t, check whether tree t has exactly the same structure and node values with a subtree of s. A subtree of s is a tree consists of a node in s and all of this node's descendants. The tree s could also be considered as a subtree of itself.\r\n\r\n\r\nExample 1:\r\n\r\nGiven tree s:\r\n\r\n     3\r\n    / \\\r\n   4   5\r\n  / \\\r\n 1   2\r\n\r\nGiven tree t:\r\n\r\n   4 \r\n  / \\\r\n 1   2\r\n\r\nReturn true, because t has the same structure and node values with a subtree of s.\r\n\r\n\r\nExample 2:\r\n\r\nGiven tree s:\r\n\r\n     3\r\n    / \\\r\n   4   5\r\n  / \\\r\n 1   2\r\n    /\r\n   0\r\n\r\nGiven tree t:\r\n\r\n   4\r\n  / \\\r\n 1   2\r\n\r\nReturn false.",
         "level": 1,
@@ -6559,6 +6579,26 @@
         ],
         "title": "Subtree of Another Tree",
         "url": "https://leetcode.com/problems/subtree-of-another-tree/description/"
+    },
+    "573": {
+        "description": "There's a tree, a squirrel, and several nuts. Positions are represented by the\ncells in a 2D grid. Your goal is to find the minimal distance for the squirrel\nto collect all the nuts and put them under the tree one by one. The squirrel\ncan only take at most one nut at one time and can move in four directions -\nup, down, left and right, to the adjacent cell. The distance is represented by\nthe number of moves.\n\nExample 1:\n\n\n\n    Input: \rHeight : 5\rWidth : 7\rTree position : [2,2]\rSquirrel : [4,4]\rNuts : [[3,0], [2,5]]\rOutput: 12\rExplanation:\r\n\n![](https://leetcode.com/static/images/problemset/squirrel_simulation.png)\n\n\n\nNote:\n\n  1. All given positions won't overlap.\n  2. The squirrel can take at most one nut at one time.\n  3. The given positions of nuts have no order.\n  4. Height and width are positive integers. 3 <= height * width <= 10,000.\n  5. The given positions contain at least one nut, only one tree and one squirrel.",
+        "level": 2,
+        "paid_only": true,
+        "question_id": 573,
+        "slug": "squirrel-simulation",
+        "tags": [],
+        "title": "Squirrel Simulation",
+        "url": "https://leetcode.com/problems/squirrel-simulation/description/"
+    },
+    "574": {
+        "description": "There's a tree, a squirrel, and several nuts. Positions are represented by the\ncells in a 2D grid. Your goal is to find the minimal distance for the squirrel\nto collect all the nuts and put them under the tree one by one. The squirrel\ncan only take at most one nut at one time and can move in four directions -\nup, down, left and right, to the adjacent cell. The distance is represented by\nthe number of moves.\n\nExample 1:\n\n\n\n    Input: \rHeight : 5\rWidth : 7\rTree position : [2,2]\rSquirrel : [4,4]\rNuts : [[3,0], [2,5]]\rOutput: 12\rExplanation:\r\n\n![](https://leetcode.com/static/images/problemset/squirrel_simulation.png)\n\n\n\nNote:\n\n  1. All given positions won't overlap.\n  2. The squirrel can take at most one nut at one time.\n  3. The given positions of nuts have no order.\n  4. Height and width are positive integers. 3 <= height * width <= 10,000.\n  5. The given positions contain at least one nut, only one tree and one squirrel.",
+        "level": 2,
+        "paid_only": true,
+        "question_id": 574,
+        "slug": "winning-candidate",
+        "tags": [],
+        "title": "Winning Candidate",
+        "url": "https://leetcode.com/problems/winning-candidate/description/"
     },
     "575": {
         "description": "Given an integer array with even length, where different numbers in this array represent different kinds of candies. Each number means one candy of the corresponding kind. You need to distribute these candies equally in number to brother and sister. Return the maximum number of kinds of candies the sister could gain. \r\n\r\nExample 1:\r\n\r\nInput: candies = [1,1,2,2,3,3]\r\nOutput: 3\r\nExplanation:\r\nThere are three different kinds of candies (1, 2 and 3), and two candies for each kind.\r\nOptimal distribution: The sister has candies [1,2,3] and the brother has candies [1,2,3], too. \r\nThe sister has three different kinds of candies. \r\n\r\n\r\n\r\nExample 2:\r\n\r\nInput: candies = [1,1,2,3]\r\nOutput: 2\r\nExplanation: For example, the sister has candies [2,3] and the brother has candies [1,1]. \r\nThe sister has two different kinds of candies, the brother has only one kind of candies. \r\n\r\n\r\n\r\nNote:\r\n\r\nThe length of the given array is in range [2, 10,000], and will be even.\r\nThe number in given array is in range [-100,000, 100,000].",
@@ -6790,6 +6830,16 @@
         ],
         "title": "Construct String from Binary Tree",
         "url": "https://leetcode.com/problems/construct-string-from-binary-tree/description/"
+    },
+    "607": {
+        "description": "You need to construct a string consists of parenthesis and integers from a\nbinary tree with the preorder traversing way.\n\nThe null node needs to be represented by empty parenthesis pair \"()\". And you\nneed to omit all the empty parenthesis pairs that don't affect the one-to-one\nmapping relationship between the string and the original binary tree.\n\nExample 1:\n\n\n\n    Input: Binary tree: [1,2,3,4]\r       1\r     /   \\\r    2     3\r   /    \r  4     \r\rOutput: \"1(2(4))(3)\"\r\n    Explanation: Originallay it needs to be \"1(2(4)())(3()())\",\n    but you need to omit all the unnecessary empty parenthesis pairs.\n    And it will be \"1(2(4))(3)\".\r\n\n\n\nExample 2:\n\n\n\n    Input: Binary tree: [1,2,3,null,4]\r       1\r     /   \\\r    2     3\r     \\  \r      4 \r\rOutput: \"1(2()(4))(3)\"\r\n    Explanation: Almost the same as the first example,\n    except we can't omit the first parenthesis pair to break the one-to-one mapping relationship between the input and the output.",
+        "level": 1,
+        "paid_only": true,
+        "question_id": 607,
+        "slug": "sales-person",
+        "tags": [],
+        "title": "Sales Person",
+        "url": "https://leetcode.com/problems/sales-person/description/"
     },
     "609": {
         "description": "Given a list of directory info including directory path, and all the files with contents in this directory, you need to find out all the groups of duplicate files in the file system in terms of their paths.\r\n\r\nA group of duplicate files consists of at least two files that have exactly the same content.\r\n\r\nA single directory info string in the input list has the following format: \r\n\"root/d1/d2/.../dm f1.txt(f1_content) f2.txt(f2_content) ... fn.txt(fn_content)\"\r\nIt means there are n files (f1.txt, f2.txt ... fn.txt with content f1_content, f2_content ... fn_content, respectively) in directory root/d1/d2/.../dm. Note that n >= 1 and m >= 0. If m = 0, it means the directory is just the root directory.\r\n\r\nThe output is a list of group of duplicate file paths. For each group, it contains all the file paths of the files that have the same content. A file path is a string that has the following format: \r\n\"directory_path/file_name.txt\"\r\n\r\n\r\nExample 1:\r\n\r\nInput:\r\n[\"root/a 1.txt(abcd) 2.txt(efgh)\", \"root/c 3.txt(abcd)\", \"root/c/d 4.txt(efgh)\", \"root 4.txt(efgh)\"]\r\nOutput:  \r\n[[\"root/a/2.txt\",\"root/c/d/4.txt\",\"root/4.txt\"],[\"root/a/1.txt\",\"root/c/3.txt\"]]\r\n\r\n\r\n\r\n\r\nNote:\r\n\r\nNo order is required for the final output.\r\nYou may assume the directory name, file name and file content only has letters and digits, and the length of file content is in the range of [1,50].\r\nThe number of files given is in the range of [1,20000].\r\nYou may assume no files or directories share the same name in the same directory.\r\nYou may assume each given directory info represents a unique directory. Directory path and file info are separated by a single blank space.\r\n\r\n\r\n\r\n\r\nFollow-up beyond contest: \r\n\r\n Imagine you are given a real file system, how will you search files? DFS or BFS?\r\n If the file content is very large (GB level), how will you modify your solution?\r\n If you can only read the file by 1kb each time, how will you modify your solution?\r\n What is the time complexity of your modified solution? What is the most time-consuming part and memory consuming part of it? How to optimize?\r\n How to make sure the duplicated files you find are not false positive?",
@@ -10136,5 +10186,1069 @@
         "tags": [],
         "title": "Number of Music Playlists",
         "url": "https://leetcode.com/problems/number-of-music-playlists/description/"
+    },
+    "957": {
+        "description": "Given a string `S` of `'('` and `')'` parentheses, we add the minimum number\nof parentheses ( `'('` or `')'`, and in any positions ) so that the resulting\nparentheses string is valid.\n\nFormally, a parentheses string is valid if and only if:\n\n  * It is the empty string, or\n  * It can be written as `AB` (`A` concatenated with `B`), where `A` and `B` are valid strings, or\n  * It can be written as `(A)`, where `A` is a valid string.\n\nGiven a parentheses string, return the minimum number of parentheses we must\nadd to make the resulting string valid.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** \"())\"\r\n    **Output:** 1\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** \"(((\"\r\n    **Output:** 3\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** \"()\"\r\n    **Output:** 0\r\n    \n\n**Example 4:**\n\n    \n    \r\n    **Input:** \"()))((\"\r\n    **Output:** 4\n\n\n\n**Note:**\n\n  1. `S.length <= 1000`\n  2. `S` only consists of `'('` and `')'` characters.",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 957,
+        "slug": "minimum-add-to-make-parentheses-valid",
+        "tags": [
+            "Stack",
+            "Greedy"
+        ],
+        "title": "Minimum Add to Make Parentheses Valid",
+        "url": "https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/description/"
+    },
+    "958": {
+        "description": "Given an array `A` of non-negative integers, half of the integers in A are\nodd, and half of the integers are even.\n\nSort the array so that whenever `A[i]` is odd, `i` is odd; and whenever `A[i]`\nis even, `i` is even.\n\nYou may return any answer array that satisfies this condition.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [4,2,5,7]\r\n    **Output:** [4,5,2,7]\r\n    **Explanation:** [4,7,2,5], [2,5,4,7], [2,7,4,5] would also have been accepted.\r\n    \n\n\n\n**Note:**\n\n  1. `2 <= A.length <= 20000`\n  2. `A.length % 2 == 0`\n  3. `0 <= A[i] <= 1000`",
+        "level": 1,
+        "paid_only": false,
+        "question_id": 958,
+        "slug": "sort-array-by-parity-ii",
+        "tags": [
+            "Array",
+            "Sort"
+        ],
+        "title": "Sort Array By Parity II",
+        "url": "https://leetcode.com/problems/sort-array-by-parity-ii/description/"
+    },
+    "959": {
+        "description": "Given an integer array `A`, and an integer `target`, return the number of\ntuples `i, j, k`  such that `i < j < k` and `A[i] + A[j] + A[k] == target`.\n\n**As the answer can be very large, return it modulo  `10^9 + 7`**.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** A = [1,1,2,2,3,3,4,4,5,5], target = 8\r\n    **Output:** 20\r\n    **Explanation:**\r\n    Enumerating by the values (A[i], A[j], A[k]):\r\n    (1, 2, 5) occurs 8 times;\r\n    (1, 3, 4) occurs 8 times;\r\n    (2, 2, 4) occurs 2 times;\r\n    (2, 3, 3) occurs 2 times.\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** A = [1,1,2,2,2,2], target = 5\r\n    **Output:** 12\r\n    **Explanation:**\r\n    A[i] = 1, A[j] = A[k] = 2 occurs 12 times:\r\n    We choose one 1 from [1,1] in 2 ways,\r\n    and two 2s from [2,2,2,2] in 6 ways.\r\n    \n\n\n\n**Note:**\n\n  1. `3 <= A.length <= 3000`\n  2. `0 <= A[i] <= 100`\n  3. `0 <= target <= 300`",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 959,
+        "slug": "3sum-with-multiplicity",
+        "tags": [
+            "Two Pointers"
+        ],
+        "title": "3Sum With Multiplicity",
+        "url": "https://leetcode.com/problems/3sum-with-multiplicity/description/"
+    },
+    "960": {
+        "description": "In a network of nodes, each node `i` is directly connected to another node `j`\nif and only if `graph[i][j] = 1`.\n\nSome nodes `initial` are initially infected by malware.  Whenever two nodes\nare directly connected and at least one of those two nodes is infected by\nmalware, both nodes will be infected by malware.  This spread of malware will\ncontinue until no more nodes can be infected in this manner.\n\nSuppose `M(initial)` is the final number of nodes infected with malware in the\nentire network, after the spread of malware stops.\n\nWe will remove one node from the initial list.  Return the node that if\nremoved, would minimize `M(initial)`.  If multiple nodes could be removed to\nminimize `M(initial)`, return such a node with the smallest index.\n\nNote that if a node was removed from the `initial` list of infected nodes, it\nmay still be infected later as a result of the malware spread.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** graph = [[1,1,0],[1,1,0],[0,0,1]], initial = [0,1]\r\n    **Output:** 0\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** graph = [[1,0,0],[0,1,0],[0,0,1]], initial = [0,2]\r\n    **Output:** 0\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** graph = [[1,1,1],[1,1,1],[1,1,1]], initial = [1,2]\r\n    **Output:** 1\r\n    \n\n\n\n**Note:**\n\n  1. `1 < graph.length = graph[0].length <= 300`\n  2. `0 <= graph[i][j] == graph[j][i] <= 1`\n  3. `graph[i][i] = 1`\n  4. `1 <= initial.length < graph.length`\n  5. `0 <= initial[i] < graph.length`",
+        "level": 3,
+        "paid_only": false,
+        "question_id": 960,
+        "slug": "minimize-malware-spread",
+        "tags": [
+            "Depth-first Search",
+            "Union Find"
+        ],
+        "title": "Minimize Malware Spread",
+        "url": "https://leetcode.com/problems/minimize-malware-spread/description/"
+    },
+    "961": {
+        "description": "Your friend is typing his `name` into a keyboard.  Sometimes, when typing a\ncharacter `c`, the key might get _long pressed_ , and the character will be\ntyped 1 or more times.\n\nYou examine the `typed` characters of the keyboard.  Return `True` if it is\npossible that it was your friends name, with some characters (possibly none)\nbeing long pressed.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** name = \"alex\", typed = \"aaleex\"\r\n    **Output:** true\r\n    **Explanation:** 'a' and 'e' in 'alex' were long pressed.\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** name = \"saeed\", typed = \"ssaaedd\"\r\n    **Output:** false\r\n    **Explanation:** 'e' must have been pressed twice, but it wasn't in the typed output.\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** name = \"leelee\", typed = \"lleeelee\"\r\n    **Output:** true\r\n    \n\n**Example 4:**\n\n    \n    \r\n    **Input:** name = \"laiden\", typed = \"laiden\"\r\n    **Output:** true\r\n    **Explanation:** It's not necessary to long press any character.\r\n    \n\n\n\n**Note:**\n\n  1. `name.length <= 1000`\n  2. `typed.length <= 1000`\n  3. The characters of `name` and `typed` are lowercase letters.",
+        "level": 1,
+        "paid_only": false,
+        "question_id": 961,
+        "slug": "long-pressed-name",
+        "tags": [
+            "Two Pointers",
+            "String"
+        ],
+        "title": "Long Pressed Name",
+        "url": "https://leetcode.com/problems/long-pressed-name/description/"
+    },
+    "962": {
+        "description": "A string of `'0'`s and `'1'`s is _monotone increasing_ if it consists of some\nnumber of `'0'`s (possibly 0), followed by some number of `'1'`s (also\npossibly 0.)\n\nWe are given a string `S` of `'0'`s and `'1'`s, and we may flip any `'0'` to a\n`'1'` or a `'1'` to a `'0'`.\n\nReturn the minimum number of flips to make `S` monotone increasing.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** \"00110\"\r\n    **Output:** 1\r\n    **Explanation:** We flip the last digit to get 00111.\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** \"010110\"\r\n    **Output:** 2\r\n    **Explanation:** We flip to get 011111, or alternatively 000111.\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** \"00011000\"\r\n    **Output:** 2\r\n    **Explanation:** We flip to get 00000000.\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= S.length <= 20000`\n  2. `S` only consists of `'0'` and `'1'` characters.",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 962,
+        "slug": "flip-string-to-monotone-increasing",
+        "tags": [
+            "Array"
+        ],
+        "title": "Flip String to Monotone Increasing",
+        "url": "https://leetcode.com/problems/flip-string-to-monotone-increasing/description/"
+    },
+    "963": {
+        "description": "Given an array `A` of `0`s and `1`s, divide the array into 3 non-empty parts\nsuch that all of these parts represent the same binary value.\n\nIf it is possible, return **any** `[i, j]` with `i+1 < j`, such that:\n\n  * `A[0], A[1], ..., A[i]` is the first part;\n  * `A[i+1], A[i+2], ..., A[j-1]` is the second part, and\n  * `A[j], A[j+1], ..., A[A.length - 1]` is the third part.\n  * All three parts have equal binary value.\n\nIf it is not possible, return `[-1, -1]`.\n\nNote that the entire part is used when considering what binary value it\nrepresents.  For example, `[1,1,0]` represents `6` in decimal, not `3`.  Also,\nleading zeros are allowed, so `[0,1,1]` and `[1,1]` represent the same value.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [1,0,1,0,1]\r\n    **Output:** [0,3]\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** [1,1,0,1,1]\r\n    **Output:** [-1,-1]\n\n\n\n**Note:**\n\n  1. `3 <= A.length <= 30000`\n  2. `A[i] == 0` or `A[i] == 1`",
+        "level": 3,
+        "paid_only": false,
+        "question_id": 963,
+        "slug": "three-equal-parts",
+        "tags": [
+            "Math",
+            "Binary Search",
+            "Greedy"
+        ],
+        "title": "Three Equal Parts",
+        "url": "https://leetcode.com/problems/three-equal-parts/description/"
+    },
+    "964": {
+        "description": "(This problem is the same as _Minimize Malware Spread_ , with the differences\nbolded.)\n\nIn a network of nodes, each node `i` is directly connected to another node `j`\nif and only if `graph[i][j] = 1`.\n\nSome nodes `initial` are initially infected by malware.  Whenever two nodes\nare directly connected and at least one of those two nodes is infected by\nmalware, both nodes will be infected by malware.  This spread of malware will\ncontinue until no more nodes can be infected in this manner.\n\nSuppose `M(initial)` is the final number of nodes infected with malware in the\nentire network, after the spread of malware stops.\n\nWe will remove one node from the initial list, **completely removing it and\nany connections from this node to any other node**.   Return the node that if\nremoved, would minimize `M(initial)`.  If multiple nodes could be removed to\nminimize `M(initial)`, return such a node with the smallest index.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** graph = [[1,1,0],[1,1,0],[0,0,1]], initial = [0,1]\r\n    **Output:** 0\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** graph = [[1,1,0],[1,1,1],[0,1,1]], initial = [0,1]\r\n    **Output:** 1\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** graph = [[1,1,0,0],[1,1,1,0],[0,1,1,1],[0,0,1,1]], initial = [0,1]\r\n    **Output:** 1\r\n    \n\n\n\n**Note:**\n\n  1. `1 < graph.length = graph[0].length <= 300`\n  2. `0 <= graph[i][j] == graph[j][i] <= 1`\n  3. `graph[i][i] = 1`\n  4. `1 <= initial.length < graph.length`\n  5. `0 <= initial[i] < graph.length`",
+        "level": 3,
+        "paid_only": false,
+        "question_id": 964,
+        "slug": "minimize-malware-spread-ii",
+        "tags": [
+            "Depth-first Search",
+            "Union Find",
+            "Graph"
+        ],
+        "title": "Minimize Malware Spread II",
+        "url": "https://leetcode.com/problems/minimize-malware-spread-ii/description/"
+    },
+    "965": {
+        "description": "Every email consists of a local name and a domain name, separated by the @\nsign.\n\nFor example, in `alice@leetcode.com`, `alice` is the local name, and\n`leetcode.com` is the domain name.\n\nBesides lowercase letters, these emails may contain `'.'`s or `'+'`s.\n\nIf you add periods (`'.'`) between some characters in the **local name** part\nof an email address, mail sent there will be forwarded to the same address\nwithout dots in the local name.   For example, `\"alice.z@leetcode.com\"` and\n`\"alicez@leetcode.com\"` forward to the same email address.  (Note that this\nrule does not apply for domain names.)\n\nIf you add a plus (`'+'`) in the **local name** , everything after the first\nplus sign will be  **ignored**. This allows certain emails to be filtered, for\nexample  `m.y+name@email.com` will be forwarded to `my@email.com`.  (Again,\nthis rule does not apply for domain names.)\n\nIt is possible to use both of these rules at the same time.\n\nGiven a list of `emails`, we send one email to each address in the list.  How\nmany different addresses actually receive mails?\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [\"test.email+alex@leetcode.com\",\"test.e.mail+bob.cathy@leetcode.com\",\"testemail+david@lee.tcode.com\"]\r\n    **Output:** 2\r\n    **Explanation:**  \"testemail@leetcode.com\" and \"testemail@lee.tcode.com\" actually receive mails\r\n    \n\n\n\n**Note:**\n\n  * `1 <= emails[i].length <= 100`\n  * `1 <= emails.length <= 100`\n  * Each `emails[i]` contains exactly one `'@'` character.",
+        "level": 1,
+        "paid_only": false,
+        "question_id": 965,
+        "slug": "unique-email-addresses",
+        "tags": [
+            "String"
+        ],
+        "title": "Unique Email Addresses",
+        "url": "https://leetcode.com/problems/unique-email-addresses/description/"
+    },
+    "966": {
+        "description": "In an array `A` of `0`s and `1`s, how many **non-empty** subarrays have sum\n`S`?\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** A = [1,0,1,0,1], S = 2\r\n    **Output:** 4\r\n    **Explanation:**\r\n    The 4 subarrays are bolded below:\r\n    [ **1,0,1** ,0,1]\r\n    [ **1,0,1,0** ,1]\r\n    [1, **0,1,0,1** ]\r\n    [1,0, **1,0,1** ]\r\n    \n\n\n\n**Note:**\n\n  1. `A.length <= 30000`\n  2. `0 <= S <= A.length`\n  3. `A[i]` is either `0` or `1`.",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 966,
+        "slug": "binary-subarrays-with-sum",
+        "tags": [
+            "Hash Table",
+            "Two Pointers"
+        ],
+        "title": "Binary Subarrays With Sum",
+        "url": "https://leetcode.com/problems/binary-subarrays-with-sum/description/"
+    },
+    "967": {
+        "description": "Given a **square** array of integers `A`, we want the **minimum** sum of a\n_falling path_ through `A`.\n\nA falling path starts at any element in the first row, and chooses one element\nfrom each row.  The next row's choice must be in a column that is different\nfrom the previous row's column by at most one.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [[1,2,3],[4,5,6],[7,8,9]]\r\n    **Output:** 12\r\n    **Explanation:**\r\n    The possible falling paths are:\r\n    \n\n  * `[1,4,7], [1,4,8], [1,5,7], [1,5,8], [1,5,9]`\n  * `[2,4,7], [2,4,8], [2,5,7], [2,5,8], [2,5,9], [2,6,8], [2,6,9]`\n  * `[3,5,7], [3,5,8], [3,5,9], [3,6,8], [3,6,9]`\n\nThe falling path with the smallest sum is `[1,4,7]`, so the answer is `12`.\n\n\n\n**Note:**\n\n  1. `1 <= A.length == A[0].length <= 100`\n  2. `-100 <= A[i][j] <= 100`",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 967,
+        "slug": "minimum-falling-path-sum",
+        "tags": [
+            "Dynamic Programming"
+        ],
+        "title": "Minimum Falling Path Sum",
+        "url": "https://leetcode.com/problems/minimum-falling-path-sum/description/"
+    },
+    "968": {
+        "description": "For some fixed `N`, an array `A` is _beautiful_ if it is a permutation of the\nintegers `1, 2, ..., N`, such that:\n\nFor every `i < j`, there is **no**  `k` with `i < k < j` such that `A[k] * 2 =\nA[i] + A[j]`.\n\nGiven `N`, return **any** beautiful array `A`.  (It is guaranteed that one\nexists.)\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** 4\r\n    **Output:** [2,1,4,3]\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** 5\r\n    **Output:** [3,1,2,5,4]\n\n\n\n**Note:**\n\n  * `1 <= N <= 1000`",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 968,
+        "slug": "beautiful-array",
+        "tags": [
+            "Divide and Conquer"
+        ],
+        "title": "Beautiful Array",
+        "url": "https://leetcode.com/problems/beautiful-array/description/"
+    },
+    "969": {
+        "description": "Write a class `RecentCounter` to count recent requests.\n\nIt has only one method: `ping(int t)`, where t represents some time in\nmilliseconds.\n\nReturn the number of `ping`s that have been made from 3000 milliseconds ago\nuntil now.\n\nAny ping with time in `[t - 3000, t]` will count, including the current ping.\n\nIt is guaranteed that every call to `ping` uses a strictly larger value of `t`\nthan before.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** inputs = [\"RecentCounter\",\"ping\",\"ping\",\"ping\",\"ping\"], inputs = [[],[1],[100],[3001],[3002]]\r\n    **Output:** [null,1,2,3,3]\n\n\n\n**Note:**\n\n  1. Each test case will have at most `10000` calls to `ping`.\n  2. Each test case will call `ping` with strictly increasing values of `t`.\n  3. Each call to ping will have `1 <= t <= 10^9`.",
+        "level": 1,
+        "paid_only": false,
+        "question_id": 969,
+        "slug": "number-of-recent-calls",
+        "tags": [
+            "Queue"
+        ],
+        "title": "Number of Recent Calls",
+        "url": "https://leetcode.com/problems/number-of-recent-calls/description/"
+    },
+    "971": {
+        "description": "In a given 2D binary array `A`, there are two islands.  (An island is a\n4-directionally connected group of `1`s not connected to any other 1s.)\n\nNow, we may change `0`s to `1`s so as to connect the two islands together to\nform 1 island.\n\nReturn the smallest number of `0`s that must be flipped.  (It is guaranteed\nthat the answer is at least 1.)\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [[0,1],[1,0]]\r\n    **Output:** 1\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** [[0,1,0],[0,0,0],[0,0,1]]\r\n    **Output:** 2\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** [[1,1,1,1,1],[1,0,0,0,1],[1,0,1,0,1],[1,0,0,0,1],[1,1,1,1,1]]\r\n    **Output:** 1\n\n\n\n**Note:**\n\n  1. `1 <= A.length = A[0].length <= 100`\n  2. `A[i][j] == 0` or `A[i][j] == 1`",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 971,
+        "slug": "shortest-bridge",
+        "tags": [
+            "Depth-first Search",
+            "Breadth-first Search"
+        ],
+        "title": "Shortest Bridge",
+        "url": "https://leetcode.com/problems/shortest-bridge/description/"
+    },
+    "972": {
+        "description": "A chess knight can move as indicated in the chess diagram below:\n\n![](https://assets.leetcode.com/uploads/2018/10/12/knight.png) .\n![](https://assets.leetcode.com/uploads/2018/10/30/keypad.png)\n\n\n\nThis time, we place our chess knight on any numbered key of a phone pad\n(indicated above), and the knight makes `N-1` hops.  Each hop must be from one\nkey to another numbered key.\n\nEach time it lands on a key (including the initial placement of the knight),\nit presses the number of that key, pressing `N` digits total.\n\nHow many distinct numbers can you dial in this manner?\n\nSince the answer may be large, **output the answer  modulo `10^9 + 7`**.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** 1\r\n    **Output:** 10\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** 2\r\n    **Output:** 20\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** 3\r\n    **Output:** 46\r\n    \n\n\n\n**Note:**\n\n  * `1 <= N <= 5000`",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 972,
+        "slug": "knight-dialer",
+        "tags": [
+            "Dynamic Programming"
+        ],
+        "title": "Knight Dialer",
+        "url": "https://leetcode.com/problems/knight-dialer/description/"
+    },
+    "973": {
+        "description": "You want to form a `target` string of **lowercase letters**.\n\nAt the beginning, your sequence is `target.length` `'?'` marks.  You also have\na `stamp` of lowercase letters.\n\nOn each turn, you may place the stamp over the sequence, and replace every\nletter in the sequence with the corresponding letter from the stamp.  You can\nmake up to `10 * target.length` turns.\n\nFor example, if the initial sequence is \"?????\", and your stamp is `\"abc\"`,\nthen you may make \"abc??\", \"?abc?\", \"??abc\" in the first turn.  (Note that the\nstamp must be fully contained in the boundaries of the sequence in order to\nstamp.)\n\nIf the sequence is possible to stamp, then return an array of the index of the\nleft-most letter being stamped at each turn.  If the sequence is not possible\nto stamp, return an empty array.\n\nFor example, if the sequence is \"ababc\", and the stamp is `\"abc\"`, then we\ncould return the answer `[0, 2]`, corresponding to the moves \"?????\" ->\n\"abc??\" -> \"ababc\".\n\nAlso, if the sequence is possible to stamp, it is guaranteed it is possible to\nstamp within `10 * target.length` moves.  Any answers specifying more than\nthis number of moves will not be accepted.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** stamp = \"abc\", target = \"ababc\"\r\n    **Output:** [0,2]\r\n    ([1,0,2] would also be accepted as an answer, as well as some other answers.)\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** stamp = \"abca\", target = \"aabcaca\"\r\n    **Output:** [3,0,1]\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= stamp.length <= target.length <= 1000`\n  2. `stamp` and `target` only contain lowercase letters.",
+        "level": 3,
+        "paid_only": false,
+        "question_id": 973,
+        "slug": "stamping-the-sequence",
+        "tags": [
+            "String",
+            "Greedy"
+        ],
+        "title": "Stamping The Sequence",
+        "url": "https://leetcode.com/problems/stamping-the-sequence/description/"
+    },
+    "974": {
+        "description": "You have an array of `logs`.  Each log is a space delimited string of words.\n\nFor each log, the first word in each log is an alphanumeric _identifier_.\nThen, either:\n\n  * Each word after the identifier will consist only of lowercase letters, or;\n  * Each word after the identifier will consist only of digits.\n\nWe will call these two varieties of logs _letter-logs_ and _digit-logs_.   It\nis guaranteed that each log has at least one word after its identifier.\n\nReorder the logs so that all of the letter-logs come before any digit-log.\nThe letter-logs are ordered lexicographically ignoring identifier, with the\nidentifier used in case of ties.  The digit-logs should be put in their\noriginal order.\n\nReturn the final order of the logs.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [\"a1 9 2 3 1\",\"g1 act car\",\"zo4 4 7\",\"ab1 off key dog\",\"a8 act zoo\"]\r\n    **Output:** [\"g1 act car\",\"a8 act zoo\",\"ab1 off key dog\",\"a1 9 2 3 1\",\"zo4 4 7\"]\r\n    \n\n\n\n**Note:**\n\n  1. `0 <= logs.length <= 100`\n  2. `3 <= logs[i].length <= 100`\n  3. `logs[i]` is guaranteed to have an identifier, and a word after the identifier.",
+        "level": 1,
+        "paid_only": false,
+        "question_id": 974,
+        "slug": "reorder-log-files",
+        "tags": [
+            "String"
+        ],
+        "title": "Reorder Log Files",
+        "url": "https://leetcode.com/problems/reorder-log-files/description/"
+    },
+    "975": {
+        "description": "Given the `root` node of a binary search tree, return the sum of values of all\nnodes with value between `L` and `R` (inclusive).\n\nThe binary search tree is guaranteed to have unique values.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** root = [10,5,15,3,7,null,18], L = 7, R = 15\r\n    **Output:** 32\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** root = [10,5,15,3,7,13,18,1,null,6], L = 6, R = 10\r\n    **Output:** 23\r\n    \n\n\n\n**Note:**\n\n  1. The number of nodes in the tree is at most `10000`.\n  2. The final answer is guaranteed to be less than `2^31`.",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 975,
+        "slug": "range-sum-of-bst",
+        "tags": [
+            "Binary Search Tree"
+        ],
+        "title": "Range Sum of BST",
+        "url": "https://leetcode.com/problems/range-sum-of-bst/description/"
+    },
+    "976": {
+        "description": "Given a set of points in the xy-plane, determine the minimum area of a\nrectangle formed from these points, with sides parallel to the x and y axes.\n\nIf there isn't any rectangle, return 0.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [[1,1],[1,3],[3,1],[3,3],[2,2]]\r\n    **Output:** 4\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** [[1,1],[1,3],[3,1],[3,3],[4,1],[4,3]]\r\n    **Output:** 2\r\n    \n\n\n\n**Note** :\n\n  1. `1 <= points.length <= 500`\n  2. `0 <= points[i][0] <= 40000`\n  3. `0 <= points[i][1] <= 40000`\n  4. All points are distinct.",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 976,
+        "slug": "minimum-area-rectangle",
+        "tags": [
+            "Hash Table"
+        ],
+        "title": "Minimum Area Rectangle",
+        "url": "https://leetcode.com/problems/minimum-area-rectangle/description/"
+    },
+    "977": {
+        "description": "Given a string `S`, count the number of distinct, non-empty subsequences of\n`S` .\n\nSince the result may be large, **return the answer modulo`10^9 + 7`**.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** \"abc\"\r\n    **Output:** 7\r\n    **Explanation** : The 7 distinct subsequences are \"a\", \"b\", \"c\", \"ab\", \"ac\", \"bc\", and \"abc\".\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** \"aba\"\r\n    **Output:** 6\r\n    **Explanation** : The 6 distinct subsequences are \"a\", \"b\", \"ab\", \"ba\", \"aa\" and \"aba\".\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** \"aaa\"\r\n    **Output:** 3\r\n    **Explanation** : The 3 distinct subsequences are \"a\", \"aa\" and \"aaa\".\r\n    \n\n\n\n\n\n**Note:**\n\n  1. `S` contains only lowercase letters.\n  2. `1 <= S.length <= 2000`",
+        "level": 3,
+        "paid_only": false,
+        "question_id": 977,
+        "slug": "distinct-subsequences-ii",
+        "tags": [
+            "Dynamic Programming"
+        ],
+        "title": "Distinct Subsequences II",
+        "url": "https://leetcode.com/problems/distinct-subsequences-ii/description/"
+    },
+    "978": {
+        "description": "Given an array `A` of integers, return `true` if and only if it is a _valid\nmountain array_.\n\nRecall that A is a mountain array if and only if:\n\n  * `A.length >= 3`\n  * There exists some `i` with `0 < i < A.length - 1` such that: \n    * `A[0] < A[1] < ... A[i-1] < A[i] `\n    * `A[i] > A[i+1] > ... > A[B.length - 1]`\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [2,1]\r\n    **Output:** false\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** [3,5,5]\r\n    **Output:** false\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** [0,3,2,1]\r\n    **Output:** true\n\n\n\n**Note:**\n\n  1. `0 <= A.length <= 10000`\n  2. `0 <= A[i] <= 10000 `",
+        "level": 1,
+        "paid_only": false,
+        "question_id": 978,
+        "slug": "valid-mountain-array",
+        "tags": [
+            "Array"
+        ],
+        "title": "Valid Mountain Array",
+        "url": "https://leetcode.com/problems/valid-mountain-array/description/"
+    },
+    "979": {
+        "description": "Given a string `S` that **only** contains  \"I\" (increase) or \"D\" (decrease),\nlet `N = S.length`.\n\nReturn **any** permutation `A` of `[0, 1, ..., N]` such that for all `i = 0,\n..., N-1`:\n\n  * If `S[i] == \"I\"`, then `A[i] < A[i+1]`\n  * If `S[i] == \"D\"`, then `A[i] > A[i+1]`\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** \"IDID\"\r\n    **Output:** [0,4,1,3,2]\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** \"III\"\r\n    **Output:** [0,1,2,3]\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** \"DDI\"\r\n    **Output:** [3,2,0,1]\n\n\n\n**Note:**\n\n  1. `1 <= S.length <= 10000`\n  2. `S` only contains characters `\"I\"` or `\"D\"`.",
+        "level": 1,
+        "paid_only": false,
+        "question_id": 979,
+        "slug": "di-string-match",
+        "tags": [
+            "Math"
+        ],
+        "title": "DI String Match",
+        "url": "https://leetcode.com/problems/di-string-match/description/"
+    },
+    "980": {
+        "description": "Given an array A of strings, find any smallest string that contains each\nstring in `A` as a substring.\n\nWe may assume that no string in `A` is substring of another string in `A`.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [\"alex\",\"loves\",\"leetcode\"]\r\n    **Output:** \"alexlovesleetcode\"\r\n    **Explanation:** All permutations of \"alex\",\"loves\",\"leetcode\" would also be accepted.\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** [\"catg\",\"ctaagt\",\"gcta\",\"ttca\",\"atgcatc\"]\r\n    **Output:** \"gctaagttcatgcatc\"\n\n\n\n**Note:**\n\n  1. `1 <= A.length <= 12`\n  2. `1 <= A[i].length <= 20`",
+        "level": 3,
+        "paid_only": false,
+        "question_id": 980,
+        "slug": "find-the-shortest-superstring",
+        "tags": [
+            "Dynamic Programming"
+        ],
+        "title": "Find the Shortest Superstring",
+        "url": "https://leetcode.com/problems/find-the-shortest-superstring/description/"
+    },
+    "981": {
+        "description": "We are given an array `A` of `N` lowercase letter strings, all of the same\nlength.\n\nNow, we may choose any set of deletion indices, and for each string, we delete\nall the characters in those indices.\n\nFor example, if we have an array `A = [\"``abcdef``\",\"uvwxyz\"]` and deletion\nindices `{0, 2, 3}`, then the final array after deletions is `[\"bef\", \"vyz\"]`,\nand the remaining columns of `A` are `[\"b\"``,\"``v\"]`, `[\"e\",\"y\"]`, and\n`[\"f\",\"z\"]`.  (Formally, the `c`-th column is `[A[0][c], A[1][c], ...,\nA[A.length-1][c]]`.)\n\nSuppose we chose a set of deletion indices `D` such that after deletions, each\nremaining column in A is in **non-decreasing** sorted order.\n\nReturn the minimum possible value of `D.length`.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [\"cba\",\"daf\",\"ghi\"]\r\n    **Output:** 1\r\n    **Explanation:**\r\n    After choosing D = {1}, each column [ \"c\",\"d\",\"g\"] and [\"a\",\"f\",\"i\"] are in non-decreasing sorted order.\r\n    If we chose D = {}, then a column [\"b\",\"a\",\"h\"] would not be in non-decreasing sorted order.\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** [\"a\",\"b\"]\r\n    **Output:** 0\r\n    **Explanation:** D = {}\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** [\"zyx\",\"wvu\",\"tsr\"]\r\n    **Output:** 3\r\n    **Explanation:** D = {0, 1, 2}\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= A.length <= 100`\n  2. `1 <= A[i].length <= 1000`",
+        "level": 1,
+        "paid_only": false,
+        "question_id": 981,
+        "slug": "delete-columns-to-make-sorted",
+        "tags": [
+            "Greedy"
+        ],
+        "title": "Delete Columns to Make Sorted",
+        "url": "https://leetcode.com/problems/delete-columns-to-make-sorted/description/"
+    },
+    "982": {
+        "description": "Given an array of integers A, a _move_ consists of choosing any `A[i]`, and\nincrementing it by `1`.\n\nReturn the least number of moves to make every value in `A` unique.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [1,2,2]\r\n    **Output:** 1\r\n    **Explanation:** After 1 move, the array could be [1, 2, 3].\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** [3,2,1,2,1,7]\r\n    **Output:** 6\r\n    **Explanation:** After 6 moves, the array could be [3, 4, 1, 2, 5, 7].\r\n    It can be shown with 5 or less moves that it is impossible for the array to have all unique values.\r\n    \n\n\n\n**Note:**\n\n  1. `0 <= A.length <= 40000`\n  2. `0 <= A[i] < 40000`",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 982,
+        "slug": "minimum-increment-to-make-array-unique",
+        "tags": [
+            "Array"
+        ],
+        "title": "Minimum Increment to Make Array Unique",
+        "url": "https://leetcode.com/problems/minimum-increment-to-make-array-unique/description/"
+    },
+    "983": {
+        "description": "Given two sequences `pushed` and `popped`  **with distinct values** , return\n`true` if and only if this could have been the result of a sequence of push\nand pop operations on an initially empty stack.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** pushed = [1,2,3,4,5], popped = [4,5,3,2,1]\r\n    **Output:** true\r\n    **Explanation:** We might do the following sequence:\r\n    push(1), push(2), push(3), push(4), pop() -> 4,\r\n    push(5), pop() -> 5, pop() -> 3, pop() -> 2, pop() -> 1\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** pushed = [1,2,3,4,5], popped = [4,3,5,1,2]\r\n    **Output:** false\r\n    **Explanation:** 1 cannot be popped before 2.\r\n    \n\n\n\n**Note:**\n\n  1. `0 <= pushed.length == popped.length <= 1000`\n  2. `0 <= pushed[i], popped[i] < 1000`\n  3. `pushed` is a permutation of `popped`.\n  4. `pushed` and `popped` have distinct values.",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 983,
+        "slug": "validate-stack-sequences",
+        "tags": [
+            "Stack"
+        ],
+        "title": "Validate Stack Sequences",
+        "url": "https://leetcode.com/problems/validate-stack-sequences/description/"
+    },
+    "984": {
+        "description": "On a 2D plane, we place stones at some integer coordinate points.  Each\ncoordinate point may have at most one stone.\n\nNow, a _move_ consists of removing a stone  that shares a column or row with\nanother stone on the grid.\n\nWhat is the largest possible number of moves we can make?\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** stones = [[0,0],[0,1],[1,0],[1,2],[2,1],[2,2]]\r\n    **Output:** 5\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** stones = [[0,0],[0,2],[1,1],[2,0],[2,2]]\r\n    **Output:** 3\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** stones = [[0,0]]\r\n    **Output:** 0\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= stones.length <= 1000`\n  2. `0 <= stones[i][j] < 10000`",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 984,
+        "slug": "most-stones-removed-with-same-row-or-column",
+        "tags": [
+            "Depth-first Search",
+            "Union Find"
+        ],
+        "title": "Most Stones Removed with Same Row or Column",
+        "url": "https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/description/"
+    },
+    "985": {
+        "description": "You have an initial power `P`, an initial score of `0` points, and a bag of\ntokens.\n\nEach token can be used at most once, has a value `token[i]`, and has\npotentially two ways to use it.\n\n  * If we have at least `token[i]` power, we may play the token face up, losing `token[i]` power, and gaining `1` point.\n  * If we have at least `1` point, we may play the token face down, gaining `token[i]` power, and losing `1` point.\n\nReturn the largest number of points we can have after playing any number of\ntokens.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** tokens = [100], P = 50\r\n    **Output:** 0\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** tokens = [100,200], P = 150\r\n    **Output:** 1\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** tokens = [100,200,300,400], P = 200\r\n    **Output:** 2\r\n    \n\n\n\n**Note:**\n\n  1. `tokens.length <= 1000`\n  2. `0 <= tokens[i] < 10000`\n  3. `0 <= P < 10000`",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 985,
+        "slug": "bag-of-tokens",
+        "tags": [
+            "Greedy"
+        ],
+        "title": "Bag of Tokens",
+        "url": "https://leetcode.com/problems/bag-of-tokens/description/"
+    },
+    "986": {
+        "description": "Given an array of 4 digits, return the largest 24 hour time that can be made.\n\nThe smallest 24 hour time is 00:00, and the largest is 23:59.  Starting from\n00:00, a time is larger if more time has elapsed since midnight.\n\nReturn the answer as a string of length 5.  If no valid time can be made,\nreturn an empty string.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [1,2,3,4]\r\n    **Output:** \"23:41\"\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** [5,5,5,5]\r\n    **Output:** \"\"\r\n    \n\n\n\n**Note:**\n\n  1. `A.length == 4`\n  2. `0 <= A[i] <= 9`",
+        "level": 1,
+        "paid_only": false,
+        "question_id": 986,
+        "slug": "largest-time-for-given-digits",
+        "tags": [
+            "Math"
+        ],
+        "title": "Largest Time for Given Digits",
+        "url": "https://leetcode.com/problems/largest-time-for-given-digits/description/"
+    },
+    "987": {
+        "description": "In a deck of cards, every card has a unique integer.  You can order the deck\nin any order you want.\n\nInitially, all the cards start face down (unrevealed) in one deck.\n\nNow, you do the following steps repeatedly, until all cards are revealed:\n\n  1. Take the top card of the deck, reveal it, and take it out of the deck.\n  2. If there are still cards in the deck, put the next top card of the deck at the bottom of the deck.\n  3. If there are still unrevealed cards, go back to step 1.  Otherwise, stop.\n\nReturn an ordering of the deck that would reveal the cards in **increasing\norder.**\n\nThe first entry in the answer is considered to be the top of the deck.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [17,13,11,2,3,5,7]\r\n    **Output:** [2,13,3,11,5,17,7]\r\n    **Explanation:**\r\n    We get the deck in the order [17,13,11,2,3,5,7] (this order doesn't matter), and reorder it.\r\n    After reordering, the deck starts as [2,13,3,11,5,17,7], where 2 is the top of the deck.\r\n    We reveal 2, and move 13 to the bottom.  The deck is now [3,11,5,17,7,13].\r\n    We reveal 3, and move 11 to the bottom.  The deck is now [5,17,7,13,11].\r\n    We reveal 5, and move 17 to the bottom.  The deck is now [7,13,11,17].\r\n    We reveal 7, and move 13 to the bottom.  The deck is now [11,17,13].\r\n    We reveal 11, and move 17 to the bottom.  The deck is now [13,17].\r\n    We reveal 13, and move 17 to the bottom.  The deck is now [17].\r\n    We reveal 17.\r\n    Since all the cards revealed are in increasing order, the answer is correct.\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= A.length <= 1000`\n  2. `1 <= A[i] <= 10^6`\n  3. `A[i] != A[j]` for all `i != j`",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 987,
+        "slug": "reveal-cards-in-increasing-order",
+        "tags": [
+            "Array"
+        ],
+        "title": "Reveal Cards In Increasing Order",
+        "url": "https://leetcode.com/problems/reveal-cards-in-increasing-order/description/"
+    },
+    "988": {
+        "description": "For a binary tree T, we can define a flip operation as follows: choose any\nnode, and swap the left and right child subtrees.\n\nA binary tree X is _flip equivalent_ to a binary tree Y if and only if we can\nmake X equal to Y after some number of flip operations.\n\nWrite a function that determines whether two binary trees are _flip\nequivalent_.   The trees are given by root nodes `root1` and `root2`.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** root1 = [1,2,3,4,5,6,null,null,null,7,8], root2 = [1,3,2,null,6,4,5,null,null,null,null,8,7]\r\n    **Output:** true\r\n    **Explanation:** We flipped at nodes with values 1, 3, and 5.\r\n    ![Flipped Trees Diagram](https://assets.leetcode.com/uploads/2018/11/29/tree_ex.png)\r\n    \n\n\n\n**Note:**\n\n  1. Each tree will have at most `100` nodes.\n  2. Each value in each tree will be a unique integer in the range `[0, 99]`.",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 988,
+        "slug": "flip-equivalent-binary-trees",
+        "tags": [
+            "Tree"
+        ],
+        "title": "Flip Equivalent Binary Trees",
+        "url": "https://leetcode.com/problems/flip-equivalent-binary-trees/description/"
+    },
+    "989": {
+        "description": "Given a non-empty array of unique positive integers `A`, consider the\nfollowing graph:\n\n  * There are `A.length` nodes, labelled `A[0]` to `A[A.length - 1];`\n  * There is an edge between `A[i]` and `A[j]` if and only if `A[i]` and `A[j]` share a common factor greater than 1.\n\nReturn the size of the largest connected component in the graph.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [4,6,15,35]\r\n    **Output:** 4\r\n    ![](https://assets.leetcode.com/uploads/2018/12/01/ex1.png)\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** [20,50,9,63]\r\n    **Output:** 2\r\n    ![](https://assets.leetcode.com/uploads/2018/12/01/ex2.png)\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** [2,3,6,7,4,12,21,39]\r\n    **Output:** 8\r\n    ![](https://assets.leetcode.com/uploads/2018/12/01/ex3.png)\r\n    \n\n**Note:**\n\n  1. `1 <= A.length <= 20000`\n  2. `1 <= A[i] <= 100000`",
+        "level": 3,
+        "paid_only": false,
+        "question_id": 989,
+        "slug": "largest-component-size-by-common-factor",
+        "tags": [
+            "Math",
+            "Union Find"
+        ],
+        "title": "Largest Component Size by Common Factor",
+        "url": "https://leetcode.com/problems/largest-component-size-by-common-factor/description/"
+    },
+    "990": {
+        "description": "In an alien language, surprisingly they also use english lowercase letters,\nbut possibly in a different `order`. The `order` of the alphabet is some\npermutation of lowercase letters.\n\nGiven a sequence of `words` written in the alien language, and the `order` of\nthe alphabet, return `true` if and only if the given `words` are sorted\nlexicographicaly in this alien language.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** words = [\"hello\",\"leetcode\"], order = \"hlabcdefgijkmnopqrstuvwxyz\"\r\n    **Output:** true\r\n    **Explanation:** As 'h' comes before 'l' in this language, then the sequence is sorted.\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** words = [\"word\",\"world\",\"row\"], order = \"worldabcefghijkmnpqstuvxyz\"\r\n    **Output:** false\r\n    **Explanation:** As 'd' comes after 'l' in this language, then words[0] > words[1], hence the sequence is unsorted.\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** words = [\"apple\",\"app\"], order = \"abcdefghijklmnopqrstuvwxyz\"\r\n    **Output:** false\r\n    **Explanation:** The first three characters \"app\" match, and the second string is shorter (in size.) According to lexicographical rules \"apple\" > \"app\", because 'l' > '∅', where '∅' is defined as the blank character which is less than any other character ([More info](https://en.wikipedia.org/wiki/Lexicographical_order)).\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= words.length <= 100`\n  2. `1 <= words[i].length <= 20`\n  3. `order.length == 26`\n  4. All characters in `words[i]` and `order` are english lowercase letters.",
+        "level": 1,
+        "paid_only": false,
+        "question_id": 990,
+        "slug": "verifying-an-alien-dictionary",
+        "tags": [
+            "Hash Table"
+        ],
+        "title": "Verifying an Alien Dictionary",
+        "url": "https://leetcode.com/problems/verifying-an-alien-dictionary/description/"
+    },
+    "991": {
+        "description": "Given an array of integers `A` with even length, return `true` if and only if\nit is possible to reorder it such that `A[2 * i + 1] = 2 * A[2 * i]` for every\n`0 <= i < len(A) / 2`.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [3,1,3,6]\r\n    **Output:** false\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** [2,1,2,6]\r\n    **Output:** false\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** [4,-2,2,-4]\r\n    **Output:** true\r\n    **Explanation:** We can take two groups, [-2,-4] and [2,4] to form [-2,-4,2,4] or [2,4,-2,-4].\r\n    \n\n**Example 4:**\n\n    \n    \r\n    **Input:** [1,2,4,16,8,4]\r\n    **Output:** false\r\n    \n\n\n\n**Note:**\n\n  1. `0 <= A.length <= 30000`\n  2. `A.length` is even\n  3. `-100000 <= A[i] <= 100000`",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 991,
+        "slug": "array-of-doubled-pairs",
+        "tags": [
+            "Array",
+            "Hash Table"
+        ],
+        "title": "Array of Doubled Pairs",
+        "url": "https://leetcode.com/problems/array-of-doubled-pairs/description/"
+    },
+    "992": {
+        "description": "We are given an array `A` of `N` lowercase letter strings, all of the same\nlength.\n\nNow, we may choose any set of deletion indices, and for each string, we delete\nall the characters in those indices.\n\nFor example, if we have an array `A = [\"abcdef\",\"uvwxyz\"]` and deletion\nindices `{0, 2, 3}`, then the final array after deletions is `[\"bef\",\"vyz\"]`.\n\nSuppose we chose a set of deletion indices `D` such that after deletions, the\nfinal array has its elements in **lexicographic** order (`A[0] <= A[1] <= A[2]\n... <= A[A.length - 1]`).\n\nReturn the minimum possible value of `D.length`.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [\"ca\",\"bb\",\"ac\"]\r\n    **Output:** 1\r\n    **Explanation:**\r\n    After deleting the first column, A = [ \"a\", \"b\", \"c\"].\r\n    Now A is in lexicographic order (ie. A[0] <= A[1] <= A[2]).\r\n    We require at least 1 deletion since initially A was not in lexicographic order, so the answer is 1.\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** [\"xc\",\"yb\",\"za\"]\r\n    **Output:** 0\r\n    **Explanation:**\r\n    A is already in lexicographic order, so we don 't need to delete anything.\r\n    Note that the rows of A are not necessarily in lexicographic order:\r\n    ie. it is NOT necessarily true that (A[0][0] <= A[0][1] <= ...)\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** [\"zyx\",\"wvu\",\"tsr\"]\r\n    **Output:** 3\r\n    **Explanation:**\r\n    We have to delete every column.\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= A.length <= 100`\n  2. `1 <= A[i].length <= 100`",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 992,
+        "slug": "delete-columns-to-make-sorted-ii",
+        "tags": [
+            "Greedy"
+        ],
+        "title": "Delete Columns to Make Sorted II",
+        "url": "https://leetcode.com/problems/delete-columns-to-make-sorted-ii/description/"
+    },
+    "993": {
+        "description": "You are installing a billboard and want it to have the largest height.  The\nbillboard will have two steel supports, one on each side.  Each steel support\nmust be an equal height.\n\nYou have a collection of `rods` which can be welded together.  For example, if\nyou have rods of lengths 1, 2, and 3, you can weld them together to make a\nsupport of length 6.\n\nReturn the largest possible height of your billboard installation.  If you\ncannot support the billboard, return 0.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [1,2,3,6]\r\n    **Output:** 6\r\n    **Explanation:** We have two disjoint subsets {1,2,3} and {6}, which have the same sum = 6.\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** [1,2,3,4,5,6]\r\n    **Output:** 10\r\n    **Explanation:** We have two disjoint subsets {2,3,5} and {4,6}, which have the same sum = 10.\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** [1,2]\r\n    **Output:** 0\r\n    **Explanation:** The billboard cannot be supported, so we return 0.\r\n    \n\n\n\n**Note:**\n\n  1. `0 <= rods.length <= 20`\n  2. `1 <= rods[i] <= 1000`\n  3. `The sum of rods is at most 5000.`",
+        "level": 3,
+        "paid_only": false,
+        "question_id": 993,
+        "slug": "tallest-billboard",
+        "tags": [
+            "Dynamic Programming"
+        ],
+        "title": "Tallest Billboard",
+        "url": "https://leetcode.com/problems/tallest-billboard/description/"
+    },
+    "994": {
+        "description": "There are 8 prison cells in a row, and each cell is either occupied or vacant.\n\nEach day, whether the cell is occupied or vacant changes according to the\nfollowing rules:\n\n  * If a cell has two adjacent neighbors that are both occupied or both vacant, then the cell becomes occupied.\n  * Otherwise, it becomes vacant.\n\n(Note that because the prison is a row, the first and the last cells in the\nrow can't have two adjacent neighbors.)\n\nWe describe the current state of the prison in the following way: `cells[i] ==\n1` if the `i`-th cell is occupied, else `cells[i] == 0`.\n\nGiven the initial state of the prison, return the state of the prison after\n`N` days (and `N` such changes described above.)\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** cells = [0,1,0,1,1,0,0,1], N = 7\r\n    **Output:** [0,0,1,1,0,0,0,0]\r\n    **Explanation:** The following table summarizes the state of the prison on each day:\r\n    Day 0: [0, 1, 0, 1, 1, 0, 0, 1]\r\n    Day 1: [0, 1, 1, 0, 0, 0, 0, 0]\r\n    Day 2: [0, 0, 0, 0, 1, 1, 1, 0]\r\n    Day 3: [0, 1, 1, 0, 0, 1, 0, 0]\r\n    Day 4: [0, 0, 0, 0, 0, 1, 0, 0]\r\n    Day 5: [0, 1, 1, 1, 0, 1, 0, 0]\r\n    Day 6: [0, 0, 1, 0, 1, 1, 0, 0]\r\n    Day 7: [0, 0, 1, 1, 0, 0, 0, 0]\r\n    \r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** cells = [1,0,0,1,0,0,1,0], N = 1000000000\r\n    **Output:** [0,0,1,1,1,1,1,0]\r\n    \n\n\n\n**Note:**\n\n  1. `cells.length == 8`\n  2. `cells[i]` is in `{0, 1}`\n  3. `1 <= N <= 10^9`",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 994,
+        "slug": "prison-cells-after-n-days",
+        "tags": [
+            "Hash Table"
+        ],
+        "title": "Prison Cells After N Days",
+        "url": "https://leetcode.com/problems/prison-cells-after-n-days/description/"
+    },
+    "998": {
+        "description": "Given a binary tree, determine if it is a _complete binary tree_.\n\n_**Definition of a complete binary tree\nfrom[Wikipedia](http://en.wikipedia.org/wiki/Binary_tree#Types_of_binary_trees):**_  \nIn a complete binary tree every level, except possibly the last, is completely\nfilled, and all nodes in the last level are as far left as possible. It can\nhave between 1 and 2 h nodes inclusive at the last level h.\n\n\n\n**Example 1:**\n\n**![](https://assets.leetcode.com/uploads/2018/12/15/complete-binary-\ntree-1.png)**\n\n    \n    \r\n    **Input:** [1,2,3,4,5,6]\r\n    **Output:** true\r\n    **Explanation:** Every level before the last is full (ie. levels with node-values {1} and {2, 3}), and all nodes in the last level ({4, 5, 6}) are as far left as possible.\r\n    \n\n**Example 2:**\n\n**![](https://assets.leetcode.com/uploads/2018/12/15/complete-binary-\ntree-2.png)**\n\n    \n    \r\n    **Input:** [1,2,3,4,5,null,7]\r\n    **Output:** false\r\n    **Explanation:** The node with value 7 isn't as far left as possible.\r\n    \n\n\n\n**Note:**\n\n  1. The tree will have between 1 and 100 nodes.",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 998,
+        "slug": "check-completeness-of-a-binary-tree",
+        "tags": [
+            "Tree"
+        ],
+        "title": "Check Completeness of a Binary Tree",
+        "url": "https://leetcode.com/problems/check-completeness-of-a-binary-tree/description/"
+    },
+    "999": {
+        "description": "In a N x N `grid` composed of 1 x 1 squares, each 1 x 1 square consists of a\n`/`, `\\`, or blank space.  These characters divide the square into contiguous\nregions.\n\n(Note that backslash characters are escaped, so a `\\` is represented as\n`\"\\\\\"`.)\n\nReturn the number of regions.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [\r\n      \" /\",\r\n      \"/ \"\r\n    ]\r\n    **Output:** 2\r\n    **Explanation:** The 2x2 grid is as follows:\r\n    ![](https://assets.leetcode.com/uploads/2018/12/15/1.png)\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** [\r\n      \" /\",\r\n      \"  \"\r\n    ]\r\n    **Output:** 1\r\n    **Explanation:** The 2x2 grid is as follows:\r\n    ![](https://assets.leetcode.com/uploads/2018/12/15/2.png)\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** [\r\n      \"\\\\/\",\r\n      \"/\\\\\"\r\n    ]\r\n    **Output:** 4\r\n    **Explanation:** (Recall that because \\ characters are escaped, \"\\\\/\" refers to \\/, and \"/\\\\\" refers to /\\.)\r\n    The 2x2 grid is as follows:\r\n    ![](https://assets.leetcode.com/uploads/2018/12/15/3.png)\r\n    \n\n**Example 4:**\n\n    \n    \r\n    **Input:** [\r\n      \"/\\\\\",\r\n      \"\\\\/\"\r\n    ]\r\n    **Output:** 5\r\n    **Explanation:** (Recall that because \\ characters are escaped, \"/\\\\\" refers to /\\, and \"\\\\/\" refers to \\/.)\r\n    The 2x2 grid is as follows:\r\n    ![](https://assets.leetcode.com/uploads/2018/12/15/4.png)\r\n    \n\n**Example 5:**\n\n    \n    \r\n    **Input:** [\r\n      \"//\",\r\n      \"/ \"\r\n    ]\r\n    **Output:** 3\r\n    **Explanation:** The 2x2 grid is as follows:\r\n    ![](https://assets.leetcode.com/uploads/2018/12/15/5.png)\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= grid.length == grid[0].length <= 30`\n  2. `grid[i][j]` is either `'/'`, `'\\'`, or `' '`.",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 999,
+        "slug": "regions-cut-by-slashes",
+        "tags": [
+            "Depth-first Search",
+            "Union Find",
+            "Graph"
+        ],
+        "title": "Regions Cut By Slashes",
+        "url": "https://leetcode.com/problems/regions-cut-by-slashes/description/"
+    },
+    "1000": {
+        "description": "We are given an array `A` of `N` lowercase letter strings, all of the same\nlength.\n\nNow, we may choose any set of deletion indices, and for each string, we delete\nall the characters in those indices.\n\nFor example, if we have an array `A = [\"babca\",\"bbazb\"]` and deletion indices\n`{0, 1, 4}`, then the final array after deletions is `[\"bc\",\"az\"]`.\n\nSuppose we chose a set of deletion indices `D` such that after deletions, the\nfinal array has **every element (row) in  lexicographic** order.\n\nFor clarity, `A[0]` is in lexicographic order (ie. `A[0][0] <= A[0][1] <= ...\n<= A[0][A[0].length - 1]`), `A[1]` is in lexicographic order (ie. `A[1][0] <=\nA[1][1] <= ... <= A[1][A[1].length - 1]`), and so on.\n\nReturn the minimum possible value of `D.length`.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [\"babca\",\"bbazb\"]\r\n    **Output:** 3\r\n    **Explanation:** After deleting columns 0, 1, and 4, the final array is A = [\"bc\", \"az\"].\r\n    Both these rows are individually in lexicographic order (ie. A[0][0] <= A[0][1] and A[1][0] <= A[1][1]).\r\n    Note that A[0] > A[1] - the array A isn't necessarily in lexicographic order.\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** [\"edcba\"]\r\n    **Output:** 4\r\n    **Explanation:** If we delete less than 4 columns, the only row won't be lexicographically sorted.\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** [\"ghi\",\"def\",\"abc\"]\r\n    **Output:** 0\r\n    **Explanation:** All rows are already lexicographically sorted.\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= A.length <= 100`\n  2. `1 <= A[i].length <= 100`",
+        "level": 3,
+        "paid_only": false,
+        "question_id": 1000,
+        "slug": "delete-columns-to-make-sorted-iii",
+        "tags": [
+            "Dynamic Programming"
+        ],
+        "title": "Delete Columns to Make Sorted III",
+        "url": "https://leetcode.com/problems/delete-columns-to-make-sorted-iii/description/"
+    },
+    "1001": {
+        "description": "In a array `A` of size `2N`, there are `N+1` unique elements, and exactly one\nof these elements is repeated N times.\n\nReturn the element repeated `N` times.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [1,2,3,3]\r\n    **Output:** 3\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** [2,1,2,5,3,2]\r\n    **Output:** 2\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** [5,1,5,2,5,3,5,4]\r\n    **Output:** 5\r\n    \n\n\n\n**Note:**\n\n  1. `4 <= A.length <= 10000`\n  2. `0 <= A[i] < 10000`\n  3. `A.length` is even",
+        "level": 1,
+        "paid_only": false,
+        "question_id": 1001,
+        "slug": "n-repeated-element-in-size-2n-array",
+        "tags": [
+            "Hash Table"
+        ],
+        "title": "N-Repeated Element in Size 2N Array",
+        "url": "https://leetcode.com/problems/n-repeated-element-in-size-2n-array/description/"
+    },
+    "1002": {
+        "description": "Given an array `A` of integers, a _ramp_  is a tuple `(i, j)` for which `i <\nj` and `A[i] <= A[j]`.  The width of such a ramp is `j - i`.\n\nFind the maximum width of a ramp in `A`.  If one doesn't exist, return 0.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [6,0,8,2,1,5]\r\n    **Output:** 4\r\n    **Explanation:**\r\n    The maximum width ramp is achieved at (i, j) = (1, 5): A[1] = 0 and A[5] = 5.\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** [9,8,1,0,1,9,4,0,4,1]\r\n    **Output:** 7\r\n    **Explanation:**\r\n    The maximum width ramp is achieved at (i, j) = (2, 9): A[2] = 1 and A[9] = 1.\r\n    \n\n\n\n**Note:**\n\n  1. `2 <= A.length <= 50000`\n  2. `0 <= A[i] <= 50000`",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 1002,
+        "slug": "maximum-width-ramp",
+        "tags": [
+            "Array"
+        ],
+        "title": "Maximum Width Ramp",
+        "url": "https://leetcode.com/problems/maximum-width-ramp/description/"
+    },
+    "1003": {
+        "description": "Given a set of points in the xy-plane, determine the minimum area of **any**\nrectangle formed from these points, with sides **not necessarily parallel** to\nthe x and y axes.\n\nIf there isn't any rectangle, return 0.\n\n\n\n**Example 1:**\n\n![](https://assets.leetcode.com/uploads/2018/12/21/1a.png)\n\n    \n    \r\n    **Input:** [[1,2],[2,1],[1,0],[0,1]]\r\n    **Output:** 2.00000\r\n    **Explanation:**  The minimum area rectangle occurs at [1,2],[2,1],[1,0],[0,1], with an area of 2.\r\n    \n\n**Example 2:**\n\n![](https://assets.leetcode.com/uploads/2018/12/22/2.png)\n\n    \n    \r\n    **Input:** [[0,1],[2,1],[1,1],[1,0],[2,0]]\r\n    **Output:** 1.00000\r\n    **Explanation:** The minimum area rectangle occurs at [1,0],[1,1],[2,1],[2,0], with an area of 1.\r\n    \n\n**Example 3:**\n\n![](https://assets.leetcode.com/uploads/2018/12/22/3.png)\n\n    \n    \r\n    **Input:** [[0,3],[1,2],[3,1],[1,3],[2,1]]\r\n    **Output:** 0\r\n    **Explanation:** There is no possible rectangle to form from these points.\r\n    \n\n**Example 4:**\n\n![](https://assets.leetcode.com/uploads/2018/12/21/4c.png)\n\n    \n    \r\n    **Input:** [[3,1],[1,1],[0,1],[2,1],[3,3],[3,2],[0,2],[2,3]]\r\n    **Output:** 2.00000\r\n    **Explanation:** The minimum area rectangle occurs at [2,1],[2,3],[3,3],[3,1], with an area of 2.\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= points.length <= 50`\n  2. `0 <= points[i][0] <= 40000`\n  3. `0 <= points[i][1] <= 40000`\n  4. All points are distinct.\n  5. Answers within `10^-5` of the actual value will be accepted as correct.",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 1003,
+        "slug": "minimum-area-rectangle-ii",
+        "tags": [
+            "Math",
+            "Geometry"
+        ],
+        "title": "Minimum Area Rectangle II",
+        "url": "https://leetcode.com/problems/minimum-area-rectangle-ii/description/"
+    },
+    "1004": {
+        "description": "Given a single positive integer `x`, we will write an expression of the form\n`x (op1) x (op2) x (op3) x ...` where each operator `op1`, `op2`, etc. is\neither addition, subtraction, multiplication, or division (`+`, `-`, `*`, or\n`/)`.  For example, with `x = 3`, we might write `3 * 3 / 3 + 3 - 3` which is\na value of 3.\n\nWhen writing such an expression, we adhere to the following conventions:\n\n  1. The division operator (`/`) returns rational numbers.\n  2. There are no parentheses placed anywhere.\n  3. We use the usual order of operations: multiplication and division happens before addition and subtraction.\n  4. It's not allowed to use the unary negation operator (`-`).  For example, \"`x - x`\" is a valid expression as it only uses subtraction, but \"`-x + x`\" is not because it uses negation.\n\nWe would like to write an expression with the least number of operators such\nthat the expression equals the given `target`.  Return the least number of\noperators used.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** x = 3, target = 19\r\n    **Output:** 5\r\n    **Explanation:** 3 * 3 + 3 * 3 + 3 / 3.  The expression contains 5 operations.\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** x = 5, target = 501\r\n    **Output:** 8\r\n    **Explanation:** 5 * 5 * 5 * 5 - 5 * 5 * 5 + 5 / 5.  The expression contains 8 operations.\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** x = 100, target = 100000000\r\n    **Output:** 3\r\n    **Explanation:** 100 * 100 * 100 * 100.  The expression contains 3 operations.\n\n\n\n**Note:**\n\n  * `2 <= x <= 100`\n  * `1 <= target <= 2 * 10^8`",
+        "level": 3,
+        "paid_only": false,
+        "question_id": 1004,
+        "slug": "least-operators-to-express-number",
+        "tags": [
+            "Math",
+            "Dynamic Programming"
+        ],
+        "title": "Least Operators to Express Number",
+        "url": "https://leetcode.com/problems/least-operators-to-express-number/description/"
+    },
+    "1005": {
+        "description": "A binary tree is _univalued_ if every node in the tree has the same value.\n\nReturn `true` if and only if the given tree is univalued.\n\n\n\n**Example 1:**\n\n![](https://assets.leetcode.com/uploads/2018/12/28/unival_bst_1.png)\n\n    \n    \r\n    **Input:** [1,1,1,1,1,null,1]\r\n    **Output:** true\r\n    \n\n**Example 2:**\n\n![](https://assets.leetcode.com/uploads/2018/12/28/unival_bst_2.png)\n\n    \n    \r\n    **Input:** [2,2,2,5,2]\r\n    **Output:** false\r\n    \n\n\n\n**Note:**\n\n  1. The number of nodes in the given tree will be in the range `[1, 100]`.\n  2. Each node's value will be an integer in the range `[0, 99]`.",
+        "level": 1,
+        "paid_only": false,
+        "question_id": 1005,
+        "slug": "univalued-binary-tree",
+        "tags": [
+            "Tree"
+        ],
+        "title": "Univalued Binary Tree",
+        "url": "https://leetcode.com/problems/univalued-binary-tree/description/"
+    },
+    "1006": {
+        "description": "Given a `wordlist`, we want to implement a spellchecker that converts a query\nword into a correct word.\n\nFor a given `query` word, the spell checker handles two categories of spelling\nmistakes:\n\n  * Capitalization: If the query matches a word in the wordlist ( **case-insensitive** ), then the query word is returned with the same case as the case in the wordlist. \n    * Example: `wordlist = [\"yellow\"]`, `query = \"YellOw\"`: `correct = \"yellow\"`\n    * Example: `wordlist = [\"Yellow\"]`, `query = \"yellow\"`: `correct = \"Yellow\"`\n    * Example: `wordlist = [\"yellow\"]`, `query = \"yellow\"`: `correct = \"yellow\"`\n  * Vowel Errors: If after replacing the vowels ('a', 'e', 'i', 'o', 'u') of the query word with any vowel individually, it matches a word in the wordlist ( **case-insensitive** ), then the query word is returned with the same case as the match in the wordlist. \n    * Example: `wordlist = [\"YellOw\"]`, `query = \"yollow\"`: `correct = \"YellOw\"`\n    * Example: `wordlist = [\"YellOw\"]`, `query = \"yeellow\"`: `correct = \"\"` (no match)\n    * Example: `wordlist = [\"YellOw\"]`, `query = \"yllw\"`: `correct = \"\"` (no match)\n\nIn addition, the spell checker operates under the following precedence rules:\n\n  * When the query exactly matches a word in the wordlist ( **case-sensitive** ), you should return the same word back.\n  * When the query matches a word up to capitlization, you should return the first such match in the wordlist.\n  * When the query matches a word up to vowel errors, you should return the first such match in the wordlist.\n  * If the query has no matches in the wordlist, you should return the empty string.\n\nGiven some `queries`, return a list of words `answer`, where `answer[i]` is\nthe correct word for `query = queries[i]`.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** wordlist = [\"KiTe\",\"kite\",\"hare\",\"Hare\"], queries = [\"kite\",\"Kite\",\"KiTe\",\"Hare\",\"HARE\",\"Hear\",\"hear\",\"keti\",\"keet\",\"keto\"]\r\n    **Output:** [\"kite\",\"KiTe\",\"KiTe\",\"Hare\",\"hare\",\"\",\"\",\"KiTe\",\"\",\"KiTe\"]\n\n\n\n**Note:**\n\n  * `1 <= wordlist.length <= 5000`\n  * `1 <= queries.length <= 5000`\n  * `1 <= wordlist[i].length <= 7`\n  * `1 <= queries[i].length <= 7`\n  * All strings in `wordlist` and `queries` consist only of **english**  letters.",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 1006,
+        "slug": "vowel-spellchecker",
+        "tags": [
+            "Hash Table",
+            "String"
+        ],
+        "title": "Vowel Spellchecker",
+        "url": "https://leetcode.com/problems/vowel-spellchecker/description/"
+    },
+    "1007": {
+        "description": "Return all **non-negative** integers of length `N` such that the absolute\ndifference between every two consecutive digits is `K`.\n\nNote that **every** number in the answer **must not** have leading zeros\n**except** for the number `0` itself. For example, `01` has one leading zero\nand is invalid, but `0` is valid.\n\nYou may return the answer in any order.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** N = 3, K = 7\r\n    **Output:** [181,292,707,818,929]\r\n    **Explanation:** Note that 070 is not a valid number, because it has leading zeroes.\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** N = 2, K = 1\r\n    **Output:** [10,12,21,23,32,34,43,45,54,56,65,67,76,78,87,89,98]\n\n\n\n**Note:**\n\n  1. `1 <= N <= 9`\n  2. `0 <= K <= 9`",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 1007,
+        "slug": "numbers-with-same-consecutive-differences",
+        "tags": [
+            "Dynamic Programming"
+        ],
+        "title": "Numbers With Same Consecutive Differences",
+        "url": "https://leetcode.com/problems/numbers-with-same-consecutive-differences/description/"
+    },
+    "1008": {
+        "description": "Given a binary tree, we install cameras on the nodes of the tree.\n\nEach camera at a node can monitor **its parent, itself, and its immediate\nchildren**.\n\nCalculate the minimum number of cameras needed to monitor all nodes of the\ntree.\n\n\n\n**Example 1:**\n\n![](https://assets.leetcode.com/uploads/2018/12/29/bst_cameras_01.png)\n\n    \n    \r\n    **Input:** [0,0,null,0,0]\r\n    **Output:** 1\r\n    **Explanation:** One camera is enough to monitor all nodes if placed as shown.\r\n    \n\n**Example 2:**\n\n![](https://assets.leetcode.com/uploads/2018/12/29/bst_cameras_02.png)\n\n    \n    \r\n    **Input:** [0,0,null,0,null,0,null,null,0]\r\n    **Output:** 2\r\n    **Explanation:** At least two cameras are needed to monitor all nodes of the tree. The above image shows one of the valid configurations of camera placement.\r\n    \n\n  \n**Note:**\n\n  1. The number of nodes in the given tree will be in the range `[1, 1000]`.\n  2. **Every** node has value 0.",
+        "level": 3,
+        "paid_only": false,
+        "question_id": 1008,
+        "slug": "binary-tree-cameras",
+        "tags": [
+            "Dynamic Programming",
+            "Tree",
+            "Depth-first Search"
+        ],
+        "title": "Binary Tree Cameras",
+        "url": "https://leetcode.com/problems/binary-tree-cameras/description/"
+    },
+    "1009": {
+        "description": "Given an array `A`, we can perform a  _pancake flip_ : We choose some positive\ninteger ` **k** <= A.length`, then reverse the order of the first **k**\nelements of `A`.  We want to perform zero or more pancake flips (doing them\none after another in succession) to sort the array `A`.\n\nReturn the k-values corresponding to a sequence of pancake flips that sort\n`A`.  Any valid answer that sorts the array within `10 * A.length` flips will\nbe judged as correct.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [3,2,4,1]\r\n    **Output:** [4,2,4,3]\r\n    **Explanation:**\r\n    We perform 4 pancake flips, with k values 4, 2, 4, and 3.\r\n    Starting state: A = [3, 2, 4, 1]\r\n    After 1st flip (k=4): A = [1, 4, 2, 3]\r\n    After 2nd flip (k=2): A = [4, 1, 2, 3]\r\n    After 3rd flip (k=4): A = [3, 2, 1, 4]\r\n    After 4th flip (k=3): A = [1, 2, 3, 4], which is sorted. \r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** [1,2,3]\r\n    **Output:** []\r\n    **Explanation:** The input is already sorted, so there is no need to flip anything.\r\n    Note that other answers, such as [3, 3], would also be accepted.\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= A.length <= 100`\n  2. `A[i]` is a permutation of `[1, 2, ..., A.length]`",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 1009,
+        "slug": "pancake-sorting",
+        "tags": [
+            "Array",
+            "Sort"
+        ],
+        "title": "Pancake Sorting",
+        "url": "https://leetcode.com/problems/pancake-sorting/description/"
+    },
+    "1010": {
+        "description": "Given two non-negative integers `x` and `y`, an integer is _powerful_  if it\nis equal to `x^i + y^j` for some integers `i >= 0` and `j >= 0`.\n\nReturn a list of all _powerful_ integers that have value less than or equal to\n`bound`.\n\nYou may return the answer in any order.  In your answer, each value should\noccur at most once.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** x = 2, y = 3, bound = 10\r\n    **Output:** [2,3,4,5,7,9,10]\r\n    **Explanation:**\r\n    2 = 2^0 + 3^0\r\n    3 = 2^1 + 3^0\r\n    4 = 2^0 + 3^1\r\n    5 = 2^1 + 3^1\r\n    7 = 2^2 + 3^1\r\n    9 = 2^3 + 3^0\r\n    10 = 2^0 + 3^2\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** x = 3, y = 5, bound = 15\r\n    **Output:** [2,4,6,8,10,14]\r\n    \n\n\n\n**Note:**\n\n  * `1 <= x <= 100`\n  * `1 <= y <= 100`\n  * `0 <= bound <= 10^6`",
+        "level": 1,
+        "paid_only": false,
+        "question_id": 1010,
+        "slug": "powerful-integers",
+        "tags": [
+            "Math"
+        ],
+        "title": "Powerful Integers",
+        "url": "https://leetcode.com/problems/powerful-integers/description/"
+    },
+    "1011": {
+        "description": "Given a binary tree with `N` nodes, each node has a different value from `{1,\n..., N}`.\n\nA node in this binary tree can be _flipped_  by swapping the left child and\nthe right child of that node.\n\nConsider the sequence of `N` values reported by a preorder traversal starting\nfrom the root.  Call such a sequence of `N` values the  _voyage_  of the tree.\n\n(Recall that a _preorder traversal_  of a node means we report the current\nnode's value, then preorder-traverse the left child, then preorder-traverse\nthe right child.)\n\nOur goal is to flip the **least number** of nodes in the tree so that the\nvoyage of the tree matches the `voyage` we are given.\n\nIf we can do so, then return a list of the values of all nodes flipped.  You\nmay return the answer in any order.\n\nIf we cannot do so, then return the list `[-1]`.\n\n\n\n**Example 1:**\n\n**![](https://assets.leetcode.com/uploads/2019/01/02/1219-01.png)**\n\n    \n    \r\n    **Input:** root = [1,2], voyage = [2,1]\r\n    **Output:** [-1]\r\n    \n\n**Example 2:**\n\n**![](https://assets.leetcode.com/uploads/2019/01/02/1219-02.png)**\n\n    \n    \r\n    **Input:** root = [1,2,3], voyage = [1,3,2]\r\n    **Output:** [1]\r\n    \n\n**Example 3:**\n\n**![](https://assets.leetcode.com/uploads/2019/01/02/1219-02.png)**\n\n    \n    \r\n    **Input:** root = [1,2,3], voyage = [1,2,3]\r\n    **Output:** []\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= N <= 100`",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 1011,
+        "slug": "flip-binary-tree-to-match-preorder-traversal",
+        "tags": [
+            "Tree",
+            "Depth-first Search"
+        ],
+        "title": "Flip Binary Tree To Match Preorder Traversal",
+        "url": "https://leetcode.com/problems/flip-binary-tree-to-match-preorder-traversal/description/"
+    },
+    "1012": {
+        "description": "Given two strings `S` and `T`, each of which represents a non-negative\nrational number, return **True** if and only if they represent the same\nnumber. The strings may use parentheses to denote the repeating part of the\nrational number.\n\nIn general a rational number can be represented using up to three parts: an\n_integer part_ , a  _non-repeating part,_ and a   _repeating part_. The number\nwill be represented  in one of the following three ways:\n\n  * `<IntegerPart>` (e.g. 0, 12, 123)\n  * `<IntegerPart><.><NonRepeatingPart>`  (e.g. 0.5, 1., 2.12, 2.0001)\n  * `<IntegerPart><.><NonRepeatingPart><(><RepeatingPart><)>` (e.g. 0.1(6), 0.9(9), 0.00(1212))\n\nThe repeating portion of a decimal expansion is conventionally denoted within\na pair of round brackets.  For example:\n\n1 / 6 = 0.16666666... = 0.1(6) = 0.1666(6) = 0.166(66)\n\nBoth 0.1(6) or 0.1666(6) or 0.166(66) are correct representations of 1 / 6.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** S = \"0.(52)\", T = \"0.5(25)\"\r\n    **Output:** true\r\n    **Explanation:** Because \"0.(52)\" represents 0.52525252..., and \"0.5(25)\" represents 0.52525252525..... , the strings represent the same number.\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** S = \"0.1666(6)\", T = \"0.166(66)\"\r\n    **Output:** true\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** S = \"0.9(9)\", T = \"1.\"\r\n    **Output:** true\r\n    **Explanation:**\r\n     \"0.9(9)\" represents 0.999999999... repeated forever, which equals 1.  [[See this link for an explanation.](https://en.wikipedia.org/wiki/0.999...)]\r\n    \"1.\" represents the number 1, which is formed correctly: (IntegerPart) = \"1\" and (NonRepeatingPart) = \"\".\n\n\n\n**Note:**\n\n  1. Each part consists only of digits.\n  2. The `<IntegerPart>` will not begin with 2 or more zeros.  (There is no other restriction on the digits of each part.)\n  3. `1 <= <IntegerPart>.length <= 4 `\n  4. `0 <= <NonRepeatingPart>.length <= 4 `\n  5. `1 <= <RepeatingPart>.length <= 4`",
+        "level": 3,
+        "paid_only": false,
+        "question_id": 1012,
+        "slug": "equal-rational-numbers",
+        "tags": [
+            "Math"
+        ],
+        "title": "Equal Rational Numbers",
+        "url": "https://leetcode.com/problems/equal-rational-numbers/description/"
+    },
+    "1013": {
+        "description": "The  **Fibonacci numbers** , commonly denoted `F(n)` form a sequence, called\nthe  **Fibonacci sequence** , such that each number is the sum of the two\npreceding ones, starting from `0` and `1`. That is,\n\n    \n    \r\n    F(0) = 0,   F(1) = 1\r\n    F(N) = F(N - 1) + F(N - 2), for N > 1.\r\n    \n\nGiven `N`, calculate `F(N)`.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** 2\r\n    **Output:** 1\r\n    **Explanation:** F(2) = F(1) + F(0) = 1 + 0 = 1.\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** 3\r\n    **Output:** 2\r\n    **Explanation:** F(3) = F(2) + F(1) = 1 + 1 = 2.\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** 4\r\n    **Output:** 3\r\n    **Explanation:** F(4) = F(3) + F(2) = 2 + 1 = 3.\r\n    \n\n\n\n**Note:**\n\n0 ≤ `N` ≤ 30.",
+        "level": 1,
+        "paid_only": false,
+        "question_id": 1013,
+        "slug": "fibonacci-number",
+        "tags": [
+            "Array"
+        ],
+        "title": "Fibonacci Number",
+        "url": "https://leetcode.com/problems/fibonacci-number/description/"
+    },
+    "1014": {
+        "description": "We have a list of `points` on the plane.  Find the `K` closest points to the\norigin `(0, 0)`.\n\n(Here, the distance between two points on a plane is the Euclidean distance.)\n\nYou may return the answer in any order.  The answer is guaranteed to be unique\n(except for the order that it is in.)\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** points = [[1,3],[-2,2]], K = 1\r\n    **Output:** [[-2,2]]\r\n    **Explanation:**\r\n    The distance between (1, 3) and the origin is sqrt(10).\r\n    The distance between (-2, 2) and the origin is sqrt(8).\r\n    Since sqrt(8)  < sqrt(10), (-2, 2) is closer to the origin.\r\n    We only want the closest K = 1 points from the origin, so the answer is just [[-2,2]].\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** points = [[3,3],[5,-1],[-2,4]], K = 2\r\n    **Output:** [[3,3],[-2,4]]\r\n    (The answer [[-2,4],[3,3]] would also be accepted.)\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= K <= points.length <= 10000`\n  2. `-10000 < points[i][0] < 10000`\n  3. `-10000 < points[i][1] < 10000`",
+        "level": 1,
+        "paid_only": false,
+        "question_id": 1014,
+        "slug": "k-closest-points-to-origin",
+        "tags": [
+            "Math",
+            "Divide and Conquer",
+            "Sort"
+        ],
+        "title": "K Closest Points to Origin",
+        "url": "https://leetcode.com/problems/k-closest-points-to-origin/description/"
+    },
+    "1016": {
+        "description": "Given an array `A` of integers, return the number of (contiguous, non-empty)\nsubarrays that have a sum divisible by `K`.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** A = [4,5,0,-2,-3,1], K = 5\r\n    **Output:** 7\r\n    **Explanation:** There are 7 subarrays with a sum divisible by K = 5:\r\n    [4, 5, 0, -2, -3, 1], [5], [5, 0], [5, 0, -2, -3], [0], [0, -2, -3], [-2, -3]\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= A.length <= 30000`\n  2. `-10000 <= A[i] <= 10000`\n  3. `2 <= K <= 10000`",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 1016,
+        "slug": "subarray-sums-divisible-by-k",
+        "tags": [
+            "Array"
+        ],
+        "title": "Subarray Sums Divisible by K",
+        "url": "https://leetcode.com/problems/subarray-sums-divisible-by-k/description/"
+    },
+    "1017": {
+        "description": "You are given an integer array `A`.  From some starting index, you can make a\nseries of jumps.  The (1st, 3rd, 5th, ...) jumps in the series are called _odd\nnumbered jumps_ , and the (2nd, 4th, 6th, ...) jumps in the series are called\n_even numbered jumps_.\n\nYou may from index `i` jump forward to index `j` (with `i < j`) in the\nfollowing way:\n\n  * During odd numbered jumps (ie. jumps 1, 3, 5, ...), you jump to the index j such that `A[i] <= A[j]` and `A[j]` is the smallest possible value.  If there are multiple such indexes `j`, you can only jump to the **smallest** such index ` j`.\n  * During even numbered jumps (ie. jumps 2, 4, 6, ...), you jump to the index j such that `A[i] >= A[j]` and `A[j]` is the largest possible value.  If there are multiple such indexes `j`, you can only jump to the **smallest** such index ` j`.\n  * (It may be the case that for some index `i,` there are no legal jumps.)\n\nA starting index is _good_ if, starting from that index, you can reach the end\nof the array (index `A.length - 1`) by jumping some number of times (possibly\n0 or more than once.)\n\nReturn the number of good starting indexes.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [10,13,12,14,15]\r\n    **Output:** 2\r\n    **Explanation:**\r\n    From starting index i = 0, we can jump to i = 2 (since A[2] is the smallest among A[1], A[2], A[3], A[4] that is greater or equal to A[0]), then we can 't jump any more.\r\n    From starting index i = 1 and i = 2, we can jump to i = 3, then we can't jump any more.\r\n    From starting index i = 3, we can jump to i = 4, so we've reached the end.\r\n    From starting index i = 4, we've reached the end already.\r\n    In total, there are 2 different starting indexes (i = 3, i = 4) where we can reach the end with some number of jumps.\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** [2,3,1,1,4]\r\n    **Output:** 3\r\n    **Explanation:**\r\n    From starting index i = 0, we make jumps to i = 1, i = 2, i = 3:\r\n    \r\n    During our 1st jump (odd numbered), we first jump to i = 1 because A[1] is the smallest value in (A[1], A[2], A[3], A[4]) that is greater than or equal to A[0].\r\n    \r\n    During our 2nd jump (even numbered), we jump from i = 1 to i = 2 because A[2] is the largest value in (A[2], A[3], A[4]) that is less than or equal to A[1].  A[3] is also the largest value, but 2 is a smaller index, so we can only jump to i = 2 and not i = 3.\r\n    \r\n    During our 3rd jump (odd numbered), we jump from i = 2 to i = 3 because A[3] is the smallest value in (A[3], A[4]) that is greater than or equal to A[2].\r\n    \r\n    We can 't jump from i = 3 to i = 4, so the starting index i = 0 is not good.\r\n    \r\n    In a similar manner, we can deduce that:\r\n    From starting index i = 1, we jump to i = 4, so we reach the end.\r\n    From starting index i = 2, we jump to i = 3, and then we can't jump anymore.\r\n    From starting index i = 3, we jump to i = 4, so we reach the end.\r\n    From starting index i = 4, we are already at the end.\r\n    In total, there are 3 different starting indexes (i = 1, i = 3, i = 4) where we can reach the end with some number of jumps.\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** [5,1,3,4,2]\r\n    **Output:** 3\r\n    **Explanation:**\r\n    We can reach the end from starting indexes 1, 2, and 4.\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= A.length <= 20000`\n  2. `0 <= A[i] < 100000`",
+        "level": 3,
+        "paid_only": false,
+        "question_id": 1017,
+        "slug": "odd-even-jump",
+        "tags": [
+            "Dynamic Programming",
+            "Stack"
+        ],
+        "title": "Odd Even Jump",
+        "url": "https://leetcode.com/problems/odd-even-jump/description/"
+    },
+    "1018": {
+        "description": "Given an array `A` of positive lengths, return the largest perimeter of a\ntriangle with **non-zero area** , formed from 3 of these lengths.\n\nIf it is impossible to form any triangle of non-zero area, return `0`.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [2,1,2]\r\n    **Output:** 5\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** [1,2,1]\r\n    **Output:** 0\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** [3,2,3,4]\r\n    **Output:** 10\r\n    \n\n**Example 4:**\n\n    \n    \r\n    **Input:** [3,6,2,3]\r\n    **Output:** 8\r\n    \n\n\n\n**Note:**\n\n  1. `3 <= A.length <= 10000`\n  2. `1 <= A[i] <= 10^6`",
+        "level": 1,
+        "paid_only": false,
+        "question_id": 1018,
+        "slug": "largest-perimeter-triangle",
+        "tags": [
+            "Array",
+            "Math"
+        ],
+        "title": "Largest Perimeter Triangle",
+        "url": "https://leetcode.com/problems/largest-perimeter-triangle/description/"
+    },
+    "1019": {
+        "description": "Given an array of integers `A` sorted in non-decreasing order, return an array\nof the squares of each number, also in sorted non-decreasing order.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [-4,-1,0,3,10]\r\n    **Output:** [0,1,9,16,100]\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** [-7,-3,2,3,11]\r\n    **Output:** [4,9,9,49,121]\r\n    \n\n\n\n**Note:**\n\n  1. ` 1 <= A.length <= 10000`\n  2. `-10000 <= A[i] <= 10000`\n  3. `A` is sorted in non-decreasing order.",
+        "level": 1,
+        "paid_only": false,
+        "question_id": 1019,
+        "slug": "squares-of-a-sorted-array",
+        "tags": [
+            "Array",
+            "Two Pointers",
+            "Sort"
+        ],
+        "title": "Squares of a Sorted Array",
+        "url": "https://leetcode.com/problems/squares-of-a-sorted-array/description/"
+    },
+    "1020": {
+        "description": "A subarray `A[i], A[i+1], ..., A[j]` of `A` is said to be _turbulent_ if and\nonly if:\n\n  * For `i <= k < j`, `A[k] > A[k+1]` when `k` is odd, and `A[k] < A[k+1]` when `k` is even;\n  * **OR** , for `i <= k < j`, `A[k] > A[k+1]` when `k` is even, and `A[k] < A[k+1]` when `k` is odd.\n\nThat is, the subarray is turbulent if the comparison sign flips between each\nadjacent pair of elements in the subarray.\n\nReturn the **length** of a  maximum size turbulent subarray of A.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [9,4,2,10,7,8,8,1,9]\r\n    **Output:** 5\r\n    **Explanation:** (A[1] > A[2] < A[3] > A[4] < A[5])\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** [4,8,12,16]\r\n    **Output:** 2\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** [100]\r\n    **Output:** 1\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= A.length <= 40000`\n  2. `0 <= A[i] <= 10^9`",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 1020,
+        "slug": "longest-turbulent-subarray",
+        "tags": [
+            "Array"
+        ],
+        "title": "Longest Turbulent Subarray",
+        "url": "https://leetcode.com/problems/longest-turbulent-subarray/description/"
+    },
+    "1021": {
+        "description": "Given the `root` of a binary tree with `N` nodes, each `node` in the tree has\n`node.val` coins, and there are `N` coins total.\n\nIn one move, we may choose two adjacent nodes and move one coin from one node\nto another.  (The move may be from parent to child, or from child to parent.)\n\nReturn the number of moves required to make every node have exactly one coin.\n\n\n\n**Example 1:**\n\n**![](https://assets.leetcode.com/uploads/2019/01/18/tree1.png)**\n\n    \n    \r\n    **Input:** [3,0,0]\r\n    **Output:** 2\r\n    **Explanation:** From the root of the tree, we move one coin to its left child, and one coin to its right child.\r\n    \n\n**Example 2:**\n\n**![](https://assets.leetcode.com/uploads/2019/01/18/tree2.png)**\n\n    \n    \r\n    **Input:** [0,3,0]\r\n    **Output:** 3\r\n    **Explanation:** From the left child of the root, we move two coins to the root [taking two moves].  Then, we move one coin from the root of the tree to the right child.\r\n    \n\n**Example 3:**\n\n**![](https://assets.leetcode.com/uploads/2019/01/18/tree3.png)**\n\n    \n    \r\n    **Input:** [1,0,2]\r\n    **Output:** 2\r\n    \n\n**Example 4:**\n\n**![](https://assets.leetcode.com/uploads/2019/01/18/tree4.png)**\n\n    \n    \r\n    **Input:** [1,0,0,null,3]\r\n    **Output:** 4\r\n    \n\n\n\n**Note:**\n\n  1. `1<= N <= 100`\n  2. `0 <= node.val <= N`",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 1021,
+        "slug": "distribute-coins-in-binary-tree",
+        "tags": [
+            "Tree",
+            "Depth-first Search"
+        ],
+        "title": "Distribute Coins in Binary Tree",
+        "url": "https://leetcode.com/problems/distribute-coins-in-binary-tree/description/"
+    },
+    "1022": {
+        "description": "On a 2-dimensional `grid`, there are 4 types of squares:\n\n  * `1` represents the starting square.  There is exactly one starting square.\n  * `2` represents the ending square.  There is exactly one ending square.\n  * `0` represents empty squares we can walk over.\n  * `-1` represents obstacles that we cannot walk over.\n\nReturn the number of 4-directional walks from the starting square to the\nending square, that **walk over every non-obstacle square  exactly once**.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [[1,0,0,0],[0,0,0,0],[0,0,2,-1]]\r\n    **Output:** 2\r\n    **Explanation:** We have the following two paths: \r\n    1. (0,0),(0,1),(0,2),(0,3),(1,3),(1,2),(1,1),(1,0),(2,0),(2,1),(2,2)\r\n    2. (0,0),(1,0),(2,0),(2,1),(1,1),(0,1),(0,2),(0,3),(1,3),(1,2),(2,2)\n\n**Example 2:**\n\n    \n    \r\n    **Input:** [[1,0,0,0],[0,0,0,0],[0,0,0,2]]\r\n    **Output:** 4\r\n    **Explanation:** We have the following four paths: \r\n    1. (0,0),(0,1),(0,2),(0,3),(1,3),(1,2),(1,1),(1,0),(2,0),(2,1),(2,2),(2,3)\r\n    2. (0,0),(0,1),(1,1),(1,0),(2,0),(2,1),(2,2),(1,2),(0,2),(0,3),(1,3),(2,3)\r\n    3. (0,0),(1,0),(2,0),(2,1),(2,2),(1,2),(1,1),(0,1),(0,2),(0,3),(1,3),(2,3)\r\n    4. (0,0),(1,0),(2,0),(2,1),(1,1),(0,1),(0,2),(0,3),(1,3),(1,2),(2,2),(2,3)\n\n**Example 3:**\n\n    \n    \r\n    **Input:** [[0,1],[2,0]]\r\n    **Output:** 0\r\n    **Explanation:**\r\n    There is no path that walks over every empty square exactly once.\r\n    Note that the starting and ending square can be anywhere in the grid.\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= grid.length * grid[0].length <= 20`",
+        "level": 3,
+        "paid_only": false,
+        "question_id": 1022,
+        "slug": "unique-paths-iii",
+        "tags": [
+            "Dynamic Programming",
+            "Backtracking"
+        ],
+        "title": "Unique Paths III",
+        "url": "https://leetcode.com/problems/unique-paths-iii/description/"
+    },
+    "1023": {
+        "description": "Create a timebased key-value store class `TimeMap`, that supports two\noperations.\n\n1\\. `set(string key, string value, int timestamp)`\n\n  * Stores the `key` and `value`, along with the given `timestamp`.\n\n2\\. `get(string key, int timestamp)`\n\n  * Returns a value such that `set(key, value, timestamp_prev)` was called previously, with `timestamp_prev <= timestamp`.\n  * If there are multiple such values, it returns the one with the largest `timestamp_prev`.\n  * If there are no values, it returns the empty string (`\"\"`).\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** inputs = [\"TimeMap\",\"set\",\"get\",\"get\",\"set\",\"get\",\"get\"], inputs = [[],[\"foo\",\"bar\",1],[\"foo\",1],[\"foo\",3],[\"foo\",\"bar2\",4],[\"foo\",4],[\"foo\",5]]\r\n    **Output:** [null,null,\"bar\",\"bar\",null,\"bar2\",\"bar2\"]\r\n    **Explanation:**   \r\n    TimeMap kv;   \r\n    kv.set(\"foo\", \"bar\", 1); // store the key \"foo\" and value \"bar\" along with timestamp = 1   \r\n    kv.get(\"foo\", 1);  // output \"bar\"   \r\n    kv.get(\"foo\", 3); // output \"bar\" since there is no value corresponding to foo at timestamp 3 and timestamp 2, then the only value is at timestamp 1 ie \"bar\"   \r\n    kv.set(\"foo\", \"bar2\", 4);   \r\n    kv.get(\"foo\", 4); // output \"bar2\"   \r\n    kv.get(\"foo\", 5); //output \"bar2\"   \r\n    \r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** inputs = [\"TimeMap\",\"set\",\"set\",\"get\",\"get\",\"get\",\"get\",\"get\"], inputs = [[],[\"love\",\"high\",10],[\"love\",\"low\",20],[\"love\",5],[\"love\",10],[\"love\",15],[\"love\",20],[\"love\",25]]\r\n    **Output:** [null,null,null,\"\",\"high\",\"high\",\"low\",\"low\"]\r\n    \n\n\n\n**Note:**\n\n  1. All key/value strings are lowercase.\n  2. All key/value strings have length in the range `[1, 100]`\n  3. The `timestamps` for all `TimeMap.set` operations are strictly increasing.\n  4. `1 <= timestamp <= 10^7`\n  5. `TimeMap.set` and `TimeMap.get` functions will be called a total of `120000` times (combined) per test case.",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 1023,
+        "slug": "time-based-key-value-store",
+        "tags": [
+            "Hash Table",
+            "Binary Search"
+        ],
+        "title": "Time Based Key-Value Store",
+        "url": "https://leetcode.com/problems/time-based-key-value-store/description/"
+    },
+    "1024": {
+        "description": "Given an array of integers `A`, find the number of triples of indices (i, j,\nk) such that:\n\n  * `0 <= i < A.length`\n  * `0 <= j < A.length`\n  * `0 <= k < A.length`\n  * `A[i] & A[j] & A[k] == 0`, where `&` represents the bitwise-AND operator.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [2,1,3]\r\n    **Output:** 12\r\n    **Explanation:** We could choose the following i, j, k triples:\r\n    (i=0, j=0, k=1) : 2 & 2 & 1\r\n    (i=0, j=1, k=0) : 2 & 1 & 2\r\n    (i=0, j=1, k=1) : 2 & 1 & 1\r\n    (i=0, j=1, k=2) : 2 & 1 & 3\r\n    (i=0, j=2, k=1) : 2 & 3 & 1\r\n    (i=1, j=0, k=0) : 1 & 2 & 2\r\n    (i=1, j=0, k=1) : 1 & 2 & 1\r\n    (i=1, j=0, k=2) : 1 & 2 & 3\r\n    (i=1, j=1, k=0) : 1 & 1 & 2\r\n    (i=1, j=2, k=0) : 1 & 3 & 2\r\n    (i=2, j=0, k=1) : 3 & 2 & 1\r\n    (i=2, j=1, k=0) : 3 & 1 & 2\r\n    \n\n\n\n**Note:**\n\n  1. ` 1 <= A.length <= 1000`\n  2. `0 <= A[i] < 2^16`",
+        "level": 3,
+        "paid_only": false,
+        "question_id": 1024,
+        "slug": "triples-with-bitwise-and-equal-to-zero",
+        "tags": [
+            "Dynamic Programming"
+        ],
+        "title": "Triples with Bitwise AND Equal To Zero",
+        "url": "https://leetcode.com/problems/triples-with-bitwise-and-equal-to-zero/description/"
+    },
+    "1025": {
+        "description": "In a country popular for train travel, you have planned some train travelling\none year in advance.  The days of the year that you will travel is given as an\narray `days`.  Each day is an integer from `1` to `365`.\n\nTrain tickets are sold in 3 different ways:\n\n  * a 1-day pass is sold for `costs[0]` dollars;\n  * a 7-day pass is sold for `costs[1]` dollars;\n  * a 30-day pass is sold for `costs[2]` dollars.\n\nThe passes allow that many days of consecutive travel.  For example, if we get\na 7-day pass on day 2, then we can travel for 7 days: day 2, 3, 4, 5, 6, 7,\nand 8.\n\nReturn the minimum number of dollars you need to travel every day in the given\nlist of `days`.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** days = [1,4,6,7,8,20], costs = [2,7,15]\r\n    **Output:** 11\r\n    **Explanation:**\r\n    For example, here is one way to buy passes that lets you travel your travel plan:\r\n    On day 1, you bought a 1-day pass for costs[0] = $2, which covered day 1.\r\n    On day 3, you bought a 7-day pass for costs[1] = $7, which covered days 3, 4, ..., 9.\r\n    On day 20, you bought a 1-day pass for costs[0] = $2, which covered day 20.\r\n    In total you spent $11 and covered all the days of your travel.\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** days = [1,2,3,4,5,6,7,8,9,10,30,31], costs = [2,7,15]\r\n    **Output:** 17\r\n    **Explanation:**\r\n    For example, here is one way to buy passes that lets you travel your travel plan:\r\n    On day 1, you bought a 30-day pass for costs[2] = $15 which covered days 1, 2, ..., 30.\r\n    On day 31, you bought a 1-day pass for costs[0] = $2 which covered day 31.\r\n    In total you spent $17 and covered all the days of your travel.\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= days.length <= 365`\n  2. `1 <= days[i] <= 365`\n  3. `days` is in strictly increasing order.\n  4. `costs.length == 3`\n  5. `1 <= costs[i] <= 1000`",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 1025,
+        "slug": "minimum-cost-for-tickets",
+        "tags": [
+            "Dynamic Programming"
+        ],
+        "title": "Minimum Cost For Tickets",
+        "url": "https://leetcode.com/problems/minimum-cost-for-tickets/description/"
+    },
+    "1026": {
+        "description": "Given two integers `A` and `B`, return **any** string `S` such that:\n\n  * `S` has length `A + B` and contains exactly `A` `'a'` letters, and exactly `B` `'b'` letters;\n  * The substring `'aaa'` does not occur in `S`;\n  * The substring `'bbb'` does not occur in `S`.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** A = 1, B = 2\r\n    **Output:** \"abb\"\r\n    **Explanation:**  \"abb\", \"bab\" and \"bba\" are all correct answers.\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** A = 4, B = 1\r\n    **Output:** \"aabaa\"\n\n\n\n**Note:**\n\n  1. `0 <= A <= 100`\n  2. `0 <= B <= 100`\n  3. It is guaranteed such an `S` exists for the given `A` and `B`.",
+        "level": 1,
+        "paid_only": false,
+        "question_id": 1026,
+        "slug": "string-without-aaa-or-bbb",
+        "tags": [
+            "Greedy"
+        ],
+        "title": "String Without AAA or BBB",
+        "url": "https://leetcode.com/problems/string-without-aaa-or-bbb/description/"
+    },
+    "1027": {
+        "description": "We have an array `A` of integers, and an array `queries` of queries.\n\nFor the `i`-th query `val = queries[i][0], index = queries[i][1]`, we add val\nto `A[index]`.  Then, the answer to the `i`-th query is the sum of the even\nvalues of `A`.\n\n_(Here, the given`index = queries[i][1]` is a 0-based index, and each query\npermanently modifies the array `A`.)_\n\nReturn the answer to all queries.  Your `answer` array should have `answer[i]`\nas the answer to the `i`-th query.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** A = [1,2,3,4], queries = [[1,0],[-3,1],[-4,0],[2,3]]\r\n    **Output:** [8,6,2,4]\r\n    **Explanation:**\r\n    At the beginning, the array is [1,2,3,4].\r\n    After adding 1 to A[0], the array is [2,2,3,4], and the sum of even values is 2 + 2 + 4 = 8.\r\n    After adding -3 to A[1], the array is [2,-1,3,4], and the sum of even values is 2 + 4 = 6.\r\n    After adding -4 to A[0], the array is [-2,-1,3,4], and the sum of even values is -2 + 4 = 2.\r\n    After adding 2 to A[3], the array is [-2,-1,3,6], and the sum of even values is -2 + 6 = 4.\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= A.length <= 10000`\n  2. `-10000 <= A[i] <= 10000`\n  3. `1 <= queries.length <= 10000`\n  4. `-10000 <= queries[i][0] <= 10000`\n  5. `0 <= queries[i][1] < A.length`",
+        "level": 1,
+        "paid_only": false,
+        "question_id": 1027,
+        "slug": "sum-of-even-numbers-after-queries",
+        "tags": [
+            "Array"
+        ],
+        "title": "Sum of Even Numbers After Queries",
+        "url": "https://leetcode.com/problems/sum-of-even-numbers-after-queries/description/"
+    },
+    "1028": {
+        "description": "Given two lists of **closed** intervals, each list of intervals is pairwise\ndisjoint and in sorted order.\n\nReturn the intersection of these two interval lists.\n\n_(Formally, a closed interval`[a, b]` (with `a <= b`) denotes the set of real\nnumbers `x` with `a <= x <= b`.  The intersection of two closed intervals is a\nset of real numbers that is either empty, or can be represented as a closed\ninterval.  For example, the intersection of [1, 3] and [2, 4] is [2, 3].)_\n\n\n\n**Example 1:**\n\n**![](https://assets.leetcode.com/uploads/2019/01/30/interval1.png)**\n\n    \n    \r\n    **Input:** A = [[0,2],[5,10],[13,23],[24,25]], B = [[1,5],[8,12],[15,24],[25,26]]\r\n    **Output:** [[1,2],[5,5],[8,10],[15,23],[24,24],[25,25]]\r\n    **Reminder:** The inputs and the desired output are lists of Interval objects, and not arrays or lists.\r\n    \n\n\n\n**Note:**\n\n  1. `0 <= A.length < 1000`\n  2. `0 <= B.length < 1000`\n  3. `0 <= A[i].start, A[i].end, B[i].start, B[i].end < 10^9`",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 1028,
+        "slug": "interval-list-intersections",
+        "tags": [
+            "Two Pointers"
+        ],
+        "title": "Interval List Intersections",
+        "url": "https://leetcode.com/problems/interval-list-intersections/description/"
+    },
+    "1029": {
+        "description": "Given a binary tree, return the _vertical order_ traversal of its nodes\nvalues.\n\nFor each node at position `(X, Y)`, its left and right children respectively\nwill be at positions `(X-1, Y-1)` and `(X+1, Y-1)`.\n\nRunning a vertical line from `X = -infinity` to `X = +infinity`, whenever the\nvertical line touches some nodes, we report the values of the nodes in order\nfrom top to bottom (decreasing `Y` coordinates).\n\nIf two nodes have the same position, then the value of the node that is\nreported first is the value that is smaller.\n\nReturn an list of non-empty reports in order of `X` coordinate.  Every report\nwill have a list of values of nodes.\n\n\n\n**Example 1:**\n\n![](https://assets.leetcode.com/uploads/2019/01/31/1236_example_1.PNG)\n\n    \n    \r\n    **Input:** [3,9,20,null,null,15,7]\r\n    **Output:** [[9],[3,15],[20],[7]]\r\n    **Explanation:**\r\n    Without loss of generality, we can assume the root node is at position (0, 0):\r\n    Then, the node with value 9 occurs at position (-1, -1);\r\n    The nodes with values 3 and 15 occur at positions (0, 0) and (0, -2);\r\n    The node with value 20 occurs at position (1, -1);\r\n    The node with value 7 occurs at position (2, -2).\r\n    \n\n**Example 2:**\n\n**![](https://assets.leetcode.com/uploads/2019/01/31/tree2.png)**\n\n    \n    \r\n    **Input:** [1,2,3,4,5,6,7]\r\n    **Output:** [[4],[2],[1,5,6],[3],[7]]\r\n    **Explanation:**\r\n    The node with value 5 and the node with value 6 have the same position according to the given scheme.\r\n    However, in the report  \"[1,5,6]\", the node value of 5 comes first since 5 is smaller than 6.\r\n    \n\n\n\n**Note:**\n\n  1. The tree will have between 1 and `1000` nodes.\n  2. Each node's value will be between `0` and `1000`.",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 1029,
+        "slug": "vertical-order-traversal-of-a-binary-tree",
+        "tags": [
+            "Hash Table",
+            "Tree"
+        ],
+        "title": "Vertical Order Traversal of a Binary Tree",
+        "url": "https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/description/"
+    },
+    "1030": {
+        "description": "Given the `root` of a binary tree, each node has a value from `0` to `25`\nrepresenting the letters `'a'` to `'z'`: a value of `0` represents `'a'`, a\nvalue of `1` represents `'b'`, and so on.\n\nFind the lexicographically smallest string that starts at a leaf of this tree\nand ends at the root.\n\n_(As a reminder, any shorter prefix of a string is lexicographically smaller:\nfor example,`\"ab\"` is lexicographically smaller than `\"aba\"`.  A leaf of a\nnode is a node that has no children.)_\n\n\n\n**Example 1:**\n\n**![](https://assets.leetcode.com/uploads/2019/01/30/tree1.png)**\n\n    \n    \r\n    **Input:** [0,1,2,3,4,3,4]\r\n    **Output:** \"dba\"\r\n    \n\n**Example 2:**\n\n**![](https://assets.leetcode.com/uploads/2019/01/30/tree2.png)**\n\n    \n    \r\n    **Input:** [25,1,3,1,3,0,2]\r\n    **Output:** \"adz\"\r\n    \n\n**Example 3:**\n\n**![](https://assets.leetcode.com/uploads/2019/02/01/tree3.png)**\n\n    \n    \r\n    **Input:** [2,2,1,null,1,0,null,0]\r\n    **Output:** \"abc\"\r\n    \n\n\n\n**Note:**\n\n  1. The number of nodes in the given tree will be between `1` and `1000`.\n  2. Each node in the tree will have a value between `0` and `25`.",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 1030,
+        "slug": "smallest-string-starting-from-leaf",
+        "tags": [
+            "Tree"
+        ],
+        "title": "Smallest String Starting From Leaf",
+        "url": "https://leetcode.com/problems/smallest-string-starting-from-leaf/description/"
+    },
+    "1031": {
+        "description": "For a non-negative integer `X`, the  _array-form of`X`_  is an array of its\ndigits in left to right order.  For example, if `X = 1231`, then the array\nform is `[1,2,3,1]`.\n\nGiven the array-form `A` of a non-negative integer `X`, return the array-form\nof the integer `X+K`.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** A = [1,2,0,0], K = 34\r\n    **Output:** [1,2,3,4]\r\n    **Explanation:** 1200 + 34 = 1234\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** A = [2,7,4], K = 181\r\n    **Output:** [4,5,5]\r\n    **Explanation:** 274 + 181 = 455\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** A = [2,1,5], K = 806\r\n    **Output:** [1,0,2,1]\r\n    **Explanation:** 215 + 806 = 1021\r\n    \n\n**Example 4:**\n\n    \n    \r\n    **Input:** A = [9,9,9,9,9,9,9,9,9,9], K = 1\r\n    **Output:** [1,0,0,0,0,0,0,0,0,0,0]\r\n    **Explanation:** 9999999999 + 1 = 10000000000\r\n    \n\n\n\n**Note：**\n\n  1. `1 <= A.length <= 10000`\n  2. `0 <= A[i] <= 9`\n  3. `0 <= K <= 10000`\n  4. If `A.length > 1`, then `A[0] != 0`",
+        "level": 1,
+        "paid_only": false,
+        "question_id": 1031,
+        "slug": "add-to-array-form-of-integer",
+        "tags": [
+            "Array"
+        ],
+        "title": "Add to Array-Form of Integer",
+        "url": "https://leetcode.com/problems/add-to-array-form-of-integer/description/"
+    },
+    "1032": {
+        "description": "Given an array equations of strings that represent relationships between\nvariables, each string `equations[i]` has length `4` and takes one of two\ndifferent forms: `\"a==b\"` or `\"a!=b\"`.  Here, `a` and `b` are lowercase\nletters (not necessarily different) that represent one-letter variable names.\n\nReturn `true` if and only if it is possible to assign integers to variable\nnames so as to satisfy all the given equations.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [\"a==b\",\"b!=a\"]\r\n    **Output:** false\r\n    **Explanation:** If we assign say, a = 1 and b = 1, then the first equation is satisfied, but not the second.  There is no way to assign the variables to satisfy both equations.\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** [\"b==a\",\"a==b\"]\r\n    **Output:** true\r\n    **Explanation:** We could assign a = 1 and b = 1 to satisfy both equations.\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** [\"a==b\",\"b==c\",\"a==c\"]\r\n    **Output:** true\r\n    \n\n**Example 4:**\n\n    \n    \r\n    **Input:** [\"a==b\",\"b!=c\",\"c==a\"]\r\n    **Output:** false\r\n    \n\n**Example 5:**\n\n    \n    \r\n    **Input:** [\"c==c\",\"b==d\",\"x!=z\"]\r\n    **Output:** true\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= equations.length <= 500`\n  2. `equations[i].length == 4`\n  3. `equations[i][0]` and `equations[i][3]` are lowercase letters\n  4. `equations[i][1]` is either `'='` or `'!'`\n  5. `equations[i][2]` is `'='`",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 1032,
+        "slug": "satisfiability-of-equality-equations",
+        "tags": [
+            "Union Find",
+            "Graph"
+        ],
+        "title": "Satisfiability of Equality Equations",
+        "url": "https://leetcode.com/problems/satisfiability-of-equality-equations/description/"
+    },
+    "1033": {
+        "description": "On a broken calculator that has a number showing on its display, we can\nperform two operations:\n\n  * **Double** : Multiply the number on the display by 2, or;\n  * **Decrement** : Subtract 1 from the number on the display.\n\nInitially, the calculator is displaying the number `X`.\n\nReturn the minimum number of operations needed to display the number `Y`.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** X = 2, Y = 3\r\n    **Output:** 2\r\n    **Explanation:** Use double operation and then decrement operation {2 -> 4 -> 3}.\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** X = 5, Y = 8\r\n    **Output:** 2\r\n    **Explanation:** Use decrement and then double {5 -> 4 -> 8}.\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** X = 3, Y = 10\r\n    **Output:** 3\r\n    **Explanation:** Use double, decrement and double {3 - > 6 -> 5 -> 10}.\r\n    \n\n**Example 4:**\n\n    \n    \r\n    **Input:** X = 1024, Y = 1\r\n    **Output:** 1023\r\n    **Explanation:** Use decrement operations 1023 times.\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= X <= 10^9`\n  2. `1 <= Y <= 10^9`",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 1033,
+        "slug": "broken-calculator",
+        "tags": [
+            "Math",
+            "Greedy"
+        ],
+        "title": "Broken Calculator",
+        "url": "https://leetcode.com/problems/broken-calculator/description/"
+    },
+    "1034": {
+        "description": "Given an array `A` of positive integers, call a (contiguous, not necessarily\ndistinct) subarray of `A` _good_ if the number of different integers in that\nsubarray is exactly `K`.\n\n(For example, `[1,2,3,1,2]` has `3` different integers: `1`, `2`, and `3`.)\n\nReturn the number of good subarrays of `A`.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** A = [1,2,1,2,3], K = 2\r\n    **Output:** 7\r\n    **Explanation:** Subarrays formed with exactly 2 different integers: [1,2], [2,1], [1,2], [2,3], [1,2,1], [2,1,2], [1,2,1,2].\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** A = [1,2,1,3,4], K = 3\r\n    **Output:** 3\r\n    **Explanation:** Subarrays formed with exactly 3 different integers: [1,2,1,3], [2,1,3], [1,3,4].\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= A.length <= 20000`\n  2. `1 <= A[i] <= A.length`\n  3. `1 <= K <= A.length`",
+        "level": 3,
+        "paid_only": false,
+        "question_id": 1034,
+        "slug": "subarrays-with-k-different-integers",
+        "tags": [
+            "Hash Table",
+            "Two Pointers",
+            "Sliding Window"
+        ],
+        "title": "Subarrays with K Different Integers",
+        "url": "https://leetcode.com/problems/subarrays-with-k-different-integers/description/"
+    },
+    "1035": {
+        "description": "In a binary tree, the root node is at depth `0`, and children of each depth\n`k` node are at depth `k+1`.\n\nTwo nodes of a binary tree are _cousins_ if they have the same depth, but have\n**different parents**.\n\nWe are given the `root` of a binary tree with unique values, and the values\n`x` and `y` of two different nodes in the tree.\n\nReturn `true` if and only if the nodes corresponding to the values `x` and `y`\nare cousins.\n\n\n\n**Example 1:  \n![](https://assets.leetcode.com/uploads/2019/02/12/q1248-01.png)**\n\n    \n    \r\n    **Input:** root = [1,2,3,4], x = 4, y = 3\r\n    **Output:** false\r\n    \n\n**Example 2:  \n![](https://assets.leetcode.com/uploads/2019/02/12/q1248-02.png)**\n\n    \n    \r\n    **Input:** root = [1,2,3,null,4,null,5], x = 5, y = 4\r\n    **Output:** true\r\n    \n\n**Example 3:**\n\n**![](https://assets.leetcode.com/uploads/2019/02/13/q1248-03.png)**\n\n    \n    \r\n    **Input:** root = [1,2,3,null,4], x = 2, y = 3\r\n    **Output:** false\n\n\n\n**Note:**\n\n  1. The number of nodes in the tree will be between `2` and `100`.\n  2. Each node has a unique integer value from `1` to `100`.",
+        "level": 1,
+        "paid_only": false,
+        "question_id": 1035,
+        "slug": "cousins-in-binary-tree",
+        "tags": [
+            "Tree",
+            "Breadth-first Search"
+        ],
+        "title": "Cousins in Binary Tree",
+        "url": "https://leetcode.com/problems/cousins-in-binary-tree/description/"
+    },
+    "1036": {
+        "description": "In a given grid, each cell can have one of three values:\n\n  * the value `0` representing an empty cell;\n  * the value `1` representing a fresh orange;\n  * the value `2` representing a rotten orange.\n\nEvery minute, any fresh orange that is adjacent (4-directionally) to a rotten\norange becomes rotten.\n\nReturn the minimum number of minutes that must elapse until no cell has a\nfresh orange.  If this is impossible, return `-1` instead.\n\n\n\n**Example 1:**\n\n**![](https://assets.leetcode.com/uploads/2019/02/16/oranges.png)**\n\n    \n    \r\n    **Input:** [[2,1,1],[1,1,0],[0,1,1]]\r\n    **Output:** 4\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** [[2,1,1],[0,1,1],[1,0,1]]\r\n    **Output:** -1\r\n    **Explanation:** The orange in the bottom left corner (row 2, column 0) is never rotten, because rotting only happens 4-directionally.\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** [[0,2]]\r\n    **Output:** 0\r\n    **Explanation:** Since there are already no fresh oranges at minute 0, the answer is just 0.\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= grid.length <= 10`\n  2. `1 <= grid[0].length <= 10`\n  3. `grid[i][j]` is only `0`, `1`, or `2`.",
+        "level": 1,
+        "paid_only": false,
+        "question_id": 1036,
+        "slug": "rotting-oranges",
+        "tags": [
+            "Breadth-first Search"
+        ],
+        "title": "Rotting Oranges",
+        "url": "https://leetcode.com/problems/rotting-oranges/description/"
+    },
+    "1037": {
+        "description": "In an array `A` containing only 0s and 1s, a _`K`-bit flip _ consists of\nchoosing a (contiguous) subarray of length `K` and simultaneously changing\nevery 0 in the subarray to 1, and every 1 in the subarray to 0.\n\nReturn the minimum number of `K`-bit flips required so that there is no 0 in\nthe array.  If it is not possible, return `-1`.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** A = [0,1,0], K = 1\r\n    **Output:** 2\r\n    **Explanation:** Flip A[0], then flip A[2].\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** A = [1,1,0], K = 2\r\n    **Output:** -1\r\n    **Explanation:**  No matter how we flip subarrays of size 2, we can't make the array become [1,1,1].\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** A = [0,0,0,1,0,1,1,0], K = 3\r\n    **Output:** 3\r\n    **Explanation:**\r\n    Flip A[0],A[1],A[2]:  A becomes [1,1,1,1,0,1,1,0]\r\n    Flip A[4],A[5],A[6]: A becomes [1,1,1,1,1,0,0,0]\r\n    Flip A[5],A[6],A[7]: A becomes [1,1,1,1,1,1,1,1]\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= A.length <= 30000`\n  2. `1 <= K <= A.length`",
+        "level": 3,
+        "paid_only": false,
+        "question_id": 1037,
+        "slug": "minimum-number-of-k-consecutive-bit-flips",
+        "tags": [
+            "Greedy",
+            "Sliding Window"
+        ],
+        "title": "Minimum Number of K Consecutive Bit Flips",
+        "url": "https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/description/"
+    },
+    "1038": {
+        "description": "Given an array `A` of non-negative integers, the array is _squareful_ if for\nevery pair of adjacent elements, their sum is a perfect square.\n\nReturn the number of permutations of A that are squareful.  Two permutations\n`A1` and `A2` differ if and only if there is some index `i` such that `A1[i]\n!= A2[i]`.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [1,17,8]\r\n    **Output:** 2\r\n    **Explanation:**\r\n    [1,8,17] and [17,8,1] are the valid permutations.\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** [2,2,2]\r\n    **Output:** 1\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= A.length <= 12`\n  2. `0 <= A[i] <= 1e9`",
+        "level": 3,
+        "paid_only": false,
+        "question_id": 1038,
+        "slug": "number-of-squareful-arrays",
+        "tags": [
+            "Math",
+            "Backtracking",
+            "Graph"
+        ],
+        "title": "Number of Squareful Arrays",
+        "url": "https://leetcode.com/problems/number-of-squareful-arrays/description/"
+    },
+    "1039": {
+        "description": "In a town, there are `N` people labelled from `1` to `N`.  There is a rumor\nthat one of these people is secretly the town judge.\n\nIf the town judge exists, then:\n\n  1. The town judge trusts nobody.\n  2. Everybody (except for the town judge) trusts the town judge.\n  3. There is exactly one person that satisfies properties 1 and 2.\n\nYou are given `trust`, an array of pairs `trust[i] = [a, b]` representing that\nthe person labelled `a` trusts the person labelled `b`.\n\nIf the town judge exists and can be identified, return the label of the town\njudge.  Otherwise, return `-1`.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** N = 2, trust = [[1,2]]\r\n    **Output:** 2\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** N = 3, trust = [[1,3],[2,3]]\r\n    **Output:** 3\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** N = 3, trust = [[1,3],[2,3],[3,1]]\r\n    **Output:** -1\r\n    \n\n**Example 4:**\n\n    \n    \r\n    **Input:** N = 3, trust = [[1,2],[2,3]]\r\n    **Output:** -1\r\n    \n\n**Example 5:**\n\n    \n    \r\n    **Input:** N = 4, trust = [[1,3],[1,4],[2,3],[2,4],[4,3]]\r\n    **Output:** 3\n\n\n\n**Note:**\n\n  1. `1 <= N <= 1000`\n  2. `trust.length <= 10000`\n  3. `trust[i]` are all different\n  4. `trust[i][0] != trust[i][1]`\n  5. `1 <= trust[i][0], trust[i][1] <= N`",
+        "level": 1,
+        "paid_only": false,
+        "question_id": 1039,
+        "slug": "find-the-town-judge",
+        "tags": [
+            "Graph"
+        ],
+        "title": "Find the Town Judge",
+        "url": "https://leetcode.com/problems/find-the-town-judge/description/"
+    },
+    "1040": {
+        "description": "We are given the `root` node of a _maximum tree:_ a tree where every node has\na value greater than any other value in its subtree.\n\nJust as in the [previous problem](https://leetcode.com/problems/maximum-\nbinary-tree/), the given tree was constructed from an list `A` (`root =\nConstruct(A)`) recursively with the following `Construct(A)` routine:\n\n  * If `A` is empty, return `null`.\n  * Otherwise, let `A[i]` be the largest element of `A`.  Create a `root` node with value `A[i]`.\n  * The left child of `root` will be `Construct([A[0], A[1], ..., A[i-1]])`\n  * The right child of `root` will be `Construct([A[i+1], A[i+2], ..., A[A.length - 1]])`\n  * Return `root`.\n\nNote that we were not given A directly, only a root node `root =\nConstruct(A)`.\n\nSuppose `B` is a copy of `A` with the value `val` appended to it.  It is\nguaranteed that `B` has unique values.\n\nReturn `Construct(B)`.\n\n\n\n**Example 1:**\n\n**![](https://assets.leetcode.com/uploads/2019/02/21/maximum-binary-\ntree-1-1.png)![](https://assets.leetcode.com/uploads/2019/02/21/maximum-\nbinary-tree-1-2.png)**\n\n    \n    \r\n    **Input:** root = [4,1,3,null,null,2], val = 5\r\n    **Output:** [5,4,null,1,3,null,null,2]\r\n    **Explanation:** A =  [1,4,2,3], B = [1,4,2,3,5]\r\n    \n\n**Example 2:  \n![](https://assets.leetcode.com/uploads/2019/02/21/maximum-binary-\ntree-2-1.png)![](https://assets.leetcode.com/uploads/2019/02/21/maximum-\nbinary-tree-2-2.png)**\n\n    \n    \r\n    **Input:** root = [5,2,4,null,1], val = 3\r\n    **Output:** [5,2,4,null,1,null,3]\r\n    **Explanation:** A =  [2,1,5,4], B = [2,1,5,4,3]\r\n    \n\n**Example 3:  \n![](https://assets.leetcode.com/uploads/2019/02/21/maximum-binary-\ntree-3-1.png)![](https://assets.leetcode.com/uploads/2019/02/21/maximum-\nbinary-tree-3-2.png)**\n\n    \n    \r\n    **Input:** root = [5,2,3,null,1], val = 4\r\n    **Output:** [5,2,4,null,1,3]\r\n    **Explanation:** A =  [2,1,5,3], B = [2,1,5,3,4]\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= B.length <= 100`",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 1040,
+        "slug": "maximum-binary-tree-ii",
+        "tags": [
+            "Tree"
+        ],
+        "title": "Maximum Binary Tree II",
+        "url": "https://leetcode.com/problems/maximum-binary-tree-ii/description/"
+    },
+    "1041": {
+        "description": "On an 8 x 8 chessboard, there is one white rook.  There also may be empty\nsquares, white bishops, and black pawns.  These are given as characters 'R',\n'.', 'B', and 'p' respectively. Uppercase characters represent white pieces,\nand lowercase characters represent black pieces.\n\nThe rook moves as in the rules of Chess: it chooses one of four cardinal\ndirections (north, east, west, and south), then moves in that direction until\nit chooses to stop, reaches the edge of the board, or captures an opposite\ncolored pawn by moving to the same square it occupies.  Also, rooks cannot\nmove into the same square as other friendly bishops.\n\nReturn the number of pawns the rook can capture in one move.\n\n\n\n**Example 1:**\n\n![](https://assets.leetcode.com/uploads/2019/02/20/1253_example_1_improved.PNG)\n\n    \n    \r\n    **Input:** [[\".\",\".\",\".\",\".\",\".\",\".\",\".\",\".\"],[\".\",\".\",\".\",\"p\",\".\",\".\",\".\",\".\"],[\".\",\".\",\".\",\"R\",\".\",\".\",\".\",\"p\"],[\".\",\".\",\".\",\".\",\".\",\".\",\".\",\".\"],[\".\",\".\",\".\",\".\",\".\",\".\",\".\",\".\"],[\".\",\".\",\".\",\"p\",\".\",\".\",\".\",\".\"],[\".\",\".\",\".\",\".\",\".\",\".\",\".\",\".\"],[\".\",\".\",\".\",\".\",\".\",\".\",\".\",\".\"]]\r\n    **Output:** 3\r\n    **Explanation:**\r\n    In this example the rook is able to capture all the pawns.\r\n    \n\n**Example 2:**\n\n![](https://assets.leetcode.com/uploads/2019/02/19/1253_example_2_improved.PNG)\n\n    \n    \r\n    **Input:** [[\".\",\".\",\".\",\".\",\".\",\".\",\".\",\".\"],[\".\",\"p\",\"p\",\"p\",\"p\",\"p\",\".\",\".\"],[\".\",\"p\",\"p\",\"B\",\"p\",\"p\",\".\",\".\"],[\".\",\"p\",\"B\",\"R\",\"B\",\"p\",\".\",\".\"],[\".\",\"p\",\"p\",\"B\",\"p\",\"p\",\".\",\".\"],[\".\",\"p\",\"p\",\"p\",\"p\",\"p\",\".\",\".\"],[\".\",\".\",\".\",\".\",\".\",\".\",\".\",\".\"],[\".\",\".\",\".\",\".\",\".\",\".\",\".\",\".\"]]\r\n    **Output:** 0\r\n    **Explanation:**\r\n    Bishops are blocking the rook to capture any pawn.\r\n    \n\n**Example 3:**\n\n![](https://assets.leetcode.com/uploads/2019/02/20/1253_example_3_improved.PNG)\n\n    \n    \r\n    **Input:** [[\".\",\".\",\".\",\".\",\".\",\".\",\".\",\".\"],[\".\",\".\",\".\",\"p\",\".\",\".\",\".\",\".\"],[\".\",\".\",\".\",\"p\",\".\",\".\",\".\",\".\"],[\"p\",\"p\",\".\",\"R\",\".\",\"p\",\"B\",\".\"],[\".\",\".\",\".\",\".\",\".\",\".\",\".\",\".\"],[\".\",\".\",\".\",\"B\",\".\",\".\",\".\",\".\"],[\".\",\".\",\".\",\"p\",\".\",\".\",\".\",\".\"],[\".\",\".\",\".\",\".\",\".\",\".\",\".\",\".\"]]\r\n    **Output:** 3\r\n    **Explanation:**\r\n    The rook can capture the pawns at positions b5, d6 and f5.\r\n    \n\n\n\n**Note:**\n\n  1. `board.length == board[i].length == 8`\n  2. `board[i][j]` is either `'R'`, `'.'`, `'B'`, or `'p'`\n  3. There is exactly one cell with `board[i][j] == 'R'`",
+        "level": 1,
+        "paid_only": false,
+        "question_id": 1041,
+        "slug": "available-captures-for-rook",
+        "tags": [
+            "Array"
+        ],
+        "title": "Available Captures for Rook",
+        "url": "https://leetcode.com/problems/available-captures-for-rook/description/"
+    },
+    "1042": {
+        "description": "There are `N` piles of stones arranged in a row.  The `i`-th pile has\n`stones[i]` stones.\n\nA _move_ consists of merging **exactly  `K` consecutive** piles into one pile,\nand the cost of this move is equal to the total number of stones in these `K`\npiles.\n\nFind the minimum cost to merge all piles of stones into one pile.  If it is\nimpossible, return `-1`.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** stones = [3,2,4,1], K = 2\r\n    **Output:** 20\r\n    **Explanation:**\r\n    We start with [3, 2, 4, 1].\r\n    We merge [3, 2] for a cost of 5, and we are left with [5, 4, 1].\r\n    We merge [4, 1] for a cost of 5, and we are left with [5, 5].\r\n    We merge [5, 5] for a cost of 10, and we are left with [10].\r\n    The total cost was 20, and this is the minimum possible.\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** stones = [3,2,4,1], K = 3\r\n    **Output:** -1\r\n    **Explanation:** After any merge operation, there are 2 piles left, and we can't merge anymore.  So the task is impossible.\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** stones = [3,5,1,2,6], K = 3\r\n    **Output:** 25\r\n    **Explanation:**\r\n    We start with [3, 5, 1, 2, 6].\r\n    We merge [5, 1, 2] for a cost of 8, and we are left with [3, 8, 6].\r\n    We merge [3, 8, 6] for a cost of 17, and we are left with [17].\r\n    The total cost was 25, and this is the minimum possible.\r\n    \n\n\n\n**Note:**\n\n  * ` 1 <= stones.length <= 30`\n  * `2 <= K <= 30`\n  * `1 <= stones[i] <= 100`",
+        "level": 3,
+        "paid_only": false,
+        "question_id": 1042,
+        "slug": "minimum-cost-to-merge-stones",
+        "tags": [
+            "Dynamic Programming"
+        ],
+        "title": "Minimum Cost to Merge Stones",
+        "url": "https://leetcode.com/problems/minimum-cost-to-merge-stones/description/"
+    },
+    "1043": {
+        "description": "On a `N x N` grid of cells, each cell `(x, y)` with `0 <= x < N` and `0 <= y <\nN` has a lamp.\n\nInitially, some number of lamps are on.  `lamps[i]` tells us the location of\nthe `i`-th lamp that is on.  Each lamp that is on illuminates every square on\nits x-axis, y-axis, and both diagonals (similar to a Queen in chess).\n\nFor the i-th query `queries[i] = (x, y)`, the answer to the query is 1 if the\ncell (x, y) is illuminated, else 0.\n\nAfter each query `(x, y)` [in the order given by `queries`], we turn off any\nlamps that are at cell `(x, y)` or are adjacent 8-directionally (ie., share a\ncorner or edge with cell `(x, y)`.)\n\nReturn an array of answers.  Each value `answer[i]` should be equal to the\nanswer of the `i`-th query `queries[i]`.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** N = 5, lamps = [[0,0],[4,4]], queries = [[1,1],[1,0]]\r\n    **Output:** [1,0]\r\n    **Explanation:**\r\n    Before performing the first query we have both lamps [0,0] and [4,4] on.\r\n    The grid representing which cells are lit looks like this, where [0,0] is the top left corner, and [4,4] is the bottom right corner:\r\n    1 1 1 1 1\r\n    1 1 0 0 1\r\n    1 0 1 0 1\r\n    1 0 0 1 1\r\n    1 1 1 1 1\r\n    Then the query at [1, 1] returns 1 because the cell is lit.  After this query, the lamp at [0, 0] turns off, and the grid now looks like this:\r\n    1 0 0 0 1\r\n    0 1 0 0 1\r\n    0 0 1 0 1\r\n    0 0 0 1 1\r\n    1 1 1 1 1\r\n    Before performing the second query we have only the lamp [4,4] on.  Now the query at [1,0] returns 0, because the cell is no longer lit.\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= N <= 10^9`\n  2. `0 <= lamps.length <= 20000`\n  3. `0 <= queries.length <= 20000`\n  4. `lamps[i].length == queries[i].length == 2`",
+        "level": 3,
+        "paid_only": false,
+        "question_id": 1043,
+        "slug": "grid-illumination",
+        "tags": [
+            "Hash Table"
+        ],
+        "title": "Grid Illumination",
+        "url": "https://leetcode.com/problems/grid-illumination/description/"
+    },
+    "1044": {
+        "description": "Given an array `A` of strings made only from lowercase letters, return a list\nof all characters that show up in all strings within the list **(including\nduplicates)**.   For example, if a character occurs 3 times in all strings but\nnot 4 times, you need to include that character three times in the final\nanswer.\n\nYou may return the answer in any order.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [\"bella\",\"label\",\"roller\"]\r\n    **Output:** [\"e\",\"l\",\"l\"]\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** [\"cool\",\"lock\",\"cook\"]\r\n    **Output:** [\"c\",\"o\"]\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= A.length <= 100`\n  2. `1 <= A[i].length <= 100`\n  3. `A[i][j]` is a lowercase letter",
+        "level": 1,
+        "paid_only": false,
+        "question_id": 1044,
+        "slug": "find-common-characters",
+        "tags": [
+            "Array",
+            "Hash Table"
+        ],
+        "title": "Find Common Characters",
+        "url": "https://leetcode.com/problems/find-common-characters/description/"
+    },
+    "1045": {
+        "description": "We are given that the string `\"abc\"` is valid.\n\nFrom any valid string `V`, we may split `V` into two pieces `X` and `Y` such\nthat `X + Y` (`X` concatenated with `Y`) is equal to `V`.  (`X` or `Y` may be\nempty.)  Then, `X + \"abc\" + Y` is also valid.\n\nIf for example `S = \"abc\"`, then examples of valid strings are: `\"abc\",\n\"aabcbc\", \"abcabc\", \"abcabcababcc\"`.  Examples of **invalid**  strings are:\n`\"abccba\"`, `\"ab\"`, `\"cababc\"`, `\"bac\"`.\n\nReturn `true` if and only if the given string `S` is valid.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** \"aabcbc\"\r\n    **Output:** true\r\n    **Explanation:**\r\n    We start with the valid string  \"abc\".\r\n    Then we can insert another \"abc\" between \"a\" and \"bc\", resulting in \"a\" + \"abc\" + \"bc\" which is \"aabcbc\".\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** \"abcabcababcc\"\r\n    **Output:** true\r\n    **Explanation:**\r\n     \"abcabcabc\" is valid after consecutive insertings of \"abc\".\r\n    Then we can insert \"abc\" before the last letter, resulting in \"abcabcab\" + \"abc\" + \"c\" which is \"abcabcababcc\".\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** \"abccba\"\r\n    **Output:** false\r\n    \n\n**Example 4:**\n\n    \n    \r\n    **Input:** \"cababc\"\r\n    **Output:** false\n\n\n\n**Note:**\n\n  1. `1 <= S.length <= 20000`\n  2. `S[i]` is `'a'`, `'b'`, or `'c'`",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 1045,
+        "slug": "check-if-word-is-valid-after-substitutions",
+        "tags": [
+            "String",
+            "Stack"
+        ],
+        "title": "Check If Word Is Valid After Substitutions",
+        "url": "https://leetcode.com/problems/check-if-word-is-valid-after-substitutions/description/"
+    },
+    "1046": {
+        "description": "Given an array `A` of 0s and 1s, we may change up to `K` values from 0 to 1.\n\nReturn the length of the longest (contiguous) subarray that contains only 1s.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** A = [1,1,1,0,0,0,1,1,1,1,0], K = 2\r\n    **Output:** 6\r\n    **Explanation:**\r\n    [1,1,1,0,0, _ **1** ,1,1,1,1, **1**_ ]\r\n    Bolded numbers were flipped from 0 to 1.  The longest subarray is underlined.\n\n**Example 2:**\n\n    \n    \r\n    **Input:** A = [0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1], K = 3\r\n    **Output:** 10\r\n    **Explanation:**\r\n    [0,0, _1,1, **1** , **1** ,1,1,1, **1** ,1,1_,0,0,0,1,1,1,1]\r\n    Bolded numbers were flipped from 0 to 1.  The longest subarray is underlined.\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= A.length <= 20000`\n  2. `0 <= K <= A.length`\n  3. `A[i]` is `0` or `1`",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 1046,
+        "slug": "max-consecutive-ones-iii",
+        "tags": [
+            "Two Pointers",
+            "Sliding Window"
+        ],
+        "title": "Max Consecutive Ones III",
+        "url": "https://leetcode.com/problems/max-consecutive-ones-iii/description/"
     }
 }
