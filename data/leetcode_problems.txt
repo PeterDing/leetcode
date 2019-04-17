@@ -31699,6 +31699,44 @@ the most recent vote (among tied candidates) wins.
 
 
 
+## 948 - Sort an Array
+~2~  []
+Given an array of integers `nums`, sort the array in ascending order.
+
+
+
+**Example 1:**
+
+    
+    
+    **Input:**  [5,2,3,1]
+    **Output:** [1,2,3,5]
+    
+
+**Example 2:**
+
+    
+    
+    **Input:** [5,1,1,2,0,0]
+    **Output:** [0,0,1,1,2,5]
+    
+
+
+
+**Note:**
+
+  1. `1 <= A.length <= 10000`
+  2. `-50000 <= A[i] <= 50000`
+
+
+
+
+
+
+
+
+
+
 ## 949 - Cat and Mouse
 ~3~  ['Breadth-first Search', 'Minimax']
 A game on an **undirected** graph is played by two players, Mouse and Cat, who
@@ -36942,6 +36980,1305 @@ Return the length of the longest (contiguous) subarray that contains only 1s.
   1. `1 <= A.length <= 20000`
   2. `0 <= K <= A.length`
   3. `A[i]` is `0` or `1`
+
+
+
+
+
+
+
+
+
+
+## 1047 - Maximize Sum Of Array After K Negations
+~1~  ['Greedy']
+Given an array `A` of integers, we **must**  modify the array in the following
+way: we choose an `i` and replace `A[i]` with `-A[i]`, and we repeat this
+process `K` times in total.  (We may choose the same index `i` multiple
+times.)
+
+Return the largest possible sum of the array after modifying it in this way.
+
+
+
+**Example 1:**
+
+    
+    
+    **Input:** A = [4,2,3], K = 1
+    **Output:** 5
+    **Explanation:** Choose indices (1,) and A becomes [4,-2,3].
+    
+
+**Example 2:**
+
+    
+    
+    **Input:** A = [3,-1,0,2], K = 3
+    **Output:** 6
+    **Explanation:** Choose indices (1, 2, 2) and A becomes [3,1,0,2].
+    
+
+**Example 3:**
+
+    
+    
+    **Input:** A = [2,-3,-1,5,-4], K = 2
+    **Output:** 13
+    **Explanation:** Choose indices (1, 4) and A becomes [2,3,-1,5,4].
+    
+
+
+
+**Note:**
+
+  1. `1 <= A.length <= 10000`
+  2. `1 <= K <= 10000`
+  3. `-100 <= A[i] <= 100`
+
+
+
+
+
+
+
+
+
+
+## 1048 - Clumsy Factorial
+~2~  ['Math']
+Normally, the factorial of a positive integer `n` is the product of all
+positive integers less than or equal to `n`.  For example, `factorial(10) = 10
+* 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1`.
+
+We instead make a _clumsy factorial:_  using the integers in decreasing order,
+we swap out the multiply operations for a fixed rotation of operations:
+multiply (*), divide (/), add (+) and subtract (-) in this order.
+
+For example, `clumsy(10) = 10 * 9 / 8 + 7 - 6 * 5 / 4 + 3 - 2 * 1`.  However,
+these operations are still applied using the usual order of operations of
+arithmetic: we do all multiplication and division steps before any addition or
+subtraction steps, and multiplication and division steps are processed left to
+right.
+
+Additionally, the division that we use is _floor division_  such that `10 * 9
+/ 8` equals `11`.  This guarantees the result is an integer.
+
+`Implement the clumsy` function as defined above: given an integer `N`, it
+returns the clumsy factorial of `N`.
+
+
+
+**Example 1:**
+
+    
+    
+    **Input:** 4
+    **Output:**  7
+    **Explanation:** 7 = 4 * 3 / 2 + 1
+    
+
+**Example 2:**
+
+    
+    
+    **Input:** 10
+    **Output:** 12
+    **Explanation:** 12 = 10 * 9 / 8 + 7 - 6 * 5 / 4 + 3 - 2 * 1
+    
+
+
+
+**Note:**
+
+  1. `1 <= N <= 10000`
+  2. `-2^31 <= answer <= 2^31 - 1`  (The answer is guaranteed to fit within a 32-bit integer.)
+
+
+
+
+
+
+
+
+
+
+## 1049 - Minimum Domino Rotations For Equal Row
+~2~  ['Array', 'Greedy']
+In a row of dominoes, `A[i]` and `B[i]` represent the top and bottom halves of
+the `i`-th domino.  (A domino is a tile with two numbers from 1 to 6 - one on
+each half of the tile.)
+
+We may rotate the `i`-th domino, so that `A[i]` and `B[i]` swap values.
+
+Return the minimum number of rotations so that all the values in `A` are the
+same, or all the values in `B` are the same.
+
+If it cannot be done, return `-1`.
+
+
+
+**Example 1:**
+
+![](https://assets.leetcode.com/uploads/2019/03/08/domino.png)
+
+    
+    
+    **Input:** A = [2,1,2,4,2,2], B = [5,2,6,2,3,2]
+    **Output:** 2
+    **Explanation:**
+    The first figure represents the dominoes as given by A and B: before we do any rotations.
+    If we rotate the second and fourth dominoes, we can make every value in the top row equal to 2, as indicated by the second figure.
+    
+
+**Example 2:**
+
+    
+    
+    **Input:** A = [3,5,1,2,3], B = [3,6,3,3,4]
+    **Output:** -1
+    **Explanation:**
+    In this case, it is not possible to rotate the dominoes to make one row of values equal.
+    
+
+
+
+**Note:**
+
+  1. `1 <= A[i], B[i] <= 6`
+  2. `2 <= A.length == B.length <= 20000`
+
+
+
+
+
+
+
+
+
+
+## 1050 - Construct Binary Search Tree from Preorder Traversal
+~2~  ['Tree']
+Return the root node of a binary **search** tree that matches the given
+`preorder` traversal.
+
+_(Recall that a binary search tree  is a binary tree where for every node, any
+descendant of `node.left` has a value `<` `node.val`, and any descendant of
+`node.right` has a value `>` `node.val`.  Also recall that a preorder
+traversal displays the value of the `node` first, then traverses `node.left`,
+then traverses `node.right`.)_
+
+
+
+**Example 1:**
+
+    
+    
+    **Input:** [8,5,1,7,10,12]
+    **Output:** [8,5,10,1,7,null,12]
+    ![](https://assets.leetcode.com/uploads/2019/03/06/1266.png)
+    
+
+
+
+**Note:**  
+
+  1. `1 <= preorder.length <= 100`
+  2. The values of `preorder` are distinct.
+
+
+
+
+
+
+
+
+
+
+## 1054 - Complement of Base 10 Integer
+~1~  ['Math']
+Every non-negative integer `N` has a binary representation.  For example, `5`
+can be represented as `"101"` in binary, `11` as `"1011"` in binary, and so
+on.  Note that except for `N = 0`, there are no leading zeroes in any binary
+representation.
+
+The _complement_  of a binary representation is the number in binary you get
+when changing every `1` to a `0` and `0` to a `1`.  For example, the
+complement of `"101"` in binary is `"010"` in binary.
+
+For a given number `N` in base-10, return the complement of it's binary
+representation as a base-10 integer.
+
+
+
+**Example 1:**
+
+    
+    
+    **Input:** 5
+    **Output:** 2
+    **Explanation:** 5 is "101" in binary, with complement "010" in binary, which is 2 in base-10.
+    
+
+**Example 2:**
+
+    
+    
+    **Input:** 7
+    **Output:** 0
+    **Explanation:** 7 is "111" in binary, with complement "000" in binary, which is 0 in base-10.
+    
+
+**Example 3:**
+
+    
+    
+    **Input:** 10
+    **Output:** 5
+    **Explanation:** 10 is "1010" in binary, with complement "0101" in binary, which is 5 in base-10.
+    
+
+
+
+**Note:**
+
+  1. `0 <= N < 10^9`
+
+
+
+
+
+
+
+
+
+
+## 1055 - Pairs of Songs With Total Durations Divisible by 60
+~1~  ['Array']
+In a list of songs, the `i`-th song has a duration of `time[i]` seconds.
+
+Return the number of pairs of songs for which their total duration in seconds
+is divisible by `60`.  Formally, we want the number of indices `i < j` with
+`(time[i] + time[j]) % 60 == 0`.
+
+
+
+**Example 1:**
+
+    
+    
+    **Input:** [30,20,150,100,40]
+    **Output:** 3
+    **Explanation:** Three pairs have a total duration divisible by 60:
+    (time[0] = 30, time[2] = 150): total duration 180
+    (time[1] = 20, time[3] = 100): total duration 120
+    (time[1] = 20, time[4] = 40): total duration 60
+    
+
+**Example 2:**
+
+    
+    
+    **Input:** [60,60,60]
+    **Output:** 3
+    **Explanation:** All three pairs have a total duration of 120, which is divisible by 60.
+    
+
+
+
+**Note:**
+
+  1. `1 <= time.length <= 60000`
+  2. `1 <= time[i] <= 500`
+
+
+
+
+
+
+
+
+
+
+## 1056 - Capacity To Ship Packages Within D Days
+~2~  ['Array', 'Binary Search']
+A conveyor belt has packages that must be shipped from one port to another
+within `D` days.
+
+The `i`-th package on the conveyor belt has a weight of `weights[i]`.  Each
+day, we load the ship with packages on the conveyor belt (in the order given
+by `weights`). We may not load more weight than the maximum weight capacity of
+the ship.
+
+Return the least weight capacity of the ship that will result in all the
+packages on the conveyor belt being shipped within `D` days.
+
+
+
+**Example 1:**
+
+    
+    
+    **Input:** weights = [1,2,3,4,5,6,7,8,9,10], D = 5
+    **Output:** 15
+    **Explanation:**
+    A ship capacity of 15 is the minimum to ship all the packages in 5 days like this:
+    1st day: 1, 2, 3, 4, 5
+    2nd day: 6, 7
+    3rd day: 8
+    4th day: 9
+    5th day: 10
+    
+    Note that the cargo must be shipped in the order given, so using a ship of capacity 14 and splitting the packages into parts like (2, 3, 4, 5), (1, 6, 7), (8), (9), (10) is not allowed. 
+    
+
+**Example 2:**
+
+    
+    
+    **Input:** weights = [3,2,2,4,1,4], D = 3
+    **Output:** 6
+    **Explanation:**
+    A ship capacity of 6 is the minimum to ship all the packages in 3 days like this:
+    1st day: 3, 2
+    2nd day: 2, 4
+    3rd day: 1, 4
+    
+
+**Example 3:**
+
+    
+    
+    **Input:** weights = [1,2,3,1,1], D = 4
+    **Output:** 3
+    **Explanation:**
+    1st day: 1
+    2nd day: 2
+    3rd day: 3
+    4th day: 1, 1
+    
+
+
+
+**Note:**
+
+  1. `1 <= D <= weights.length <= 50000`
+  2. `1 <= weights[i] <= 500`
+
+
+
+
+
+
+
+
+
+
+## 1057 - Numbers With Repeated Digits
+~3~  ['Math', 'Dynamic Programming']
+Given a positive integer `N`, return the number of positive integers less than
+or equal to `N` that have at least 1 repeated digit.
+
+
+
+**Example 1:**
+
+    
+    
+    **Input:** 20
+    **Output:** 1
+    **Explanation:** The only positive number (<= 20) with at least 1 repeated digit is 11.
+    
+
+**Example 2:**
+
+    
+    
+    **Input:** 100
+    **Output:** 10
+    **Explanation:** The positive numbers (<= 100) with atleast 1 repeated digit are 11, 22, 33, 44, 55, 66, 77, 88, 99, and 100.
+    
+
+**Example 3:**
+
+    
+    
+    **Input:** 1000
+    **Output:** 262
+    
+
+
+
+**Note:**
+
+  1. `1 <= N <= 10^9`
+
+
+
+
+
+
+
+
+
+
+## 1062 - Partition Array Into Three Parts With Equal Sum
+~1~  ['Array']
+Given an array `A` of integers, return `true` if and only if we can partition
+the array into three **non-empty** parts with equal sums.
+
+Formally, we can partition the array if we can find indexes `i+1 < j` with
+`(A[0] + A[1] + ... + A[i] == A[i+1] + A[i+2] + ... + A[j-1] == A[j] + A[j-1]
++ ... + A[A.length - 1])`
+
+
+
+**Example 1:**
+
+    
+    
+    **Input:** [0,2,1,-6,6,-7,9,1,2,0,1]
+    **Output:** true
+    **Explanation:** 0 + 2 + 1 = -6 + 6 - 7 + 9 + 1 = 2 + 0 + 1
+    
+
+**Example 2:**
+
+    
+    
+    **Input:** [0,2,1,-6,6,7,9,-1,2,0,1]
+    **Output:** false
+    
+
+**Example 3:**
+
+    
+    
+    **Input:** [3,3,6,5,-2,2,5,1,-9,4]
+    **Output:** true
+    **Explanation:** 3 + 3 = 6 = 5 - 2 + 2 + 5 + 1 - 9 + 4
+    
+
+
+
+**Note:**
+
+  1. `3 <= A.length <= 50000`
+  2. `-10000 <= A[i] <= 10000`
+
+
+
+
+
+
+
+
+
+
+## 1063 - Best Sightseeing Pair
+~2~  ['Array']
+Given an array `A` of positive integers, `A[i]` represents the value of the
+`i`-th sightseeing spot, and two sightseeing spots `i` and `j` have distance
+`j - i` between them.
+
+The _score_  of a pair (`i < j`) of sightseeing spots is (`A[i] + A[j] + i -
+j)` : the sum of the values of the sightseeing spots, **minus** the distance
+between them.
+
+Return the maximum score of a pair of sightseeing spots.
+
+
+
+**Example 1:**
+
+    
+    
+    **Input:** [8,1,5,2,6]
+    **Output:** 11
+    **Explanation:** i = 0, j = 2, A[i] + A[j] + i - j = 8 + 5 + 0 - 2 = 11
+    
+
+
+
+**Note:**
+
+  1. `2 <= A.length <= 50000`
+  2. `1 <= A[i] <= 1000`
+
+
+
+
+
+
+
+
+
+
+## 1064 - Smallest Integer Divisible by K
+~2~  ['Math']
+Given a positive integer `K`, you need find the **smallest**  positive integer
+`N` such that `N` is divisible by `K`, and `N` only contains the digit **1**.
+
+Return the length of `N`.  If there is no such `N`, return -1.
+
+
+
+**Example 1:**
+
+    
+    
+    **Input:** 1
+    **Output:** 1
+    **Explanation:** The smallest answer is N = 1, which has length 1.
+
+**Example 2:**
+
+    
+    
+    **Input:** 2
+    **Output:** -1
+    **Explanation:** There is no such positive integer N divisible by 2.
+
+**Example 3:**
+
+    
+    
+    **Input:** 3
+    **Output:** 3
+    **Explanation:** The smallest answer is N = 111, which has length 3.
+
+
+
+**Note:**
+
+  * `1 <= K <= 10^5`
+
+
+
+
+
+
+
+
+
+
+## 1065 - Binary String With Substrings Representing 1 To N
+~2~  ['String']
+Given a binary string `S` (a string consisting only of '0' and '1's) and a
+positive integer `N`, return true if and only if for every integer X from 1 to
+N, the binary representation of X is a substring of S.
+
+
+
+**Example 1:**
+
+    
+    
+    **Input:** S = "0110", N = 3
+    **Output:** true
+    
+
+**Example 2:**
+
+    
+    
+    **Input:** S = "0110", N = 4
+    **Output:** false
+    
+
+
+
+**Note:**
+
+  1. `1 <= S.length <= 1000`
+  2. `1 <= N <= 10^9`
+
+
+
+
+
+
+
+
+
+
+## 1070 - Convert to Base -2
+~2~  ['Math']
+Given a number `N`, return a string consisting of `"0"`s and `"1"`s that
+represents its value in base `**-2**` (negative two).
+
+The returned string must have no leading zeroes, unless the string is `"0"`.
+
+
+
+**Example 1:**
+
+    
+    
+    **Input:** 2
+    **Output:** "110"
+    **Explantion:** (-2) ^ 2 + (-2) ^ 1 = 2
+    
+
+**Example 2:**
+
+    
+    
+    **Input:** 3
+    **Output:** "111"
+    **Explantion:** (-2) ^ 2 + (-2) ^ 1 + (-2) ^ 0 = 3
+    
+
+**Example 3:**
+
+    
+    
+    **Input:** 4
+    **Output:** "100"
+    **Explantion:** (-2) ^ 2 = 4
+    
+
+
+
+**Note:**
+
+  1. `0 <= N <= 10^9`
+
+
+
+
+
+
+
+
+
+
+## 1071 - Binary Prefix Divisible By 5
+~1~  ['Array']
+Given an array `A` of `0`s and `1`s, consider `N_i`: the i-th subarray from
+`A[0]` to `A[i]` interpreted as a binary number (from most-significant-bit to
+least-significant-bit.)
+
+Return a list of booleans `answer`, where `answer[i]` is `true` if and only if
+`N_i` is divisible by 5.
+
+**Example 1:**
+
+    
+    
+    **Input:** [0,1,1]
+    **Output:** [true,false,false]
+    **Explanation:**
+    The input numbers in binary are 0, 01, 011; which are 0, 1, and 3 in base-10.  Only the first number is divisible by 5, so answer[0] is true.
+    
+
+**Example 2:**
+
+    
+    
+    **Input:** [1,1,1]
+    **Output:** [false,false,false]
+    
+
+**Example 3:**
+
+    
+    
+    **Input:** [0,1,1,1,1,1]
+    **Output:** [true,false,false,false,true,false]
+    
+
+**Example 4:**
+
+    
+    
+    **Input:** [1,1,1,0,1]
+    **Output:** [false,false,false,false,false]
+    
+
+
+
+**Note:**
+
+  1. `1 <= A.length <= 30000`
+  2. `A[i]` is `0` or `1`
+
+
+
+
+
+
+
+
+
+
+## 1072 - Next Greater Node In Linked List
+~2~  ['Linked List', 'Stack']
+We are given a linked list with `head` as the first node.  Let's number the
+nodes in the list: `node_1, node_2, node_3, ...` etc.
+
+Each node may have a _next larger_ **value** : for `node_i`,
+`next_larger(node_i)` is the `node_j.val` such that `j > i`, `node_j.val >
+node_i.val`, and `j` is the smallest possible choice.  If such a `j` does not
+exist, the next larger value is `0`.
+
+Return an array of integers `answer`, where `answer[i] =
+next_larger(node_{i+1})`.
+
+Note that in the example **inputs**  (not outputs) below, arrays such as
+`[2,1,5]` represent the serialization of a linked list with a head node value
+of 2, second node value of 1, and third node value of 5.
+
+
+
+**Example 1:**
+
+    
+    
+    **Input:** [2,1,5]
+    **Output:** [5,5,0]
+    
+
+**Example 2:**
+
+    
+    
+    **Input:** [2,7,4,3,5]
+    **Output:** [7,0,5,5,0]
+    
+
+**Example 3:**
+
+    
+    
+    **Input:** [1,7,5,1,9,2,5,1]
+    **Output:** [7,9,9,9,0,5,0,0]
+    
+
+
+
+**Note:**
+
+  1. ` 1 <= node.val <= 10^9` for each node in the linked list.
+  2. The given list has length in the range `[0, 10000]`.
+
+
+
+
+
+
+
+
+
+
+## 1073 - Number of Enclaves
+~2~  ['Depth-first Search']
+Given a 2D array `A`, each cell is 0 (representing sea) or 1 (representing
+land)
+
+A move consists of walking from one land square 4-directionally to another
+land square, or off the boundary of the grid.
+
+Return the number of land squares in the grid for which we **cannot** walk off
+the boundary of the grid in any number of moves.
+
+
+
+**Example 1:**
+
+    
+    
+    **Input:** [[0,0,0,0],[1,0,1,0],[0,1,1,0],[0,0,0,0]]
+    **Output:** 3
+    **Explanation:**
+    There are three 1s that are enclosed by 0s, and one 1 that isn 't enclosed because its on the boundary.
+
+**Example 2:**
+
+    
+    
+    **Input:** [[0,1,1,0],[0,0,1,0],[0,0,1,0],[0,0,0,0]]
+    **Output:** 0
+    **Explanation:**
+    All 1s are either on the boundary or can reach the boundary.
+    
+
+
+
+**Note:**
+
+  1. `1 <= A.length <= 500`
+  2. `1 <= A[i].length <= 500`
+  3. `0 <= A[i][j] <= 1`
+  4. All rows have the same size.
+
+
+
+
+
+
+
+
+
+
+## 1078 - Remove Outermost Parentheses
+~1~  ['Stack']
+A valid parentheses string is either empty `("")`, `"(" + A + ")"`, or `A +
+B`, where `A` and `B` are valid parentheses strings, and `+` represents string
+concatenation.  For example, `""`, `"()"`, `"(())()"`, and `"(()(()))"` are
+all valid parentheses strings.
+
+A valid parentheses string `S` is **primitive** if it is nonempty, and there
+does not exist a way to split it into `S = A+B`, with `A` and `B` nonempty
+valid parentheses strings.
+
+Given a valid parentheses string `S`, consider its primitive decomposition: `S
+= P_1 + P_2 + ... + P_k`, where `P_i` are primitive valid parentheses strings.
+
+Return `S` after removing the outermost parentheses of every primitive string
+in the primitive decomposition of `S`.
+
+
+
+**Example 1:**
+
+    
+    
+    **Input:** "(()())(())"
+    **Output:** "()()()"
+    **Explanation:**
+    The input string is  "(()())(())", with primitive decomposition "(()())" + "(())".
+    After removing outer parentheses of each part, this is "()()" + "()" = "()()()".
+    
+
+**Example 2:**
+
+    
+    
+    **Input:** "(()())(())(()(()))"
+    **Output:** "()()()()(())"
+    **Explanation:**
+    The input string is  "(()())(())(()(()))", with primitive decomposition "(()())" + "(())" + "(()(()))".
+    After removing outer parentheses of each part, this is "()()" + "()" + "()(())" = "()()()()(())".
+    
+
+**Example 3:**
+
+    
+    
+    **Input:** "()()"
+    **Output:** ""
+    **Explanation:**
+    The input string is  "()()", with primitive decomposition "()" + "()".
+    After removing outer parentheses of each part, this is "" + "" = "".
+    
+
+
+
+**Note:**
+
+  1. `S.length <= 10000`
+  2. `S[i]` is `"("` or `")"`
+  3. `S` is a valid parentheses string
+
+
+
+
+
+
+
+
+
+
+## 1079 - Sum of Root To Leaf Binary Numbers
+~1~  ['Tree']
+Given a binary tree, each node has value `0` or `1`.  Each root-to-leaf path
+represents a binary number starting with the most significant bit.  For
+example, if the path is `0 -> 1 -> 1 -> 0 -> 1`, then this could represent
+`01101` in binary, which is `13`.
+
+For all leaves in the tree, consider the numbers represented by the path from
+the root to that leaf.
+
+Return the sum of these numbers.
+
+
+
+**Example 1:**
+
+![](https://assets.leetcode.com/uploads/2019/04/04/sum-of-root-to-leaf-binary-
+numbers.png)
+
+    
+    
+    **Input:** [1,0,1,0,1,0,1]
+    **Output:** 22
+    **Explanation:** (100) + (101) + (110) + (111) = 4 + 5 + 6 + 7 = 22
+    
+
+
+
+**Note:**
+
+  1. The number of nodes in the tree is between `1` and `1000`.
+  2. node.val is `0` or `1`.
+  3. The answer will not exceed `2^31 - 1`.
+
+
+
+
+
+
+
+
+
+
+## 1080 - Camelcase Matching
+~2~  ['String', 'Trie']
+A query word matches a given `pattern` if we can insert **lowercase** letters
+to the pattern word so that it equals the `query`. (We may insert each
+character at any position, and may insert 0 characters.)
+
+Given a list of `queries`, and a `pattern`, return an `answer` list of
+booleans, where `answer[i]` is true if and only if `queries[i]` matches the
+`pattern`.
+
+
+
+**Example 1:**
+
+    
+    
+    **Input:** queries = ["FooBar","FooBarTest","FootBall","FrameBuffer","ForceFeedBack"], pattern = "FB"
+    **Output:** [true,false,true,true,false]
+    **Explanation:**
+     "FooBar" can be generated like this "F" + "oo" + "B" + "ar".
+    "FootBall" can be generated like this "F" + "oot" + "B" + "all".
+    "FrameBuffer" can be generated like this "F" + "rame" + "B" + "uffer".
+
+**Example 2:**
+
+    
+    
+    **Input:** queries = ["FooBar","FooBarTest","FootBall","FrameBuffer","ForceFeedBack"], pattern = "FoBa"
+    **Output:** [true,false,true,false,false]
+    **Explanation:**
+     "FooBar" can be generated like this "Fo" + "o" + "Ba" + "r".
+    "FootBall" can be generated like this "Fo" + "ot" + "Ba" + "ll".
+    
+
+**Example 3:**
+
+    
+    
+    **Input:** queries = ["FooBar","FooBarTest","FootBall","FrameBuffer","ForceFeedBack"], pattern = "FoBaT"
+    **Output:** [false,true,false,false,false]
+    **Explanation:**
+     "FooBarTest" can be generated like this "Fo" + "o" + "Ba" + "r" + "T" + "est".
+    
+
+
+
+**Note:**
+
+  1. `1 <= queries.length <= 100`
+  2. `1 <= queries[i].length <= 100`
+  3. `1 <= pattern.length <= 100`
+  4. All strings consists only of lower and upper case English letters.
+
+
+
+
+
+
+
+
+
+
+## 1081 - Video Stitching
+~2~  ['Dynamic Programming']
+You are given a series of video clips from a sporting event that lasted `T`
+seconds.  These video clips can be overlapping with each other and have varied
+lengths.
+
+Each video clip `clips[i]` is an interval: it starts at time `clips[i][0]` and
+ends at time `clips[i][1]`.  We can cut these clips into segments freely: for
+example, a clip `[0, 7]` can be cut into segments `[0, 1] + [1, 3] + [3, 7]`.
+
+Return the minimum number of clips needed so that we can cut the clips into
+segments that cover the entire sporting event (`[0, T]`).  If the task is
+impossible, return `-1`.
+
+
+
+**Example 1:**
+
+    
+    
+    **Input:** clips = [[0,2],[4,6],[8,10],[1,9],[1,5],[5,9]], T = 10
+    **Output:** 3
+    **Explanation:**
+    We take the clips [0,2], [8,10], [1,9]; a total of 3 clips.
+    Then, we can reconstruct the sporting event as follows:
+    We cut [1,9] into segments [1,2] + [2,8] + [8,9].
+    Now we have segments [0,2] + [2,8] + [8,10] which cover the sporting event [0, 10].
+    
+
+**Example 2:**
+
+    
+    
+    **Input:** clips = [[0,1],[1,2]], T = 5
+    **Output:** -1
+    **Explanation:**
+    We can 't cover [0,5] with only [0,1] and [0,2].
+    
+
+**Example 3:**
+
+    
+    
+    **Input:** clips = [[0,1],[6,8],[0,2],[5,6],[0,4],[0,3],[6,7],[1,3],[4,7],[1,4],[2,5],[2,6],[3,4],[4,5],[5,7],[6,9]], T = 9
+    **Output:** 3
+    **Explanation:**
+    We can take clips [0,4], [4,7], and [6,9].
+    
+
+**Example 4:**
+
+    
+    
+    **Input:** clips = [[0,4],[2,8]], T = 5
+    **Output:** 2
+    **Explanation:**
+    Notice you can have extra video after the event ends.
+    
+
+
+
+**Note:**
+
+  1. `1 <= clips.length <= 100`
+  2. `0 <= clips[i][0], clips[i][1] <= 100`
+  3. `0 <= T <= 100`
+
+
+
+
+
+
+
+
+
+
+## 1086 - Divisor Game
+~1~  ['Math', 'Dynamic Programming']
+Alice and Bob take turns playing a game, with Alice starting first.
+
+Initially, there is a number `N` on the chalkboard.  On each player's turn,
+that player makes a _move_  consisting of:
+
+  * Choosing any `x` with `0 < x < N` and `N % x == 0`.
+  * Replacing the number `N` on the chalkboard with `N - x`.
+
+Also, if a player cannot make a move, they lose the game.
+
+Return `True` if and only if Alice wins the game, assuming both players play
+optimally.
+
+
+
+**Example 1:**
+
+    
+    
+    **Input:** 2
+    **Output:** true
+    **Explanation:** Alice chooses 1, and Bob has no more moves.
+    
+
+**Example 2:**
+
+    
+    
+    **Input:** 3
+    **Output:** false
+    **Explanation:** Alice chooses 1, Bob chooses 1, and Alice has no more moves.
+    
+
+
+
+**Note:**
+
+  1. `1 <= N <= 1000`
+
+
+
+
+
+
+
+
+
+
+## 1087 - Longest Arithmetic Sequence
+~2~  ['Dynamic Programming']
+Given an array `A` of integers, return the **length** of the longest
+arithmetic subsequence in `A`.
+
+Recall that a _subsequence_ of `A` is a list `A[i_1], A[i_2], ..., A[i_k]`
+with `0 <= i_1 < i_2 < ... < i_k <= A.length - 1`, and that a sequence `B` is
+_arithmetic_ if `B[i+1] - B[i]` are all the same value (for `0 <= i < B.length
+- 1`).
+
+
+
+**Example 1:**
+
+    
+    
+    **Input:** [3,6,9,12]
+    **Output:** 4
+    **Explanation:**
+    The whole array is an arithmetic sequence with steps of length = 3.
+    
+
+**Example 2:**
+
+    
+    
+    **Input:** [9,4,7,2,10]
+    **Output:** 3
+    **Explanation:**
+    The longest arithmetic subsequence is [4,7,10].
+    
+
+**Example 3:**
+
+    
+    
+    **Input:** [20,1,15,3,10,5,8]
+    **Output:** 4
+    **Explanation:**
+    The longest arithmetic subsequence is [20,15,10,5].
+    
+
+
+
+**Note:**
+
+  1. `2 <= A.length <= 2000`
+  2. `0 <= A[i] <= 10000`
+
+
+
+
+
+
+
+
+
+
+## 1092 - Maximum Difference Between Node and Ancestor
+~2~  ['Tree', 'Depth-first Search']
+Given the `root` of a binary tree, find the maximum value `V` for which there
+exists **different** nodes `A` and `B` where `V = |A.val - B.val|` and `A` is
+an ancestor of `B`.
+
+(A node A is an ancestor of B if either: any child of A is equal to B, or any
+child of A is an ancestor of B.)
+
+
+
+**Example 1:**
+
+![](http://i68.tinypic.com/2whqcep.jpg)
+
+    
+    
+    **Input:** [8,3,10,1,6,null,14,null,null,4,7,13]
+    **Output:** 7
+    **Explanation:**
+    We have various ancestor-node differences, some of which are given below :
+    |8 - 3| = 5
+    |3 - 7| = 4
+    |8 - 1| = 7
+    |10 - 13| = 3
+    Among all possible differences, the maximum value of 7 is obtained by |8 - 1| = 7.
+    
+
+
+
+**Note:**
+
+  1. The number of nodes in the tree is between `2` and `5000`.
+  2. Each node will have value between `0` and `100000`.
+
+
+
+
+
+
+
+
+
+
+## 1093 - Recover a Tree From Preorder Traversal
+~3~  ['Tree', 'Depth-first Search']
+We run a preorder depth first search on the `root` of a binary tree.
+
+At each node in this traversal, we output `D` dashes (where `D` is the _depth_
+of this node), then we output the value of this node.    _(If the depth of a
+node is`D`, the depth of its immediate child is `D+1`.  The depth of the root
+node is `0`.)_
+
+If a node has only one child, that child is guaranteed to be the left child.
+
+Given the output `S` of this traversal, recover the tree and return its
+`root`.
+
+
+
+**Example 1:**
+
+**![](https://assets.leetcode.com/uploads/2019/04/08/recover-a-tree-from-
+preorder-traversal.png)**
+
+    
+    
+    **Input:** "1-2--3--4-5--6--7"
+    **Output:** [1,2,5,3,4,6,7]
+    
+
+**Example 2:**
+
+**![](https://assets.leetcode.com/uploads/2019/04/11/screen-
+shot-2019-04-10-at-114101-pm.png)**
+
+    
+    
+    **Input:** "1-2--3---4-5--6---7"
+    **Output:** [1,2,5,3,null,6,null,4,null,7]
+
+
+
+**Example 3:**
+
+![](https://assets.leetcode.com/uploads/2019/04/11/screen-
+shot-2019-04-10-at-114955-pm.png)
+
+    
+    
+    **Input:** "1-401--349---90--88"
+    **Output:** [1,401,null,349,88,90]
+    
+
+
+
+**Note:**
+
+  * The number of nodes in the original tree is between `1` and `1000`.` `
+  * Each node will have a value between `1` and `10^9`.
 
 
 

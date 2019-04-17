@@ -10097,6 +10097,16 @@
         "title": "Online Election",
         "url": "https://leetcode.com/problems/online-election/description/"
     },
+    "948": {
+        "description": "Given an array of integers `nums`, sort the array in ascending order.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:**  [5,2,3,1]\r\n    **Output:** [1,2,3,5]\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** [5,1,1,2,0,0]\r\n    **Output:** [0,0,1,1,2,5]\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= A.length <= 10000`\n  2. `-50000 <= A[i] <= 50000`",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 948,
+        "slug": "sort-an-array",
+        "tags": [],
+        "title": "Sort an Array",
+        "url": "https://leetcode.com/problems/sort-an-array/description/"
+    },
     "949": {
         "description": "A game on an **undirected** graph is played by two players, Mouse and Cat, who\nalternate turns.\n\nThe graph is given as follows: `graph[a]` is a list of all nodes `b` such that\n`ab` is an edge of the graph.\n\nMouse starts at node 1 and goes first, Cat starts at node 2 and goes second,\nand there is a Hole at node 0.\n\nDuring each player's turn, they **must** travel along one  edge of the graph\nthat meets where they are.  For example, if the Mouse is at node `1`, it\n**must** travel to any node in `graph[1]`.\n\nAdditionally, it is not allowed for the Cat to travel to the Hole (node 0.)\n\nThen, the game can end in 3 ways:\n\n  * If ever the Cat occupies the same node as the Mouse, the Cat wins.\n  * If ever the Mouse reaches the Hole, the Mouse wins.\n  * If ever a position is repeated (ie. the players are in the same position as a previous turn, and it is the same player's turn to move), the game is a draw.\n\nGiven a `graph`, and assuming both players play optimally, return `1` if the\ngame is won by Mouse, `2` if the game is won by Cat, and `0` if the game is a\ndraw.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [[2,5],[3],[0,4,5],[1,4,5],[2,3],[0,2,3]]\r\n    **Output:** 0\r\n    **Explanation:**\r\n     4---3---1\r\n    |   |\r\n    2---5\r\n     \\ /\r\n      0\r\n    \n\n\n\n**Note:**\n\n  1. `3 <= graph.length <= 50`\n  2. It is guaranteed that `graph[1]` is non-empty.\n  3. It is guaranteed that `graph[2]` contains a non-zero element.",
         "level": 3,
@@ -11250,5 +11260,301 @@
         ],
         "title": "Max Consecutive Ones III",
         "url": "https://leetcode.com/problems/max-consecutive-ones-iii/description/"
+    },
+    "1047": {
+        "description": "Given an array `A` of integers, we **must**  modify the array in the following\nway: we choose an `i` and replace `A[i]` with `-A[i]`, and we repeat this\nprocess `K` times in total.  (We may choose the same index `i` multiple\ntimes.)\n\nReturn the largest possible sum of the array after modifying it in this way.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** A = [4,2,3], K = 1\r\n    **Output:** 5\r\n    **Explanation:** Choose indices (1,) and A becomes [4,-2,3].\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** A = [3,-1,0,2], K = 3\r\n    **Output:** 6\r\n    **Explanation:** Choose indices (1, 2, 2) and A becomes [3,1,0,2].\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** A = [2,-3,-1,5,-4], K = 2\r\n    **Output:** 13\r\n    **Explanation:** Choose indices (1, 4) and A becomes [2,3,-1,5,4].\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= A.length <= 10000`\n  2. `1 <= K <= 10000`\n  3. `-100 <= A[i] <= 100`",
+        "level": 1,
+        "paid_only": false,
+        "question_id": 1047,
+        "slug": "maximize-sum-of-array-after-k-negations",
+        "tags": [
+            "Greedy"
+        ],
+        "title": "Maximize Sum Of Array After K Negations",
+        "url": "https://leetcode.com/problems/maximize-sum-of-array-after-k-negations/description/"
+    },
+    "1048": {
+        "description": "Normally, the factorial of a positive integer `n` is the product of all\npositive integers less than or equal to `n`.  For example, `factorial(10) = 10\n* 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1`.\n\nWe instead make a _clumsy factorial:_  using the integers in decreasing order,\nwe swap out the multiply operations for a fixed rotation of operations:\nmultiply (*), divide (/), add (+) and subtract (-) in this order.\n\nFor example, `clumsy(10) = 10 * 9 / 8 + 7 - 6 * 5 / 4 + 3 - 2 * 1`.  However,\nthese operations are still applied using the usual order of operations of\narithmetic: we do all multiplication and division steps before any addition or\nsubtraction steps, and multiplication and division steps are processed left to\nright.\n\nAdditionally, the division that we use is _floor division_  such that `10 * 9\n/ 8` equals `11`.  This guarantees the result is an integer.\n\n`Implement the clumsy` function as defined above: given an integer `N`, it\nreturns the clumsy factorial of `N`.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** 4\r\n    **Output:**  7\r\n    **Explanation:** 7 = 4 * 3 / 2 + 1\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** 10\r\n    **Output:** 12\r\n    **Explanation:** 12 = 10 * 9 / 8 + 7 - 6 * 5 / 4 + 3 - 2 * 1\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= N <= 10000`\n  2. `-2^31 <= answer <= 2^31 - 1`  (The answer is guaranteed to fit within a 32-bit integer.)",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 1048,
+        "slug": "clumsy-factorial",
+        "tags": [
+            "Math"
+        ],
+        "title": "Clumsy Factorial",
+        "url": "https://leetcode.com/problems/clumsy-factorial/description/"
+    },
+    "1049": {
+        "description": "In a row of dominoes, `A[i]` and `B[i]` represent the top and bottom halves of\nthe `i`-th domino.  (A domino is a tile with two numbers from 1 to 6 - one on\neach half of the tile.)\n\nWe may rotate the `i`-th domino, so that `A[i]` and `B[i]` swap values.\n\nReturn the minimum number of rotations so that all the values in `A` are the\nsame, or all the values in `B` are the same.\n\nIf it cannot be done, return `-1`.\n\n\n\n**Example 1:**\n\n![](https://assets.leetcode.com/uploads/2019/03/08/domino.png)\n\n    \n    \r\n    **Input:** A = [2,1,2,4,2,2], B = [5,2,6,2,3,2]\r\n    **Output:** 2\r\n    **Explanation:**\r\n    The first figure represents the dominoes as given by A and B: before we do any rotations.\r\n    If we rotate the second and fourth dominoes, we can make every value in the top row equal to 2, as indicated by the second figure.\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** A = [3,5,1,2,3], B = [3,6,3,3,4]\r\n    **Output:** -1\r\n    **Explanation:**\r\n    In this case, it is not possible to rotate the dominoes to make one row of values equal.\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= A[i], B[i] <= 6`\n  2. `2 <= A.length == B.length <= 20000`",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 1049,
+        "slug": "minimum-domino-rotations-for-equal-row",
+        "tags": [
+            "Array",
+            "Greedy"
+        ],
+        "title": "Minimum Domino Rotations For Equal Row",
+        "url": "https://leetcode.com/problems/minimum-domino-rotations-for-equal-row/description/"
+    },
+    "1050": {
+        "description": "Return the root node of a binary **search** tree that matches the given\n`preorder` traversal.\n\n_(Recall that a binary search tree  is a binary tree where for every node, any\ndescendant of `node.left` has a value `<` `node.val`, and any descendant of\n`node.right` has a value `>` `node.val`.  Also recall that a preorder\ntraversal displays the value of the `node` first, then traverses `node.left`,\nthen traverses `node.right`.)_\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [8,5,1,7,10,12]\r\n    **Output:** [8,5,10,1,7,null,12]\r\n    ![](https://assets.leetcode.com/uploads/2019/03/06/1266.png)\r\n    \n\n\n\n**Note:**  \n\n  1. `1 <= preorder.length <= 100`\n  2. The values of `preorder` are distinct.",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 1050,
+        "slug": "construct-binary-search-tree-from-preorder-traversal",
+        "tags": [
+            "Tree"
+        ],
+        "title": "Construct Binary Search Tree from Preorder Traversal",
+        "url": "https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/description/"
+    },
+    "1054": {
+        "description": "Every non-negative integer `N` has a binary representation.  For example, `5`\ncan be represented as `\"101\"` in binary, `11` as `\"1011\"` in binary, and so\non.  Note that except for `N = 0`, there are no leading zeroes in any binary\nrepresentation.\n\nThe _complement_  of a binary representation is the number in binary you get\nwhen changing every `1` to a `0` and `0` to a `1`.  For example, the\ncomplement of `\"101\"` in binary is `\"010\"` in binary.\n\nFor a given number `N` in base-10, return the complement of it's binary\nrepresentation as a base-10 integer.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** 5\r\n    **Output:** 2\r\n    **Explanation:** 5 is \"101\" in binary, with complement \"010\" in binary, which is 2 in base-10.\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** 7\r\n    **Output:** 0\r\n    **Explanation:** 7 is \"111\" in binary, with complement \"000\" in binary, which is 0 in base-10.\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** 10\r\n    **Output:** 5\r\n    **Explanation:** 10 is \"1010\" in binary, with complement \"0101\" in binary, which is 5 in base-10.\r\n    \n\n\n\n**Note:**\n\n  1. `0 <= N < 10^9`",
+        "level": 1,
+        "paid_only": false,
+        "question_id": 1054,
+        "slug": "complement-of-base-10-integer",
+        "tags": [
+            "Math"
+        ],
+        "title": "Complement of Base 10 Integer",
+        "url": "https://leetcode.com/problems/complement-of-base-10-integer/description/"
+    },
+    "1055": {
+        "description": "In a list of songs, the `i`-th song has a duration of `time[i]` seconds.\n\nReturn the number of pairs of songs for which their total duration in seconds\nis divisible by `60`.  Formally, we want the number of indices `i < j` with\n`(time[i] + time[j]) % 60 == 0`.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [30,20,150,100,40]\r\n    **Output:** 3\r\n    **Explanation:** Three pairs have a total duration divisible by 60:\r\n    (time[0] = 30, time[2] = 150): total duration 180\r\n    (time[1] = 20, time[3] = 100): total duration 120\r\n    (time[1] = 20, time[4] = 40): total duration 60\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** [60,60,60]\r\n    **Output:** 3\r\n    **Explanation:** All three pairs have a total duration of 120, which is divisible by 60.\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= time.length <= 60000`\n  2. `1 <= time[i] <= 500`",
+        "level": 1,
+        "paid_only": false,
+        "question_id": 1055,
+        "slug": "pairs-of-songs-with-total-durations-divisible-by-60",
+        "tags": [
+            "Array"
+        ],
+        "title": "Pairs of Songs With Total Durations Divisible by 60",
+        "url": "https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/description/"
+    },
+    "1056": {
+        "description": "A conveyor belt has packages that must be shipped from one port to another\nwithin `D` days.\n\nThe `i`-th package on the conveyor belt has a weight of `weights[i]`.  Each\nday, we load the ship with packages on the conveyor belt (in the order given\nby `weights`). We may not load more weight than the maximum weight capacity of\nthe ship.\n\nReturn the least weight capacity of the ship that will result in all the\npackages on the conveyor belt being shipped within `D` days.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** weights = [1,2,3,4,5,6,7,8,9,10], D = 5\r\n    **Output:** 15\r\n    **Explanation:**\r\n    A ship capacity of 15 is the minimum to ship all the packages in 5 days like this:\r\n    1st day: 1, 2, 3, 4, 5\r\n    2nd day: 6, 7\r\n    3rd day: 8\r\n    4th day: 9\r\n    5th day: 10\r\n    \r\n    Note that the cargo must be shipped in the order given, so using a ship of capacity 14 and splitting the packages into parts like (2, 3, 4, 5), (1, 6, 7), (8), (9), (10) is not allowed. \r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** weights = [3,2,2,4,1,4], D = 3\r\n    **Output:** 6\r\n    **Explanation:**\r\n    A ship capacity of 6 is the minimum to ship all the packages in 3 days like this:\r\n    1st day: 3, 2\r\n    2nd day: 2, 4\r\n    3rd day: 1, 4\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** weights = [1,2,3,1,1], D = 4\r\n    **Output:** 3\r\n    **Explanation:**\r\n    1st day: 1\r\n    2nd day: 2\r\n    3rd day: 3\r\n    4th day: 1, 1\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= D <= weights.length <= 50000`\n  2. `1 <= weights[i] <= 500`",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 1056,
+        "slug": "capacity-to-ship-packages-within-d-days",
+        "tags": [
+            "Array",
+            "Binary Search"
+        ],
+        "title": "Capacity To Ship Packages Within D Days",
+        "url": "https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/description/"
+    },
+    "1057": {
+        "description": "Given a positive integer `N`, return the number of positive integers less than\nor equal to `N` that have at least 1 repeated digit.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** 20\r\n    **Output:** 1\r\n    **Explanation:** The only positive number (<= 20) with at least 1 repeated digit is 11.\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** 100\r\n    **Output:** 10\r\n    **Explanation:** The positive numbers (<= 100) with atleast 1 repeated digit are 11, 22, 33, 44, 55, 66, 77, 88, 99, and 100.\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** 1000\r\n    **Output:** 262\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= N <= 10^9`",
+        "level": 3,
+        "paid_only": false,
+        "question_id": 1057,
+        "slug": "numbers-with-repeated-digits",
+        "tags": [
+            "Math",
+            "Dynamic Programming"
+        ],
+        "title": "Numbers With Repeated Digits",
+        "url": "https://leetcode.com/problems/numbers-with-repeated-digits/description/"
+    },
+    "1062": {
+        "description": "Given an array `A` of integers, return `true` if and only if we can partition\nthe array into three **non-empty** parts with equal sums.\n\nFormally, we can partition the array if we can find indexes `i+1 < j` with\n`(A[0] + A[1] + ... + A[i] == A[i+1] + A[i+2] + ... + A[j-1] == A[j] + A[j-1]\n+ ... + A[A.length - 1])`\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [0,2,1,-6,6,-7,9,1,2,0,1]\r\n    **Output:** true\r\n    **Explanation:** 0 + 2 + 1 = -6 + 6 - 7 + 9 + 1 = 2 + 0 + 1\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** [0,2,1,-6,6,7,9,-1,2,0,1]\r\n    **Output:** false\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** [3,3,6,5,-2,2,5,1,-9,4]\r\n    **Output:** true\r\n    **Explanation:** 3 + 3 = 6 = 5 - 2 + 2 + 5 + 1 - 9 + 4\r\n    \n\n\n\n**Note:**\n\n  1. `3 <= A.length <= 50000`\n  2. `-10000 <= A[i] <= 10000`",
+        "level": 1,
+        "paid_only": false,
+        "question_id": 1062,
+        "slug": "partition-array-into-three-parts-with-equal-sum",
+        "tags": [
+            "Array"
+        ],
+        "title": "Partition Array Into Three Parts With Equal Sum",
+        "url": "https://leetcode.com/problems/partition-array-into-three-parts-with-equal-sum/description/"
+    },
+    "1063": {
+        "description": "Given an array `A` of positive integers, `A[i]` represents the value of the\n`i`-th sightseeing spot, and two sightseeing spots `i` and `j` have distance\n`j - i` between them.\n\nThe _score_  of a pair (`i < j`) of sightseeing spots is (`A[i] + A[j] + i -\nj)` : the sum of the values of the sightseeing spots, **minus** the distance\nbetween them.\n\nReturn the maximum score of a pair of sightseeing spots.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [8,1,5,2,6]\r\n    **Output:** 11\r\n    **Explanation:** i = 0, j = 2, A[i] + A[j] + i - j = 8 + 5 + 0 - 2 = 11\r\n    \n\n\n\n**Note:**\n\n  1. `2 <= A.length <= 50000`\n  2. `1 <= A[i] <= 1000`",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 1063,
+        "slug": "best-sightseeing-pair",
+        "tags": [
+            "Array"
+        ],
+        "title": "Best Sightseeing Pair",
+        "url": "https://leetcode.com/problems/best-sightseeing-pair/description/"
+    },
+    "1064": {
+        "description": "Given a positive integer `K`, you need find the **smallest**  positive integer\n`N` such that `N` is divisible by `K`, and `N` only contains the digit **1**.\n\nReturn the length of `N`.  If there is no such `N`, return -1.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** 1\r\n    **Output:** 1\r\n    **Explanation:** The smallest answer is N = 1, which has length 1.\n\n**Example 2:**\n\n    \n    \r\n    **Input:** 2\r\n    **Output:** -1\r\n    **Explanation:** There is no such positive integer N divisible by 2.\n\n**Example 3:**\n\n    \n    \r\n    **Input:** 3\r\n    **Output:** 3\r\n    **Explanation:** The smallest answer is N = 111, which has length 3.\n\n\n\n**Note:**\n\n  * `1 <= K <= 10^5`",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 1064,
+        "slug": "smallest-integer-divisible-by-k",
+        "tags": [
+            "Math"
+        ],
+        "title": "Smallest Integer Divisible by K",
+        "url": "https://leetcode.com/problems/smallest-integer-divisible-by-k/description/"
+    },
+    "1065": {
+        "description": "Given a binary string `S` (a string consisting only of '0' and '1's) and a\npositive integer `N`, return true if and only if for every integer X from 1 to\nN, the binary representation of X is a substring of S.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** S = \"0110\", N = 3\r\n    **Output:** true\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** S = \"0110\", N = 4\r\n    **Output:** false\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= S.length <= 1000`\n  2. `1 <= N <= 10^9`",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 1065,
+        "slug": "binary-string-with-substrings-representing-1-to-n",
+        "tags": [
+            "String"
+        ],
+        "title": "Binary String With Substrings Representing 1 To N",
+        "url": "https://leetcode.com/problems/binary-string-with-substrings-representing-1-to-n/description/"
+    },
+    "1070": {
+        "description": "Given a number `N`, return a string consisting of `\"0\"`s and `\"1\"`s that\nrepresents its value in base `**-2**` (negative two).\n\nThe returned string must have no leading zeroes, unless the string is `\"0\"`.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** 2\r\n    **Output:** \"110\"\r\n    **Explantion:** (-2) ^ 2 + (-2) ^ 1 = 2\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** 3\r\n    **Output:** \"111\"\r\n    **Explantion:** (-2) ^ 2 + (-2) ^ 1 + (-2) ^ 0 = 3\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** 4\r\n    **Output:** \"100\"\r\n    **Explantion:** (-2) ^ 2 = 4\r\n    \n\n\n\n**Note:**\n\n  1. `0 <= N <= 10^9`",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 1070,
+        "slug": "convert-to-base-2",
+        "tags": [
+            "Math"
+        ],
+        "title": "Convert to Base -2",
+        "url": "https://leetcode.com/problems/convert-to-base-2/description/"
+    },
+    "1071": {
+        "description": "Given an array `A` of `0`s and `1`s, consider `N_i`: the i-th subarray from\n`A[0]` to `A[i]` interpreted as a binary number (from most-significant-bit to\nleast-significant-bit.)\n\nReturn a list of booleans `answer`, where `answer[i]` is `true` if and only if\n`N_i` is divisible by 5.\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [0,1,1]\r\n    **Output:** [true,false,false]\r\n    **Explanation:**\r\n    The input numbers in binary are 0, 01, 011; which are 0, 1, and 3 in base-10.  Only the first number is divisible by 5, so answer[0] is true.\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** [1,1,1]\r\n    **Output:** [false,false,false]\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** [0,1,1,1,1,1]\r\n    **Output:** [true,false,false,false,true,false]\r\n    \n\n**Example 4:**\n\n    \n    \r\n    **Input:** [1,1,1,0,1]\r\n    **Output:** [false,false,false,false,false]\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= A.length <= 30000`\n  2. `A[i]` is `0` or `1`",
+        "level": 1,
+        "paid_only": false,
+        "question_id": 1071,
+        "slug": "binary-prefix-divisible-by-5",
+        "tags": [
+            "Array"
+        ],
+        "title": "Binary Prefix Divisible By 5",
+        "url": "https://leetcode.com/problems/binary-prefix-divisible-by-5/description/"
+    },
+    "1072": {
+        "description": "We are given a linked list with `head` as the first node.  Let's number the\nnodes in the list: `node_1, node_2, node_3, ...` etc.\n\nEach node may have a _next larger_ **value** : for `node_i`,\n`next_larger(node_i)` is the `node_j.val` such that `j > i`, `node_j.val >\nnode_i.val`, and `j` is the smallest possible choice.  If such a `j` does not\nexist, the next larger value is `0`.\n\nReturn an array of integers `answer`, where `answer[i] =\nnext_larger(node_{i+1})`.\n\nNote that in the example **inputs**  (not outputs) below, arrays such as\n`[2,1,5]` represent the serialization of a linked list with a head node value\nof 2, second node value of 1, and third node value of 5.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [2,1,5]\r\n    **Output:** [5,5,0]\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** [2,7,4,3,5]\r\n    **Output:** [7,0,5,5,0]\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** [1,7,5,1,9,2,5,1]\r\n    **Output:** [7,9,9,9,0,5,0,0]\r\n    \n\n\n\n**Note:**\n\n  1. ` 1 <= node.val <= 10^9` for each node in the linked list.\n  2. The given list has length in the range `[0, 10000]`.",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 1072,
+        "slug": "next-greater-node-in-linked-list",
+        "tags": [
+            "Linked List",
+            "Stack"
+        ],
+        "title": "Next Greater Node In Linked List",
+        "url": "https://leetcode.com/problems/next-greater-node-in-linked-list/description/"
+    },
+    "1073": {
+        "description": "Given a 2D array `A`, each cell is 0 (representing sea) or 1 (representing\nland)\n\nA move consists of walking from one land square 4-directionally to another\nland square, or off the boundary of the grid.\n\nReturn the number of land squares in the grid for which we **cannot** walk off\nthe boundary of the grid in any number of moves.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [[0,0,0,0],[1,0,1,0],[0,1,1,0],[0,0,0,0]]\r\n    **Output:** 3\r\n    **Explanation:**\r\n    There are three 1s that are enclosed by 0s, and one 1 that isn 't enclosed because its on the boundary.\n\n**Example 2:**\n\n    \n    \r\n    **Input:** [[0,1,1,0],[0,0,1,0],[0,0,1,0],[0,0,0,0]]\r\n    **Output:** 0\r\n    **Explanation:**\r\n    All 1s are either on the boundary or can reach the boundary.\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= A.length <= 500`\n  2. `1 <= A[i].length <= 500`\n  3. `0 <= A[i][j] <= 1`\n  4. All rows have the same size.",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 1073,
+        "slug": "number-of-enclaves",
+        "tags": [
+            "Depth-first Search"
+        ],
+        "title": "Number of Enclaves",
+        "url": "https://leetcode.com/problems/number-of-enclaves/description/"
+    },
+    "1078": {
+        "description": "A valid parentheses string is either empty `(\"\")`, `\"(\" + A + \")\"`, or `A +\nB`, where `A` and `B` are valid parentheses strings, and `+` represents string\nconcatenation.  For example, `\"\"`, `\"()\"`, `\"(())()\"`, and `\"(()(()))\"` are\nall valid parentheses strings.\n\nA valid parentheses string `S` is **primitive** if it is nonempty, and there\ndoes not exist a way to split it into `S = A+B`, with `A` and `B` nonempty\nvalid parentheses strings.\n\nGiven a valid parentheses string `S`, consider its primitive decomposition: `S\n= P_1 + P_2 + ... + P_k`, where `P_i` are primitive valid parentheses strings.\n\nReturn `S` after removing the outermost parentheses of every primitive string\nin the primitive decomposition of `S`.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** \"(()())(())\"\r\n    **Output:** \"()()()\"\r\n    **Explanation:**\r\n    The input string is  \"(()())(())\", with primitive decomposition \"(()())\" + \"(())\".\r\n    After removing outer parentheses of each part, this is \"()()\" + \"()\" = \"()()()\".\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** \"(()())(())(()(()))\"\r\n    **Output:** \"()()()()(())\"\r\n    **Explanation:**\r\n    The input string is  \"(()())(())(()(()))\", with primitive decomposition \"(()())\" + \"(())\" + \"(()(()))\".\r\n    After removing outer parentheses of each part, this is \"()()\" + \"()\" + \"()(())\" = \"()()()()(())\".\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** \"()()\"\r\n    **Output:** \"\"\r\n    **Explanation:**\r\n    The input string is  \"()()\", with primitive decomposition \"()\" + \"()\".\r\n    After removing outer parentheses of each part, this is \"\" + \"\" = \"\".\r\n    \n\n\n\n**Note:**\n\n  1. `S.length <= 10000`\n  2. `S[i]` is `\"(\"` or `\")\"`\n  3. `S` is a valid parentheses string",
+        "level": 1,
+        "paid_only": false,
+        "question_id": 1078,
+        "slug": "remove-outermost-parentheses",
+        "tags": [
+            "Stack"
+        ],
+        "title": "Remove Outermost Parentheses",
+        "url": "https://leetcode.com/problems/remove-outermost-parentheses/description/"
+    },
+    "1079": {
+        "description": "Given a binary tree, each node has value `0` or `1`.  Each root-to-leaf path\nrepresents a binary number starting with the most significant bit.  For\nexample, if the path is `0 -> 1 -> 1 -> 0 -> 1`, then this could represent\n`01101` in binary, which is `13`.\n\nFor all leaves in the tree, consider the numbers represented by the path from\nthe root to that leaf.\n\nReturn the sum of these numbers.\n\n\n\n**Example 1:**\n\n![](https://assets.leetcode.com/uploads/2019/04/04/sum-of-root-to-leaf-binary-\nnumbers.png)\n\n    \n    \r\n    **Input:** [1,0,1,0,1,0,1]\r\n    **Output:** 22\r\n    **Explanation:** (100) + (101) + (110) + (111) = 4 + 5 + 6 + 7 = 22\r\n    \n\n\n\n**Note:**\n\n  1. The number of nodes in the tree is between `1` and `1000`.\n  2. node.val is `0` or `1`.\n  3. The answer will not exceed `2^31 - 1`.",
+        "level": 1,
+        "paid_only": false,
+        "question_id": 1079,
+        "slug": "sum-of-root-to-leaf-binary-numbers",
+        "tags": [
+            "Tree"
+        ],
+        "title": "Sum of Root To Leaf Binary Numbers",
+        "url": "https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/description/"
+    },
+    "1080": {
+        "description": "A query word matches a given `pattern` if we can insert **lowercase** letters\nto the pattern word so that it equals the `query`. (We may insert each\ncharacter at any position, and may insert 0 characters.)\n\nGiven a list of `queries`, and a `pattern`, return an `answer` list of\nbooleans, where `answer[i]` is true if and only if `queries[i]` matches the\n`pattern`.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** queries = [\"FooBar\",\"FooBarTest\",\"FootBall\",\"FrameBuffer\",\"ForceFeedBack\"], pattern = \"FB\"\r\n    **Output:** [true,false,true,true,false]\r\n    **Explanation:**\r\n     \"FooBar\" can be generated like this \"F\" + \"oo\" + \"B\" + \"ar\".\r\n    \"FootBall\" can be generated like this \"F\" + \"oot\" + \"B\" + \"all\".\r\n    \"FrameBuffer\" can be generated like this \"F\" + \"rame\" + \"B\" + \"uffer\".\n\n**Example 2:**\n\n    \n    \r\n    **Input:** queries = [\"FooBar\",\"FooBarTest\",\"FootBall\",\"FrameBuffer\",\"ForceFeedBack\"], pattern = \"FoBa\"\r\n    **Output:** [true,false,true,false,false]\r\n    **Explanation:**\r\n     \"FooBar\" can be generated like this \"Fo\" + \"o\" + \"Ba\" + \"r\".\r\n    \"FootBall\" can be generated like this \"Fo\" + \"ot\" + \"Ba\" + \"ll\".\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** queries = [\"FooBar\",\"FooBarTest\",\"FootBall\",\"FrameBuffer\",\"ForceFeedBack\"], pattern = \"FoBaT\"\r\n    **Output:** [false,true,false,false,false]\r\n    **Explanation:**\r\n     \"FooBarTest\" can be generated like this \"Fo\" + \"o\" + \"Ba\" + \"r\" + \"T\" + \"est\".\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= queries.length <= 100`\n  2. `1 <= queries[i].length <= 100`\n  3. `1 <= pattern.length <= 100`\n  4. All strings consists only of lower and upper case English letters.",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 1080,
+        "slug": "camelcase-matching",
+        "tags": [
+            "String",
+            "Trie"
+        ],
+        "title": "Camelcase Matching",
+        "url": "https://leetcode.com/problems/camelcase-matching/description/"
+    },
+    "1081": {
+        "description": "You are given a series of video clips from a sporting event that lasted `T`\nseconds.  These video clips can be overlapping with each other and have varied\nlengths.\n\nEach video clip `clips[i]` is an interval: it starts at time `clips[i][0]` and\nends at time `clips[i][1]`.  We can cut these clips into segments freely: for\nexample, a clip `[0, 7]` can be cut into segments `[0, 1] + [1, 3] + [3, 7]`.\n\nReturn the minimum number of clips needed so that we can cut the clips into\nsegments that cover the entire sporting event (`[0, T]`).  If the task is\nimpossible, return `-1`.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** clips = [[0,2],[4,6],[8,10],[1,9],[1,5],[5,9]], T = 10\r\n    **Output:** 3\r\n    **Explanation:**\r\n    We take the clips [0,2], [8,10], [1,9]; a total of 3 clips.\r\n    Then, we can reconstruct the sporting event as follows:\r\n    We cut [1,9] into segments [1,2] + [2,8] + [8,9].\r\n    Now we have segments [0,2] + [2,8] + [8,10] which cover the sporting event [0, 10].\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** clips = [[0,1],[1,2]], T = 5\r\n    **Output:** -1\r\n    **Explanation:**\r\n    We can 't cover [0,5] with only [0,1] and [0,2].\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** clips = [[0,1],[6,8],[0,2],[5,6],[0,4],[0,3],[6,7],[1,3],[4,7],[1,4],[2,5],[2,6],[3,4],[4,5],[5,7],[6,9]], T = 9\r\n    **Output:** 3\r\n    **Explanation:**\r\n    We can take clips [0,4], [4,7], and [6,9].\r\n    \n\n**Example 4:**\n\n    \n    \r\n    **Input:** clips = [[0,4],[2,8]], T = 5\r\n    **Output:** 2\r\n    **Explanation:**\r\n    Notice you can have extra video after the event ends.\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= clips.length <= 100`\n  2. `0 <= clips[i][0], clips[i][1] <= 100`\n  3. `0 <= T <= 100`",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 1081,
+        "slug": "video-stitching",
+        "tags": [
+            "Dynamic Programming"
+        ],
+        "title": "Video Stitching",
+        "url": "https://leetcode.com/problems/video-stitching/description/"
+    },
+    "1086": {
+        "description": "Alice and Bob take turns playing a game, with Alice starting first.\n\nInitially, there is a number `N` on the chalkboard.  On each player's turn,\nthat player makes a _move_  consisting of:\n\n  * Choosing any `x` with `0 < x < N` and `N % x == 0`.\n  * Replacing the number `N` on the chalkboard with `N - x`.\n\nAlso, if a player cannot make a move, they lose the game.\n\nReturn `True` if and only if Alice wins the game, assuming both players play\noptimally.\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** 2\r\n    **Output:** true\r\n    **Explanation:** Alice chooses 1, and Bob has no more moves.\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** 3\r\n    **Output:** false\r\n    **Explanation:** Alice chooses 1, Bob chooses 1, and Alice has no more moves.\r\n    \n\n\n\n**Note:**\n\n  1. `1 <= N <= 1000`",
+        "level": 1,
+        "paid_only": false,
+        "question_id": 1086,
+        "slug": "divisor-game",
+        "tags": [
+            "Math",
+            "Dynamic Programming"
+        ],
+        "title": "Divisor Game",
+        "url": "https://leetcode.com/problems/divisor-game/description/"
+    },
+    "1087": {
+        "description": "Given an array `A` of integers, return the **length** of the longest\narithmetic subsequence in `A`.\n\nRecall that a _subsequence_ of `A` is a list `A[i_1], A[i_2], ..., A[i_k]`\nwith `0 <= i_1 < i_2 < ... < i_k <= A.length - 1`, and that a sequence `B` is\n_arithmetic_ if `B[i+1] - B[i]` are all the same value (for `0 <= i < B.length\n- 1`).\n\n\n\n**Example 1:**\n\n    \n    \r\n    **Input:** [3,6,9,12]\r\n    **Output:** 4\r\n    **Explanation:**\r\n    The whole array is an arithmetic sequence with steps of length = 3.\r\n    \n\n**Example 2:**\n\n    \n    \r\n    **Input:** [9,4,7,2,10]\r\n    **Output:** 3\r\n    **Explanation:**\r\n    The longest arithmetic subsequence is [4,7,10].\r\n    \n\n**Example 3:**\n\n    \n    \r\n    **Input:** [20,1,15,3,10,5,8]\r\n    **Output:** 4\r\n    **Explanation:**\r\n    The longest arithmetic subsequence is [20,15,10,5].\r\n    \n\n\n\n**Note:**\n\n  1. `2 <= A.length <= 2000`\n  2. `0 <= A[i] <= 10000`",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 1087,
+        "slug": "longest-arithmetic-sequence",
+        "tags": [
+            "Dynamic Programming"
+        ],
+        "title": "Longest Arithmetic Sequence",
+        "url": "https://leetcode.com/problems/longest-arithmetic-sequence/description/"
+    },
+    "1092": {
+        "description": "Given the `root` of a binary tree, find the maximum value `V` for which there\nexists **different** nodes `A` and `B` where `V = |A.val - B.val|` and `A` is\nan ancestor of `B`.\n\n(A node A is an ancestor of B if either: any child of A is equal to B, or any\nchild of A is an ancestor of B.)\n\n\n\n**Example 1:**\n\n![](http://i68.tinypic.com/2whqcep.jpg)\n\n    \n    \r\n    **Input:** [8,3,10,1,6,null,14,null,null,4,7,13]\r\n    **Output:** 7\r\n    **Explanation:**\r\n    We have various ancestor-node differences, some of which are given below :\r\n    |8 - 3| = 5\r\n    |3 - 7| = 4\r\n    |8 - 1| = 7\r\n    |10 - 13| = 3\r\n    Among all possible differences, the maximum value of 7 is obtained by |8 - 1| = 7.\r\n    \n\n\n\n**Note:**\n\n  1. The number of nodes in the tree is between `2` and `5000`.\n  2. Each node will have value between `0` and `100000`.",
+        "level": 2,
+        "paid_only": false,
+        "question_id": 1092,
+        "slug": "maximum-difference-between-node-and-ancestor",
+        "tags": [
+            "Tree",
+            "Depth-first Search"
+        ],
+        "title": "Maximum Difference Between Node and Ancestor",
+        "url": "https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/description/"
+    },
+    "1093": {
+        "description": "We run a preorder depth first search on the `root` of a binary tree.\n\nAt each node in this traversal, we output `D` dashes (where `D` is the _depth_\nof this node), then we output the value of this node.    _(If the depth of a\nnode is`D`, the depth of its immediate child is `D+1`.  The depth of the root\nnode is `0`.)_\n\nIf a node has only one child, that child is guaranteed to be the left child.\n\nGiven the output `S` of this traversal, recover the tree and return its\n`root`.\n\n\n\n**Example 1:**\n\n**![](https://assets.leetcode.com/uploads/2019/04/08/recover-a-tree-from-\npreorder-traversal.png)**\n\n    \n    \r\n    **Input:** \"1-2--3--4-5--6--7\"\r\n    **Output:** [1,2,5,3,4,6,7]\r\n    \n\n**Example 2:**\n\n**![](https://assets.leetcode.com/uploads/2019/04/11/screen-\nshot-2019-04-10-at-114101-pm.png)**\n\n    \n    \r\n    **Input:** \"1-2--3---4-5--6---7\"\r\n    **Output:** [1,2,5,3,null,6,null,4,null,7]\n\n\n\n**Example 3:**\n\n![](https://assets.leetcode.com/uploads/2019/04/11/screen-\nshot-2019-04-10-at-114955-pm.png)\n\n    \n    \r\n    **Input:** \"1-401--349---90--88\"\r\n    **Output:** [1,401,null,349,88,90]\r\n    \n\n\n\n**Note:**\n\n  * The number of nodes in the original tree is between `1` and `1000`.` `\n  * Each node will have a value between `1` and `10^9`.",
+        "level": 3,
+        "paid_only": false,
+        "question_id": 1093,
+        "slug": "recover-a-tree-from-preorder-traversal",
+        "tags": [
+            "Tree",
+            "Depth-first Search"
+        ],
+        "title": "Recover a Tree From Preorder Traversal",
+        "url": "https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/description/"
     }
 }
