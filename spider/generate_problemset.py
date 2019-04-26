@@ -2,11 +2,16 @@ import json
 import os
 import urllib
 
+import html2text
+
 from leetcode_spider import DATA_FILE
+
+from util import to_format
 
 PROBLEMSET_DIR = '../problems/'
 
 README_TEMPLATE = open('README_TEMPLATE.md').read()
+SOLUTION_TEMPLATE = open('SOLUTION_TEMPLATE.md').read()
 
 DIFFICULTIES = {
     1: 'Easy',
@@ -29,18 +34,27 @@ def generate_problemset(data):
         dirs.append(dir_name)
 
         problem_dir = os.path.join(PROBLEMSET_DIR, dir_name)
-        if os.path.exists(problem_dir):
-            continue
-
-        os.makedirs(problem_dir)
+        if not os.path.exists(problem_dir):
+            os.makedirs(problem_dir)
 
         readme_path = os.path.join(problem_dir, 'README.md')
-        if os.path.exists(readme_path):
-            continue
 
         difficulty = DIFFICULTIES[info['level']]
         tags = ', '.join(info['tags'])
-        desc = info['description']
+        if info['json']:
+            desc = info['description']
+        else:
+            cn = html2text.html2text(info['description']).strip()
+            cn = to_format(cn)
+            desc = '```\n{}```'.format(cn)
+
+        similar_problems = ''
+        for prob in info['similar_problems']:
+            line = '- [{}] [{}]({})\n\n'.format(
+                prob['difficulty'], prob['title'], prob['titleSlug']
+            )
+            similar_problems += line
+
         url = info['url']
         readme = README_TEMPLATE.format(
             problem_id=problem_id,
@@ -48,9 +62,26 @@ def generate_problemset(data):
             difficulty=difficulty,
             tags=tags,
             desc=desc,
-            url=url)
+            similar=similar_problems,
+            url=url
+        )
         with open(readme_path, 'w') as g:
             g.write(readme)
+
+        if info['solution']:
+            solution = SOLUTION_TEMPLATE.format(
+                problem_id=problem_id,
+                title=title,
+                difficulty=difficulty,
+                tags=tags,
+                desc=desc,
+                similar=similar_problems,
+                solution=info['solution'],
+                url=url
+            )
+            solution_path = os.path.join(problem_dir, 'leetcode-solution.md')
+            with open(solution_path, 'w') as g:
+                g.write(solution)
 
         changed = True
 
