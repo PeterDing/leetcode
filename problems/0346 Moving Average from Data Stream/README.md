@@ -10,6 +10,7 @@ Easy |  | [Leetcode](https://leetcode.com/problems/moving-average-from-data-stre
 ```
 Given a stream of integers and a window size, calculate the moving average of
 all integers in the sliding window.
+
 For example,
 MovingAverage m = new MovingAverage(3);
 m.next(1) = 1
