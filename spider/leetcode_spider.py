@@ -13,28 +13,28 @@ from hide_problem import get_hide_problems
 
 from util import to_format
 
-
 DATA_FILE = '../data/leetcode_problems.json'
-OUT_FILE = '../data/leetcode_problems.txt'
+OUT_FILE = '../data/leetcode_problems.md'
 
 API_URL = 'https://leetcode.com/graphql'
-DATA = "{\"operationName\":\"question\",\"variables\":{\"titleSlug\":\"%s\"},\"query\":\"query question($titleSlug: String!) {\\n  question(titleSlug: $titleSlug) {\\n    questionId\\n    questionFrontendId\\n    boundTopicId\\n    title\\n    content\\n    translatedTitle\\n    translatedContent\\n    isPaidOnly\\n    difficulty\\n    likes\\n    dislikes\\n    isLiked\\n    similarQuestions\\n    contributors {\\n      username\\n      profileUrl\\n      avatarUrl\\n      __typename\\n    }\\n    langToValidPlayground\\n    topicTags {\\n      name\\n      slug\\n      translatedName\\n      __typename\\n    }\\n    companyTagStats\\n    codeSnippets {\\n      lang\\n      langSlug\\n      code\\n      __typename\\n    }\\n    stats\\n    hints\\n    solution {\\n      canSeeDetail\\n      __typename\\n    }\\n    status\\n    sampleTestCase\\n    metaData\\n    judgerAvailable\\n    judgeType\\n    mysqlSchemas\\n    enableRunCode\\n    enableTestMode\\n    envInfo\\n    __typename\\n  }\\n}\\n\"}"
+DATA = '{"operationName":"questionData","variables":{"titleSlug":"%s"},"query":"query questionData($titleSlug: String!) {\n  question(titleSlug: $titleSlug) {\n    questionId\n    questionFrontendId\n    boundTopicId\n    title\n    titleSlug\n    content\n    solution {\n      id\n      url\n      content\n      contentTypeId\n      canSeeDetail\n      rating {\n        id\n        count\n        average\n        userRating {\n          score\n          __typename\n        }\n        __typename\n      }\n      __typename\n    }\n    translatedTitle\n    translatedContent\n    isPaidOnly\n    difficulty\n    likes\n    dislikes\n    isLiked\n    similarQuestions\n    contributors {\n      username\n      profileUrl\n      avatarUrl\n      __typename\n    }\n    langToValidPlayground\n    topicTags {\n      name\n      slug\n      translatedName\n      __typename\n    }\n    companyTagStats\n    codeSnippets {\n      lang\n      langSlug\n      code\n      __typename\n    }\n    stats\n    hints\n    status\n    sampleTestCase\n    metaData\n    judgerAvailable\n    judgeType\n    mysqlSchemas\n    enableRunCode\n    enableTestMode\n    envInfo\n    libraryUrl\n    __typename\n  }\n}\n"}'.replace(
+    '\n', r'\n'
+)
+PROBLEM_URL = 'https://leetcode.com/problems/'
 
 HEADERS = {
-    'origin': 'https://leetcode.com',
     'accept-encoding': 'gzip',
     'accept-language': 'en-US,en;q=0.9,zh-CN;q=0.8,zh-TW;q=0.7,zh;q=0.6,ja;q=0.5',
-    'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
-    'x-csrftoken': 'kwiXPuqb3rhiFaiult7L86wJfgfWfbhBiDlvCkVNwPyh0tJh6sgEmqArbgKiWHuo',
+    'user-agent':
+        'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
     'content-type': 'application/json',
     'accept': '*/*',
-    'referer': 'https://leetcode.com/problems/super-palindromes/description/',
     'authority': 'leetcode.com',
-    'cookie': 'csrftoken=kwiXPuqb3rhiFaiult7L86wJfgfWfbhBiDlvCkVNwPyh0tJh6sgEmqArbgKiWHuo; _gat=1',
-
+    'content-type': 'application/json',
 }
 
-class LeetcodeProblems(object):
+
+class LeetcodeProblems:
 
     def __init__(self):
         if os.path.exists(DATA_FILE):
@@ -45,12 +45,21 @@ class LeetcodeProblems(object):
 
         self.hide_problems = get_hide_problems(set(self.problem_infos.keys()))
 
+        headers = {
+            'authority': 'leetcode.com',
+            'user-agent':
+                'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+            'accept':
+                'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+            'accept-encoding': 'gzip, deflate, br',
+            'accept-language': 'en-US,en;q=0.9,zh-CN;q=0.8,zh-TW;q=0.7,zh;q=0.6,ja;q=0.5',
+        }
+        res = requests.get('https://leetcode.com/', headers=headers)
+        self.cookies = res.cookies
+
     def _save_data(self):
         with open(DATA_FILE, 'w') as g:
-            json.dump(self.problem_infos, g,
-                      indent=4,
-                      ensure_ascii=False,
-                      sort_keys=True)
+            json.dump(self.problem_infos, g, indent=4, ensure_ascii=False, sort_keys=True)
 
     def get_problems_info(self):
         leetcode_url = 'https://leetcode.com/api/problems/all/'
@@ -59,65 +68,81 @@ class LeetcodeProblems(object):
             print('request error')
             self._save_data()
             sys.exit()
+
         infos = res.json()
         for info in infos['stat_status_pairs']:
             title = info['stat']['question__title']
             level = info['difficulty']['level']
-            question_id = info['stat']['question_id']
+            raw_question_id = info['stat']['question_id']
+            question_id = info['stat']['frontend_question_id']
+            title_slug = info['stat']['question__title_slug'] \
+                or info['stat']['question__article__slug']
             paid_only = info['paid_only']
+            problem_url = PROBLEM_URL + title_slug
+            origin_json = None
+            tags = []
+            similar_problems = []
+            solution = None
 
             if question_id in self.problem_infos:
                 if 'paid_only' not in self.problem_infos[question_id]:
                     self.problem_infos[question_id]['paid_only'] = paid_only
                 continue
 
-            uri = info['stat']['question__title_slug'] or info['stat']['question__article__slug']
-            problem_url = 'https://leetcode.com/problems/{}/description/'.format(uri)
-            data = DATA % uri
-            headers = dict(HEADERS)
-            headers['referer'] = problem_url
-
             if paid_only:
                 if question_id in self.hide_problems:
                     description = self.hide_problems[question_id]
-                    tags = []
                 else:
                     print(' ! need to pay: {}, {}'.format(question_id, problem_url))
                     continue
             else:
+                headers = dict(HEADERS)
+                headers['referer'] = problem_url
+                csrftoken = self.cookies.get('csrftoken')
+                headers['x-csrftoken'] = csrftoken
+                data = DATA % title_slug
                 try:
-                    res = requests.post(API_URL, headers=headers, data=data)
+                    res = requests.post(API_URL, headers=headers, cookies=self.cookies, data=data)
                 except Exception:
+                    print(' ! request error:', title_slug)
                     self._save_data()
                     continue
 
                 if not res.ok:
-                    print('request error: {}'.format(info))
+                    print('request error: {}, response: {}'.format(title_slug, res.text))
                     self._save_data()
                     continue
 
-                info = res.json()
-                description = html2text.html2text(info['data']['question']['content']).strip()
+                js = res.json()
+                description = js['data']['question']['content']
 
-                tags = []
-                if info['data']['question']['topicTags']:
-                    for item in info['data']['question']['topicTags']:
+                if js['data']['question']['topicTags']:
+                    for item in js['data']['question']['topicTags']:
                         tags.append(item['name'])
+                origin_json = res.text
+
+                similar_problems = json.loads(
+                    js['data']['question'].get('similarQuestions') or '[]'
+                )
+                solution = (js['data']['question']['solution'] or {}).get('content')
 
             problem = {
                 'title': title,
                 'level': level,
+                'raw_question_id': raw_question_id,
                 'question_id': question_id,
                 'description': description,
+                'solution': solution,
                 'tags': tags,
                 'url': problem_url,
-                'slug': uri,
+                'slug': title_slug,
                 'paid_only': paid_only,
+                'similar_problems': similar_problems,
+                'json': origin_json,
             }
             self.problem_infos[question_id] = problem
 
             print('get - {}: {}'.format(question_id, title))
-
 
     def to_text(self):
         if self.args.index:
@@ -135,14 +160,17 @@ class LeetcodeProblems(object):
 
         infos = sorted(pm_infos, key=lambda i: i[key])
 
-        text_template = '## {question_id} - {title}\n' \
-            '~{level}~  {tags}\n' \
-            '{description}\n' + '\n' * self.args.line
+        text_template = '<h2># {question_id} - {title}</h2>\n\n' \
+            '<hr>' \
+            '<p>Difficulty: <b>{level}</b>; Tags: {tags}</p>\n\n' \
+            '<br>' \
+            '{description}\n' + '<br>\n' * self.args.line
         text = ''
         for info in infos:
-            if self.args.rm_blank:
-                desc = to_format(info['description'])
-                info['description'] = desc
+            desc = info['description']
+            if not info['json']:
+                desc = '```\n{}```'.format(desc)
+            info['description'] = desc
             text += text_template.format(**info)
 
         with open(OUT_FILE, 'w') as g:
@@ -153,7 +181,7 @@ class LeetcodeProblems(object):
         self._save_data()
 
         print('find %s problems.' % len(self.problem_infos))
-        self.to_text()
+        #  self.to_text()
 
 
 def handle_args(argv):
@@ -174,6 +202,7 @@ def main(argv):
     x = LeetcodeProblems()
     x.args = args
     x.run()
+
 
 if __name__ == '__main__':
     argv = sys.argv
