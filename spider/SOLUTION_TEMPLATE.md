@@ -17,4 +17,6 @@ Difficulty  | Tags | Links | Solutions
 {similar}
 
 
-## Thought:
+## Solution:
+
+{solution}
