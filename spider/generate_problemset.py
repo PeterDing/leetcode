@@ -44,9 +44,9 @@ def generate_problemset(data):
         if info['json']:
             desc = info['description']
         else:
-            cn = html2text.html2text(info['description']).strip()
+            cn = info['description']
             cn = to_format(cn)
-            desc = '```\n{}```'.format(cn)
+            desc = '```\n{}\n```'.format(cn)
 
         similar_problems = ''
         for prob in info['similar_problems']:
