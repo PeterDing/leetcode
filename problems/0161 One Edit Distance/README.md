@@ -8,7 +8,8 @@ Medium |  | [Leetcode](https://leetcode.com/problems/one-edit-distance) | [solut
 -----------
 
 ```
-Given two strings S and T, determine if they are both one edit distance apart.```
+Given two strings S and T, determine if they are both one edit distance apart.
+```
 
 -----------
 
