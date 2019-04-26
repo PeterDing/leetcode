@@ -45,7 +45,6 @@ def generate_problemset(data):
             desc = info['description']
         else:
             cn = info['description']
-            cn = to_format(cn)
             desc = '```\n{}\n```'.format(cn)
 
         similar_problems = ''
