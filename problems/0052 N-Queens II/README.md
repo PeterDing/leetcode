@@ -2,17 +2,45 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Hard | Backtracking | [Leetcode](https://leetcode.com/problems/n-queens-ii/description/) |
+Hard | Backtracking | [Leetcode](https://leetcode.com/problems/n-queens-ii) | [solution](https://leetcode.com/problems/n-queens-ii/solution/)
 
 
 -----------
 
-```
-Follow up for N-Queens problem.
+<p>The <em>n</em>-queens puzzle is the problem of placing <em>n</em> queens on an <em>n</em>&times;<em>n</em> chessboard such that no two queens attack each other.</p>
 
-Now, instead outputting board configurations, return the total number of distinct solutions.
-```
+<p><img src="https://assets.leetcode.com/uploads/2018/10/12/8-queens.png" style="width: 258px; height: 276px;" /></p>
+
+<p>Given an integer&nbsp;<em>n</em>, return the number of&nbsp;distinct solutions to the&nbsp;<em>n</em>-queens puzzle.</p>
+
+<p><strong>Example:</strong></p>
+
+<pre>
+<strong>Input:</strong> 4
+<strong>Output:</strong> 2
+<strong>Explanation:</strong> There are two distinct solutions to the 4-queens puzzle as shown below.
+[
+&nbsp;[&quot;.Q..&quot;, &nbsp;// Solution 1
+&nbsp; &quot;...Q&quot;,
+&nbsp; &quot;Q...&quot;,
+&nbsp; &quot;..Q.&quot;],
+
+&nbsp;[&quot;..Q.&quot;, &nbsp;// Solution 2
+&nbsp; &quot;Q...&quot;,
+&nbsp; &quot;...Q&quot;,
+&nbsp; &quot;.Q..&quot;]
+]
+</pre>
+
 
 -----------
+
+
+## Similar Problems
+
+- [Hard] [N-Queens](n-queens)
+
+
+
 
 ## Thought:

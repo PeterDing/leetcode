@@ -2,19 +2,19 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Tree | [Leetcode](https://leetcode.com/problems/maximum-width-of-binary-tree/description/) |
+Medium | Tree | [Leetcode](https://leetcode.com/problems/maximum-width-of-binary-tree) | [solution](https://leetcode.com/problems/maximum-width-of-binary-tree/solution/)
 
 
 -----------
 
-```
-Given a binary tree, write a function to get the maximum width of the given tree. The width of a tree is the maximum width among all levels. The binary tree has the same structure as a full binary tree, but some nodes are null. 
+<p>Given a binary tree, write a function to get the maximum width of the given tree. The width of a tree is the maximum width among all levels. The binary tree has the same structure as a <b>full binary tree</b>, but some nodes are null.</p>
 
-The width of one level is defined as the length between the end-nodes (the leftmost and right most non-null nodes in the level, where the null nodes between the end-nodes are also counted into the length calculation.
+<p>The width of one level is defined as the length between the end-nodes (the leftmost and right most non-null nodes in the level, where the <code>null</code> nodes between the end-nodes are also counted into the length calculation.</p>
 
-Example 1:
+<p><b>Example 1:</b></p>
 
-Input: 
+<pre>
+<b>Input:</b> 
 
            1
          /   \
@@ -22,14 +22,14 @@ Input:
        / \     \  
       5   3     9 
 
-Output: 4
-Explanation: The maximum width existing in the third level with the length 4 (5,3,null,9).
+<b>Output:</b> 4
+<b>Explanation:</b> The maximum width existing in the third level with the length 4 (5,3,null,9).
+</pre>
 
+<p><b>Example 2:</b></p>
 
-
-Example 2:
-
-Input: 
+<pre>
+<b>Input:</b> 
 
           1
          /  
@@ -37,14 +37,14 @@ Input:
        / \       
       5   3     
 
-Output: 2
-Explanation: The maximum width existing in the third level with the length 2 (5,3).
+<b>Output:</b> 2
+<b>Explanation:</b> The maximum width existing in the third level with the length 2 (5,3).
+</pre>
 
+<p><b>Example 3:</b></p>
 
-
-Example 3:
-
-Input: 
+<pre>
+<b>Input:</b> 
 
           1
          / \
@@ -52,13 +52,14 @@ Input:
        /        
       5      
 
-Output: 2
-Explanation: The maximum width existing in the second level with the length 2 (3,2).
+<b>Output:</b> 2
+<b>Explanation:</b> The maximum width existing in the second level with the length 2 (3,2).
+</pre>
 
+<p><b>Example 4:</b></p>
 
-Example 4:
-
-Input: 
+<pre>
+<b>Input:</b> 
 
           1
          / \
@@ -67,16 +68,21 @@ Input:
       5       9 
      /         \
     6           7
-Output: 8
-Explanation:The maximum width existing in the fourth level with the length 8 (6,null,null,null,null,null,null,7).
+<b>Output:</b> 8
+<b>Explanation:</b>The maximum width existing in the fourth level with the length 8 (6,null,null,null,null,null,null,7).
 
 
+</pre>
 
+<p><b>Note:</b> Answer will in the range of 32-bit signed integer.</p>
 
-Note:
-Answer will in the range of 32-bit signed integer.
-```
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

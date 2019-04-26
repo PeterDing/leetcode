@@ -2,45 +2,61 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Hard | Math, Binary Search | [Leetcode](https://leetcode.com/problems/smallest-good-base/description/) |
+Hard | Math, Binary Search | [Leetcode](https://leetcode.com/problems/smallest-good-base) | [solution](https://leetcode.com/problems/smallest-good-base/solution/)
 
 
 -----------
 
-```
-For an integer n, we call k>=2 a good base of n, if all digits of n base k are 1.
-Now given a string representing n, you should return the smallest good base of n in string format. 
+<p>For an integer n, we call k&gt;=2 a <i><b>good base</b></i> of n, if all digits of n base k are 1.</p>
 
-Example 1:
+<p>Now given a string representing n, you should return the smallest good base of n in string format.</p>
 
-Input: "13"
-Output: "3"
-Explanation: 13 base 3 is 111.
+<p><b>Example 1:</b></p>
 
+<pre>
+<b>Input:</b> &quot;13&quot;
+<b>Output:</b> &quot;3&quot;
+<b>Explanation:</b> 13 base 3 is 111.
+</pre>
 
+<p>&nbsp;</p>
 
-Example 2:
+<p><b>Example 2:</b></p>
 
-Input: "4681"
-Output: "8"
-Explanation: 4681 base 8 is 11111.
+<pre>
+<b>Input:</b> &quot;4681&quot;
+<b>Output:</b> &quot;8&quot;
+<b>Explanation:</b> 4681 base 8 is 11111.
+</pre>
 
+<p>&nbsp;</p>
 
+<p><b>Example 3:</b></p>
 
-Example 3:
+<pre>
+<b>Input:</b> &quot;1000000000000000000&quot;
+<b>Output:</b> &quot;999999999999999999&quot;
+<b>Explanation:</b> 1000000000000000000 base 999999999999999999 is 11.
+</pre>
 
-Input: "1000000000000000000"
-Output: "999999999999999999"
-Explanation: 1000000000000000000 base 999999999999999999 is 11.
+<p>&nbsp;</p>
 
+<p><b>Note:</b></p>
 
+<ol>
+	<li>The range of n is [3, 10^18].</li>
+	<li>The string representing n is always valid and will not have leading zeros.</li>
+</ol>
 
-Note:
+<p>&nbsp;</p>
 
-The range of n is [3, 10^18].
-The string representing n is always valid and will not have leading zeros.
-```
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

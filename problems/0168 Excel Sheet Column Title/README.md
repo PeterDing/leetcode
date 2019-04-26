@@ -2,27 +2,55 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy | Math | [Leetcode](https://leetcode.com/problems/excel-sheet-column-title/description/) |
+Easy | Math | [Leetcode](https://leetcode.com/problems/excel-sheet-column-title) | [solution](https://leetcode.com/problems/excel-sheet-column-title/solution/)
 
 
 -----------
 
-```
-Given a positive integer, return its corresponding column title as appear in an Excel sheet.
+<p>Given a positive integer, return its corresponding column title as appear in an Excel sheet.</p>
 
-For example:
+<p>For example:</p>
 
-    1 -> A
-    2 -> B
-    3 -> C
+<pre>
+    1 -&gt; A
+    2 -&gt; B
+    3 -&gt; C
     ...
-    26 -> Z
-    27 -> AA
-    28 -> AB 
+    26 -&gt; Z
+    27 -&gt; AA
+    28 -&gt; AB 
+    ...
+</pre>
 
-Credits:Special thanks to @ifanchu for adding this problem and creating all test cases.
-```
+<p><strong>Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> 1
+<strong>Output:</strong> &quot;A&quot;
+</pre>
+
+<p><strong>Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> 28
+<strong>Output:</strong> &quot;AB&quot;
+</pre>
+
+<p><strong>Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> 701
+<strong>Output:</strong> &quot;ZY&quot;
+</pre>
 
 -----------
+
+
+## Similar Problems
+
+- [Easy] [Excel Sheet Column Number](excel-sheet-column-number)
+
+
+
 
 ## Thought:

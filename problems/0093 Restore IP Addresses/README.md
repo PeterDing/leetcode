@@ -2,22 +2,29 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | String, Backtracking | [Leetcode](https://leetcode.com/problems/restore-ip-addresses/description/) |
+Medium | String, Backtracking | [Leetcode](https://leetcode.com/problems/restore-ip-addresses) | [solution](https://leetcode.com/problems/restore-ip-addresses/solution/)
 
 
 -----------
 
-```
-Given a string containing only digits, restore it by returning all possible valid IP address combinations.
+<p>Given a string containing only digits, restore it by returning all possible valid IP address combinations.</p>
 
+<p><strong>Example:</strong></p>
 
-For example:
-Given "25525511135",
+<pre>
+<strong>Input:</strong> &quot;25525511135&quot;
+<strong>Output:</strong> <code>[&quot;255.255.11.135&quot;, &quot;255.255.111.35&quot;]
+</code></pre>
 
-
-return ["255.255.11.135", "255.255.111.35"]. (Order does not matter)
-```
 
 -----------
+
+
+## Similar Problems
+
+- [Easy] [IP to CIDR](ip-to-cidr)
+
+
+
 
 ## Thought:

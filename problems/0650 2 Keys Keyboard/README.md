@@ -2,41 +2,55 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Dynamic Programming | [Leetcode](https://leetcode.com/problems/2-keys-keyboard/description/) |
+Medium | Dynamic Programming | [Leetcode](https://leetcode.com/problems/2-keys-keyboard) | [solution](https://leetcode.com/problems/2-keys-keyboard/solution/)
 
 
 -----------
 
-```
-Initially on a notepad only one character 'A' is present. You can perform two operations on this notepad for each step: 
+<p>Initially on a notepad only one character &#39;A&#39; is present. You can perform two operations on this notepad for each step:</p>
 
-Copy All: You can copy all the characters present on the notepad (partial copy is not allowed).
-Paste: You can paste the characters which are copied last time.
+<ol>
+	<li><code>Copy All</code>: You can copy all the characters present on the notepad (partial copy is not allowed).</li>
+	<li><code>Paste</code>: You can paste the characters which are copied <b>last time</b>.</li>
+</ol>
 
+<p>&nbsp;</p>
 
+<p>Given a number <code>n</code>. You have to get <b>exactly</b> <code>n</code> &#39;A&#39; on the notepad by performing the minimum number of steps permitted. Output the minimum number of steps to get <code>n</code> &#39;A&#39;.</p>
 
+<p><b>Example 1:</b></p>
 
-Given a number n. You have to get exactly n 'A' on the notepad by performing the minimum number of steps permitted. Output the minimum number of steps to get n 'A'. 
+<pre>
+<b>Input:</b> 3
+<b>Output:</b> 3
+<b>Explanation:</b>
+Intitally, we have one character &#39;A&#39;.
+In step 1, we use <b>Copy All</b> operation.
+In step 2, we use <b>Paste</b> operation to get &#39;AA&#39;.
+In step 3, we use <b>Paste</b> operation to get &#39;AAA&#39;.
+</pre>
 
+<p>&nbsp;</p>
 
-Example 1:
+<p><b>Note:</b></p>
 
-Input: 3
-Output: 3
-Explanation:
-Intitally, we have one character 'A'.
-In step 1, we use Copy All operation.
-In step 2, we use Paste operation to get 'AA'.
-In step 3, we use Paste operation to get 'AAA'.
+<ol>
+	<li>The <code>n</code> will be in the range [1, 1000].</li>
+</ol>
 
+<p>&nbsp;</p>
 
-
-
-Note:
-
-The n will be in the range [1, 1000].
-```
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [4 Keys Keyboard](4-keys-keyboard)
+
+- [Medium] [Broken Calculator](broken-calculator)
+
+
+
 
 ## Thought:

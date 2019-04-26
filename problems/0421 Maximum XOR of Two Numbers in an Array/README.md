@@ -2,27 +2,36 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Bit Manipulation, Trie | [Leetcode](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/description/) |
+Medium | Bit Manipulation, Trie | [Leetcode](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array) | [solution](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/solution/)
 
 
 -----------
 
-```
-Given a non-empty array of numbers, a0, a1, a2, … , an-1, where 0 ≤ ai < 231.
+<p>Given a <b>non-empty</b> array of numbers, a<sub>0</sub>, a<sub>1</sub>, a<sub>2</sub>, &hellip; , a<sub>n-1</sub>, where 0 &le; a<sub>i</sub> &lt; 2<sup>31</sup>.</p>
 
-Find the maximum result of ai XOR aj, where 0 ≤ i, j < n.
+<p>Find the maximum result of a<sub>i</sub> XOR a<sub>j</sub>, where 0 &le; <i>i</i>, <i>j</i> &lt; <i>n</i>.</p>
 
-Could you do this in O(n) runtime?
+<p>Could you do this in O(<i>n</i>) runtime?</p>
 
-Example:
+<p><b>Example:</b></p>
 
-Input: [3, 10, 5, 25, 2, 8]
+<pre>
+<b>Input:</b> [3, 10, 5, 25, 2, 8]
 
-Output: 28
+<b>Output:</b> 28
 
-Explanation: The maximum result is 5 ^ 25 = 28.
-```
+<b>Explanation:</b> The maximum result is <b>5</b> ^ <b>25</b> = 28.
+</pre>
+
+<p>&nbsp;</p>
+
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

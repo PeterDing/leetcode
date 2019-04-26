@@ -2,23 +2,22 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy | Math | [Leetcode](https://leetcode.com/problems/range-addition-ii/description/) |
+Easy | Math | [Leetcode](https://leetcode.com/problems/range-addition-ii) | [solution](https://leetcode.com/problems/range-addition-ii/solution/)
 
 
 -----------
 
-```
-Given an m * n matrix M initialized with all 0's and several update operations.
-Operations are represented by a 2D array, and each operation is represented by an array with two positive integers a and b, which means M[i][j] should be added by one for all 0 <= i < a and 0 <= j < b. 
-You need to count and return the number of maximum integers in the matrix after performing all the operations.
+<p>Given an m * n matrix <b>M</b> initialized with all <b>0</b>'s and several update operations.</p>
+<p>Operations are represented by a 2D array, and each operation is represented by an array with two <b>positive</b> integers <b>a</b> and <b>b</b>, which means <b>M[i][j]</b> should be <b>added by one</b> for all <b>0 <= i < a</b> and <b>0 <= j < b</b>. </p>
+<p>You need to count and return the number of maximum integers in the matrix after performing all the operations.</p>
 
-Example 1:
-
-Input: 
+<p><b>Example 1:</b><br />
+<pre>
+<b>Input:</b> 
 m = 3, n = 3
 operations = [[2,2],[3,3]]
-Output: 4
-Explanation: 
+<b>Output:</b> 4
+<b>Explanation:</b> 
 Initially, M = 
 [[0, 0, 0],
  [0, 0, 0],
@@ -35,16 +34,25 @@ After performing [3,3], M =
  [1, 1, 1]]
 
 So the maximum integer in M is 2, and there are four of it in M. So return 4.
+</pre>
+</p>
 
-
-
-Note:
-
-The range of m and n is [1,40000].
-The range of a is [1,m], and the range of b is [1,n].
-The range of operations size won't exceed 10,000.
-```
+<p><b>Note:</b><br>
+<ol>
+<li>The range of m and n is [1,40000].</li>
+<li>The range of a is [1,m], and the range of b is [1,n].</li>
+<li>The range of operations size won't exceed 10,000.</li>
+</ol>
+</p>
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Range Addition](range-addition)
+
+
+
 
 ## Thought:

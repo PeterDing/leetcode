@@ -2,33 +2,41 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Math, Heap | [Leetcode](https://leetcode.com/problems/super-ugly-number/description/) |
+Medium | Math, Heap | [Leetcode](https://leetcode.com/problems/super-ugly-number) | [solution](https://leetcode.com/problems/super-ugly-number/solution/)
 
 
 -----------
 
-```
-Write a program to find the nth super ugly number.
+<p>Write a program to find the <code>n<sup>th</sup></code> super ugly number.</p>
 
+<p>Super ugly numbers are positive numbers whose all prime factors are in the given prime list <code>primes</code> of size <code>k</code>.</p>
 
+<p><b>Example:</b></p>
 
-    Super ugly numbers are positive numbers whose all prime factors are in the given prime list
-    primes of size k. For example, [1, 2, 4, 7, 8, 13, 14, 16, 19, 26, 28, 32]
- is the sequence of the first 12 super ugly numbers given primes
-    = [2, 7, 13, 19] of size 4.
+<pre>
+<b>Input:</b> n = 12, <code>primes</code> = <code>[2,7,13,19]</code>
+<b>Output:</b> 32 
+<strong>Explanation: </strong><code>[1,2,4,7,8,13,14,16,19,26,28,32] </code>is the sequence of the first 12 
+             super ugly numbers given <code>primes</code> = <code>[2,7,13,19]</code> of size 4.</pre>
 
+<p><b>Note:</b></p>
 
+<ul>
+	<li><code>1</code> is a super ugly number for any given <code>primes</code>.</li>
+	<li>The given numbers in <code>primes</code> are in ascending order.</li>
+	<li>0 &lt; <code>k</code> &le; 100, 0 &lt; <code>n</code> &le; 10<sup>6</sup>, 0 &lt; <code>primes[i]</code> &lt; 1000.</li>
+	<li>The n<sup>th</sup> super ugly number is guaranteed to fit in a 32-bit signed integer.</li>
+</ul>
 
-    Note:
-    (1) 1 is a super ugly number for any given primes.
-    (2) The given numbers in primes are in ascending order.
-    (3) 0 < k ≤ 100, 0 < n ≤ 106, 0 < primes[i] < 1000.
-    (4) The nth super ugly number is guaranteed to fit in a 32-bit signed integer.
-
-
-Credits:Special thanks to @dietpepsi for adding this problem and creating all test cases.
-```
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Ugly Number II](ugly-number-ii)
+
+
+
 
 ## Thought:

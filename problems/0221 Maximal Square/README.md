@@ -2,28 +2,36 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Dynamic Programming | [Leetcode](https://leetcode.com/problems/maximal-square/description/) |
+Medium | Dynamic Programming | [Leetcode](https://leetcode.com/problems/maximal-square) | [solution](https://leetcode.com/problems/maximal-square/solution/)
 
 
 -----------
 
-```
-Given a 2D binary matrix filled with 0's and 1's, find the largest square containing only 1's and return its area.
+<p>Given a 2D binary matrix filled with 0&#39;s and 1&#39;s, find the largest square containing only 1&#39;s and return its area.</p>
 
+<p><strong>Example:</strong></p>
 
-For example, given the following matrix:
-
+<pre>
+<strong>Input: 
+</strong>
 1 0 1 0 0
-1 0 1 1 1
-1 1 1 1 1
+1 0 <font color="red">1</font> <font color="red">1</font> 1
+1 1 <font color="red">1</font> <font color="red">1</font> 1
 1 0 0 1 0
 
-Return 4.
-
-
-Credits:Special thanks to @Freezen for adding this problem and creating all test cases.
-```
+<strong>Output: </strong>4
+</pre>
 
 -----------
+
+
+## Similar Problems
+
+- [Hard] [Maximal Rectangle](maximal-rectangle)
+
+- [Medium] [Largest Plus Sign](largest-plus-sign)
+
+
+
 
 ## Thought:

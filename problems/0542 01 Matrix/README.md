@@ -2,53 +2,62 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Depth-first Search, Breadth-first Search | [Leetcode](https://leetcode.com/problems/01-matrix/description/) |
+Medium | Depth-first Search, Breadth-first Search | [Leetcode](https://leetcode.com/problems/01-matrix) | [solution](https://leetcode.com/problems/01-matrix/solution/)
 
 
 -----------
 
-```
-Given a matrix consists of 0 and 1, find the distance of the nearest 0 for each cell.
+<p>Given a matrix consists of 0 and 1, find the distance of the nearest 0 for each cell.</p>
 
-The distance between two adjacent cells is 1.
+<p>The distance between two adjacent cells is 1.</p>
 
-Example 1: 
-Input:
+<p>&nbsp;</p>
 
-0 0 0
-0 1 0
-0 0 0
+<p><b>Example 1: </b></p>
 
-Output:
+<pre>
+<strong>Input:</strong>
+[[0,0,0],
+ [0,1,0],
+ [0,0,0]]
 
-0 0 0
-0 1 0
-0 0 0
+<strong>Output:</strong>
+[[0,0,0],
+&nbsp;[0,1,0],
+&nbsp;[0,0,0]]
+</pre>
 
+<p><b>Example 2: </b></p>
 
+<pre>
+<b>Input:</b>
+[[0,0,0],
+ [0,1,0],
+ [1,1,1]]
 
-Example 2: 
-Input:
+<strong>Output:</strong>
+[[0,0,0],
+ [0,1,0],
+ [1,2,1]]
+</pre>
 
-0 0 0
-0 1 0
-1 1 1
+<p>&nbsp;</p>
 
-Output:
+<p><b>Note:</b></p>
 
-0 0 0
-0 1 0
-1 2 1
+<ol>
+	<li>The number of elements of the given matrix will not exceed 10,000.</li>
+	<li>There are at least one 0 in the given matrix.</li>
+	<li>The cells are adjacent in only four directions: up, down, left and right.</li>
+</ol>
 
-
-
-Note:
-
-The number of elements of the given matrix will not exceed 10,000.
-There are at least one 0 in the given matrix.
-The cells are adjacent in only four directions: up, down, left and right.
-```
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

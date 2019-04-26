@@ -2,15 +2,14 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Hard |  | [Leetcode](https://leetcode.com/problems/trips-and-users/description/) |
+Hard |  | [Leetcode](https://leetcode.com/problems/trips-and-users) | [solution](https://leetcode.com/problems/trips-and-users/solution/)
 
 
 -----------
 
-```
-The Trips table holds all taxi trips. Each trip has a unique Id, while Client_Id and Driver_Id are both foreign keys to the Users_Id at the Users table. Status is an ENUM type of (‘completed’, ‘cancelled_by_driver’, ‘cancelled_by_client’).
+<p>The <code>Trips</code> table holds all taxi trips. Each trip has a unique Id, while Client_Id and Driver_Id are both foreign keys to the Users_Id at the <code>Users</code> table. Status is an ENUM type of (&lsquo;completed&rsquo;, &lsquo;cancelled_by_driver&rsquo;, &lsquo;cancelled_by_client&rsquo;).</p>
 
-
+<pre>
 +----+-----------+-----------+---------+--------------------+----------+
 | Id | Client_Id | Driver_Id | City_Id |        Status      |Request_at|
 +----+-----------+-----------+---------+--------------------+----------+
@@ -25,11 +24,11 @@ The Trips table holds all taxi trips. Each trip has a unique Id, while Client_Id
 | 9  |     3     |    10     |    12   |     completed      |2013-10-03| 
 | 10 |     4     |    13     |    12   | cancelled_by_driver|2013-10-03|
 +----+-----------+-----------+---------+--------------------+----------+
+</pre>
 
+<p>The <code>Users</code> table holds all users. Each user has an unique Users_Id, and Role is an ENUM type of (&lsquo;client&rsquo;, &lsquo;driver&rsquo;, &lsquo;partner&rsquo;).</p>
 
-
-The Users table holds all users. Each user has an unique Users_Id, and Role is an ENUM type of (‘client’, ‘driver’, ‘partner’).
-
+<pre>
 +----------+--------+--------+
 | Users_Id | Banned |  Role  |
 +----------+--------+--------+
@@ -42,10 +41,11 @@ The Users table holds all users. Each user has an unique Users_Id, and Role is a
 |    12    |   No   | driver |
 |    13    |   No   | driver |
 +----------+--------+--------+
+</pre>
 
+<p>Write a SQL query to find the cancellation rate of requests made by unbanned users between <strong>Oct 1, 2013</strong> and <strong>Oct 3, 2013</strong>. For the above tables, your SQL query should return the following rows with the cancellation rate being rounded to <em>two</em> decimal places.</p>
 
-Write a SQL query to find the cancellation rate of requests made by unbanned clients between Oct 1, 2013 and Oct 3, 2013. For the above tables, your SQL query should return the following rows with the cancellation rate being rounded to two decimal places.
-
+<pre>
 +------------+-------------------+
 |     Day    | Cancellation Rate |
 +------------+-------------------+
@@ -53,11 +53,18 @@ Write a SQL query to find the cancellation rate of requests made by unbanned cli
 | 2013-10-02 |       0.00        |
 | 2013-10-03 |       0.50        |
 +------------+-------------------+
+</pre>
 
+<p><strong>Credits:</strong><br />
+Special thanks to <a href="https://leetcode.com/discuss/user/cak1erlizhou">@cak1erlizhou</a> for contributing this question, writing the problem description and adding part of the test cases.</p>
 
-Credits:Special thanks to @cak1erlizhou for contributing this question, writing the problem description and adding part of the test cases.
-```
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

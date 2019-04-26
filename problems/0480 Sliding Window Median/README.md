@@ -2,23 +2,22 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Hard |  | [Leetcode](https://leetcode.com/problems/sliding-window-median/description/) |
+Hard | Sliding Window | [Leetcode](https://leetcode.com/problems/sliding-window-median) | [solution](https://leetcode.com/problems/sliding-window-median/solution/)
 
 
 -----------
 
-```
-Median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value. So the median is the mean of the two middle value.
-Examples: 
-[2,3,4] , the median is 3
-[2,3], the median is (2 + 3) / 2 = 2.5 
+<p>Median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value. So the median is the mean of the two middle value.</p>
+Examples: <br />
+<p><code>[2,3,4]</code> , the median is <code>3</code></p>
+<p><code>[2,3]</code>, the median is <code>(2 + 3) / 2 = 2.5</code> </p>
 
-Given an array nums, there is a sliding window of size k which is moving from the very left of the array to the very right. You can only see the k numbers in the window. Each time the sliding window moves right by one position. Your job is to output the median array for each window in the original array.
+<p>Given an array <i>nums</i>, there is a sliding window of size <i>k</i> which is moving from the very left of the array to the very right. You can only see the <i>k</i> numbers in the window. Each time the sliding window moves right by one position. Your job is to output the median array for each window in the original array.</p>
 
-For example,
-Given nums = [1,3,-1,-3,5,3,6,7], and k = 3.
+<p>For example,<br>
+Given <i>nums</i> = <code>[1,3,-1,-3,5,3,6,7]</code>, and <i>k</i> = 3.</p>
 
-
+<pre>
 Window position                Median
 ---------------               -----
 [1  3  -1] -3  5  3  6  7       1
@@ -27,14 +26,21 @@ Window position                Median
  1  3  -1 [-3  5  3] 6  7       3
  1  3  -1  -3 [5  3  6] 7       5
  1  3  -1  -3  5 [3  6  7]      6
+</pre>
 
+<p>Therefore, return the median sliding window as <code>[1,-1,-1,3,5,6]</code>.</p>
 
-Therefore, return the median sliding window as [1,-1,-1,3,5,6].
-
-Note: 
-You may assume k is always valid, ie: k is always smaller than input array's size for non-empty array.
-```
+<p><b>Note: </b><br>
+You may assume <code>k</code> is always valid, ie: <code>k</code> is always smaller than input array's size for non-empty array.</p>
 
 -----------
+
+
+## Similar Problems
+
+- [Hard] [Find Median from Data Stream](find-median-from-data-stream)
+
+
+
 
 ## Thought:

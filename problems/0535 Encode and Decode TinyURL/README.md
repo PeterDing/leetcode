@@ -2,19 +2,24 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Hash Table, Math | [Leetcode](https://leetcode.com/problems/encode-and-decode-tinyurl/description/) |
+Medium | Hash Table, Math | [Leetcode](https://leetcode.com/problems/encode-and-decode-tinyurl) | [solution](https://leetcode.com/problems/encode-and-decode-tinyurl/solution/)
 
 
 -----------
 
-```
-Note: This is a companion problem to the System Design problem: Design TinyURL.
+<blockquote>Note: This is a companion problem to the <a href="https://leetcode.com/discuss/interview-question/system-design/" target="_blank">System Design</a> problem: <a href="https://leetcode.com/discuss/interview-question/124658/Design-a-URL-Shortener-(-TinyURL-)-System/" target="_blank">Design TinyURL</a>.</blockquote>
 
-TinyURL is a URL shortening service where you enter a URL such as https://leetcode.com/problems/design-tinyurl and it returns a short URL such as http://tinyurl.com/4e9iAk.
+<p>TinyURL is a URL shortening service where you enter a URL such as <code>https://leetcode.com/problems/design-tinyurl</code> and it returns a short URL such as <code>http://tinyurl.com/4e9iAk</code>.</p>
 
-Design the encode and decode methods for the TinyURL service. There is no restriction on how your encode/decode algorithm should work. You just need to ensure that a URL can be encoded to a tiny URL and the tiny URL can be decoded to the original URL.
-```
+<p>Design the <code>encode</code> and <code>decode</code> methods for the TinyURL service. There is no restriction on how your encode/decode algorithm should work. You just need to ensure that a URL can be encoded to a tiny URL and the tiny URL can be decoded to the original URL.</p>
+
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

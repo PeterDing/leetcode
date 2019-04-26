@@ -2,34 +2,37 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Array, Dynamic Programming | [Leetcode](https://leetcode.com/problems/triangle/description/) |
+Medium | Array, Dynamic Programming | [Leetcode](https://leetcode.com/problems/triangle) | [solution](https://leetcode.com/problems/triangle/solution/)
 
 
 -----------
 
-```
-Given a triangle, find the minimum path sum from top to bottom. Each step you may move to adjacent numbers on the row below.
+<p>Given a triangle, find the minimum path sum from top to bottom. Each step you may move to adjacent numbers on the row below.</p>
 
+<p>For example, given the following triangle</p>
 
-For example, given the following triangle
-
+<pre>
 [
-     [2],
-    [3,4],
-   [6,5,7],
-  [4,1,8,3]
+     [<strong>2</strong>],
+    [<strong>3</strong>,4],
+   [6,<strong>5</strong>,7],
+  [4,<strong>1</strong>,8,3]
 ]
+</pre>
 
+<p>The minimum path sum from top to bottom is <code>11</code> (i.e., <strong>2</strong> + <strong>3</strong> + <strong>5</strong> + <strong>1</strong> = 11).</p>
 
+<p><strong>Note:</strong></p>
 
-The minimum path sum from top to bottom is 11 (i.e., 2 + 3 + 5 + 1 = 11).
+<p>Bonus point if you are able to do this using only <em>O</em>(<em>n</em>) extra space, where <em>n</em> is the total number of rows in the triangle.</p>
 
-
-
-Note:
-Bonus point if you are able to do this using only O(n) extra space, where n is the total number of rows in the triangle.
-```
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

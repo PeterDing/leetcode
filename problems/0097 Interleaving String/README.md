@@ -2,26 +2,34 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Hard | String, Dynamic Programming | [Leetcode](https://leetcode.com/problems/interleaving-string/description/) |
+Hard | String, Dynamic Programming | [Leetcode](https://leetcode.com/problems/interleaving-string) | [solution](https://leetcode.com/problems/interleaving-string/solution/)
 
 
 -----------
 
-```
-Given s1, s2, s3, find whether s3 is formed by the interleaving of s1 and s2.
+<p>Given <em>s1</em>, <em>s2</em>, <em>s3</em>, find whether <em>s3</em> is formed by the interleaving of <em>s1</em> and <em>s2</em>.</p>
 
+<p><strong>Example 1:</strong></p>
 
+<pre>
+<strong>Input:</strong> s1 = &quot;aabcc&quot;, s2 = &quot;dbbca&quot;, <em>s3</em> = &quot;aadbbcbcac&quot;
+<strong>Output:</strong> true
+</pre>
 
-For example,
-Given:
-s1 = "aabcc",
-s2 = "dbbca",
+<p><strong>Example 2:</strong></p>
 
+<pre>
+<strong>Input:</strong> s1 = &quot;aabcc&quot;, s2 = &quot;dbbca&quot;, <em>s3</em> = &quot;aadbbbaccc&quot;
+<strong>Output:</strong> false
+</pre>
 
-When s3 = "aadbbcbcac", return true.
-When s3 = "aadbbbaccc", return false.
-```
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

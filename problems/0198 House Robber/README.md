@@ -2,19 +2,55 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy | Dynamic Programming | [Leetcode](https://leetcode.com/problems/house-robber/description/) |
+Easy | Dynamic Programming | [Leetcode](https://leetcode.com/problems/house-robber) | [solution](https://leetcode.com/problems/house-robber/solution/)
 
 
 -----------
 
-```
-You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security system connected and it will automatically contact the police if two adjacent houses were broken into on the same night.
+<p>You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security system connected and <b>it will automatically contact the police if two adjacent houses were broken into on the same night</b>.</p>
 
-Given a list of non-negative integers representing the amount of money of each house, determine the maximum amount of money you can rob tonight without alerting the police.
+<p>Given a list of non-negative integers representing the amount of money of each house, determine the maximum amount of money you can rob tonight <b>without alerting the police</b>.</p>
 
-Credits:Special thanks to @ifanchu for adding this problem and creating all test cases. Also thanks to @ts for adding additional test cases.
-```
+<p><strong>Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> [1,2,3,1]
+<strong>Output:</strong> 4
+<strong>Explanation:</strong> Rob house 1 (money = 1) and then rob house 3 (money = 3).
+&nbsp;            Total amount you can rob = 1 + 3 = 4.</pre>
+
+<p><strong>Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> [2,7,9,3,1]
+<strong>Output:</strong> 12
+<strong>Explanation:</strong> Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1).
+&nbsp;            Total amount you can rob = 2 + 9 + 1 = 12.
+</pre>
+
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Maximum Product Subarray](maximum-product-subarray)
+
+- [Medium] [House Robber II](house-robber-ii)
+
+- [Easy] [Paint House](paint-house)
+
+- [Easy] [Paint Fence](paint-fence)
+
+- [Medium] [House Robber III](house-robber-iii)
+
+- [Hard] [Non-negative Integers without Consecutive Ones](non-negative-integers-without-consecutive-ones)
+
+- [Hard] [Coin Path](coin-path)
+
+- [Medium] [Delete and Earn](delete-and-earn)
+
+
+
 
 ## Thought:

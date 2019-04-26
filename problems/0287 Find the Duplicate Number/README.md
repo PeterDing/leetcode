@@ -2,28 +2,52 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Array, Two Pointers, Binary Search | [Leetcode](https://leetcode.com/problems/find-the-duplicate-number/description/) |
+Medium | Array, Two Pointers, Binary Search | [Leetcode](https://leetcode.com/problems/find-the-duplicate-number) | [solution](https://leetcode.com/problems/find-the-duplicate-number/solution/)
 
 
 -----------
 
-```
-Given an array nums containing n + 1 integers where each integer is between 1 and n (inclusive), prove that at least one duplicate number must exist. Assume that there is only one duplicate number, find the duplicate one.
+<p>Given an array <i>nums</i> containing <i>n</i> + 1 integers where each integer is between 1 and <i>n</i> (inclusive), prove that at least one duplicate number must exist. Assume that there is only one duplicate number, find the duplicate one.</p>
 
+<p><b>Example 1:</b></p>
 
+<pre>
+<b>Input:</b> <code>[1,3,4,2,2]</code>
+<b>Output:</b> 2
+</pre>
 
-Note:
+<p><b>Example 2:</b></p>
 
-You must not modify the array (assume the array is read only).
-You must use only constant, O(1) extra space.
-Your runtime complexity should be less than O(n2).
-There is only one duplicate number in the array, but it could be repeated more than once.
+<pre>
+<b>Input:</b> [3,1,3,4,2]
+<b>Output:</b> 3</pre>
 
+<p><b>Note:</b></p>
 
+<ol>
+	<li>You <b>must not</b> modify the array (assume the array is read only).</li>
+	<li>You must use only constant, <i>O</i>(1) extra space.</li>
+	<li>Your runtime complexity should be less than <em>O</em>(<em>n</em><sup>2</sup>).</li>
+	<li>There is only one duplicate number in the array, but it could be repeated more than once.</li>
+</ol>
 
-Credits:Special thanks to @jianchao.li.fighter for adding this problem and creating all test cases.
-```
 
 -----------
+
+
+## Similar Problems
+
+- [Hard] [First Missing Positive](first-missing-positive)
+
+- [Easy] [Single Number](single-number)
+
+- [Medium] [Linked List Cycle II](linked-list-cycle-ii)
+
+- [Easy] [Missing Number](missing-number)
+
+- [Easy] [Set Mismatch](set-mismatch)
+
+
+
 
 ## Thought:

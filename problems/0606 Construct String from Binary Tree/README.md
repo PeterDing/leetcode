@@ -2,43 +2,53 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy | String, Tree | [Leetcode](https://leetcode.com/problems/construct-string-from-binary-tree/description/) |
+Easy | String, Tree | [Leetcode](https://leetcode.com/problems/construct-string-from-binary-tree) | [solution](https://leetcode.com/problems/construct-string-from-binary-tree/solution/)
 
 
 -----------
 
-```
-You need to construct a string consists of parenthesis and integers from a binary tree with the preorder traversing way.
+<p>You need to construct a string consists of parenthesis and integers from a binary tree with the preorder traversing way.</p>
 
-The null node needs to be represented by empty parenthesis pair "()". And you need to omit all the empty parenthesis pairs that don't affect the one-to-one mapping relationship between the string and the original binary tree.
+<p>The null node needs to be represented by empty parenthesis pair "()". And you need to omit all the empty parenthesis pairs that don't affect the one-to-one mapping relationship between the string and the original binary tree.</p>
 
-Example 1:
-
-Input: Binary tree: [1,2,3,4]
+<p><b>Example 1:</b><br />
+<pre>
+<b>Input:</b> Binary tree: [1,2,3,4]
        1
      /   \
     2     3
    /    
   4     
 
-Output: "1(2(4))(3)"
-Explanation: Originallay it needs to be "1(2(4)())(3()())", but you need to omit all the unnecessary empty parenthesis pairs. And it will be "1(2(4))(3)".
+<b>Output:</b> "1(2(4))(3)"
+<br/><b>Explanation:</b> Originallay it needs to be "1(2(4)())(3()())", <br/>but you need to omit all the unnecessary empty parenthesis pairs. <br/>And it will be "1(2(4))(3)".
+</pre>
+</p>
 
-
-
-Example 2:
-
-Input: Binary tree: [1,2,3,null,4]
+<p><b>Example 2:</b><br />
+<pre>
+<b>Input:</b> Binary tree: [1,2,3,null,4]
        1
      /   \
     2     3
      \  
       4 
 
-Output: "1(2()(4))(3)"
-Explanation: Almost the same as the first example, except we can't omit the first parenthesis pair to break the one-to-one mapping relationship between the input and the output.
-```
+<b>Output:</b> "1(2()(4))(3)"
+<br/><b>Explanation:</b> Almost the same as the first example, <br/>except we can't omit the first parenthesis pair to break the one-to-one mapping relationship between the input and the output.
+</pre>
+</p>
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Construct Binary Tree from String](construct-binary-tree-from-string)
+
+- [Medium] [Find Duplicate Subtrees](find-duplicate-subtrees)
+
+
+
 
 ## Thought:

@@ -2,29 +2,41 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy | Array | [Leetcode](https://leetcode.com/problems/maximum-average-subarray-i/description/) |
+Easy | Array | [Leetcode](https://leetcode.com/problems/maximum-average-subarray-i) | [solution](https://leetcode.com/problems/maximum-average-subarray-i/solution/)
 
 
 -----------
 
-```
-Given an array consisting of n integers, find the contiguous subarray of given length k that has the maximum average value. And you need to output the maximum average value.
+<p>Given an array consisting of <code>n</code> integers, find the contiguous subarray of given length <code>k</code> that has the maximum average value. And you need to output the maximum average value.</p>
 
+<p><b>Example 1:</b></p>
 
-Example 1:
+<pre>
+<b>Input:</b> [1,12,-5,-6,50,3], k = 4
+<b>Output:</b> 12.75
+<b>Explanation:</b> Maximum average is (12-5-6+50)/4 = 51/4 = 12.75
+</pre>
 
-Input: [1,12,-5,-6,50,3], k = 4
-Output: 12.75
-Explanation: Maximum average is (12-5-6+50)/4 = 51/4 = 12.75
+<p>&nbsp;</p>
 
+<p><b>Note:</b></p>
 
+<ol>
+	<li>1 &lt;= <code>k</code> &lt;= <code>n</code> &lt;= 30,000.</li>
+	<li>Elements of the given array will be in the range [-10,000, 10,000].</li>
+</ol>
 
-Note:
+<p>&nbsp;</p>
 
-1 <= k <= n <= 30,000.
-Elements of the given array will be in the range [-10,000, 10,000].
-```
 
 -----------
+
+
+## Similar Problems
+
+- [Hard] [Maximum Average Subarray II](maximum-average-subarray-ii)
+
+
+
 
 ## Thought:

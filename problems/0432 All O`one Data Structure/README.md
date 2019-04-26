@@ -2,27 +2,32 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Hard | Design | [Leetcode](https://leetcode.com/problems/all-oone-data-structure/description/) |
+Hard | Design | [Leetcode](https://leetcode.com/problems/all-oone-data-structure) | [solution](https://leetcode.com/problems/all-oone-data-structure/solution/)
 
 
 -----------
 
-```
-Implement a data structure supporting the following operations:
+<p>Implement a data structure supporting the following operations:</p>
 
+<p>
+<ol>
+<li>Inc(Key) - Inserts a new key <Key> with value 1. Or increments an existing key by 1. Key is guaranteed to be a <b>non-empty</b> string.</li>
+<li>Dec(Key) - If Key's value is 1, remove it from the data structure. Otherwise decrements an existing key by 1. If the key does not exist, this function does nothing. Key is guaranteed to be a <b>non-empty</b> string.</li>
+<li>GetMaxKey() - Returns one of the keys with maximal value. If no element exists, return an empty string <code>""</code>.</li>
+<li>GetMinKey() - Returns one of the keys with minimal value. If no element exists, return an empty string <code>""</code>.</li>
+</ol>
+</p>
 
-
-Inc(Key) - Inserts a new key  with value 1. Or increments an existing key by 1. Key is guaranteed to be a non-empty string.
-Dec(Key) - If Key's value is 1, remove it from the data structure. Otherwise decrements an existing key by 1. If the key does not exist, this function does nothing. Key is guaranteed to be a non-empty string.
-GetMaxKey() - Returns one of the keys with maximal value. If no element exists, return an empty string "".
-GetMinKey() - Returns one of the keys with minimal value. If no element exists, return an empty string "".
-
-
-
-
+<p>
 Challenge: Perform all these in O(1) time complexity.
-```
+</p>
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

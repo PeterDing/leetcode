@@ -2,34 +2,49 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy | Array, Math | [Leetcode](https://leetcode.com/problems/maximum-product-of-three-numbers/description/) |
+Easy | Array, Math | [Leetcode](https://leetcode.com/problems/maximum-product-of-three-numbers) | [solution](https://leetcode.com/problems/maximum-product-of-three-numbers/solution/)
 
 
 -----------
 
-```
-Given an integer array, find three numbers whose product is maximum and output the maximum product.
+<p>Given an integer array, find three numbers whose product is maximum and output the maximum product.</p>
 
-Example 1:
+<p><b>Example 1:</b></p>
 
-Input: [1,2,3]
-Output: 6
+<pre>
+<b>Input:</b> [1,2,3]
+<b>Output:</b> 6
+</pre>
 
+<p>&nbsp;</p>
 
+<p><b>Example 2:</b></p>
 
-Example 2:
+<pre>
+<b>Input:</b> [1,2,3,4]
+<b>Output:</b> 24
+</pre>
 
-Input: [1,2,3,4]
-Output: 24
+<p>&nbsp;</p>
 
+<p><b>Note:</b></p>
 
+<ol>
+	<li>The length of the given array will be in range [3,10<sup>4</sup>] and all elements are in the range [-1000, 1000].</li>
+	<li>Multiplication of any three numbers in the input won&#39;t exceed the range of 32-bit signed integer.</li>
+</ol>
 
-Note:
+<p>&nbsp;</p>
 
-The length of the given array will be in range [3,104] and all elements are in the range [-1000, 1000].
-Multiplication of any three numbers in the input won't exceed the range of 32-bit signed integer.
-```
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Maximum Product Subarray](maximum-product-subarray)
+
+
+
 
 ## Thought:

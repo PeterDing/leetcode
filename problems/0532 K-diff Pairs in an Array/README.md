@@ -2,47 +2,56 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy | Array, Two Pointers | [Leetcode](https://leetcode.com/problems/k-diff-pairs-in-an-array/description/) |
+Easy | Array, Two Pointers | [Leetcode](https://leetcode.com/problems/k-diff-pairs-in-an-array) | [solution](https://leetcode.com/problems/k-diff-pairs-in-an-array/solution/)
 
 
 -----------
 
-```
-Given an array of integers and an integer k, you need to find the number of unique k-diff pairs in the array. Here a k-diff pair is defined as an integer pair (i, j), where i and j are both numbers in the array and their absolute difference is k.
+<p>
+Given an array of integers and an integer <b>k</b>, you need to find the number of <b>unique</b> k-diff pairs in the array. Here a <b>k-diff</b> pair is defined as an integer pair (i, j), where <b>i</b> and <b>j</b> are both numbers in the array and their <a href = "https://en.wikipedia.org/wiki/Absolute_difference">absolute difference</a> is <b>k</b>.
+</p>
 
 
+<p><b>Example 1:</b><br />
+<pre>
+<b>Input:</b> [3, 1, 4, 1, 5], k = 2
+<b>Output:</b> 2
+<b>Explanation: </b>There are two 2-diff pairs in the array, (1, 3) and (3, 5).</br>Although we have two 1s in the input, we should only return the number of <b>unique</b> pairs.
+</pre>
+</p>
 
-Example 1:
+<p><b>Example 2:</b><br />
+<pre>
+<b>Input:</b>[1, 2, 3, 4, 5], k = 1
+<b>Output: </b>4
+<b>Explanation:</b> There are four 1-diff pairs in the array, (1, 2), (2, 3), (3, 4) and (4, 5).
+</pre>
+</p>
 
-Input: [3, 1, 4, 1, 5], k = 2
-Output: 2
-Explanation: There are two 2-diff pairs in the array, (1, 3) and (3, 5).Although we have two 1s in the input, we should only return the number of unique pairs.
+<p><b>Example 3:</b><br />
+<pre>
+<b>Input: </b>[1, 3, 1, 5, 4], k = 0
+<b>Output: </b>1
+<b>Explanation:</b> There is one 0-diff pair in the array, (1, 1).
+</pre>
+</p>
 
-
-
-Example 2:
-
-Input:[1, 2, 3, 4, 5], k = 1
-Output: 4
-Explanation: There are four 1-diff pairs in the array, (1, 2), (2, 3), (3, 4) and (4, 5).
-
-
-
-Example 3:
-
-Input: [1, 3, 1, 5, 4], k = 0
-Output: 1
-Explanation: There is one 0-diff pair in the array, (1, 1).
-
-
-
-Note:
-
-The pairs (i, j) and (j, i) count as the same pair.
-The length of the array won't exceed 10,000.
-All the integers in the given input belong to the range: [-1e7, 1e7].
-```
+<p><b>Note:</b><br>
+<ol>
+<li>The pairs (i, j) and (j, i) count as the same pair.</li>
+<li>The length of the array won't exceed 10,000.</li>
+<li>All the integers in the given input belong to the range: [-1e7, 1e7].</li>
+</ol>
+</p>
 
 -----------
+
+
+## Similar Problems
+
+- [Easy] [Minimum Absolute Difference in BST](minimum-absolute-difference-in-bst)
+
+
+
 
 ## Thought:

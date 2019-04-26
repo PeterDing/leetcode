@@ -2,34 +2,39 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Array, Backtracking | [Leetcode](https://leetcode.com/problems/word-search/description/) |
+Medium | Array, Backtracking | [Leetcode](https://leetcode.com/problems/word-search) | [solution](https://leetcode.com/problems/word-search/solution/)
 
 
 -----------
 
-```
-Given a 2D board and a word, find if the word exists in the grid.
+<p>Given a 2D board and a word, find if the word exists in the grid.</p>
 
+<p>The word can be constructed from letters of sequentially adjacent cell, where &quot;adjacent&quot; cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once.</p>
 
-The word can be constructed from letters of sequentially adjacent cell, where "adjacent" cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once.
+<p><strong>Example:</strong></p>
 
-
-
-For example,
-Given board = 
-
+<pre>
+board =
 [
-  ['A','B','C','E'],
-  ['S','F','C','S'],
-  ['A','D','E','E']
+  [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;,&#39;E&#39;],
+  [&#39;S&#39;,&#39;F&#39;,&#39;C&#39;,&#39;S&#39;],
+  [&#39;A&#39;,&#39;D&#39;,&#39;E&#39;,&#39;E&#39;]
 ]
 
+Given word = &quot;<strong>ABCCED</strong>&quot;, return <strong>true</strong>.
+Given word = &quot;<strong>SEE</strong>&quot;, return <strong>true</strong>.
+Given word = &quot;<strong>ABCB</strong>&quot;, return <strong>false</strong>.
+</pre>
 
-word = "ABCCED", -> returns true,
-word = "SEE", -> returns true,
-word = "ABCB", -> returns false.
-```
 
 -----------
+
+
+## Similar Problems
+
+- [Hard] [Word Search II](word-search-ii)
+
+
+
 
 ## Thought:

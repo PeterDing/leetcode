@@ -2,56 +2,52 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Heap | [Leetcode](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/description/) |
+Medium | Heap | [Leetcode](https://leetcode.com/problems/find-k-pairs-with-smallest-sums) | [solution](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/solution/)
 
 
 -----------
 
-```
-You are given two integer arrays nums1 and nums2 sorted in ascending order and an integer k. 
+<p>You are given two integer arrays <b>nums1</b> and <b>nums2</b> sorted in ascending order and an integer <b>k</b>.</p>
 
+<p>Define a pair <b>(u,v)</b> which consists of one element from the first array and one element from the second array.</p>
 
-Define a pair (u,v) which consists of one element from the first array and one element from the second array.
+<p>Find the k pairs <b>(u<sub>1</sub>,v<sub>1</sub>),(u<sub>2</sub>,v<sub>2</sub>) ...(u<sub>k</sub>,v<sub>k</sub>)</b> with the smallest sums.</p>
 
-Find the k pairs (u1,v1),(u2,v2) ...(uk,vk) with the smallest sums.
+<p><strong>Example 1:</strong></p>
 
+<pre>
+<strong>Input: </strong>nums1 = <span id="example-input-1-1">[1,7,11]</span>, nums2 = <span id="example-input-1-2">[2,4,6]</span>, k = <span id="example-input-1-3">3</span>
+<strong>Output: </strong><span id="example-output-1">[[1,2],[1,4],[1,6]] 
+<strong>Explanation: </strong></span>The first 3 pairs are returned from the sequence: 
+&nbsp;            [1,2],[1,4],[1,6],[7,2],[7,4],[11,2],[7,6],[11,4],[11,6]</pre>
 
-Example 1:
+<p><strong>Example 2:</strong></p>
 
-Given nums1 = [1,7,11], nums2 = [2,4,6],  k = 3
+<pre>
+<strong>Input: </strong>nums1 = [1,1,2], nums2 = [1,2,3], k = 2
+<strong>Output: </strong>[1,1],[1,1]<span>
+<strong>Explanation: </strong></span>The first 2 pairs are returned from the sequence: 
+&nbsp;            [1,1],[1,1],[1,2],[2,1],[1,2],[2,2],[1,3],[1,3],[2,3]</pre>
 
-Return: [1,2],[1,4],[1,6]
+<p><strong>Example 3:</strong></p>
 
-The first 3 pairs are returned from the sequence:
-[1,2],[1,4],[1,6],[7,2],[7,4],[11,2],[7,6],[11,4],[11,6]
+<pre>
+<strong>Input: </strong>nums1 = [1,2], nums2 = [3], k = 3
+<strong>Output: </strong>[1,3],[2,3]<span>
+<strong>Explanation: </strong></span>All possible pairs are returned from the sequence: [1,3],[2,3]
+</pre>
 
-
-
-Example 2:
-
-Given nums1 = [1,1,2], nums2 = [1,2,3],  k = 2
-
-Return: [1,1],[1,1]
-
-The first 2 pairs are returned from the sequence:
-[1,1],[1,1],[1,2],[2,1],[1,2],[2,2],[1,3],[1,3],[2,3]
-
-
-
-Example 3:
-
-Given nums1 = [1,2], nums2 = [3],  k = 3 
-
-Return: [1,3],[2,3]
-
-All possible pairs are returned from the sequence:
-[1,3],[2,3]
-
-
-
-Credits:Special thanks to @elmirap and @StefanPochmann for adding this problem and creating all test cases.
-```
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Kth Smallest Element in a Sorted Matrix](kth-smallest-element-in-a-sorted-matrix)
+
+- [Hard] [Find K-th Smallest Pair Distance](find-k-th-smallest-pair-distance)
+
+
+
 
 ## Thought:

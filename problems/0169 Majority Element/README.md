@@ -2,19 +2,37 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy | Array, Divide and Conquer, Bit Manipulation | [Leetcode](https://leetcode.com/problems/majority-element/description/) |
+Easy | Array, Divide and Conquer, Bit Manipulation | [Leetcode](https://leetcode.com/problems/majority-element) | [solution](https://leetcode.com/problems/majority-element/solution/)
 
 
 -----------
 
-```
-Given an array of size n, find the majority element. The majority element is the element that appears more than ⌊ n/2 ⌋ times.
+<p>Given an array of size <i>n</i>, find the majority element. The majority element is the element that appears <b>more than</b> <code>&lfloor; n/2 &rfloor;</code> times.</p>
 
-You may assume that the array is non-empty and the majority element always exist in the array.
+<p>You may assume that the array is non-empty and the majority element always exist in the array.</p>
 
-Credits:Special thanks to @ts for adding this problem and creating all test cases.
-```
+<p><strong>Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> [3,2,3]
+<strong>Output:</strong> 3</pre>
+
+<p><strong>Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> [2,2,1,1,1,2,2]
+<strong>Output:</strong> 2
+</pre>
+
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Majority Element II](majority-element-ii)
+
+
+
 
 ## Thought:

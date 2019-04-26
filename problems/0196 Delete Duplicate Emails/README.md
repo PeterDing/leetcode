@@ -2,15 +2,14 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy |  | [Leetcode](https://leetcode.com/problems/delete-duplicate-emails/description/) |
+Easy |  | [Leetcode](https://leetcode.com/problems/delete-duplicate-emails) | [solution](https://leetcode.com/problems/delete-duplicate-emails/solution/)
 
 
 -----------
 
-```
-Write a SQL query to delete all duplicate email entries in a table named Person, keeping only unique emails based on its smallest Id.
+<p>Write a SQL query to <strong>delete</strong> all duplicate email entries in a table named <code>Person</code>, keeping only unique emails based on its <i>smallest</i> <b>Id</b>.</p>
 
-
+<pre>
 +----+------------------+
 | Id | Email            |
 +----+------------------+
@@ -19,18 +18,30 @@ Write a SQL query to delete all duplicate email entries in a table named Person,
 | 3  | john@example.com |
 +----+------------------+
 Id is the primary key column for this table.
+</pre>
 
+<p>For example, after running your query, the above <code>Person</code> table should have the following rows:</p>
 
-For example, after running your query, the above Person table should have the following rows:
-
+<pre>
 +----+------------------+
 | Id | Email            |
 +----+------------------+
 | 1  | john@example.com |
 | 2  | bob@example.com  |
 +----+------------------+
-```
+</pre>
+
+<p><strong>Note:</strong></p>
+
+<p>Your output is the whole <code>Person</code>&nbsp;table after executing your sql. Use <code>delete</code> statement.</p>
+
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

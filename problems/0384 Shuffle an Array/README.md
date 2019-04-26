@@ -2,17 +2,16 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium |  | [Leetcode](https://leetcode.com/problems/shuffle-an-array/description/) |
+Medium |  | [Leetcode](https://leetcode.com/problems/shuffle-an-array) | [solution](https://leetcode.com/problems/shuffle-an-array/solution/)
 
 
 -----------
 
-```
-Shuffle a set of numbers without duplicates.
+<p>Shuffle a set of numbers without duplicates.
+</p>
 
-
-Example:
-
+<p><b>Example:</b>
+<pre>
 // Init an array with set 1, 2, and 3.
 int[] nums = {1,2,3};
 Solution solution = new Solution(nums);
@@ -25,8 +24,15 @@ solution.reset();
 
 // Returns the random shuffling of array [1,2,3].
 solution.shuffle();
-```
+</pre>
+</p>
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

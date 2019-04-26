@@ -2,30 +2,42 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Hard | Array, Sort | [Leetcode](https://leetcode.com/problems/insert-interval/description/) |
+Hard | Array, Sort | [Leetcode](https://leetcode.com/problems/insert-interval) | [solution](https://leetcode.com/problems/insert-interval/solution/)
 
 
 -----------
 
-```
-Given a set of non-overlapping intervals, insert a new interval into the intervals (merge if necessary).
+<p>Given a set of <em>non-overlapping</em> intervals, insert a new interval into the intervals (merge if necessary).</p>
 
-You may assume that the intervals were initially sorted according to their start times.
+<p>You may assume that the intervals were initially sorted according to their start times.</p>
 
+<p><strong>Example 1:</strong></p>
 
-Example 1:
-Given intervals [1,3],[6,9], insert and merge [2,5] in as [1,5],[6,9].
+<pre>
+<strong>Input:</strong> intervals = [[1,3],[6,9]], newInterval = [2,5]
+<strong>Output:</strong> [[1,5],[6,9]]
+</pre>
 
+<p><strong>Example 2:</strong></p>
 
+<pre>
+<strong>Input:</strong> intervals = <code>[[1,2],[3,5],[6,7],[8,10],[12,16]]</code>, newInterval = <code>[4,8]</code>
+<strong>Output:</strong> [[1,2],[3,10],[12,16]]
+<strong>Explanation:</strong> Because the new interval <code>[4,8]</code> overlaps with <code>[3,5],[6,7],[8,10]</code>.</pre>
 
-Example 2:
-Given [1,2],[3,5],[6,7],[8,10],[12,16], insert and merge [4,9] in as [1,2],[3,10],[12,16].
+<p><strong>NOTE:</strong>&nbsp;input types have been changed on April 15, 2019. Please reset to default code definition to get new method signature.</p>
 
-
-
-This is because the new interval [4,9] overlaps with [3,5],[6,7],[8,10].
-```
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Merge Intervals](merge-intervals)
+
+- [Hard] [Range Module](range-module)
+
+
+
 
 ## Thought:

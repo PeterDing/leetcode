@@ -2,32 +2,41 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Stack, Tree | [Leetcode](https://leetcode.com/problems/binary-tree-preorder-traversal/description/) |
+Medium | Stack, Tree | [Leetcode](https://leetcode.com/problems/binary-tree-preorder-traversal) | [solution](https://leetcode.com/problems/binary-tree-preorder-traversal/solution/)
 
 
 -----------
 
-```
-Given a binary tree, return the preorder traversal of its nodes' values.
+<p>Given a binary tree, return the <em>preorder</em> traversal of its nodes&#39; values.</p>
 
+<p><strong>Example:</strong></p>
 
-For example:
-Given binary tree [1,null,2,3],
-
+<pre>
+<strong>Input:</strong>&nbsp;<code>[1,null,2,3]</code>
    1
     \
      2
     /
    3
 
+<strong>Output:</strong>&nbsp;<code>[1,2,3]</code>
+</pre>
 
+<p><strong>Follow up:</strong> Recursive solution is trivial, could you do it iteratively?</p>
 
-return [1,2,3].
-
-
-Note: Recursive solution is trivial, could you do it iteratively?
-```
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Binary Tree Inorder Traversal](binary-tree-inorder-traversal)
+
+- [Medium] [Verify Preorder Sequence in Binary Search Tree](verify-preorder-sequence-in-binary-search-tree)
+
+- [Easy] [N-ary Tree Preorder Traversal](n-ary-tree-preorder-traversal)
+
+
+
 
 ## Thought:

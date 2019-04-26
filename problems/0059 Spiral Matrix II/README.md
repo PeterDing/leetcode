@@ -2,27 +2,34 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Array | [Leetcode](https://leetcode.com/problems/spiral-matrix-ii/description/) |
+Medium | Array | [Leetcode](https://leetcode.com/problems/spiral-matrix-ii) | [solution](https://leetcode.com/problems/spiral-matrix-ii/solution/)
 
 
 -----------
 
-```
-Given an integer n, generate a square matrix filled with elements from 1 to n2 in spiral order.
+<p>Given a positive integer <em>n</em>, generate a square matrix filled with elements from 1 to <em>n</em><sup>2</sup> in spiral order.</p>
 
+<p><strong>Example:</strong></p>
 
-For example,
-Given n = 3,
-
-You should return the following matrix:
-
+<pre>
+<strong>Input:</strong> 3
+<strong>Output:</strong>
 [
  [ 1, 2, 3 ],
  [ 8, 9, 4 ],
  [ 7, 6, 5 ]
 ]
-```
+</pre>
+
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Spiral Matrix](spiral-matrix)
+
+
+
 
 ## Thought:

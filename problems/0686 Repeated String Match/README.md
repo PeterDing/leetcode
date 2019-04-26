@@ -2,25 +2,29 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy | String | [Leetcode](https://leetcode.com/problems/repeated-string-match/description/) |
+Easy | String | [Leetcode](https://leetcode.com/problems/repeated-string-match) | [solution](https://leetcode.com/problems/repeated-string-match/solution/)
 
 
 -----------
 
-```
-Given two strings A and B, find the minimum number of times A has to be repeated such that B is a substring of it. If no such solution, return -1.
+<p>Given two strings A and B, find the minimum number of times A has to be repeated such that B is a substring of it. If no such solution, return -1.</p>
 
+<p>For example, with A = &quot;abcd&quot; and B = &quot;cdabcdab&quot;.</p>
 
-For example, with A = "abcd" and B = "cdabcdab". 
+<p>Return 3, because by repeating A three times (&ldquo;abcdabcdabcd&rdquo;), B is a substring of it; and B is not a substring of A repeated two times (&quot;abcdabcd&quot;).</p>
 
+<p><b>Note:</b><br />
+The length of <code>A</code> and <code>B</code> will be between 1 and 10000.</p>
 
-Return 3, because by repeating A three times (“abcdabcdabcd”), B is a substring of it; and B is not a substring of A repeated two times ("abcdabcd").
-
-
-Note:
-The length of A and B will be between 1 and 10000.
-```
 
 -----------
+
+
+## Similar Problems
+
+- [Easy] [Repeated Substring Pattern](repeated-substring-pattern)
+
+
+
 
 ## Thought:

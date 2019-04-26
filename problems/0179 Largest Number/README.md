@@ -2,21 +2,35 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Sort | [Leetcode](https://leetcode.com/problems/largest-number/description/) |
+Medium | Sort | [Leetcode](https://leetcode.com/problems/largest-number) | [solution](https://leetcode.com/problems/largest-number/solution/)
 
 
 -----------
 
-```
-Given a list of non negative integers, arrange them such that they form the largest number.
+<p>Given a list of non negative integers, arrange them such that they form the largest number.</p>
 
-For example, given [3, 30, 34, 5, 9], the largest formed number is 9534330.
+<p><strong>Example 1:</strong></p>
 
-Note: The result may be very large, so you need to return a string instead of an integer.
+<pre>
+<strong>Input:</strong> <code>[10,2]</code>
+<strong>Output:</strong> &quot;<code>210&quot;</code></pre>
 
-Credits:Special thanks to @ts for adding this problem and creating all test cases.
-```
+<p><strong>Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> <code>[3,30,34,5,9]</code>
+<strong>Output:</strong> &quot;<code>9534330&quot;</code>
+</pre>
+
+<p><strong>Note:</strong> The result may be very large, so you need to return a string instead of an integer.</p>
+
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

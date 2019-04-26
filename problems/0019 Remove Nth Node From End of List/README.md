@@ -2,29 +2,36 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Linked List, Two Pointers | [Leetcode](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/) |
+Medium | Linked List, Two Pointers | [Leetcode](https://leetcode.com/problems/remove-nth-node-from-end-of-list) | [solution](https://leetcode.com/problems/remove-nth-node-from-end-of-list/solution/)
 
 
 -----------
 
-```
-Given a linked list, remove the nth node from the end of list and return its head.
+<p>Given a linked list, remove the <em>n</em>-th node from the end of list and return its head.</p>
 
+<p><strong>Example:</strong></p>
 
-For example,
+<pre>
+Given linked list: <strong>1-&gt;2-&gt;3-&gt;4-&gt;5</strong>, and <strong><em>n</em> = 2</strong>.
 
+After removing the second node from the end, the linked list becomes <strong>1-&gt;2-&gt;3-&gt;5</strong>.
+</pre>
 
-   Given linked list: 1->2->3->4->5, and n = 2.
+<p><strong>Note:</strong></p>
 
-   After removing the second node from the end, the linked list becomes 1->2->3->5.
+<p>Given <em>n</em> will always be valid.</p>
 
+<p><strong>Follow up:</strong></p>
 
+<p>Could you do this in one pass?</p>
 
-Note:
-Given n will always be valid.
-Try to do this in one pass.
-```
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

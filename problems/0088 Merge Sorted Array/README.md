@@ -2,19 +2,43 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy | Array, Two Pointers | [Leetcode](https://leetcode.com/problems/merge-sorted-array/description/) |
+Easy | Array, Two Pointers | [Leetcode](https://leetcode.com/problems/merge-sorted-array) | [solution](https://leetcode.com/problems/merge-sorted-array/solution/)
 
 
 -----------
 
-```
-Given two sorted integer arrays nums1 and nums2, merge nums2 into nums1 as one sorted array.
+<p>Given two sorted integer arrays <em>nums1</em> and <em>nums2</em>, merge <em>nums2</em> into <em>nums1</em> as one sorted array.</p>
 
+<p><strong>Note:</strong></p>
 
-Note:
-You may assume that nums1 has enough space (size that is greater or equal to m + n) to hold additional elements from nums2. The number of elements initialized in nums1 and nums2 are m and n respectively.
-```
+<ul>
+	<li>The number of elements initialized in <em>nums1</em> and <em>nums2</em> are <em>m</em> and <em>n</em> respectively.</li>
+	<li>You may assume that <em>nums1</em> has enough space (size that is greater or equal to <em>m</em> + <em>n</em>) to hold additional elements from <em>nums2</em>.</li>
+</ul>
+
+<p><strong>Example:</strong></p>
+
+<pre>
+<strong>Input:</strong>
+nums1 = [1,2,3,0,0,0], m = 3
+nums2 = [2,5,6],       n = 3
+
+<strong>Output:</strong>&nbsp;[1,2,2,3,5,6]
+</pre>
+
 
 -----------
+
+
+## Similar Problems
+
+- [Easy] [Merge Two Sorted Lists](merge-two-sorted-lists)
+
+- [Easy] [Squares of a Sorted Array](squares-of-a-sorted-array)
+
+- [Medium] [Interval List Intersections](interval-list-intersections)
+
+
+
 
 ## Thought:

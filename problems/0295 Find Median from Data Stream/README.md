@@ -2,38 +2,55 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Hard | Heap, Design | [Leetcode](https://leetcode.com/problems/find-median-from-data-stream/description/) |
+Hard | Heap, Design | [Leetcode](https://leetcode.com/problems/find-median-from-data-stream) | [solution](https://leetcode.com/problems/find-median-from-data-stream/solution/)
 
 
 -----------
 
-```
-Median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value. So the median is the mean of the two middle value.
-Examples: 
-[2,3,4] , the median is 3
-[2,3], the median is (2 + 3) / 2 = 2.5 
+<p>Median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value. So the median is the mean of the two middle value.</p>
+For example,
 
+<p><code>[2,3,4]</code>, the median is <code>3</code></p>
 
-Design a data structure that supports the following two operations:
+<p><code>[2,3]</code>, the median is <code>(2 + 3) / 2 = 2.5</code></p>
 
+<p>Design a data structure that supports the following two operations:</p>
 
-void addNum(int num) - Add a integer number from the data stream to the data structure.
-double findMedian() - Return the median of all elements so far.
+<ul>
+	<li>void addNum(int num) - Add a integer number from the data stream to the data structure.</li>
+	<li>double findMedian() - Return the median of all elements so far.</li>
+</ul>
 
+<p>&nbsp;</p>
 
+<p><strong>Example:</strong></p>
 
-For example:
-
+<pre>
 addNum(1)
 addNum(2)
-findMedian() -> 1.5
+findMedian() -&gt; 1.5
 addNum(3) 
-findMedian() -> 2
+findMedian() -&gt; 2
+</pre>
 
+<p>&nbsp;</p>
 
-Credits:Special thanks to @Louis1992 for adding this problem and creating all test cases.
-```
+<p><strong>Follow up:</strong></p>
+
+<ol>
+	<li>If all integer numbers from the stream are between 0&nbsp;and 100, how would you optimize it?</li>
+	<li>If 99% of all integer numbers from the stream are between 0 and 100, how would you optimize it?</li>
+</ol>
+
 
 -----------
+
+
+## Similar Problems
+
+- [Hard] [Sliding Window Median](sliding-window-median)
+
+
+
 
 ## Thought:

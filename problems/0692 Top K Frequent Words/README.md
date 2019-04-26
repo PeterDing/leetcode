@@ -2,45 +2,55 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Hash Table, Heap, Trie | [Leetcode](https://leetcode.com/problems/top-k-frequent-words/description/) |
+Medium | Hash Table, Heap, Trie | [Leetcode](https://leetcode.com/problems/top-k-frequent-words) | [solution](https://leetcode.com/problems/top-k-frequent-words/solution/)
 
 
 -----------
 
-```
-Given a non-empty list of words, return the k most frequent elements.
-Your answer should be sorted by frequency from highest to lowest. If two words have the same frequency, then the word with the lower alphabetical order comes first.
+<p>Given a non-empty list of words, return the <i>k</i> most frequent elements.</p>
+<p>Your answer should be sorted by frequency from highest to lowest. If two words have the same frequency, then the word with the lower alphabetical order comes first.</p>
 
-Example 1:
-
-Input: ["i", "love", "leetcode", "i", "love", "coding"], k = 2
-Output: ["i", "love"]
-Explanation: "i" and "love" are the two most frequent words.
+<p><b>Example 1:</b><br />
+<pre>
+<b>Input:</b> ["i", "love", "leetcode", "i", "love", "coding"], k = 2
+<b>Output:</b> ["i", "love"]
+<b>Explanation:</b> "i" and "love" are the two most frequent words.
     Note that "i" comes before "love" due to a lower alphabetical order.
+</pre>
+</p>
 
-
-
-Example 2:
-
-Input: ["the", "day", "is", "sunny", "the", "the", "the", "sunny", "is", "is"], k = 4
-Output: ["the", "is", "sunny", "day"]
-Explanation: "the", "is", "sunny" and "day" are the four most frequent words,
+<p><b>Example 2:</b><br />
+<pre>
+<b>Input:</b> ["the", "day", "is", "sunny", "the", "the", "the", "sunny", "is", "is"], k = 4
+<b>Output:</b> ["the", "is", "sunny", "day"]
+<b>Explanation:</b> "the", "is", "sunny" and "day" are the four most frequent words,
     with the number of occurrence being 4, 3, 2 and 1 respectively.
+</pre>
+</p>
 
+<p><b>Note:</b><br>
+<ol>
+<li>You may assume <i>k</i> is always valid, 1 &le; <i>k</i> &le; number of unique elements.</li>
+<li>Input words contain only lowercase letters.</li>
+</ol>
+</p>
 
-
-Note:
-
-You may assume k is always valid, 1 ≤ k ≤ number of unique elements.
-Input words contain only lowercase letters.
-
-
-
-Follow up:
-
-Try to solve it in O(n log k) time and O(n) extra space.
-```
+<p><b>Follow up:</b><br />
+<ol>
+<li>Try to solve it in <i>O</i>(<i>n</i> log <i>k</i>) time and <i>O</i>(<i>n</i>) extra space.</li>
+</ol>
+</p>
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Top K Frequent Elements](top-k-frequent-elements)
+
+- [Medium] [K Closest Points to Origin](k-closest-points-to-origin)
+
+
+
 
 ## Thought:

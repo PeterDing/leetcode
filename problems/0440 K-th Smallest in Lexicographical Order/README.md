@@ -2,28 +2,35 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Hard |  | [Leetcode](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order/description/) |
+Hard |  | [Leetcode](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order) | [solution](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order/solution/)
 
 
 -----------
 
-```
-Given integers n and k, find the lexicographically k-th smallest integer in the range from 1 to n.
+<p>Given integers <code>n</code> and <code>k</code>, find the lexicographically k-th smallest integer in the range from <code>1</code> to <code>n</code>.</p>
 
-Note: 1 ≤ k ≤ n ≤ 109.
+<p>Note: 1 &le; k &le; n &le; 10<sup>9</sup>.</p>
 
-Example:
-
-Input:
+<p><b>Example:</b>
+<pre>
+<b>Input:</b>
 n: 13   k: 2
 
-Output:
+<b>Output:</b>
 10
 
-Explanation:
+<b>Explanation:</b>
 The lexicographical order is [1, 10, 11, 12, 13, 2, 3, 4, 5, 6, 7, 8, 9], so the second smallest number is 10.
-```
+</pre>
+</p>
+
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

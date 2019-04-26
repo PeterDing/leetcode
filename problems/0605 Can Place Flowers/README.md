@@ -2,37 +2,47 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy | Array | [Leetcode](https://leetcode.com/problems/can-place-flowers/description/) |
+Easy | Array | [Leetcode](https://leetcode.com/problems/can-place-flowers) | [solution](https://leetcode.com/problems/can-place-flowers/solution/)
 
 
 -----------
 
-```
-Suppose you have a long flowerbed in which some of the plots are planted and some are not. However, flowers cannot be planted in adjacent plots - they would compete for water and both would die.
+<p>Suppose you have a long flowerbed in which some of the plots are planted and some are not. However, flowers cannot be planted in adjacent plots - they would compete for water and both would die.</p>
 
-Given a flowerbed (represented as an array containing 0 and 1, where 0 means empty and 1 means not empty), and a number n, return if n new flowers can be planted in it without violating the no-adjacent-flowers rule.
+<p>Given a flowerbed (represented as an array containing 0 and 1, where 0 means empty and 1 means not empty), and a number <b>n</b>, return if <b>n</b> new flowers can be planted in it without violating the no-adjacent-flowers rule.</p>
 
-Example 1:
+<p><b>Example 1:</b><br />
+<pre>
+<b>Input:</b> flowerbed = [1,0,0,0,1], n = 1
+<b>Output:</b> True
+</pre>
+</p>
 
-Input: flowerbed = [1,0,0,0,1], n = 1
-Output: True
+<p><b>Example 2:</b><br />
+<pre>
+<b>Input:</b> flowerbed = [1,0,0,0,1], n = 2
+<b>Output:</b> False
+</pre>
+</p>
 
-
-
-Example 2:
-
-Input: flowerbed = [1,0,0,0,1], n = 2
-Output: False
-
-
-
-Note:
-
-The input array won't violate no-adjacent-flowers rule.
-The input array size is in the range of [1, 20000].
-n is a non-negative integer which won't exceed the input array size.
-```
+<p><b>Note:</b><br>
+<ol>
+<li>The input array won't violate no-adjacent-flowers rule.</li>
+<li>The input array size is in the range of [1, 20000].</li>
+<li><b>n</b> is a non-negative integer which won't exceed the input array size.</li>
+</ol>
+</p>
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Teemo Attacking](teemo-attacking)
+
+- [Medium] [Asteroid Collision](asteroid-collision)
+
+
+
 
 ## Thought:

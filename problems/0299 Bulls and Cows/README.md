@@ -2,38 +2,43 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Hash Table | [Leetcode](https://leetcode.com/problems/bulls-and-cows/description/) |
+Medium | Hash Table | [Leetcode](https://leetcode.com/problems/bulls-and-cows) | [solution](https://leetcode.com/problems/bulls-and-cows/solution/)
 
 
 -----------
 
-```
-You are playing the following Bulls and Cows game with your friend: You write down a number and ask your friend to guess what the number is. Each time your friend makes a guess, you provide a hint that indicates how many digits in said guess match your secret number exactly in both digit and position (called "bulls") and how many digits match the secret number but locate in the wrong position (called "cows"). Your friend will use successive guesses and hints to eventually derive the secret number.
+<p>You are playing the following <a href="https://en.wikipedia.org/wiki/Bulls_and_Cows" target="_blank">Bulls and Cows</a> game with your friend: You write down a number and ask your friend to guess what the number is. Each time your friend makes a guess, you provide a hint that indicates how many digits in said guess match your secret number exactly in both digit and position (called &quot;bulls&quot;) and how many digits match the secret number but locate in the wrong position (called &quot;cows&quot;). Your friend will use successive guesses and hints to eventually derive the secret number.</p>
 
+<p>Write a function to return a hint according to the secret number and friend&#39;s guess, use <code>A</code> to indicate the bulls and <code>B</code> to indicate the cows.&nbsp;</p>
 
-For example:
+<p>Please note that both secret number and friend&#39;s guess may contain duplicate digits.</p>
 
-Secret number:  "1807"
-Friend's guess: "7810"
+<p><strong>Example 1:</strong></p>
 
-Hint: 1 bull and 3 cows. (The bull is 8, the cows are 0, 1 and 7.)
+<pre>
+<strong>Input:</strong> secret = &quot;1807&quot;, guess = &quot;7810&quot;
 
+<strong>Output:</strong> &quot;1A3B&quot;
 
-Write a function to return a hint according to the secret number and friend's guess, use A to indicate the bulls and B to indicate the cows. In the above example, your function should return "1A3B". 
+<strong>Explanation:</strong> <code>1</code><span style="font-family: sans-serif, Arial, Verdana, &quot;Trebuchet MS&quot;;"> bull and </span><code>3</code><span style="font-family: sans-serif, Arial, Verdana, &quot;Trebuchet MS&quot;;"> cows. The bull is </span><code>8</code><span style="font-family: sans-serif, Arial, Verdana, &quot;Trebuchet MS&quot;;">, the cows are </span><code>0</code><span style="font-family: sans-serif, Arial, Verdana, &quot;Trebuchet MS&quot;;">, </span><code>1</code><span style="font-family: sans-serif, Arial, Verdana, &quot;Trebuchet MS&quot;;"> and </span><code>7<font face="sans-serif, Arial, Verdana, Trebuchet MS">.</font></code></pre>
 
-Please note that both secret number and friend's guess may contain duplicate digits, for example:
+<p><strong>Example 2:</strong></p>
 
-Secret number:  "1123"
-Friend's guess: "0111"
+<pre>
+<strong>Input:</strong> secret = &quot;1123&quot;, guess = &quot;0111&quot;
 
-In this case, the 1st 1 in friend's guess is a bull, the 2nd or 3rd 1 is a cow, and your function should return "1A1B".
+<strong>Output:</strong> &quot;1A1B&quot;
 
+<strong>Explanation: </strong>The 1st <code>1 </code><span style="font-family: sans-serif, Arial, Verdana, &quot;Trebuchet MS&quot;;">in friend&#39;s guess is a bull, the 2nd or 3rd </span><code>1</code><span style="font-family: sans-serif, Arial, Verdana, &quot;Trebuchet MS&quot;;"> is a cow</span><span style="font-family: sans-serif, Arial, Verdana, &quot;Trebuchet MS&quot;;">.</span></pre>
 
-You may assume that the secret number and your friend's guess only contain digits, and their lengths are always equal.
-
-Credits:Special thanks to @jeantimex for adding this problem and creating all test cases.
-```
+<p><strong>Note: </strong>You may assume that the secret number and your friend&#39;s guess only contain digits, and their lengths are always equal.</p>
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

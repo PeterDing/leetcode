@@ -2,32 +2,41 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium |  | [Leetcode](https://leetcode.com/problems/transpose-file/description/) |
+Medium |  | [Leetcode](https://leetcode.com/problems/transpose-file) | [solution](https://leetcode.com/problems/transpose-file/solution/)
 
 
 -----------
 
-```
-Given a text file file.txt, transpose its content.
+<p>Given a text file <code>file.txt</code>, transpose its content.</p>
 
-You may assume that each row has the same number of columns and each field is separated by the ' ' character.
+<p>You may assume that each row has the same number of columns and each field is separated by the <code>&#39; &#39;</code> character.</p>
 
+<p><strong>Example:</strong></p>
 
-For example, if file.txt has the following content:
+<p>If <code>file.txt</code> has the following content:</p>
 
+<pre>
 name age
 alice 21
 ryan 30
+</pre>
 
+<p>Output the following:</p>
 
-
-
-Output the following:
-
+<pre>
 name alice ryan
 age 21 30
-```
+</pre>
+
+<p>&nbsp;</p>
+
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

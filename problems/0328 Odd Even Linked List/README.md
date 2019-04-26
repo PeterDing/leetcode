@@ -2,30 +2,45 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Linked List | [Leetcode](https://leetcode.com/problems/odd-even-linked-list/description/) |
+Medium | Linked List | [Leetcode](https://leetcode.com/problems/odd-even-linked-list) | [solution](https://leetcode.com/problems/odd-even-linked-list/solution/)
 
 
 -----------
 
-```
-Given a singly linked list, group all odd nodes together followed by the even nodes. Please note here we are talking about the node number and not the value in the nodes.
+<p>Given a singly linked list, group all odd nodes together followed by the even nodes. Please note here we are talking about the node number and not the value in the nodes.</p>
 
-You should try to do it in place. The program should run in O(1) space complexity and O(nodes) time complexity.
+<p>You should try to do it in place. The program should run in O(1) space complexity and O(nodes) time complexity.</p>
 
+<p><b>Example 1:</b></p>
 
-Example:
-Given 1->2->3->4->5->NULL,
-return 1->3->5->2->4->NULL.
+<pre>
+<strong>Input: </strong><code>1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL</code>
+<strong>Output: </strong><code>1-&gt;3-&gt;5-&gt;2-&gt;4-&gt;NULL</code>
+</pre>
 
+<p><b>Example 2:</b></p>
 
-Note:
-The relative order inside both the even and odd groups should remain as it was in the input. 
-The first node is considered odd, the second node even and so on ...
+<pre>
+<strong>Input: </strong>2<code>-&gt;1-&gt;3-&gt;5-&gt;6-&gt;4-&gt;7-&gt;NULL</code>
+<strong>Output: </strong><code>2-&gt;3-&gt;6-&gt;7-&gt;1-&gt;5-&gt;4-&gt;NULL</code>
+</pre>
 
+<p><b>Note:</b></p>
 
-Credits:Special thanks to @DjangoUnchained for adding this problem and creating all test cases.
-```
+<ul>
+	<li>The relative order inside both the even and odd groups should remain as it was in the input.</li>
+	<li>The first node is considered odd, the second node even and so on ...</li>
+</ul>
+
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Split Linked List in Parts](split-linked-list-in-parts)
+
+
+
 
 ## Thought:

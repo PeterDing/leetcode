@@ -2,27 +2,23 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium |  | [Leetcode](https://leetcode.com/problems/my-calendar-ii/description/) |
+Medium | Ordered Map | [Leetcode](https://leetcode.com/problems/my-calendar-ii) | [solution](https://leetcode.com/problems/my-calendar-ii/solution/)
 
 
 -----------
 
-```
-Implement a MyCalendarTwo class to store your events. A new event can be added if adding the event will not cause a triple booking.
+<p>Implement a <code>MyCalendarTwo</code> class to store your events. A new event can be added if adding the event will not cause a <b>triple</b> booking.</p>
 
-Your class will have one method, book(int start, int end).  Formally, this represents a booking on the half open interval [start, end), the range of real numbers x such that start <= x < end.
+<p>Your class will have one method, <code>book(int start, int end)</code>. Formally, this represents a booking on the half open interval <code>[start, end)</code>, the range of real numbers <code>x</code> such that <code>start &lt;= x &lt; end</code>.</p>
 
-A triple booking happens when three events have some non-empty intersection (ie., there is some time that is common to all 3 events.)
+<p>A <i>triple booking</i> happens when <b>three</b> events have some non-empty intersection (ie., there is some time that is common to all 3 events.)</p>
 
-For each call to the method MyCalendar.book, return true if the event can be added to the calendar successfully without causing a triple booking.  Otherwise, return false and do not add the event to the calendar.
+<p>For each call to the method <code>MyCalendar.book</code>, return <code>true</code> if the event can be added to the calendar successfully without causing a <b>triple</b> booking. Otherwise, return <code>false</code> and do not add the event to the calendar.</p>
+Your class will be called like this: <code>MyCalendar cal = new MyCalendar();</code> <code>MyCalendar.book(start, end)</code>
 
+<p><b>Example 1:</b></p>
 
-Your class will be called like this:
-MyCalendar cal = new MyCalendar();
-MyCalendar.book(start, end)
-
-Example 1:
-
+<pre>
 MyCalendar();
 MyCalendar.book(10, 20); // returns true
 MyCalendar.book(50, 60); // returns true
@@ -30,20 +26,35 @@ MyCalendar.book(10, 40); // returns true
 MyCalendar.book(5, 15); // returns false
 MyCalendar.book(5, 10); // returns true
 MyCalendar.book(25, 55); // returns true
-Explanation: 
+<b>Explanation:</b> 
 The first two events can be booked.  The third event can be double booked.
-The fourth event (5, 15) can't be booked, because it would result in a triple booking.
+The fourth event (5, 15) can&#39;t be booked, because it would result in a triple booking.
 The fifth event (5, 10) can be booked, as it does not use time 10 which is already double booked.
 The sixth event (25, 55) can be booked, as the time in [25, 40) will be double booked with the third event;
 the time [40, 50) will be single booked, and the time [50, 55) will be double booked with the second event.
+</pre>
 
+<p>&nbsp;</p>
 
+<p><b>Note:</b></p>
 
-Note:
-The number of calls to MyCalendar.book per test case will be at most 1000.
-In calls to MyCalendar.book(start, end), start and end are integers in the range [0, 10^9].
-```
+<ul>
+	<li>The number of calls to <code>MyCalendar.book</code> per test case will be at most <code>1000</code>.</li>
+	<li>In calls to <code>MyCalendar.book(start, end)</code>, <code>start</code> and <code>end</code> are integers in the range <code>[0, 10^9]</code>.</li>
+</ul>
+
+<p>&nbsp;</p>
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [My Calendar I](my-calendar-i)
+
+- [Hard] [My Calendar III](my-calendar-iii)
+
+
+
 
 ## Thought:

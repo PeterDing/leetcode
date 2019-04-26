@@ -2,21 +2,51 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Dynamic Programming | [Leetcode](https://leetcode.com/problems/house-robber-ii/description/) |
+Medium | Dynamic Programming | [Leetcode](https://leetcode.com/problems/house-robber-ii) | [solution](https://leetcode.com/problems/house-robber-ii/solution/)
 
 
 -----------
 
-```
-Note: This is an extension of House Robber.
+<p>You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed. All houses at this place are <strong>arranged in a circle.</strong> That means the first house is the neighbor of the last one. Meanwhile, adjacent houses have security system connected and&nbsp;<b>it will automatically contact the police if two adjacent houses were broken into on the same night</b>.</p>
 
-After robbing those houses on that street, the thief has found himself a new place for his thievery so that he will not get too much attention. This time, all houses at this place are arranged in a circle. That means the first house is the neighbor of the last one. Meanwhile, the security system for these houses remain the same as for those in the previous street. 
+<p>Given a list of non-negative integers representing the amount of money of each house, determine the maximum amount of money you can rob tonight <strong>without alerting the police</strong>.</p>
 
-Given a list of non-negative integers representing the amount of money of each house, determine the maximum amount of money you can rob tonight without alerting the police.
+<p><strong>Example 1:</strong></p>
 
-Credits:Special thanks to @Freezen for adding this problem and creating all test cases.
-```
+<pre>
+<strong>Input:</strong> [2,3,2]
+<strong>Output:</strong> 3
+<strong>Explanation:</strong> You cannot rob house 1 (money = 2) and then rob house 3 (money = 2),
+&nbsp;            because they are adjacent houses.
+</pre>
+
+<p><strong>Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> [1,2,3,1]
+<strong>Output:</strong> 4
+<strong>Explanation:</strong> Rob house 1 (money = 1) and then rob house 3 (money = 3).
+&nbsp;            Total amount you can rob = 1 + 3 = 4.</pre>
+
 
 -----------
+
+
+## Similar Problems
+
+- [Easy] [House Robber](house-robber)
+
+- [Easy] [Paint House](paint-house)
+
+- [Easy] [Paint Fence](paint-fence)
+
+- [Medium] [House Robber III](house-robber-iii)
+
+- [Hard] [Non-negative Integers without Consecutive Ones](non-negative-integers-without-consecutive-ones)
+
+- [Hard] [Coin Path](coin-path)
+
+
+
 
 ## Thought:

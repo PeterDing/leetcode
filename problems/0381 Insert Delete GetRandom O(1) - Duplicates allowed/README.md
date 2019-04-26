@@ -2,24 +2,23 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Hard | Array, Hash Table, Design | [Leetcode](https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/description/) |
+Hard | Array, Hash Table, Design | [Leetcode](https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed) | [solution](https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/solution/)
 
 
 -----------
 
-```
-Design a data structure that supports all following operations in average O(1) time.
-Note: Duplicate elements are allowed.
+<p>Design a data structure that supports all following operations in <i>average</i> <b>O(1)</b> time.</p>
+<b>Note: Duplicate elements are allowed.</b>
+<p>
+<ol>
+<li><code>insert(val)</code>: Inserts an item val to the collection.</li>
+<li><code>remove(val)</code>: Removes an item val from the collection if present.</li>
+<li><code>getRandom</code>: Returns a random element from current collection of elements. The probability of each element being returned is <b>linearly related</b> to the number of same value the collection contains.</li>
+</ol>
+</p>
 
-
-insert(val): Inserts an item val to the collection.
-remove(val): Removes an item val from the collection if present.
-getRandom: Returns a random element from current collection of elements. The probability of each element being returned is linearly related to the number of same value the collection contains.
-
-
-
-Example:
-
+<p><b>Example:</b>
+<pre>
 // Init an empty collection.
 RandomizedCollection collection = new RandomizedCollection();
 
@@ -40,8 +39,17 @@ collection.remove(1);
 
 // getRandom should return 1 and 2 both equally likely.
 collection.getRandom();
-```
+</pre>
+</p>
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Insert Delete GetRandom O(1)](insert-delete-getrandom-o1)
+
+
+
 
 ## Thought:

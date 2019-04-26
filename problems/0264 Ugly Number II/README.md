@@ -2,26 +2,45 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Math, Dynamic Programming, Heap | [Leetcode](https://leetcode.com/problems/ugly-number-ii/description/) |
+Medium | Math, Dynamic Programming, Heap | [Leetcode](https://leetcode.com/problems/ugly-number-ii) | [solution](https://leetcode.com/problems/ugly-number-ii/solution/)
 
 
 -----------
 
-```
-Write a program to find the n-th ugly number.
+<p>Write a program to find the <code>n</code>-th ugly number.</p>
 
+<p>Ugly numbers are<strong> positive numbers</strong> whose prime factors only include <code>2, 3, 5</code>.&nbsp;</p>
 
+<p><strong>Example:</strong></p>
 
-Ugly numbers are positive numbers whose prime factors only include 2, 3, 5. For example, 1, 2, 3, 4, 5, 6, 8, 9, 10, 12 is the sequence of the first 10 ugly numbers.
+<pre>
+<strong>Input:</strong> n = 10
+<strong>Output:</strong> 12
+<strong>Explanation: </strong><code>1, 2, 3, 4, 5, 6, 8, 9, 10, 12</code> is the sequence of the first <code>10</code> ugly numbers.</pre>
 
+<p><strong>Note: </strong>&nbsp;</p>
 
-
-Note that 1 is typically treated as an ugly number, and n does not exceed 1690.
-
-
-Credits:Special thanks to @jianchao.li.fighter for adding this problem and creating all test cases.
-```
+<ol>
+	<li><code>1</code> is typically treated as an ugly number.</li>
+	<li><code>n</code> <b>does not exceed 1690</b>.</li>
+</ol>
 
 -----------
+
+
+## Similar Problems
+
+- [Hard] [Merge k Sorted Lists](merge-k-sorted-lists)
+
+- [Easy] [Count Primes](count-primes)
+
+- [Easy] [Ugly Number](ugly-number)
+
+- [Medium] [Perfect Squares](perfect-squares)
+
+- [Medium] [Super Ugly Number](super-ugly-number)
+
+
+
 
 ## Thought:

@@ -2,43 +2,57 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Depth-first Search, Breadth-first Search, Graph, Topological Sort | [Leetcode](https://leetcode.com/problems/course-schedule/description/) |
+Medium | Depth-first Search, Breadth-first Search, Graph, Topological Sort | [Leetcode](https://leetcode.com/problems/course-schedule) | [solution](https://leetcode.com/problems/course-schedule/solution/)
 
 
 -----------
 
-```
-There are a total of n courses you have to take, labeled from 0 to n - 1.
+<p>There are a total of <i>n</i> courses you have to take, labeled from <code>0</code> to <code>n-1</code>.</p>
 
-Some courses may have prerequisites, for example to take course 0 you have to first take course 1, which is expressed as a pair: [0,1]
+<p>Some courses may have prerequisites, for example to take course 0 you have to first take course 1, which is expressed as a pair: <code>[0,1]</code></p>
 
+<p>Given the total number of courses and a list of prerequisite <b>pairs</b>, is it possible for you to finish all courses?</p>
 
-Given the total number of courses and a list of prerequisite pairs, is it possible for you to finish all courses?
+<p><strong>Example 1:</strong></p>
 
+<pre>
+<strong>Input:</strong> 2, [[1,0]] 
+<strong>Output: </strong>true
+<strong>Explanation:</strong>&nbsp;There are a total of 2 courses to take. 
+&nbsp;            To take course 1 you should have finished course 0. So it is possible.</pre>
 
-For example:
-2, [[1,0]]
-There are a total of 2 courses to take. To take course 1 you should have finished course 0. So it is possible.
+<p><strong>Example 2:</strong></p>
 
-2, [[1,0],[0,1]]
-There are a total of 2 courses to take. To take course 1 you should have finished course 0, and to take course 0 you should also have finished course 1. So it is impossible.
+<pre>
+<strong>Input:</strong> 2, [[1,0],[0,1]]
+<strong>Output: </strong>false
+<strong>Explanation:</strong>&nbsp;There are a total of 2 courses to take. 
+&nbsp;            To take course 1 you should have finished course 0, and to take course 0 you should
+&nbsp;            also have finished course 1. So it is impossible.
+</pre>
 
-Note:
+<p><b>Note:</b></p>
 
-The input prerequisites is a graph represented by a list of edges, not adjacency matrices. Read more about how a graph is represented.
-You may assume that there are no duplicate edges in the input prerequisites.
+<ol>
+	<li>The input prerequisites is a graph represented by <b>a list of edges</b>, not adjacency matrices. Read more about <a href="https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/representing-graphs" target="_blank">how a graph is represented</a>.</li>
+	<li>You may assume that there are no duplicate edges in the input prerequisites.</li>
+</ol>
 
-
-
-click to show more hints.
-
-Hints:
-
-This problem is equivalent to finding if a cycle exists in a directed graph. If a cycle exists, no topological ordering exists and therefore it will be impossible to take all courses.
-Topological Sort via DFS - A great video tutorial (21 minutes) on Coursera explaining the basic concepts of Topological Sort.
-Topological sort could also be done via BFS.
-```
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Course Schedule II](course-schedule-ii)
+
+- [Medium] [Graph Valid Tree](graph-valid-tree)
+
+- [Medium] [Minimum Height Trees](minimum-height-trees)
+
+- [Hard] [Course Schedule III](course-schedule-iii)
+
+
+
 
 ## Thought:

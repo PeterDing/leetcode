@@ -2,31 +2,45 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy | Tree | [Leetcode](https://leetcode.com/problems/invert-binary-tree/description/) |
+Easy | Tree | [Leetcode](https://leetcode.com/problems/invert-binary-tree) | [solution](https://leetcode.com/problems/invert-binary-tree/solution/)
 
 
 -----------
 
-```
-Invert a binary tree.
+<p>Invert a binary tree.</p>
+
+<p><strong>Example:</strong></p>
+
+<p>Input:</p>
+
+<pre>
      4
    /   \
   2     7
  / \   / \
-1   3 6   9
+1   3 6   9</pre>
 
-to
+<p>Output:</p>
+
+<pre>
      4
    /   \
   7     2
  / \   / \
-9   6 3   1
+9   6 3   1</pre>
 
-Trivia:
-This problem was inspired by this original tweet by Max Howell:
-Google: 90% of our engineers use the software you wrote (Homebrew), but you can’t invert a binary tree on a whiteboard so fuck off.
-```
+<p><strong>Trivia:</strong><br />
+This problem was inspired by <a href="https://twitter.com/mxcl/status/608682016205344768" target="_blank">this original tweet</a> by <a href="https://twitter.com/mxcl" target="_blank">Max Howell</a>:</p>
+
+<blockquote>Google: 90% of our engineers use the software you wrote (Homebrew), but you can&rsquo;t invert a binary tree on a whiteboard so f*** off.</blockquote>
+
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

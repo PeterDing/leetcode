@@ -2,40 +2,56 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | String, Dynamic Programming | [Leetcode](https://leetcode.com/problems/palindromic-substrings/description/) |
+Medium | String, Dynamic Programming | [Leetcode](https://leetcode.com/problems/palindromic-substrings) | [solution](https://leetcode.com/problems/palindromic-substrings/solution/)
 
 
 -----------
 
-```
-Given a string, your task is to count how many palindromic substrings in this string.
+<p>Given a string, your task is to count how many palindromic substrings in this string.</p>
 
+<p>The substrings with different start indexes or end indexes are counted as different substrings even they consist of same characters.</p>
 
+<p><b>Example 1:</b></p>
 
-The substrings with different start indexes or end indexes are counted as different substrings even they consist of same characters. 
+<pre>
+<b>Input:</b> &quot;abc&quot;
+<b>Output:</b> 3
+<b>Explanation:</b> Three palindromic strings: &quot;a&quot;, &quot;b&quot;, &quot;c&quot;.
+</pre>
 
+<p>&nbsp;</p>
 
-Example 1:
+<p><b>Example 2:</b></p>
 
-Input: "abc"
-Output: 3
-Explanation: Three palindromic strings: "a", "b", "c".
+<pre>
+<b>Input:</b> &quot;aaa&quot;
+<b>Output:</b> 6
+<b>Explanation:</b> Six palindromic strings: &quot;a&quot;, &quot;a&quot;, &quot;a&quot;, &quot;aa&quot;, &quot;aa&quot;, &quot;aaa&quot;.
+</pre>
 
+<p>&nbsp;</p>
 
+<p><b>Note:</b></p>
 
-Example 2:
+<ol>
+	<li>The input string length won&#39;t exceed 1000.</li>
+</ol>
 
-Input: "aaa"
-Output: 6
-Explanation: Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
+<p>&nbsp;</p>
 
-
-
-Note:
-
-The input string length won't exceed 1000.
-```
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Longest Palindromic Substring](longest-palindromic-substring)
+
+- [Medium] [Longest Palindromic Subsequence](longest-palindromic-subsequence)
+
+- [Medium] [Palindromic Substrings](palindromic-substrings)
+
+
+
 
 ## Thought:

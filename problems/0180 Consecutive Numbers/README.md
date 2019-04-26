@@ -2,15 +2,14 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium |  | [Leetcode](https://leetcode.com/problems/consecutive-numbers/description/) |
+Medium |  | [Leetcode](https://leetcode.com/problems/consecutive-numbers) | [solution](https://leetcode.com/problems/consecutive-numbers/solution/)
 
 
 -----------
 
-```
-Write a SQL query to find all numbers that appear at least three times consecutively.
+<p>Write a SQL query to find all numbers that appear at least three times consecutively.</p>
 
-
+<pre>
 +----+-----+
 | Id | Num |
 +----+-----+
@@ -22,18 +21,25 @@ Write a SQL query to find all numbers that appear at least three times consecuti
 | 6  |  2  |
 | 7  |  2  |
 +----+-----+
+</pre>
 
+<p>For example, given the above <code>Logs</code> table, <code>1</code> is the only number that appears consecutively for at least three times.</p>
 
-For example, given the above Logs table, 1 is the only number that appears consecutively for at least three times.
-
-
+<pre>
 +-----------------+
 | ConsecutiveNums |
 +-----------------+
 | 1               |
 +-----------------+
-```
+</pre>
+
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

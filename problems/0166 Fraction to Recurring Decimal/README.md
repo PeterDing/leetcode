@@ -2,27 +2,42 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Hash Table, Math | [Leetcode](https://leetcode.com/problems/fraction-to-recurring-decimal/description/) |
+Medium | Hash Table, Math | [Leetcode](https://leetcode.com/problems/fraction-to-recurring-decimal) | [solution](https://leetcode.com/problems/fraction-to-recurring-decimal/solution/)
 
 
 -----------
 
-```
-Given two integers representing the numerator and denominator of a fraction, return the fraction in string format.
+<p>Given two integers representing the numerator and denominator of a fraction, return the fraction in string format.</p>
 
-If the fractional part is repeating, enclose the repeating part in parentheses.
+<p>If the fractional part is repeating, enclose the repeating part in parentheses.</p>
 
-For example,
+<p><strong>Example 1:</strong></p>
 
-Given numerator = 1, denominator = 2, return "0.5".
-Given numerator = 2, denominator = 1, return "2".
-Given numerator = 2, denominator = 3, return "0.(6)".
+<pre>
+<strong>Input:</strong> numerator = 1, denominator = 2
+<strong>Output:</strong> &quot;0.5&quot;
+</pre>
 
+<p><strong>Example 2:</strong></p>
 
+<pre>
+<strong>Input:</strong> numerator = 2, denominator = 1
+<strong>Output:</strong> &quot;2&quot;</pre>
 
-Credits:Special thanks to @Shangrila for adding this problem and creating all test cases.
-```
+<p><strong>Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> numerator = 2, denominator = 3
+<strong>Output: </strong>&quot;0.(6)&quot;
+</pre>
+
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

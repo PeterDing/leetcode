@@ -2,46 +2,51 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy | Tree | [Leetcode](https://leetcode.com/problems/find-mode-in-binary-search-tree/description/) |
+Easy | Tree | [Leetcode](https://leetcode.com/problems/find-mode-in-binary-search-tree) | [solution](https://leetcode.com/problems/find-mode-in-binary-search-tree/solution/)
 
 
 -----------
 
-```
-Given a binary search tree (BST) with duplicates, find all the mode(s) (the most frequently occurred element) in the given BST.
+<p>Given a binary search tree (BST) with duplicates, find all the <a href="https://en.wikipedia.org/wiki/Mode_(statistics)" target="_blank">mode(s)</a> (the most frequently occurred element) in the given BST.</p>
 
+<p>Assume a BST is defined as follows:</p>
 
-Assume a BST is defined as follows:
+<ul>
+	<li>The left subtree of a node contains only nodes with keys <b>less than or equal to</b> the node&#39;s key.</li>
+	<li>The right subtree of a node contains only nodes with keys <b>greater than or equal to</b> the node&#39;s key.</li>
+	<li>Both the left and right subtrees must also be binary search trees.</li>
+</ul>
 
-The left subtree of a node contains only nodes with keys less than or equal to the node's key.
-The right subtree of a node contains only nodes with keys greater than or equal to the node's key.
-Both the left and right subtrees must also be binary search trees.
+<p>&nbsp;</p>
 
+<p>For example:<br />
+Given BST <code>[1,null,2,2]</code>,</p>
 
-
-
-For example:
-Given BST [1,null,2,2],
-
+<pre>
    1
     \
      2
     /
    2
+</pre>
 
+<p>&nbsp;</p>
 
+<p>return <code>[2]</code>.</p>
 
-return [2].
+<p><b>Note:</b> If a tree has more than one mode, you can return them in any order.</p>
 
+<p><b>Follow up:</b> Could you do that without using any extra space? (Assume that the implicit stack space incurred due to recursion does not count).</p>
 
-Note:
-If a tree has more than one mode, you can return them in any order.
-
-
-Follow up:
-Could you do that without using any extra space? (Assume that the implicit stack space incurred due to recursion does not count).
-```
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Validate Binary Search Tree](validate-binary-search-tree)
+
+
+
 
 ## Thought:

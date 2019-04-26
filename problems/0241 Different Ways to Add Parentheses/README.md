@@ -2,32 +2,47 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Divide and Conquer | [Leetcode](https://leetcode.com/problems/different-ways-to-add-parentheses/description/) |
+Medium | Divide and Conquer | [Leetcode](https://leetcode.com/problems/different-ways-to-add-parentheses) | [solution](https://leetcode.com/problems/different-ways-to-add-parentheses/solution/)
 
 
 -----------
 
-```
-Given a string of numbers and operators, return all possible results from computing all the different possible ways to group numbers and operators. The valid operators are +, - and *.
+<p>Given a string of numbers and operators, return all possible results from computing all the different possible ways to group numbers and operators. The valid operators are <code>+</code>, <code>-</code> and <code>*</code>.</p>
 
-Example 1
-Input: "2-1-1". 
-((2-1)-1) = 0
-(2-(1-1)) = 2
-Output: [0, 2]
+<p><b>Example 1:</b></p>
 
-Example 2
-Input: "2*3-4*5" 
-(2*(3-(4*5))) = -34
-((2*3)-(4*5)) = -14
-((2*(3-4))*5) = -10
-(2*((3-4)*5)) = -10
-(((2*3)-4)*5) = 10
-Output: [-34, -14, -10, -10, 10] 
+<pre>
+<b>Input:</b> <code>&quot;2-1-1&quot;</code>
+<b>Output:</b> <code>[0, 2]</code>
+<strong>Explanation: </strong>
+((2-1)-1) = 0 
+(2-(1-1)) = 2</pre>
 
-Credits:Special thanks to @mithmatt for adding this problem and creating all test cases.
-```
+<p><b>Example 2:</b></p>
+
+<pre>
+<b>Input: </b><code>&quot;2*3-4*5&quot;</code>
+<b>Output:</b> <code>[-34, -14, -10, -10, 10]</code>
+<strong>Explanation: 
+</strong>(2*(3-(4*5))) = -34 
+((2*3)-(4*5)) = -14 
+((2*(3-4))*5) = -10 
+(2*((3-4)*5)) = -10 
+(((2*3)-4)*5) = 10<strong>
+</strong></pre>
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Unique Binary Search Trees II](unique-binary-search-trees-ii)
+
+- [Hard] [Basic Calculator](basic-calculator)
+
+- [Hard] [Expression Add Operators](expression-add-operators)
+
+
+
 
 ## Thought:

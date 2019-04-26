@@ -2,36 +2,45 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy | String | [Leetcode](https://leetcode.com/problems/valid-palindrome-ii/description/) |
+Easy | String | [Leetcode](https://leetcode.com/problems/valid-palindrome-ii) | [solution](https://leetcode.com/problems/valid-palindrome-ii/solution/)
 
 
 -----------
 
-```
-Given a non-empty string s, you may delete at most one character.  Judge whether you can make it a palindrome.
+<p>
+Given a non-empty string <code>s</code>, you may delete <b>at most</b> one character.  Judge whether you can make it a palindrome.
+</p>
 
+<p><b>Example 1:</b><br />
+<pre>
+<b>Input:</b> "aba"
+<b>Output:</b> True
+</pre>
+</p>
 
-Example 1:
+<p><b>Example 2:</b><br />
+<pre>
+<b>Input:</b> "abca"
+<b>Output:</b> True
+<b>Explanation:</b> You could delete the character 'c'.
+</pre>
+</p>
 
-Input: "aba"
-Output: True
-
-
-
-Example 2:
-
-Input: "abca"
-Output: True
-Explanation: You could delete the character 'c'.
-
-
-
-Note:
-
-The string will only contain lowercase characters a-z.
-The maximum length of the string is 50000.
-```
+<p><b>Note:</b><br>
+<ol>
+<li>The string will only contain lowercase characters a-z.
+The maximum length of the string is 50000.</li>
+</ol>
+</p>
 
 -----------
+
+
+## Similar Problems
+
+- [Easy] [Valid Palindrome](valid-palindrome)
+
+
+
 
 ## Thought:

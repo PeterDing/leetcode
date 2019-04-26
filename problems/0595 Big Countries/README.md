@@ -2,14 +2,14 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy |  | [Leetcode](https://leetcode.com/problems/big-countries/description/) |
+Easy |  | [Leetcode](https://leetcode.com/problems/big-countries) | [solution](https://leetcode.com/problems/big-countries/solution/)
 
 
 -----------
 
-```
-There is a table World 
+<p>There is a table <code>World</code></p>
 
+<pre>
 +-----------------+------------+------------+--------------+---------------+
 | name            | continent  | area       | population   | gdp           |
 +-----------------+------------+------------+--------------+---------------+
@@ -19,23 +19,32 @@ There is a table World
 | Andorra         | Europe     | 468        | 78115        | 3712000       |
 | Angola          | Africa     | 1246700    | 20609294     | 100990000     |
 +-----------------+------------+------------+--------------+---------------+
+</pre>
 
+<p>A country is big if it has an area of bigger than 3 million square km or a population of more than 25 million.</p>
 
-A country is big if it has an area of bigger than 3 million square km or a population of more than 25 million.
+<p>Write a SQL solution to output big countries&#39; name, population and area.</p>
 
-Write a SQL solution to output big countries' name, population and area.
+<p>For example, according to the above table, we should output:</p>
 
-
-For example, according to the above table, we should output:
-
+<pre>
 +--------------+-------------+--------------+
 | name         | population  | area         |
 +--------------+-------------+--------------+
 | Afghanistan  | 25500100    | 652230       |
 | Algeria      | 37100000    | 2381741      |
 +--------------+-------------+--------------+
-```
+</pre>
+
+<p>&nbsp;</p>
+
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

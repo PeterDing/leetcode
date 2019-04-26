@@ -2,17 +2,17 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium |  | [Leetcode](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/description/) |
+Medium |  | [Leetcode](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters) | [solution](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/solution/)
 
 
 -----------
 
-```
-Find the length of the longest substring T of a given string (consists of lowercase letters only) such that every character in T appears no less than k times.
+<p>
+Find the length of the longest substring <b><i>T</i></b> of a given string (consists of lowercase letters only) such that every character in <b><i>T</i></b> appears no less than <i>k</i> times.
+</p>
 
-
-Example 1:
-
+<p><b>Example 1:</b>
+<pre>
 Input:
 s = "aaabb", k = 3
 
@@ -20,11 +20,11 @@ Output:
 3
 
 The longest substring is "aaa", as 'a' is repeated 3 times.
+</pre>
+</p>
 
-
-
-Example 2:
-
+<p><b>Example 2:</b>
+<pre>
 Input:
 s = "ababbc", k = 2
 
@@ -32,8 +32,15 @@ Output:
 5
 
 The longest substring is "ababb", as 'a' is repeated 2 times and 'b' is repeated 3 times.
-```
+</pre>
+</p>
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

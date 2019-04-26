@@ -2,58 +2,83 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Hard | String | [Leetcode](https://leetcode.com/problems/text-justification/description/) |
+Hard | String | [Leetcode](https://leetcode.com/problems/text-justification) | [solution](https://leetcode.com/problems/text-justification/solution/)
 
 
 -----------
 
-```
-Given an array of words and a length L, format the text such that each line has exactly L characters and is fully (left and right) justified.
- 
+<p>Given an array of words and a width&nbsp;<em>maxWidth</em>, format the text such that each line has exactly <em>maxWidth</em> characters and is fully (left and right) justified.</p>
 
+<p>You should pack your words in a greedy approach; that is, pack as many words as you can in each line. Pad extra spaces <code>&#39; &#39;</code> when necessary so that each line has exactly <em>maxWidth</em> characters.</p>
 
-You should pack your words in a greedy approach; that is, pack as many words as you can in each line. Pad extra spaces ' ' when necessary so that each line has exactly L characters.
+<p>Extra spaces between words should be distributed as evenly as possible. If the number of spaces on a line do not divide evenly between words, the empty slots on the left will be assigned more spaces than the slots on the right.</p>
 
+<p>For the last line of text, it should be left justified and no <strong>extra</strong> space is inserted between words.</p>
 
+<p><strong>Note:</strong></p>
 
-Extra spaces between words should be distributed as evenly as possible. If the number of spaces on a line do not divide evenly between words, the empty slots on the left will be assigned more spaces than the slots on the right.
+<ul>
+	<li>A word is defined as a character sequence consisting&nbsp;of non-space characters only.</li>
+	<li>Each word&#39;s length is&nbsp;guaranteed to be greater than 0 and not exceed <em>maxWidth</em>.</li>
+	<li>The input array <code>words</code>&nbsp;contains at least one word.</li>
+</ul>
 
+<p><strong>Example 1:</strong></p>
 
-
-For the last line of text, it should be left justified and no extra space is inserted between words.
-
-
-
-For example,
-words: ["This", "is", "an", "example", "of", "text", "justification."]
-L: 16.
-
-
-
-Return the formatted lines as:
-
+<pre>
+<strong>Input:</strong>
+words = [&quot;This&quot;, &quot;is&quot;, &quot;an&quot;, &quot;example&quot;, &quot;of&quot;, &quot;text&quot;, &quot;justification.&quot;]
+maxWidth = 16
+<strong>Output:</strong>
 [
-   "This    is    an",
-   "example  of text",
-   "justification.  "
+&nbsp; &nbsp;&quot;This &nbsp; &nbsp;is &nbsp; &nbsp;an&quot;,
+&nbsp; &nbsp;&quot;example &nbsp;of text&quot;,
+&nbsp; &nbsp;&quot;justification. &nbsp;&quot;
 ]
+</pre>
 
+<p><strong>Example 2:</strong></p>
 
+<pre>
+<strong>Input:</strong>
+words = [&quot;What&quot;,&quot;must&quot;,&quot;be&quot;,&quot;acknowledgment&quot;,&quot;shall&quot;,&quot;be&quot;]
+maxWidth = 16
+<strong>Output:</strong>
+[
+&nbsp; &quot;What &nbsp; must &nbsp; be&quot;,
+&nbsp; &quot;acknowledgment &nbsp;&quot;,
+&nbsp; &quot;shall be &nbsp; &nbsp; &nbsp; &nbsp;&quot;
+]
+<strong>Explanation:</strong> Note that the last line is &quot;shall be    &quot; instead of &quot;shall     be&quot;,
+&nbsp;            because the last line must be left-justified instead of fully-justified.
+             Note that the second line is also left-justified becase it contains only one word.
+</pre>
 
+<p><strong>Example 3:</strong></p>
 
-Note: Each word is guaranteed not to exceed L in length.
+<pre>
+<strong>Input:</strong>
+words = [&quot;Science&quot;,&quot;is&quot;,&quot;what&quot;,&quot;we&quot;,&quot;understand&quot;,&quot;well&quot;,&quot;enough&quot;,&quot;to&quot;,&quot;explain&quot;,
+&nbsp;        &quot;to&quot;,&quot;a&quot;,&quot;computer.&quot;,&quot;Art&quot;,&quot;is&quot;,&quot;everything&quot;,&quot;else&quot;,&quot;we&quot;,&quot;do&quot;]
+maxWidth = 20
+<strong>Output:</strong>
+[
+&nbsp; &quot;Science &nbsp;is &nbsp;what we&quot;,
+  &quot;understand &nbsp; &nbsp; &nbsp;well&quot;,
+&nbsp; &quot;enough to explain to&quot;,
+&nbsp; &quot;a &nbsp;computer. &nbsp;Art is&quot;,
+&nbsp; &quot;everything &nbsp;else &nbsp;we&quot;,
+&nbsp; &quot;do &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&quot;
+]
+</pre>
 
-
-
-click to show corner cases.
-
-Corner Cases:
-
-
-A line other than the last line might contain only one word. What should you do in this case?
-In this case, that line should be left-justified.
-```
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

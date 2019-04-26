@@ -2,36 +2,45 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Hard | Greedy | [Leetcode](https://leetcode.com/problems/patching-array/description/) |
+Hard | Greedy | [Leetcode](https://leetcode.com/problems/patching-array) | [solution](https://leetcode.com/problems/patching-array/solution/)
 
 
 -----------
 
-```
-Given a sorted positive integer array nums and an integer n, add/patch elements to the array such that any number in range [1, n] inclusive can be formed by the sum of some elements in the array. Return the minimum number of patches required.
+<p>Given a sorted positive integer array <i>nums</i> and an integer <i>n</i>, add/patch elements to the array such that any number in range <code>[1, n]</code> inclusive can be formed by the sum of some elements in the array. Return the minimum number of patches required.</p>
 
+<p><b>Example 1:</b></p>
 
-Example 1:
-nums = [1, 3], n = 6
-Return 1.
+<pre>
+<strong>Input: </strong><i>nums</i> = <code>[1,3]</code>, <i>n</i> = <code>6</code>
+<strong>Output: </strong>1 
+<strong>Explanation:</strong>
+Combinations of <i>nums</i> are <code>[1], [3], [1,3]</code>, which form possible sums of: <code>1, 3, 4</code>.
+Now if we add/patch <code>2</code> to <i>nums</i>, the combinations are: <code>[1], [2], [3], [1,3], [2,3], [1,2,3]</code>.
+Possible sums are <code>1, 2, 3, 4, 5, 6</code>, which now covers the range <code>[1, 6]</code>.
+So we only need <code>1</code> patch.</pre>
 
-Combinations of nums are [1], [3], [1,3], which form possible sums of: 1, 3, 4.
-Now if we add/patch 2 to nums, the combinations are: [1], [2], [3], [1,3], [2,3], [1,2,3].
-Possible sums are 1, 2, 3, 4, 5, 6, which now covers the range [1, 6].
-So we only need 1 patch.
+<p><b>Example 2:</b></p>
 
-Example 2:
-nums = [1, 5, 10], n = 20
-Return 2.
-The two patches can be [2, 4].
+<pre>
+<strong>Input: </strong><i>nums</i> = <code>[1,5,10]</code>, <i>n</i> = <code>20</code>
+<strong>Output:</strong> 2
+<strong>Explanation: </strong>The two patches can be <code>[2, 4]</code>.
+</pre>
 
-Example 3:
-nums = [1, 2, 2], n = 5
-Return 0.
+<p><b>Example 3:</b></p>
 
-Credits:Special thanks to @dietpepsi for adding this problem and creating all test cases.
-```
+<pre>
+<strong>Input: </strong><i>nums</i> = <code>[1,2,2]</code>, <i>n</i> = <code>5</code>
+<strong>Output:</strong> 0
+</pre>
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

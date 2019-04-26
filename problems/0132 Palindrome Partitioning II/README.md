@@ -2,22 +2,32 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Hard | Dynamic Programming | [Leetcode](https://leetcode.com/problems/palindrome-partitioning-ii/description/) |
+Hard | Dynamic Programming | [Leetcode](https://leetcode.com/problems/palindrome-partitioning-ii) | [solution](https://leetcode.com/problems/palindrome-partitioning-ii/solution/)
 
 
 -----------
 
-```
-Given a string s, partition s such that every substring of the partition is a palindrome.
+<p>Given a string <em>s</em>, partition <em>s</em> such that every substring of the partition is a palindrome.</p>
 
+<p>Return the minimum cuts needed for a palindrome partitioning of <em>s</em>.</p>
 
-Return the minimum cuts needed for a palindrome partitioning of s.
+<p><strong>Example:</strong></p>
 
+<pre>
+<strong>Input:</strong>&nbsp;&quot;aab&quot;
+<strong>Output:</strong> 1
+<strong>Explanation:</strong> The palindrome partitioning [&quot;aa&quot;,&quot;b&quot;] could be produced using 1 cut.
+</pre>
 
-For example, given s = "aab",
-Return 1 since the palindrome partitioning ["aa","b"] could be produced using 1 cut.
-```
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Palindrome Partitioning](palindrome-partitioning)
+
+
+
 
 ## Thought:

@@ -2,55 +2,62 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Math, Bit Manipulation | [Leetcode](https://leetcode.com/problems/integer-replacement/description/) |
+Medium | Math, Bit Manipulation | [Leetcode](https://leetcode.com/problems/integer-replacement) | [solution](https://leetcode.com/problems/integer-replacement/solution/)
 
 
 -----------
 
-```
-Given a positive integer n and you can do operations as follow:
+<p>
+Given a positive integer <i>n</i> and you can do operations as follow:
+</p>
 
+<p>
+<ol>
+<li>If <i>n</i> is even, replace <i>n</i> with <code><i>n</i>/2</code>.</li>
+<li>If <i>n</i> is odd, you can replace <i>n</i> with either <code><i>n</i> + 1</code> or <code><i>n</i> - 1</code>.</li>
+</ol>
+</p>
 
+<p>
+What is the minimum number of replacements needed for <i>n</i> to become 1?
+</p>
 
+</p>
 
-If n is even, replace n with n/2.
-If n is odd, you can replace n with either n + 1 or n - 1.
-
-
-
-
-What is the minimum number of replacements needed for n to become 1?
-
-
-
-
-Example 1:
-
-Input:
+<p><b>Example 1:</b>
+<pre>
+<b>Input:</b>
 8
 
-Output:
+<b>Output:</b>
 3
 
-Explanation:
+<b>Explanation:</b>
 8 -> 4 -> 2 -> 1
+</pre>
+</p>
 
-
-
-Example 2:
-
-Input:
+<p><b>Example 2:</b>
+<pre>
+<b>Input:</b>
 7
 
-Output:
+<b>Output:</b>
 4
 
-Explanation:
+<b>Explanation:</b>
 7 -> 8 -> 4 -> 2 -> 1
 or
 7 -> 6 -> 3 -> 2 -> 1
-```
+</pre>
+</p>
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

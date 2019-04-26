@@ -2,27 +2,35 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Linked List | [Leetcode](https://leetcode.com/problems/add-two-numbers-ii/description/) |
+Medium | Linked List | [Leetcode](https://leetcode.com/problems/add-two-numbers-ii) | [solution](https://leetcode.com/problems/add-two-numbers-ii/solution/)
 
 
 -----------
 
-```
-You are given two non-empty linked lists representing two non-negative integers. The most significant digit comes first and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
+<p>You are given two <b>non-empty</b> linked lists representing two non-negative integers. The most significant digit comes first and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.</p>
 
-You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+<p>You may assume the two numbers do not contain any leading zero, except the number 0 itself.</p>
 
-Follow up:
+<p><b>Follow up:</b><br />
 What if you cannot modify the input lists? In other words, reversing the lists is not allowed.
+</p>
 
-
-
-Example:
-
-Input: (7 -> 2 -> 4 -> 3) + (5 -> 6 -> 4)
-Output: 7 -> 8 -> 0 -> 7
-```
+<p>
+<b>Example:</b>
+<pre>
+<b>Input:</b> (7 -> 2 -> 4 -> 3) + (5 -> 6 -> 4)
+<b>Output:</b> 7 -> 8 -> 0 -> 7
+</pre>
+</p>
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Add Two Numbers](add-two-numbers)
+
+
+
 
 ## Thought:

@@ -2,24 +2,46 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Divide and Conquer, Heap | [Leetcode](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) |
+Medium | Divide and Conquer, Heap | [Leetcode](https://leetcode.com/problems/kth-largest-element-in-an-array) | [solution](https://leetcode.com/problems/kth-largest-element-in-an-array/solution/)
 
 
 -----------
 
-```
-Find the kth largest element in an unsorted array. Note that it is the kth largest element in the sorted order, not the kth distinct element.
+<p>Find the <strong>k</strong>th largest element in an unsorted array. Note that it is the kth largest element in the sorted order, not the kth distinct element.</p>
 
-For example,
-Given [3,2,1,5,6,4] and k = 2, return 5.
+<p><strong>Example 1:</strong></p>
 
+<pre>
+<strong>Input:</strong> <code>[3,2,1,5,6,4] </code>and k = 2
+<strong>Output:</strong> 5
+</pre>
 
-Note: 
-You may assume k is always valid, 1 ≤ k ≤ array's length.
+<p><strong>Example 2:</strong></p>
 
-Credits:Special thanks to @mithmatt for adding this problem and creating all test cases.
-```
+<pre>
+<strong>Input:</strong> <code>[3,2,3,1,2,4,5,5,6] </code>and k = 4
+<strong>Output:</strong> 4</pre>
+
+<p><strong>Note: </strong><br />
+You may assume k is always valid, 1 &le; k &le; array&#39;s length.</p>
+
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Wiggle Sort II](wiggle-sort-ii)
+
+- [Medium] [Top K Frequent Elements](top-k-frequent-elements)
+
+- [Easy] [Third Maximum Number](third-maximum-number)
+
+- [Easy] [Kth Largest Element in a Stream](kth-largest-element-in-a-stream)
+
+- [Medium] [K Closest Points to Origin](k-closest-points-to-origin)
+
+
+
 
 ## Thought:

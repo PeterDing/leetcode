@@ -2,26 +2,44 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Array, Two Pointers | [Leetcode](https://leetcode.com/problems/3sum/description/) |
+Medium | Array, Two Pointers | [Leetcode](https://leetcode.com/problems/3sum) | [solution](https://leetcode.com/problems/3sum/solution/)
 
 
 -----------
 
-```
-Given an array S of n integers, are there elements a, b, c in S such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.
+<p>Given an array <code>nums</code> of <em>n</em> integers, are there elements <em>a</em>, <em>b</em>, <em>c</em> in <code>nums</code> such that <em>a</em> + <em>b</em> + <em>c</em> = 0? Find all unique triplets in the array which gives the sum of zero.</p>
 
-Note: The solution set must not contain duplicate triplets.
+<p><strong>Note:</strong></p>
 
+<p>The solution set must not contain duplicate triplets.</p>
 
-For example, given array S = [-1, 0, 1, 2, -1, -4],
+<p><strong>Example:</strong></p>
+
+<pre>
+Given array nums = [-1, 0, 1, 2, -1, -4],
 
 A solution set is:
 [
   [-1, 0, 1],
   [-1, -1, 2]
 ]
-```
+</pre>
+
 
 -----------
+
+
+## Similar Problems
+
+- [Easy] [Two Sum](two-sum)
+
+- [Medium] [3Sum Closest](3sum-closest)
+
+- [Medium] [4Sum](4sum)
+
+- [Medium] [3Sum Smaller](3sum-smaller)
+
+
+
 
 ## Thought:

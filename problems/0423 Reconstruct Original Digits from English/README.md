@@ -2,37 +2,43 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Math | [Leetcode](https://leetcode.com/problems/reconstruct-original-digits-from-english/description/) |
+Medium | Math | [Leetcode](https://leetcode.com/problems/reconstruct-original-digits-from-english) | [solution](https://leetcode.com/problems/reconstruct-original-digits-from-english/solution/)
 
 
 -----------
 
-```
-Given a non-empty string containing an out-of-order English representation of digits 0-9, output the digits in ascending order.
+<p>Given a <b>non-empty</b> string containing an out-of-order English representation of digits <code>0-9</code>, output the digits in ascending order.</p>
 
-Note:
+<p><b>Note:</b><br />
+<ol>
+<li>Input contains only lowercase English letters.</li>
+<li>Input is guaranteed to be valid and can be transformed to its original digits. That means invalid inputs such as "abc" or "zerone" are not permitted.</li>
+<li>Input length is less than 50,000.</li>
+</ol>
+</p>
 
-Input contains only lowercase English letters.
-Input is guaranteed to be valid and can be transformed to its original digits. That means invalid inputs such as "abc" or "zerone" are not permitted.
-Input length is less than 50,000.
-
-
-
-Example 1:
-
+<p><b>Example 1:</b><br />
+<pre>
 Input: "owoztneoer"
 
 Output: "012"
+</pre>
+</p>
 
-
-
-Example 2:
-
+<p><b>Example 2:</b><br />
+<pre>
 Input: "fviefuro"
 
 Output: "45"
-```
+</pre>
+</p>
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

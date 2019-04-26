@@ -2,38 +2,79 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Math, String | [Leetcode](https://leetcode.com/problems/string-to-integer-atoi/description/) |
+Medium | Math, String | [Leetcode](https://leetcode.com/problems/string-to-integer-atoi) | [solution](https://leetcode.com/problems/string-to-integer-atoi/solution/)
 
 
 -----------
 
-```
-Implement atoi to convert a string to an integer.
+<p>Implement <code><span>atoi</span></code> which&nbsp;converts a string to an integer.</p>
 
-Hint: Carefully consider all possible input cases. If you want a challenge, please do not see below and ask yourself what are the possible input cases.
+<p>The function first discards as many whitespace characters as necessary until the first non-whitespace character is found. Then, starting from this character, takes an optional initial plus or minus sign followed by as many numerical digits as possible, and interprets them as a numerical value.</p>
 
+<p>The string can contain additional characters after those that form the integral number, which are ignored and have no effect on the behavior of this function.</p>
 
-Notes: 
-It is intended for this problem to be specified vaguely (ie, no given input specs). You are responsible to gather all the input requirements up front. 
+<p>If the first sequence of non-whitespace characters in str is not a valid integral number, or if no such sequence exists because either str is empty or it contains only whitespace characters, no conversion is performed.</p>
 
+<p>If no valid conversion could be performed, a zero value is returned.</p>
 
-Update (2015-02-10):
-The signature of the C++ function had been updated. If you still see your function signature accepts a const char * argument, please click the reload button  to reset your code definition.
+<p><strong>Note:</strong></p>
 
+<ul>
+	<li>Only the space character <code>&#39; &#39;</code> is considered as whitespace character.</li>
+	<li>Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: [&minus;2<sup>31</sup>,&nbsp; 2<sup>31&nbsp;</sup>&minus; 1]. If the numerical value is out of the range of representable values, INT_MAX (2<sup>31&nbsp;</sup>&minus; 1) or INT_MIN (&minus;2<sup>31</sup>) is returned.</li>
+</ul>
 
-spoilers alert... click to show requirements for atoi.
+<p><strong>Example 1:</strong></p>
 
-Requirements for atoi:
+<pre>
+<strong>Input:</strong> &quot;42&quot;
+<strong>Output:</strong> 42
+</pre>
 
-The function first discards as many whitespace characters as necessary until the first non-whitespace character is found. Then, starting from this character, takes an optional initial plus or minus sign followed by as many numerical digits as possible, and interprets them as a numerical value.
+<p><strong>Example 2:</strong></p>
 
-The string can contain additional characters after those that form the integral number, which are ignored and have no effect on the behavior of this function.
+<pre>
+<strong>Input:</strong> &quot;   -42&quot;
+<strong>Output:</strong> -42
+<strong>Explanation:</strong> The first non-whitespace character is &#39;-&#39;, which is the minus sign.
+&nbsp;            Then take as many numerical digits as possible, which gets 42.
+</pre>
 
-If the first sequence of non-whitespace characters in str is not a valid integral number, or if no such sequence exists because either str is empty or it contains only whitespace characters, no conversion is performed.
+<p><strong>Example 3:</strong></p>
 
-If no valid conversion could be performed, a zero value is returned. If the correct value is out of the range of representable values, INT_MAX (2147483647) or INT_MIN (-2147483648) is returned.
-```
+<pre>
+<strong>Input:</strong> &quot;4193 with words&quot;
+<strong>Output:</strong> 4193
+<strong>Explanation:</strong> Conversion stops at digit &#39;3&#39; as the next character is not a numerical digit.
+</pre>
+
+<p><strong>Example 4:</strong></p>
+
+<pre>
+<strong>Input:</strong> &quot;words and 987&quot;
+<strong>Output:</strong> 0
+<strong>Explanation:</strong> The first non-whitespace character is &#39;w&#39;, which is not a numerical 
+&nbsp;            digit or a +/- sign. Therefore no valid conversion could be performed.</pre>
+
+<p><strong>Example 5:</strong></p>
+
+<pre>
+<strong>Input:</strong> &quot;-91283472332&quot;
+<strong>Output:</strong> -2147483648
+<strong>Explanation:</strong> The number &quot;-91283472332&quot; is out of the range of a 32-bit signed integer.
+&nbsp;            Thefore INT_MIN (&minus;2<sup>31</sup>) is returned.</pre>
+
 
 -----------
+
+
+## Similar Problems
+
+- [Easy] [Reverse Integer](reverse-integer)
+
+- [Hard] [Valid Number](valid-number)
+
+
+
 
 ## Thought:

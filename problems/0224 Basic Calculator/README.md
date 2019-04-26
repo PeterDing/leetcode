@@ -2,30 +2,57 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Hard | Math, Stack | [Leetcode](https://leetcode.com/problems/basic-calculator/description/) |
+Hard | Math, Stack | [Leetcode](https://leetcode.com/problems/basic-calculator) | [solution](https://leetcode.com/problems/basic-calculator/solution/)
 
 
 -----------
 
-```
-Implement a basic calculator to evaluate a simple expression string.
+<p>Implement a basic calculator to evaluate a simple expression string.</p>
 
-The expression string may contain open ( and closing parentheses ), the plus + or minus sign -, non-negative integers and empty spaces  .
+<p>The expression string may contain open <code>(</code> and closing parentheses <code>)</code>, the plus <code>+</code> or minus sign <code>-</code>, <b>non-negative</b> integers and empty spaces <code> </code>.</p>
 
-You may assume that the given expression is always valid.
+<p><strong>Example 1:</strong></p>
 
-Some examples:
+<pre>
+<strong>Input:</strong> &quot;1 + 1&quot;
+<strong>Output:</strong> 2
+</pre>
 
-"1 + 1" = 2
-" 2-1 + 2 " = 3
-"(1+(4+5+2)-3)+(6+8)" = 23
+<p><strong>Example 2:</strong></p>
 
+<pre>
+<strong>Input:</strong> &quot; 2-1 + 2 &quot;
+<strong>Output:</strong> 3</pre>
 
+<p><strong>Example 3:</strong></p>
 
+<pre>
+<strong>Input:</strong> &quot;(1+(4+5+2)-3)+(6+8)&quot;
+<strong>Output:</strong> 23</pre>
+<b>Note:</b>
 
-Note: Do not use the eval built-in library function.
-```
+<ul>
+	<li>You may assume that the given expression is always valid.</li>
+	<li><b>Do not</b> use the <code>eval</code> built-in library function.</li>
+</ul>
+
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Evaluate Reverse Polish Notation](evaluate-reverse-polish-notation)
+
+- [Medium] [Basic Calculator II](basic-calculator-ii)
+
+- [Medium] [Different Ways to Add Parentheses](different-ways-to-add-parentheses)
+
+- [Hard] [Expression Add Operators](expression-add-operators)
+
+- [Hard] [Basic Calculator III](basic-calculator-iii)
+
+
+
 
 ## Thought:

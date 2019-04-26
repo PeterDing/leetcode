@@ -2,22 +2,30 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Math, Dynamic Programming, Backtracking | [Leetcode](https://leetcode.com/problems/count-numbers-with-unique-digits/description/) |
+Medium | Math, Dynamic Programming, Backtracking | [Leetcode](https://leetcode.com/problems/count-numbers-with-unique-digits) | [solution](https://leetcode.com/problems/count-numbers-with-unique-digits/solution/)
 
 
 -----------
 
-```
-Given a non-negative integer n, count all numbers with unique digits, x, where 0 ≤ x < 10n.
+<p>Given a <b>non-negative</b> integer n, count all numbers with unique digits, x, where 0 &le; x &lt; 10<sup>n</sup>.</p>
 
+<div>
+<p><strong>Example:</strong></p>
 
-    Example:
-Given n = 2, return 91. (The answer should be the total numbers in the range of 0 ≤ x < 100, excluding [11,22,33,44,55,66,77,88,99])
-
-
-Credits:Special thanks to @memoryless for adding this problem and creating all test cases.
-```
+<pre>
+<strong>Input: </strong><span id="example-input-1-1">2</span>
+<strong>Output: </strong><span id="example-output-1">91 
+<strong>Explanation: </strong></span>The answer should be the total numbers in the range of 0 &le; x &lt; 100, 
+&nbsp;            excluding <code>11,22,33,44,55,66,77,88,99</code>
+</pre>
+</div>
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

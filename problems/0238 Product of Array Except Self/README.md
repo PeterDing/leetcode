@@ -2,22 +2,38 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Array | [Leetcode](https://leetcode.com/problems/product-of-array-except-self/description/) |
+Medium | Array | [Leetcode](https://leetcode.com/problems/product-of-array-except-self) | [solution](https://leetcode.com/problems/product-of-array-except-self/solution/)
 
 
 -----------
 
-```
-Given an array of n integers where n > 1, nums, return an array output such that output[i] is equal to the product of all the elements of nums except nums[i].
+<p>Given an array <code>nums</code> of <em>n</em> integers where <em>n</em> &gt; 1, &nbsp;return an array <code>output</code> such that <code>output[i]</code> is equal to the product of all the elements of <code>nums</code> except <code>nums[i]</code>.</p>
 
-Solve it without division and in O(n).
+<p><b>Example:</b></p>
 
-For example, given [1,2,3,4], return [24,12,8,6].
+<pre>
+<b>Input:</b>  <code>[1,2,3,4]</code>
+<b>Output:</b> <code>[24,12,8,6]</code>
+</pre>
 
-Follow up:
-Could you solve it with constant space complexity? (Note: The output array does not count as extra space for the purpose of space complexity analysis.)
-```
+<p><strong>Note: </strong>Please solve it <strong>without division</strong> and in O(<em>n</em>).</p>
+
+<p><strong>Follow up:</strong><br />
+Could you solve it with constant space complexity? (The output array <strong>does not</strong> count as extra space for the purpose of space complexity analysis.)</p>
+
 
 -----------
+
+
+## Similar Problems
+
+- [Hard] [Trapping Rain Water](trapping-rain-water)
+
+- [Medium] [Maximum Product Subarray](maximum-product-subarray)
+
+- [Hard] [Paint House II](paint-house-ii)
+
+
+
 
 ## Thought:

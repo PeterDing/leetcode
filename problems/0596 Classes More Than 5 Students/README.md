@@ -2,20 +2,18 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy |  | [Leetcode](https://leetcode.com/problems/classes-more-than-5-students/description/) |
+Easy |  | [Leetcode](https://leetcode.com/problems/classes-more-than-5-students) | [solution](https://leetcode.com/problems/classes-more-than-5-students/solution/)
 
 
 -----------
 
-```
-There is a table courses with columns: student and class
+<p>There is a table <code>courses</code> with columns: <b>student</b> and <b>class</b></p>
 
-Please list out all classes which have more than or equal to 5 students.
+<p>Please list out all classes which have more than or equal to 5 students.</p>
 
+<p>For example, the table:</p>
 
-For example, the table:
-
-
+<pre>
 +---------+------------+
 | student | class      |
 +---------+------------+
@@ -29,22 +27,30 @@ For example, the table:
 | H       | Math       |
 | I       | Math       |
 +---------+------------+
+</pre>
 
+<p>Should output:</p>
 
-Should output:
-
+<pre>
 +---------+
 | class   |
 +---------+
 | Math    |
 +---------+
+</pre>
 
+<p>&nbsp;</p>
 
+<p><b>Note:</b><br />
+The students should not be counted duplicate in each course.</p>
 
-Note:
-The students should not be counted duplicate in each course.
-```
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

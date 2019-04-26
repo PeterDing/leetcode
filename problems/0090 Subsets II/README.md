@@ -2,22 +2,20 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Array, Backtracking | [Leetcode](https://leetcode.com/problems/subsets-ii/description/) |
+Medium | Array, Backtracking | [Leetcode](https://leetcode.com/problems/subsets-ii) | [solution](https://leetcode.com/problems/subsets-ii/solution/)
 
 
 -----------
 
-```
-Given a collection of integers that might contain duplicates, nums, return all possible subsets (the power set).
+<p>Given a collection of integers that might contain duplicates, <strong><em>nums</em></strong>, return all possible subsets (the power set).</p>
 
-Note: The solution set must not contain duplicate subsets.
+<p><strong>Note:</strong> The solution set must not contain duplicate subsets.</p>
 
+<p><strong>Example:</strong></p>
 
-For example,
-If nums = [1,2,2], a solution is:
-
-
-
+<pre>
+<strong>Input:</strong> [1,2,2]
+<strong>Output:</strong>
 [
   [2],
   [1],
@@ -26,8 +24,17 @@ If nums = [1,2,2], a solution is:
   [1,2],
   []
 ]
-```
+</pre>
+
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Subsets](subsets)
+
+
+
 
 ## Thought:

@@ -2,32 +2,53 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy | Hash Table | [Leetcode](https://leetcode.com/problems/word-pattern/description/) |
+Easy | Hash Table | [Leetcode](https://leetcode.com/problems/word-pattern) | [solution](https://leetcode.com/problems/word-pattern/solution/)
 
 
 -----------
 
-```
-Given a pattern and a string str, find if str follows the same pattern.
- Here follow means a full match, such that there is a bijection between a letter in pattern and a non-empty word in str.
+<p>Given a <code>pattern</code> and a string <code>str</code>, find if <code>str</code> follows the same pattern.</p>
 
-Examples:
+<p>Here <b>follow</b> means a full match, such that there is a bijection between a letter in <code>pattern</code> and a <b>non-empty</b> word in <code>str</code>.</p>
 
-pattern = "abba", str = "dog cat cat dog" should return true.
-pattern = "abba", str = "dog cat cat fish" should return false.
-pattern = "aaaa", str = "dog cat cat dog" should return false.
-pattern = "abba", str = "dog dog dog dog" should return false.
+<p><strong>Example 1:</strong></p>
 
+<pre>
+<strong>Input:</strong> pattern = <code>&quot;abba&quot;</code>, str = <code>&quot;dog cat cat dog&quot;</code>
+<strong>Output:</strong> true</pre>
 
+<p><strong>Example 2:</strong></p>
 
+<pre>
+<strong>Input:</strong>pattern = <code>&quot;abba&quot;</code>, str = <code>&quot;dog cat cat fish&quot;</code>
+<strong>Output:</strong> false</pre>
 
-Notes:
-You may assume pattern contains only lowercase letters, and str contains lowercase letters separated by a single space.
+<p><strong>Example 3:</strong></p>
 
+<pre>
+<strong>Input:</strong> pattern = <code>&quot;aaaa&quot;</code>, str = <code>&quot;dog cat cat dog&quot;</code>
+<strong>Output:</strong> false</pre>
 
-Credits:Special thanks to @minglotus6 for adding this problem and creating all test cases.
-```
+<p><strong>Example 4:</strong></p>
+
+<pre>
+<strong>Input:</strong> pattern = <code>&quot;abba&quot;</code>, str = <code>&quot;dog dog dog dog&quot;</code>
+<strong>Output:</strong> false</pre>
+
+<p><b>Notes:</b><br />
+You may assume <code>pattern</code> contains only lowercase letters, and <code>str</code> contains lowercase letters that may be separated by a single space.</p>
+
 
 -----------
+
+
+## Similar Problems
+
+- [Easy] [Isomorphic Strings](isomorphic-strings)
+
+- [Hard] [Word Pattern II](word-pattern-ii)
+
+
+
 
 ## Thought:

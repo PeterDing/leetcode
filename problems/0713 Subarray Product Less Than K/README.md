@@ -2,30 +2,41 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Array, Two Pointers | [Leetcode](https://leetcode.com/problems/subarray-product-less-than-k/description/) |
+Medium | Array, Two Pointers | [Leetcode](https://leetcode.com/problems/subarray-product-less-than-k) | [solution](https://leetcode.com/problems/subarray-product-less-than-k/solution/)
 
 
 -----------
 
-```
-Your are given an array of positive integers nums.
-Count and print the number of (contiguous) subarrays where the product of all the elements in the subarray is less than k.
+<p>Your are given an array of positive integers <code>nums</code>.</p>
+<p>Count and print the number of (contiguous) subarrays where the product of all the elements in the subarray is less than <code>k</code>.</p>
 
-Example 1:
-
-Input: nums = [10, 5, 2, 6], k = 100
-Output: 8
-Explanation: The 8 subarrays that have product less than 100 are: [10], [5], [2], [6], [10, 5], [5, 2], [2, 6], [5, 2, 6].
+<p><b>Example 1:</b><br />
+<pre>
+<b>Input:</b> nums = [10, 5, 2, 6], k = 100
+<b>Output:</b> 8
+<b>Explanation:</b> The 8 subarrays that have product less than 100 are: [10], [5], [2], [6], [10, 5], [5, 2], [2, 6], [5, 2, 6].
 Note that [10, 5, 2] is not included as the product of 100 is not strictly less than k.
+</pre>
+</p>
 
-
-
-Note:
-0 < nums.length <= 50000.
-0 < nums[i] < 1000.
-0 <= k < 10^6.
-```
+<p><b>Note:</b>
+<li><code>0 < nums.length <= 50000</code>.</li>
+<li><code>0 < nums[i] < 1000</code>.</li>
+<li><code>0 <= k < 10^6</code>.</li>
+</p>
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Maximum Product Subarray](maximum-product-subarray)
+
+- [Medium] [Maximum Size Subarray Sum Equals k](maximum-size-subarray-sum-equals-k)
+
+- [Medium] [Subarray Sum Equals K](subarray-sum-equals-k)
+
+
+
 
 ## Thought:

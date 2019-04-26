@@ -2,20 +2,37 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy | Linked List | [Leetcode](https://leetcode.com/problems/reverse-linked-list/description/) |
+Easy | Linked List | [Leetcode](https://leetcode.com/problems/reverse-linked-list) | [solution](https://leetcode.com/problems/reverse-linked-list/solution/)
 
 
 -----------
 
-```
-Reverse a singly linked list.
+<p>Reverse a singly linked list.</p>
 
-click to show more hints.
+<p><strong>Example:</strong></p>
 
-Hint:
-A linked list can be reversed either iteratively or recursively. Could you implement both?
-```
+<pre>
+<strong>Input:</strong> 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL
+<strong>Output:</strong> 5-&gt;4-&gt;3-&gt;2-&gt;1-&gt;NULL
+</pre>
+
+<p><b>Follow up:</b></p>
+
+<p>A linked list can be reversed either iteratively or recursively. Could you implement both?</p>
+
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Reverse Linked List II](reverse-linked-list-ii)
+
+- [Medium] [Binary Tree Upside Down](binary-tree-upside-down)
+
+- [Easy] [Palindrome Linked List](palindrome-linked-list)
+
+
+
 
 ## Thought:

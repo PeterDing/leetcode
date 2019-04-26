@@ -2,29 +2,26 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Hard |  | [Leetcode](https://leetcode.com/problems/word-pattern-ii/description/) |
+Hard |  | [Leetcode](https://leetcode.com/problems/word-pattern-ii) | [solution](https://leetcode.com/problems/word-pattern-ii/solution/)
 
 
 -----------
 
 ```
-Given a `pattern` and a string `str`, find if `str` follows the same pattern.
-
+Given a `pattern` and a string `str`, find if `str`follows the same pattern.
 Here follow means a full match, such that there is a bijection between a
-letter in `pattern` and a non-empty substring in `str`.
-
-Examples:
-
-  1. pattern = `"abab"`, str = `"redblueredblue"` should return true.
-  2. pattern = `"aaaa"`, str = `"asdasdasdasd"` should return true.
-  3. pattern = `"aabb"`, str = `"xyzabcxzyabc"` should return false.
-
-
-
-Notes:
-You may assume both `pattern` and `str` contains only lowercase letters.
-```
+letter in `pattern` and a non-empty substring in `str`. Example 1: Input:
+pattern = "abab", str = "redblueredblue" Output: true Example 2: Input:
+pattern = pattern = "aaaa", str = "asdasdasdasd" Output: true Example 3:
+Input: pattern = "aabb", str = "xyzabcxzyabc" Output: false Notes: You may
+assume both `pattern` and `str` contains only lowercase letters.```
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

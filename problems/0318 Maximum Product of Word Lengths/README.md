@@ -2,45 +2,41 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Bit Manipulation | [Leetcode](https://leetcode.com/problems/maximum-product-of-word-lengths/description/) |
+Medium | Bit Manipulation | [Leetcode](https://leetcode.com/problems/maximum-product-of-word-lengths) | [solution](https://leetcode.com/problems/maximum-product-of-word-lengths/solution/)
 
 
 -----------
 
-```
-Given a string array words, find the maximum value of length(word[i]) * length(word[j]) where the two words do not share common letters.
-    You may assume that each word will contain only lower case letters.
-    If no such two words exist, return 0.
+<p>Given a string array <code>words</code>, find the maximum value of <code>length(word[i]) * length(word[j])</code> where the two words do not share common letters. You may assume that each word will contain only lower case letters. If no such two words exist, return 0.</p>
 
+<p><b>Example 1:</b></p>
 
+<pre>
+<b>Input:</b> <code>[&quot;abcw&quot;,&quot;baz&quot;,&quot;foo&quot;,&quot;bar&quot;,&quot;xtfn&quot;,&quot;abcdef&quot;]</code>
+<b>Output: </b><code>16 
+<strong>Explanation: </strong></code>The two words can be <code>&quot;abcw&quot;, &quot;xtfn&quot;</code><span style="font-family: sans-serif, Arial, Verdana, &quot;Trebuchet MS&quot;;">.</span></pre>
 
-    Example 1:
+<p><b>Example 2:</b></p>
 
+<pre>
+<b>Input:</b> <code>[&quot;a&quot;,&quot;ab&quot;,&quot;abc&quot;,&quot;d&quot;,&quot;cd&quot;,&quot;bcd&quot;,&quot;abcd&quot;]</code>
+<b>Output: </b><code>4 
+<strong>Explanation: </strong></code>The two words can be <code>&quot;ab&quot;, &quot;cd&quot;</code><span style="font-family: sans-serif, Arial, Verdana, &quot;Trebuchet MS&quot;;">.</span></pre>
 
-    Given ["abcw", "baz", "foo", "bar", "xtfn", "abcdef"]
-    Return 16
-    The two words can be "abcw", "xtfn".
+<p><b>Example 3:</b></p>
 
-
-    Example 2:
-
-
-    Given ["a", "ab", "abc", "d", "cd", "bcd", "abcd"]
-    Return 4
-    The two words can be "ab", "cd".
-
-
-    Example 3:
-
-
-    Given ["a", "aa", "aaa", "aaaa"]
-    Return 0
-    No such pair of words.    
-
-
-Credits:Special thanks to @dietpepsi for adding this problem and creating all test cases.
-```
+<pre>
+<b>Input:</b> <code>[&quot;a&quot;,&quot;aa&quot;,&quot;aaa&quot;,&quot;aaaa&quot;]</code>
+<b>Output: </b><code>0 
+<strong>Explanation: </strong></code>No such pair of words.
+</pre>
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

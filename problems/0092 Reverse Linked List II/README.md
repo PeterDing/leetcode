@@ -2,28 +2,31 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Linked List | [Leetcode](https://leetcode.com/problems/reverse-linked-list-ii/description/) |
+Medium | Linked List | [Leetcode](https://leetcode.com/problems/reverse-linked-list-ii) | [solution](https://leetcode.com/problems/reverse-linked-list-ii/solution/)
 
 
 -----------
 
-```
-Reverse a linked list from position m to n. Do it in-place and in one-pass.
+<p>Reverse a linked list from position <em>m</em> to <em>n</em>. Do it in one-pass.</p>
 
+<p><strong>Note:&nbsp;</strong>1 &le; <em>m</em> &le; <em>n</em> &le; length of list.</p>
 
+<p><strong>Example:</strong></p>
 
-For example:
-Given 1->2->3->4->5->NULL, m = 2 and n = 4,
+<pre>
+<strong>Input:</strong> 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL, <em>m</em> = 2, <em>n</em> = 4
+<strong>Output:</strong> 1-&gt;4-&gt;3-&gt;2-&gt;5-&gt;NULL
+</pre>
 
-
-return 1->4->3->2->5->NULL.
-
-
-Note:
-Given m, n satisfy the following condition:
-1 ≤ m ≤ n ≤ length of list.
-```
 
 -----------
+
+
+## Similar Problems
+
+- [Easy] [Reverse Linked List](reverse-linked-list)
+
+
+
 
 ## Thought:

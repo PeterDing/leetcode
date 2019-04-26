@@ -2,28 +2,48 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Hard | Hash Table, Backtracking | [Leetcode](https://leetcode.com/problems/sudoku-solver/description/) |
+Hard | Hash Table, Backtracking | [Leetcode](https://leetcode.com/problems/sudoku-solver) | [solution](https://leetcode.com/problems/sudoku-solver/solution/)
 
 
 -----------
 
-```
-Write a program to solve a Sudoku puzzle by filling the empty cells.
+<p>Write a program to solve a Sudoku puzzle by filling the empty cells.</p>
 
-Empty cells are indicated by the character '.'.
+<p>A&nbsp;sudoku solution must satisfy <strong>all of&nbsp;the following rules</strong>:</p>
 
-You may assume that there will be only one unique solution.
+<ol>
+	<li>Each of the digits&nbsp;<code>1-9</code> must occur exactly&nbsp;once in each row.</li>
+	<li>Each of the digits&nbsp;<code>1-9</code>&nbsp;must occur&nbsp;exactly once in each column.</li>
+	<li>Each of the the digits&nbsp;<code>1-9</code> must occur exactly once in each of the 9 <code>3x3</code> sub-boxes of the grid.</li>
+</ol>
 
+<p>Empty cells are indicated by the character <code>&#39;.&#39;</code>.</p>
 
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Sudoku-by-L2G-20050714.svg/250px-Sudoku-by-L2G-20050714.svg.png" style="height:250px; width:250px" /><br />
+<small>A sudoku puzzle...</small></p>
 
-A sudoku puzzle...
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Sudoku-by-L2G-20050714_solution.svg/250px-Sudoku-by-L2G-20050714_solution.svg.png" style="height:250px; width:250px" /><br />
+<small>...and its solution numbers marked in red.</small></p>
 
+<p><strong>Note:</strong></p>
 
+<ul>
+	<li>The given board&nbsp;contain only digits <code>1-9</code> and the character <code>&#39;.&#39;</code>.</li>
+	<li>You may assume that the given Sudoku puzzle will have a single unique solution.</li>
+	<li>The given board size is always <code>9x9</code>.</li>
+</ul>
 
-
-...and its solution numbers marked in red.
-```
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Valid Sudoku](valid-sudoku)
+
+- [Hard] [Unique Paths III](unique-paths-iii)
+
+
+
 
 ## Thought:

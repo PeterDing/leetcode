@@ -2,30 +2,42 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Dynamic Programming, Bit Manipulation | [Leetcode](https://leetcode.com/problems/counting-bits/description/) |
+Medium | Dynamic Programming, Bit Manipulation | [Leetcode](https://leetcode.com/problems/counting-bits) | [solution](https://leetcode.com/problems/counting-bits/solution/)
 
 
 -----------
 
-```
-Given a non negative integer number num. For every numbers i in the range 0 ≤ i ≤ num calculate the number of 1's in their binary representation and return them as an array.
+<p>Given a non negative integer number <b>num</b>. For every numbers <b>i</b> in the range <b>0 &le; i &le; num</b> calculate the number of 1&#39;s in their binary representation and return them as an array.</p>
 
+<p><strong>Example 1:</strong></p>
 
-Example:
-For num = 5 you should return [0,1,1,2,1,2].
+<pre>
+<strong>Input: </strong><span id="example-input-1-1">2</span>
+<strong>Output: </strong><span id="example-output-1">[0,1,1]</span></pre>
 
+<p><strong>Example 2:</strong></p>
 
-Follow up:
+<pre>
+<strong>Input: </strong><span id="example-input-1-1">5</span>
+<strong>Output: </strong><code>[0,1,1,2,1,2]</code>
+</pre>
 
-It is very easy to come up with a solution with run time O(n*sizeof(integer)). But can you do it in linear time O(n) /possibly in a single pass?
-Space complexity should be O(n).
-Can you do it like a boss? Do it without using any builtin function like __builtin_popcount  in c++ or in any other language.
+<p><b>Follow up:</b></p>
 
-
-
-Credits:Special thanks to @ syedee  for adding this problem and creating all test cases.
-```
+<ul>
+	<li>It is very easy to come up with a solution with run time <b>O(n*sizeof(integer))</b>. But can you do it in linear time <b>O(n)</b> /possibly in a single pass?</li>
+	<li>Space complexity should be <b>O(n)</b>.</li>
+	<li>Can you do it like a boss? Do it without using any builtin function like <b>__builtin_popcount</b> in c++ or in any other language.</li>
+</ul>
 
 -----------
+
+
+## Similar Problems
+
+- [Easy] [Number of 1 Bits](number-of-1-bits)
+
+
+
 
 ## Thought:

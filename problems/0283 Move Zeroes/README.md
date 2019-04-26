@@ -2,30 +2,34 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy | Array, Two Pointers | [Leetcode](https://leetcode.com/problems/move-zeroes/description/) |
+Easy | Array, Two Pointers | [Leetcode](https://leetcode.com/problems/move-zeroes) | [solution](https://leetcode.com/problems/move-zeroes/solution/)
 
 
 -----------
 
-```
-Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+<p>Given an array <code>nums</code>, write a function to move all <code>0</code>&#39;s to the end of it while maintaining the relative order of the non-zero elements.</p>
 
+<p><b>Example:</b></p>
 
+<pre>
+<b>Input:</b> <code>[0,1,0,3,12]</code>
+<b>Output:</b> <code>[1,3,12,0,0]</code></pre>
 
-For example, given nums  = [0, 1, 0, 3, 12], after calling your function, nums should be [1, 3, 12, 0, 0].
+<p><b>Note</b>:</p>
 
-
-
-Note:
-
-You must do this in-place without making a copy of the array.
-Minimize the total number of operations.
-
-
-
-Credits:Special thanks to @jianchao.li.fighter for adding this problem and creating all test cases.
-```
+<ol>
+	<li>You must do this <b>in-place</b> without making a copy of the array.</li>
+	<li>Minimize the total number of operations.</li>
+</ol>
 
 -----------
+
+
+## Similar Problems
+
+- [Easy] [Remove Element](remove-element)
+
+
+
 
 ## Thought:

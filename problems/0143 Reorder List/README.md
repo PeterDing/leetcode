@@ -2,23 +2,34 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Linked List | [Leetcode](https://leetcode.com/problems/reorder-list/description/) |
+Medium | Linked List | [Leetcode](https://leetcode.com/problems/reorder-list) | [solution](https://leetcode.com/problems/reorder-list/solution/)
 
 
 -----------
 
-```
-Given a singly linked list L: L0→L1→…→Ln-1→Ln,
-reorder it to: L0→Ln→L1→Ln-1→L2→Ln-2→…
+<p>Given a singly linked list <em>L</em>: <em>L</em><sub>0</sub>&rarr;<em>L</em><sub>1</sub>&rarr;&hellip;&rarr;<em>L</em><sub><em>n</em>-1</sub>&rarr;<em>L</em><sub>n</sub>,<br />
+reorder it to: <em>L</em><sub>0</sub>&rarr;<em>L</em><sub><em>n</em></sub>&rarr;<em>L</em><sub>1</sub>&rarr;<em>L</em><sub><em>n</em>-1</sub>&rarr;<em>L</em><sub>2</sub>&rarr;<em>L</em><sub><em>n</em>-2</sub>&rarr;&hellip;</p>
 
+<p>You may <strong>not</strong> modify the values in the list&#39;s nodes, only nodes itself may be changed.</p>
 
-You must do this in-place without altering the nodes' values.
+<p><strong>Example 1:</strong></p>
 
+<pre>
+Given 1-&gt;2-&gt;3-&gt;4, reorder it to 1-&gt;4-&gt;2-&gt;3.</pre>
 
-For example,
-Given {1,2,3,4}, reorder it to {1,4,2,3}.
-```
+<p><strong>Example 2:</strong></p>
+
+<pre>
+Given 1-&gt;2-&gt;3-&gt;4-&gt;5, reorder it to 1-&gt;5-&gt;2-&gt;4-&gt;3.
+</pre>
+
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

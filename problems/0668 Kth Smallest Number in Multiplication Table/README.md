@@ -2,54 +2,67 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Hard | Binary Search | [Leetcode](https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/description/) |
+Hard | Binary Search | [Leetcode](https://leetcode.com/problems/kth-smallest-number-in-multiplication-table) | [solution](https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/solution/)
 
 
 -----------
 
-```
-Nearly every one have used the Multiplication Table. But could you find out the k-th smallest number quickly from the multiplication table?
+<p>
+Nearly every one have used the <a href="https://en.wikipedia.org/wiki/Multiplication_table">Multiplication Table</a>. But could you find out the <code>k-th</code> smallest number quickly from the multiplication table?
+</p>
 
+<p>
+Given the height <code>m</code> and the length <code>n</code> of a <code>m * n</code> Multiplication Table, and a positive integer <code>k</code>, you need to return the <code>k-th</code> smallest number in this table.
+</p>
 
-
-Given the height m and the length n of a m * n Multiplication Table, and a positive integer k, you need to return the k-th smallest number in this table.
-
-
-Example 1:
-
-Input: m = 3, n = 3, k = 5
-Output: 
-Explanation: 
+<p><b>Example 1:</b><br />
+<pre>
+<b>Input:</b> m = 3, n = 3, k = 5
+<b>Output:</b> 
+<b>Explanation:</b> 
 The Multiplication Table:
 1	2	3
 2	4	6
 3	6	9
 
 The 5-th smallest number is 3 (1, 2, 2, 3, 3).
+</pre>
+</p>
 
 
-
-
-Example 2:
-
-Input: m = 2, n = 3, k = 6
-Output: 
-Explanation: 
+<p><b>Example 2:</b><br />
+<pre>
+<b>Input:</b> m = 2, n = 3, k = 6
+<b>Output:</b> 
+<b>Explanation:</b> 
 The Multiplication Table:
 1	2	3
 2	4	6
 
 The 6-th smallest number is 6 (1, 2, 2, 3, 4, 6).
+</pre>
+</p>
 
 
-
-
-Note:
-
-The m and n will be in the range [1, 30000].
-The k will be in the range [1, m * n]
-```
+<p><b>Note:</b><br>
+<ol>
+<li>The <code>m</code> and <code>n</code> will be in the range [1, 30000].</li>
+<li>The <code>k</code> will be in the range [1, m * n]</li>
+</ol>
+</p>
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Kth Smallest Element in a Sorted Matrix](kth-smallest-element-in-a-sorted-matrix)
+
+- [Hard] [Find K-th Smallest Pair Distance](find-k-th-smallest-pair-distance)
+
+- [Hard] [K-th Smallest Prime Fraction](k-th-smallest-prime-fraction)
+
+
+
 
 ## Thought:

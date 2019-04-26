@@ -2,48 +2,48 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Tree, Depth-first Search | [Leetcode](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/) |
+Medium | Tree, Depth-first Search | [Leetcode](https://leetcode.com/problems/flatten-binary-tree-to-linked-list) | [solution](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/solution/)
 
 
 -----------
 
-```
-Given a binary tree, flatten it to a linked list in-place.
+<p>Given a binary tree, flatten it to a linked list in-place.</p>
 
+<p>For example, given the following tree:</p>
 
+<pre>
+    1
+   / \
+  2   5
+ / \   \
+3   4   6
+</pre>
 
-For example,
-Given
+<p>The flattened tree should look like:</p>
 
-         1
-        / \
-       2   5
-      / \   \
-     3   4   6
+<pre>
+1
+ \
+  2
+   \
+    3
+     \
+      4
+       \
+        5
+         \
+          6
+</pre>
 
-
-
-The flattened tree should look like:
-
-   1
-    \
-     2
-      \
-       3
-        \
-         4
-          \
-           5
-            \
-             6
-
-
-click to show hints.
-
-Hints:
-If you notice carefully in the flattened tree, each node's right child points to the next node of a pre-order traversal.
-```
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Flatten a Multilevel Doubly Linked List](flatten-a-multilevel-doubly-linked-list)
+
+
+
 
 ## Thought:

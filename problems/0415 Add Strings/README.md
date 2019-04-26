@@ -2,22 +2,34 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy | Math | [Leetcode](https://leetcode.com/problems/add-strings/description/) |
+Easy | String | [Leetcode](https://leetcode.com/problems/add-strings) | [solution](https://leetcode.com/problems/add-strings/solution/)
 
 
 -----------
 
-```
-Given two non-negative integers num1 and num2 represented as string, return the sum of num1 and num2.
+<p>Given two non-negative integers <code>num1</code> and <code>num2</code> represented as string, return the sum of <code>num1</code> and <code>num2</code>.</p>
 
-Note:
-
-The length of both num1 and num2 is < 5100.
-Both num1 and num2 contains only digits 0-9.
-Both num1 and num2 does not contain any leading zero.
-You must not use any built-in BigInteger library or convert the inputs to integer directly.
-```
+<p><b>Note:</b>
+<ol>
+<li>The length of both <code>num1</code> and <code>num2</code> is < 5100.</li>
+<li>Both <code>num1</code> and <code>num2</code> contains only digits <code>0-9</code>.</li>
+<li>Both <code>num1</code> and <code>num2</code> does not contain any leading zero.</li>
+<li>You <b>must not use any built-in BigInteger library</b> or <b>convert the inputs to integer</b> directly.</li>
+</ol>
+</p>
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Add Two Numbers](add-two-numbers)
+
+- [Medium] [Multiply Strings](multiply-strings)
+
+- [Easy] [Add to Array-Form of Integer](add-to-array-form-of-integer)
+
+
+
 
 ## Thought:

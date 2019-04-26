@@ -2,42 +2,52 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Hard | Dynamic Programming | [Leetcode](https://leetcode.com/problems/student-attendance-record-ii/description/) |
+Hard | Dynamic Programming | [Leetcode](https://leetcode.com/problems/student-attendance-record-ii) | [solution](https://leetcode.com/problems/student-attendance-record-ii/solution/)
 
 
 -----------
 
-```
-Given a positive integer n, return the number of all possible attendance records with length n, which will be regarded as rewardable. The answer may be very large, return it after mod 109 + 7.
+<p>Given a positive integer <b>n</b>, return the number of all possible attendance records with length n, which will be regarded as rewardable. The answer may be very large, return it after mod 10<sup>9</sup> + 7.</p>
 
-A student attendance record is a string that only contains the following three characters:
+<p>A student attendance record is a string that only contains the following three characters:</p>
 
+<p>
+<ol>
+<li><b>'A'</b> : Absent. </li>
+<li><b>'L'</b> : Late.</li>
+<li> <b>'P'</b> : Present. </li>
+</ol>
+</p>
 
+<p>
+A record is regarded as rewardable if it doesn't contain <b>more than one 'A' (absent)</b> or <b>more than two continuous 'L' (late)</b>.</p>
 
-'A' : Absent. 
-'L' : Late.
- 'P' : Present. 
-
-
-
-
-A record is regarded as rewardable if it doesn't contain more than one 'A' (absent) or more than two continuous 'L' (late).
-
-Example 1:
-
-Input: n = 2
-Output: 8 
-Explanation:
+<p><b>Example 1:</b><br />
+<pre>
+<b>Input:</b> n = 2
+<b>Output:</b> 8 
+<b>Explanation:</b>
 There are 8 records with length 2 will be regarded as rewardable:
 "PP" , "AP", "PA", "LP", "PL", "AL", "LA", "LL"
 Only "AA" won't be regarded as rewardable owing to more than one absent times. 
+</pre>
+</p>
+
+<p><b>Note:</b>
+The value of <b>n</b> won't exceed 100,000.
+</p>
 
 
 
-Note:
-The value of n won't exceed 100,000.
-```
 
 -----------
+
+
+## Similar Problems
+
+- [Easy] [Student Attendance Record I](student-attendance-record-i)
+
+
+
 
 ## Thought:

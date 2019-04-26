@@ -2,29 +2,44 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Hard | Depth-first Search, Breadth-first Search | [Leetcode](https://leetcode.com/problems/remove-invalid-parentheses/description/) |
+Hard | Depth-first Search, Breadth-first Search | [Leetcode](https://leetcode.com/problems/remove-invalid-parentheses) | [solution](https://leetcode.com/problems/remove-invalid-parentheses/solution/)
 
 
 -----------
 
-```
-Remove the minimum number of invalid parentheses in order to make the input string valid. Return all possible results.
+<p>Remove the minimum number of invalid parentheses in order to make the input string valid. Return all possible results.</p>
 
-Note: The input string may contain letters other than the parentheses ( and ). 
+<p><strong>Note:</strong>&nbsp;The input string may contain letters other than the parentheses <code>(</code> and <code>)</code>.</p>
 
+<p><b>Example 1:</b></p>
 
+<pre>
+<b>Input:</b> &quot;()())()&quot;
+<b>Output:</b> [&quot;()()()&quot;, &quot;(())()&quot;]
+</pre>
 
-Examples:
+<p><b>Example 2:</b></p>
 
-"()())()" -> ["()()()", "(())()"]
-"(a)())()" -> ["(a)()()", "(a())()"]
-")(" -> [""]
+<pre>
+<b>Input:</b> &quot;(a)())()&quot;
+<b>Output:</b> [&quot;(a)()()&quot;, &quot;(a())()&quot;]
+</pre>
 
+<p><b>Example 3:</b></p>
 
-
-Credits:Special thanks to @hpplayer for adding this problem and creating all test cases.
-```
+<pre>
+<b>Input:</b> &quot;)(&quot;
+<b>Output: </b>[&quot;&quot;]
+</pre>
 
 -----------
+
+
+## Similar Problems
+
+- [Easy] [Valid Parentheses](valid-parentheses)
+
+
+
 
 ## Thought:

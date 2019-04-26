@@ -2,16 +2,14 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium |  | [Leetcode](https://leetcode.com/problems/nth-highest-salary/description/) |
+Medium |  | [Leetcode](https://leetcode.com/problems/nth-highest-salary) | [solution](https://leetcode.com/problems/nth-highest-salary/solution/)
 
 
 -----------
 
-```
-Write a SQL query to get the nth highest salary from the Employee table.
+<p>Write a SQL query to get the <em>n</em><sup>th</sup> highest salary from the <code>Employee</code> table.</p>
 
-
-
+<pre>
 +----+--------+
 | Id | Salary |
 +----+--------+
@@ -19,18 +17,25 @@ Write a SQL query to get the nth highest salary from the Employee table.
 | 2  | 200    |
 | 3  | 300    |
 +----+--------+
+</pre>
 
+<p>For example, given the above Employee table, the <em>n</em><sup>th</sup> highest salary where <em>n</em> = 2 is <code>200</code>. If there is no <em>n</em><sup>th</sup> highest salary, then the query should return <code>null</code>.</p>
 
-For example, given the above Employee table, the nth highest salary where n = 2 is 200. If there is no nth highest salary, then the query should return null.
-
-
+<pre>
 +------------------------+
 | getNthHighestSalary(2) |
 +------------------------+
 | 200                    |
 +------------------------+
-```
+</pre>
+
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

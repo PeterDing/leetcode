@@ -2,40 +2,47 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy | Array | [Leetcode](https://leetcode.com/problems/degree-of-an-array/description/) |
+Easy | Array | [Leetcode](https://leetcode.com/problems/degree-of-an-array) | [solution](https://leetcode.com/problems/degree-of-an-array/solution/)
 
 
 -----------
 
-```
-Given a non-empty array of non-negative integers nums, the degree of this array is defined as the maximum frequency of any one of its elements.
-Your task is to find the smallest possible length of a (contiguous) subarray of nums, that has the same degree as nums.
+<p>Given a non-empty array of non-negative integers <code>nums</code>, the <b>degree</b> of this array is defined as the maximum frequency of any one of its elements.</p>
+<p>Your task is to find the smallest possible length of a (contiguous) subarray of <code>nums</code>, that has the same degree as <code>nums</code>.</p>
 
-Example 1:
-
-Input: [1, 2, 2, 3, 1]
-Output: 2
-Explanation: 
+<p><b>Example 1:</b><br />
+<pre>
+<b>Input:</b> [1, 2, 2, 3, 1]
+<b>Output:</b> 2
+<b>Explanation:</b> 
 The input array has a degree of 2 because both elements 1 and 2 appear twice.
 Of the subarrays that have the same degree:
 [1, 2, 2, 3, 1], [1, 2, 2, 3], [2, 2, 3, 1], [1, 2, 2], [2, 2, 3], [2, 2]
 The shortest length is 2. So return 2.
+</pre>
+</p>
 
 
+<p><b>Example 2:</b><br />
+<pre>
+<b>Input:</b> [1,2,2,3,1,4,2]
+<b>Output:</b> 6
+</pre>
+</p>
 
-
-Example 2:
-
-Input: [1,2,2,3,1,4,2]
-Output: 6
-
-
-
-Note:
-nums.length will be between 1 and 50,000.
-nums[i] will be an integer between 0 and 49,999.
-```
+<p><b>Note:</b>
+<li><code>nums.length</code> will be between 1 and 50,000.</li>
+<li><code>nums[i]</code> will be an integer between 0 and 49,999.</li>
+</p>
 
 -----------
+
+
+## Similar Problems
+
+- [Easy] [Maximum Subarray](maximum-subarray)
+
+
+
 
 ## Thought:

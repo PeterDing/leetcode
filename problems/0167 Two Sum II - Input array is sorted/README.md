@@ -2,23 +2,40 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy | Array, Two Pointers, Binary Search | [Leetcode](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) |
+Easy | Array, Two Pointers, Binary Search | [Leetcode](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted) | [solution](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/solution/)
 
 
 -----------
 
-```
-Given an array of integers that is already sorted in ascending order, find two numbers such that they add up to a specific target number.
+<p>Given an array of integers that is already <strong><em>sorted in ascending order</em></strong>, find two numbers such that they add up to a specific target number.</p>
 
-The function twoSum should return indices of the two numbers such that they add up to the target, where index1 must be less than index2. Please note that your returned answers (both index1 and index2) are not zero-based.
+<p>The function twoSum should return indices of the two numbers such that they add up to the target, where index1 must be less than index2.</p>
 
-You may assume that each input would have exactly one solution and you may not use the same element twice.
+<p><strong>Note:</strong></p>
 
+<ul>
+	<li>Your returned answers (both index1 and index2) are not zero-based.</li>
+	<li>You may assume that each input would have <em>exactly</em> one solution and you may not use the <em>same</em> element twice.</li>
+</ul>
 
-Input: numbers={2, 7, 11, 15}, target=9
-Output: index1=1, index2=2
-```
+<p><strong>Example:</strong></p>
+
+<pre>
+<strong>Input:</strong> numbers = [2,7,11,15], target = 9
+<strong>Output:</strong> [1,2]
+<strong>Explanation:</strong> The sum of 2 and 7 is 9. Therefore index1 = 1, index2 = 2.</pre>
+
 
 -----------
+
+
+## Similar Problems
+
+- [Easy] [Two Sum](two-sum)
+
+- [Easy] [Two Sum IV - Input is a BST](two-sum-iv-input-is-a-bst)
+
+
+
 
 ## Thought:

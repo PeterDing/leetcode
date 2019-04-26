@@ -2,31 +2,41 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy |  | [Leetcode](https://leetcode.com/problems/valid-phone-numbers/description/) |
+Easy |  | [Leetcode](https://leetcode.com/problems/valid-phone-numbers) | [solution](https://leetcode.com/problems/valid-phone-numbers/solution/)
 
 
 -----------
 
-```
-Given a text file file.txt that contains list of phone numbers (one per line), write a one liner bash script to print all valid phone numbers.
+<p>Given a text file <code>file.txt</code> that contains list of phone numbers (one per line), write a one liner bash script to print all valid phone numbers.</p>
 
-You may assume that a valid phone number must appear in one of the following two formats: (xxx) xxx-xxxx or xxx-xxx-xxxx. (x means a digit)
+<p>You may assume that a valid phone number must appear in one of the following two formats: (xxx) xxx-xxxx or xxx-xxx-xxxx. (x means a digit)</p>
 
-You may also assume each line in the text file must not contain leading or trailing white spaces.
+<p>You may also assume each line in the text file must not contain leading or trailing white spaces.</p>
 
-For example, assume that file.txt has the following content:
+<p><strong>Example:</strong></p>
 
+<p>Assume that <code>file.txt</code> has the following content:</p>
+
+<pre>
 987-123-4567
 123 456 7890
 (123) 456-7890
+</pre>
 
+<p>Your script should output the following valid phone numbers:</p>
 
-Your script should output the following valid phone numbers:
-
+<pre>
 987-123-4567
 (123) 456-7890
-```
+</pre>
+
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

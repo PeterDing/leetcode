@@ -2,34 +2,44 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Array, Backtracking | [Leetcode](https://leetcode.com/problems/combination-sum-iii/description/) |
+Medium | Array, Backtracking | [Leetcode](https://leetcode.com/problems/combination-sum-iii) | [solution](https://leetcode.com/problems/combination-sum-iii/solution/)
 
 
 -----------
 
-```
-Find all possible combinations of k numbers that add up to a number n, given that only numbers from 1 to 9 can be used and each combination should be a unique set of numbers.
+<div>
+<p>Find all possible combinations of <i><b>k</b></i> numbers that add up to a number <i><b>n</b></i>, given that only numbers from 1 to 9 can be used and each combination should be a unique set of numbers.</p>
 
+<p><strong>Note:</strong></p>
 
+<ul>
+	<li>All numbers will be positive integers.</li>
+	<li>The solution set must not contain duplicate combinations.</li>
+</ul>
 
- Example 1:
-Input:  k = 3,  n = 7
-Output: 
+<p><strong>Example 1:</strong></p>
 
-[[1,2,4]]
+<pre>
+<strong>Input:</strong> <i><b>k</b></i> = 3, <i><b>n</b></i> = 7
+<strong>Output:</strong> [[1,2,4]]
+</pre>
 
+<p><strong>Example 2:</strong></p>
 
- Example 2:
-Input:  k = 3,  n = 9
-Output: 
-
-[[1,2,6], [1,3,5], [2,3,4]]
-
-
-
-Credits:Special thanks to @mithmatt for adding this problem and creating all test cases.
-```
+<pre>
+<strong>Input:</strong> <i><b>k</b></i> = 3, <i><b>n</b></i> = 9
+<strong>Output:</strong> [[1,2,6], [1,3,5], [2,3,4]]
+</pre>
+</div>
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Combination Sum](combination-sum)
+
+
+
 
 ## Thought:

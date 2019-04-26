@@ -2,38 +2,44 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Hard | Binary Search, Dynamic Programming | [Leetcode](https://leetcode.com/problems/split-array-largest-sum/description/) |
+Hard | Binary Search, Dynamic Programming | [Leetcode](https://leetcode.com/problems/split-array-largest-sum) | [solution](https://leetcode.com/problems/split-array-largest-sum/solution/)
 
 
 -----------
 
-```
-Given an array which consists of non-negative integers and an integer m, you can split the array into m non-empty continuous subarrays. Write an algorithm to minimize the largest sum among these m subarrays.
+<p>Given an array which consists of non-negative integers and an integer <i>m</i>, you can split the array into <i>m</i> non-empty continuous subarrays. Write an algorithm to minimize the largest sum among these <i>m</i> subarrays.
+</p>
 
+<p><b>Note:</b><br />
+If <i>n</i> is the length of array, assume the following constraints are satisfied:
+<ul>
+<li>1 &le; <i>n</i> &le; 1000</li>
+<li>1 &le; <i>m</i> &le; min(50, <i>n</i>)</li>
+</ul>
+</p>
 
-Note:
-If n is the length of array, assume the following constraints are satisfied:
-
-1 ≤ n ≤ 1000
-1 ≤ m ≤ min(50, n)
-
-
-
-Examples: 
-
+<p><b>Examples: </b>
+<pre>
 Input:
-nums = [7,2,5,10,8]
-m = 2
+<b>nums</b> = [7,2,5,10,8]
+<b>m</b> = 2
 
 Output:
 18
 
 Explanation:
-There are four ways to split nums into two subarrays.
-The best way is to split it into [7,2,5] and [10,8],
+There are four ways to split <b>nums</b> into two subarrays.
+The best way is to split it into <b>[7,2,5]</b> and <b>[10,8]</b>,
 where the largest sum among the two subarrays is only 18.
-```
+</pre>
+</p>
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

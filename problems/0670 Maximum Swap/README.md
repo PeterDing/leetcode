@@ -2,37 +2,46 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Array, Math | [Leetcode](https://leetcode.com/problems/maximum-swap/description/) |
+Medium | Array, Math | [Leetcode](https://leetcode.com/problems/maximum-swap) | [solution](https://leetcode.com/problems/maximum-swap/solution/)
 
 
 -----------
 
-```
-Given a non-negative integer, you could swap two digits at most once to get the maximum valued number. Return the maximum valued number you could get.
+<p>
+Given a non-negative integer, you could swap two digits <b>at most</b> once to get the maximum valued number. Return the maximum valued number you could get.
+</p>
+
+<p><b>Example 1:</b><br />
+<pre>
+<b>Input:</b> 2736
+<b>Output:</b> 7236
+<b>Explanation:</b> Swap the number 2 and the number 7.
+</pre>
+</p>
+
+<p><b>Example 2:</b><br />
+<pre>
+<b>Input:</b> 9973
+<b>Output:</b> 9973
+<b>Explanation:</b> No swap.
+</pre>
+</p>
 
 
-Example 1:
-
-Input: 2736
-Output: 7236
-Explanation: Swap the number 2 and the number 7.
-
-
-
-Example 2:
-
-Input: 9973
-Output: 9973
-Explanation: No swap.
-
-
-
-
-Note:
-
-The given number is in the range [0, 108]
-```
+<p><b>Note:</b><br>
+<ol>
+<li>The given number is in the range [0, 10<sup>8</sup>]</li>
+</ol>
+</p>
 
 -----------
+
+
+## Similar Problems
+
+- [Hard] [Create Maximum Number](create-maximum-number)
+
+
+
 
 ## Thought:

@@ -2,35 +2,43 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Sort | [Leetcode](https://leetcode.com/problems/wiggle-sort-ii/description/) |
+Medium | Sort | [Leetcode](https://leetcode.com/problems/wiggle-sort-ii) | [solution](https://leetcode.com/problems/wiggle-sort-ii/solution/)
 
 
 -----------
 
-```
-Given an unsorted array nums, reorder it such that
-    nums[0] < nums[1] > nums[2] < nums[3]....
+<p>Given an unsorted array <code>nums</code>, reorder it such that <code>nums[0] &lt; nums[1] &gt; nums[2] &lt; nums[3]...</code>.</p>
 
+<p><b>Example 1:</b></p>
 
+<pre>
+<strong>Input: </strong><code>nums = [1, 5, 1, 1, 6, 4]</code>
+<strong>Output: </strong>One possible answer is <code>[1, 4, 1, 5, 1, 6]</code>.</pre>
 
-    Example:
-    (1) Given nums = [1, 5, 1, 1, 6, 4], one possible answer is [1, 4, 1, 5, 1, 6]. 
-    (2) Given nums = [1, 3, 2, 2, 3, 1], one possible answer is [2, 3, 1, 3, 1, 2].
+<p><b>Example 2:</b></p>
 
+<pre>
+<strong>Input: </strong><code>nums = [1, 3, 2, 2, 3, 1]</code>
+<strong>Output:</strong> One possible answer is <code>[2, 3, 1, 3, 1, 2]</code>.</pre>
 
+<p><b>Note:</b><br />
+You may assume all input has valid answer.</p>
 
-    Note:
-    You may assume all input has valid answer.
-
-
-
-    Follow Up:
-    Can you do it in O(n) time and/or in-place with O(1) extra space?
-
-
-Credits:Special thanks to @dietpepsi for adding this problem and creating all test cases.
-```
+<p><b>Follow Up:</b><br />
+Can you do it in O(n) time and/or in-place with O(1) extra space?</p>
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Sort Colors](sort-colors)
+
+- [Medium] [Kth Largest Element in an Array](kth-largest-element-in-an-array)
+
+- [Medium] [Wiggle Sort](wiggle-sort)
+
+
+
 
 ## Thought:

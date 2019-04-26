@@ -2,59 +2,68 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Math | [Leetcode](https://leetcode.com/problems/solve-the-equation/description/) |
+Medium | Math | [Leetcode](https://leetcode.com/problems/solve-the-equation) | [solution](https://leetcode.com/problems/solve-the-equation/solution/)
 
 
 -----------
 
-```
-Solve a given equation and return the value of x in the form of string "x=#value". The equation contains only '+', '-' operation, the variable x and its coefficient.
+<p>
+Solve a given equation and return the value of <code>x</code> in the form of string "x=#value". The equation contains only '+', '-' operation, the variable <code>x</code> and its coefficient.
+</p>
 
-
-
+<p>
 If there is no solution for the equation, return "No solution".
-
-
+</p>
+<p>
 If there are infinite solutions for the equation, return "Infinite solutions".
+</p>
+<p>
+If there is exactly one solution for the equation, we ensure that the value of <code>x</code> is an integer.
+</p>
 
+<p><b>Example 1:</b><br/>
+<pre>
+<b>Input:</b> "x+5-3+x=6+x-2"
+<b>Output:</b> "x=2"
+</pre>
+</p>
 
-If there is exactly one solution for the equation, we ensure that the value of x is an integer.
+<p><b>Example 2:</b><br/>
+<pre>
+<b>Input:</b> "x=x"
+<b>Output:</b> "Infinite solutions"
+</pre>
+</p>
 
+<p><b>Example 3:</b><br/>
+<pre>
+<b>Input:</b> "2x=x"
+<b>Output:</b> "x=0"
+</pre>
+</p>
 
-Example 1:
+<p><b>Example 4:</b><br/>
+<pre>
+<b>Input:</b> "2x+3x-6x=x+2"
+<b>Output:</b> "x=-1"
+</pre>
+</p>
 
-Input: "x+5-3+x=6+x-2"
-Output: "x=2"
-
-
-
-Example 2:
-
-Input: "x=x"
-Output: "Infinite solutions"
-
-
-
-Example 3:
-
-Input: "2x=x"
-Output: "x=0"
-
-
-
-Example 4:
-
-Input: "2x+3x-6x=x+2"
-Output: "x=-1"
-
-
-
-Example 5:
-
-Input: "x=x+2"
-Output: "No solution"
-```
+<p><b>Example 5:</b><br/>
+<pre>
+<b>Input:</b> "x=x+2"
+<b>Output:</b> "No solution"
+</pre>
+</p>
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Fraction Addition and Subtraction](fraction-addition-and-subtraction)
+
+
+
 
 ## Thought:

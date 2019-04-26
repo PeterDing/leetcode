@@ -2,42 +2,51 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Two Pointers, Sort | [Leetcode](https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/description/) |
+Medium | Two Pointers, Sort | [Leetcode](https://leetcode.com/problems/longest-word-in-dictionary-through-deleting) | [solution](https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/solution/)
 
 
 -----------
 
-```
+<p>
 Given a string and a string dictionary, find the longest string in the dictionary that can be formed by deleting some characters of the given string. If there are more than one possible results, return the longest word with the smallest lexicographical order. If there is no possible result, return the empty string.
-
-Example 1:
-
-Input:
+</p>
+<p><b>Example 1:</b><br>
+<pre>
+<b>Input:</b>
 s = "abpcplea", d = ["ale","apple","monkey","plea"]
 
-Output: 
+<b>Output:</b> 
 "apple"
+</pre>
+</p>
 
-
-
-
-Example 2:
-
-Input:
+</p>
+<p><b>Example 2:</b><br>
+<pre>
+<b>Input:</b>
 s = "abpcplea", d = ["a","b","c"]
 
-Output: 
+<b>Output:</b> 
 "a"
+</pre>
+</p>
 
-
-
-Note:
-
-All the strings in the input will only contain lower-case letters.
-The size of the dictionary won't exceed 1,000.
-The length of all the strings in the input won't exceed 1,000.
-```
+<p><b>Note:</b><br>
+<ol>
+<li>All the strings in the input will only contain lower-case letters.</li>
+<li>The size of the dictionary won't exceed 1,000.</li>
+<li>The length of all the strings in the input won't exceed 1,000.</li>
+</ol>
+</p>
 
 -----------
+
+
+## Similar Problems
+
+- [Easy] [Longest Word in Dictionary](longest-word-in-dictionary)
+
+
+
 
 ## Thought:

@@ -2,30 +2,40 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy | Backtracking, Bit Manipulation | [Leetcode](https://leetcode.com/problems/binary-watch/description/) |
+Easy | Backtracking, Bit Manipulation | [Leetcode](https://leetcode.com/problems/binary-watch) | [solution](https://leetcode.com/problems/binary-watch/solution/)
 
 
 -----------
 
-```
-A binary watch has 4 LEDs on the top which represent the hours (0-11), and the 6 LEDs on the bottom represent the minutes (0-59).
-Each LED represents a zero or one, with the least significant bit on the right.
+<p>A binary watch has 4 LEDs on the top which represent the <b>hours</b> (<b>0-11</b>), and the 6 LEDs on the bottom represent the <b>minutes</b> (<b>0-59</b>).</p>
+<p>Each LED represents a zero or one, with the least significant bit on the right.</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Binary_clock_samui_moon.jpg" height="300" />
+<p>For example, the above binary watch reads "3:25".</p>
 
-For example, the above binary watch reads "3:25".
+<p>Given a non-negative integer <i>n</i> which represents the number of LEDs that are currently on, return all possible times the watch could represent.</p>
 
-Given a non-negative integer n which represents the number of LEDs that are currently on, return all possible times the watch could represent.
+<p><b>Example:</b>
+<pre>Input: n = 1<br>Return: ["1:00", "2:00", "4:00", "8:00", "0:01", "0:02", "0:04", "0:08", "0:16", "0:32"]</pre>
+</p>
 
-Example:
-Input: n = 1Return: ["1:00", "2:00", "4:00", "8:00", "0:01", "0:02", "0:04", "0:08", "0:16", "0:32"]
-
-
-Note:
-
-The order of output does not matter.
-The hour must not contain a leading zero, for example "01:00" is not valid, it should be "1:00".
-The minute must be consist of two digits and may contain a leading zero, for example "10:2" is not valid, it should be "10:02".
-```
+<p><b>Note:</b><br />
+<ul>
+<li>The order of output does not matter.</li>
+<li>The hour must not contain a leading zero, for example "01:00" is not valid, it should be "1:00".</li>
+<li>The minute must be consist of two digits and may contain a leading zero, for example "10:2" is not valid, it should be "10:02".</li>
+</ul>
+</p>
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Letter Combinations of a Phone Number](letter-combinations-of-a-phone-number)
+
+- [Easy] [Number of 1 Bits](number-of-1-bits)
+
+
+
 
 ## Thought:

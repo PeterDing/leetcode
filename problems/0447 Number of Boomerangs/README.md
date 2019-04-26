@@ -2,28 +2,39 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy | Hash Table | [Leetcode](https://leetcode.com/problems/number-of-boomerangs/description/) |
+Easy | Hash Table | [Leetcode](https://leetcode.com/problems/number-of-boomerangs) | [solution](https://leetcode.com/problems/number-of-boomerangs/solution/)
 
 
 -----------
 
-```
-Given n points in the plane that are all pairwise distinct, a "boomerang" is a tuple of points (i, j, k) such that the distance between i and j equals the distance between i and k (the order of the tuple matters).
+<p>Given <i>n</i> points in the plane that are all pairwise distinct, a &quot;boomerang&quot; is a tuple of points <code>(i, j, k)</code> such that the distance between <code>i</code> and <code>j</code> equals the distance between <code>i</code> and <code>k</code> (<b>the order of the tuple matters</b>).</p>
 
-Find the number of boomerangs. You may assume that n will be at most 500 and coordinates of points are all in the range [-10000, 10000] (inclusive).
+<p>Find the number of boomerangs. You may assume that <i>n</i> will be at most <b>500</b> and coordinates of points are all in the range <b>[-10000, 10000]</b> (inclusive).</p>
 
-Example:
+<p><b>Example:</b></p>
 
-Input:
+<pre>
+<b>Input:</b>
 [[0,0],[1,0],[2,0]]
 
-Output:
+<b>Output:</b>
 2
 
-Explanation:
-The two boomerangs are [[1,0],[0,0],[2,0]] and [[1,0],[2,0],[0,0]]
-```
+<b>Explanation:</b>
+The two boomerangs are <b>[[1,0],[0,0],[2,0]]</b> and <b>[[1,0],[2,0],[0,0]]</b>
+</pre>
+
+<p>&nbsp;</p>
+
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Line Reflection](line-reflection)
+
+
+
 
 ## Thought:

@@ -2,49 +2,57 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy | Bit Manipulation | [Leetcode](https://leetcode.com/problems/binary-number-with-alternating-bits/description/) |
+Easy | Bit Manipulation | [Leetcode](https://leetcode.com/problems/binary-number-with-alternating-bits) | [solution](https://leetcode.com/problems/binary-number-with-alternating-bits/solution/)
 
 
 -----------
 
-```
-Given a positive integer, check whether it has alternating bits: namely, if two adjacent bits will always have different values.
+<p>Given a positive integer, check whether it has alternating bits: namely, if two adjacent bits will always have different values.</p>
 
-Example 1:
-
-Input: 5
-Output: True
-Explanation:
+<p><b>Example 1:</b><br />
+<pre>
+<b>Input:</b> 5
+<b>Output:</b> True
+<b>Explanation:</b>
 The binary representation of 5 is: 101
+</pre>
+</p>
 
-
-
-Example 2:
-
-Input: 7
-Output: False
-Explanation:
+<p><b>Example 2:</b><br />
+<pre>
+<b>Input:</b> 7
+<b>Output:</b> False
+<b>Explanation:</b>
 The binary representation of 7 is: 111.
+</pre>
+</p>
 
-
-
-Example 3:
-
-Input: 11
-Output: False
-Explanation:
+<p><b>Example 3:</b><br />
+<pre>
+<b>Input:</b> 11
+<b>Output:</b> False
+<b>Explanation:</b>
 The binary representation of 11 is: 1011.
+</pre>
+</p>
 
-
-
-Example 4:
-
-Input: 10
-Output: True
-Explanation:
+<p><b>Example 4:</b><br />
+<pre>
+<b>Input:</b> 10
+<b>Output:</b> True
+<b>Explanation:</b>
 The binary representation of 10 is: 1010.
-```
+</pre>
+</p>
 
 -----------
+
+
+## Similar Problems
+
+- [Easy] [Number of 1 Bits](number-of-1-bits)
+
+
+
 
 ## Thought:

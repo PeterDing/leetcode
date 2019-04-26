@@ -2,35 +2,64 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Array, Backtracking | [Leetcode](https://leetcode.com/problems/combination-sum/description/) |
+Medium | Array, Backtracking | [Leetcode](https://leetcode.com/problems/combination-sum) | [solution](https://leetcode.com/problems/combination-sum/solution/)
 
 
 -----------
 
-```
-Given a set of candidate numbers (C) (without duplicates) and a target number (T), find all unique combinations in C where the candidate numbers sums to T. 
+<p>Given a <strong>set</strong> of candidate numbers (<code>candidates</code>) <strong>(without duplicates)</strong> and a target number (<code>target</code>), find all unique combinations in <code>candidates</code>&nbsp;where the candidate numbers sums to <code>target</code>.</p>
 
+<p>The <strong>same</strong> repeated number may be chosen from <code>candidates</code>&nbsp;unlimited number of times.</p>
 
-The same repeated number may be chosen from C unlimited number of times.
+<p><strong>Note:</strong></p>
 
+<ul>
+	<li>All numbers (including <code>target</code>) will be positive integers.</li>
+	<li>The solution set must not contain duplicate combinations.</li>
+</ul>
 
-Note:
+<p><strong>Example 1:</strong></p>
 
-All numbers (including target) will be positive integers.
-The solution set must not contain duplicate combinations.
-
-
-
-
-For example, given candidate set [2, 3, 6, 7] and target 7, 
-A solution set is: 
-
+<pre>
+<strong>Input:</strong> candidates = <code>[2,3,6,7], </code>target = <code>7</code>,
+<strong>A solution set is:</strong>
 [
   [7],
-  [2, 2, 3]
+  [2,2,3]
 ]
-```
+</pre>
+
+<p><strong>Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> candidates = [2,3,5]<code>, </code>target = 8,
+<strong>A solution set is:</strong>
+[
+&nbsp; [2,2,2,2],
+&nbsp; [2,3,3],
+&nbsp; [3,5]
+]
+</pre>
+
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Letter Combinations of a Phone Number](letter-combinations-of-a-phone-number)
+
+- [Medium] [Combination Sum II](combination-sum-ii)
+
+- [Medium] [Combinations](combinations)
+
+- [Medium] [Combination Sum III](combination-sum-iii)
+
+- [Medium] [Factor Combinations](factor-combinations)
+
+- [Medium] [Combination Sum IV](combination-sum-iv)
+
+
+
 
 ## Thought:

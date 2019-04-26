@@ -2,38 +2,48 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy | Stack, Design | [Leetcode](https://leetcode.com/problems/implement-stack-using-queues/description/) |
+Easy | Stack, Design | [Leetcode](https://leetcode.com/problems/implement-stack-using-queues) | [solution](https://leetcode.com/problems/implement-stack-using-queues/solution/)
 
 
 -----------
 
-```
-Implement the following operations of a stack using queues.
+<p>Implement the following operations of a stack using queues.</p>
 
+<ul>
+	<li>push(x) -- Push element x onto stack.</li>
+	<li>pop() -- Removes the element on top of the stack.</li>
+	<li>top() -- Get the top element.</li>
+	<li>empty() -- Return whether the stack is empty.</li>
+</ul>
 
-push(x) -- Push element x onto stack.
+<p><b>Example:</b></p>
 
+<pre>
+MyStack stack = new MyStack();
 
-pop() -- Removes the element on top of the stack.
+stack.push(1);
+stack.push(2);  
+stack.top();   // returns 2
+stack.pop();   // returns 2
+stack.empty(); // returns false</pre>
 
+<p><b>Notes:</b></p>
 
-top() -- Get the top element.
+<ul>
+	<li>You must use <i>only</i> standard operations of a queue -- which means only <code>push to back</code>, <code>peek/pop from front</code>, <code>size</code>, and <code>is empty</code> operations are valid.</li>
+	<li>Depending on your language, queue may not be supported natively. You may simulate a queue by using a list or deque (double-ended queue), as long as you use only standard operations of a queue.</li>
+	<li>You may assume that all operations are valid (for example, no pop or top operations will be called on an empty stack).</li>
+</ul>
 
-
-empty() -- Return whether the stack is empty.
-
-
-Notes:
-
-You must use only standard operations of a queue -- which means only push to back, peek/pop from front, size, and is empty operations are valid.
-Depending on your language, queue may not be supported natively. You may simulate a queue by using a list or deque (double-ended queue), as long as you use only standard operations of a queue.
-You may assume that all operations are valid (for example, no pop or top operations will be called on an empty stack).
-
-
-
-Credits:Special thanks to @jianchao.li.fighter for adding this problem and all test cases.
-```
 
 -----------
+
+
+## Similar Problems
+
+- [Easy] [Implement Queue using Stacks](implement-queue-using-stacks)
+
+
+
 
 ## Thought:

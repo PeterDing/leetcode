@@ -2,25 +2,30 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Hash Table, Bit Manipulation | [Leetcode](https://leetcode.com/problems/repeated-dna-sequences/description/) |
+Medium | Hash Table, Bit Manipulation | [Leetcode](https://leetcode.com/problems/repeated-dna-sequences) | [solution](https://leetcode.com/problems/repeated-dna-sequences/solution/)
 
 
 -----------
 
-```
-All DNA is composed of a series of nucleotides abbreviated as A, C, G, and T, for example: "ACGAATTCCG". When studying DNA, it is sometimes useful to identify repeated sequences within the DNA.
+<p>All DNA is composed of a series of nucleotides abbreviated as A, C, G, and T, for example: &quot;ACGAATTCCG&quot;. When studying DNA, it is sometimes useful to identify repeated sequences within the DNA.</p>
 
-Write a function to find all the 10-letter-long sequences (substrings) that occur more than once in a DNA molecule.
+<p>Write a function to find all the 10-letter-long sequences (substrings) that occur more than once in a DNA molecule.</p>
 
+<p><strong>Example:</strong></p>
 
-For example,
+<pre>
+<strong>Input:</strong> s = &quot;AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT&quot;
 
-Given s = "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT",
+<strong>Output:</strong> [&quot;AAAAACCCCC&quot;, &quot;CCCCCAAAAA&quot;]
+</pre>
 
-Return:
-["AAAAACCCCC", "CCCCCAAAAA"].
-```
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

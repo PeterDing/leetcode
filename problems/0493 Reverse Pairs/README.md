@@ -2,34 +2,44 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Hard | Divide and Conquer, Binary Indexed Tree, Segment Tree, Binary Search Tree | [Leetcode](https://leetcode.com/problems/reverse-pairs/description/) |
+Hard | Binary Search, Divide and Conquer, Sort, Binary Indexed Tree, Segment Tree | [Leetcode](https://leetcode.com/problems/reverse-pairs) | [solution](https://leetcode.com/problems/reverse-pairs/solution/)
 
 
 -----------
 
-```
-Given an array nums, we call (i, j) an important reverse pair if i < j and nums[i] > 2*nums[j].
+<p>Given an array <code>nums</code>, we call <code>(i, j)</code> an <b><i>important reverse pair</i></b> if <code>i &lt; j</code> and <code>nums[i] &gt; 2*nums[j]</code>.</p>
 
-You need to return the number of important reverse pairs in the given array.
+<p>You need to return the number of important reverse pairs in the given array.</p>
 
-Example1:
+<p><b>Example1:</b>
+<pre>
+<b>Input</b>: [1,3,2,3,1]
+<b>Output</b>: 2
+</pre></p>
 
-Input: [1,3,2,3,1]
-Output: 2
+<p><b>Example2:</b>
+<pre>
+<b>Input</b>: [2,4,3,5,1]
+<b>Output</b>: 3
+</pre></p>
 
-
-Example2:
-
-Input: [2,4,3,5,1]
-Output: 3
-
-
-Note:
-
-The length of the given array will not exceed 50,000.
-All the numbers in the input array are in the range of 32-bit integer.
-```
+<p><b>Note:</b><br>
+<ol>
+<li>The length of the given array will not exceed <code>50,000</code>.</li>
+<li>All the numbers in the input array are in the range of 32-bit integer.</li>
+</ol>
+</p>
 
 -----------
+
+
+## Similar Problems
+
+- [Hard] [Count of Smaller Numbers After Self](count-of-smaller-numbers-after-self)
+
+- [Hard] [Count of Range Sum](count-of-range-sum)
+
+
+
 
 ## Thought:

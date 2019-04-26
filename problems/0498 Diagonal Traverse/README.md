@@ -2,34 +2,44 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium |  | [Leetcode](https://leetcode.com/problems/diagonal-traverse/description/) |
+Medium |  | [Leetcode](https://leetcode.com/problems/diagonal-traverse) | [solution](https://leetcode.com/problems/diagonal-traverse/solution/)
 
 
 -----------
 
-```
-Given a matrix of M x N elements (M rows, N columns), return all elements of the matrix in diagonal order as shown in the below image. 
+<p>Given a matrix of M x N elements (M rows, N columns), return all elements of the matrix in diagonal order as shown in the below image.</p>
 
+<p>&nbsp;</p>
 
-Example:
+<p><b>Example:</b></p>
 
-Input:
+<pre>
+<b>Input:</b>
 [
  [ 1, 2, 3 ],
  [ 4, 5, 6 ],
  [ 7, 8, 9 ]
 ]
-Output:  [1,2,4,7,5,3,6,8,9]
-Explanation:
 
+<b>Output:</b>  [1,2,4,7,5,3,6,8,9]
 
+<b>Explanation:</b>
+<img src="https://assets.leetcode.com/uploads/2018/10/12/diagonal_traverse.png" style="width: 220px;" />
+</pre>
 
+<p>&nbsp;</p>
 
-Note:
+<p><b>Note:</b></p>
 
-The total number of elements of the given matrix will not exceed 10,000.
-```
+<p>The total number of elements of the given matrix will not exceed 10,000.</p>
+
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

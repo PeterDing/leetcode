@@ -2,35 +2,42 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Hash Table | [Leetcode](https://leetcode.com/problems/contiguous-array/description/) |
+Medium | Hash Table | [Leetcode](https://leetcode.com/problems/contiguous-array) | [solution](https://leetcode.com/problems/contiguous-array/solution/)
 
 
 -----------
 
-```
-Given a binary array, find the maximum length of a contiguous subarray with equal number of 0 and 1. 
+<p>Given a binary array, find the maximum length of a contiguous subarray with equal number of 0 and 1. </p>
 
 
-Example 1:
+<p><b>Example 1:</b><br />
+<pre>
+<b>Input:</b> [0,1]
+<b>Output:</b> 2
+<b>Explanation:</b> [0, 1] is the longest contiguous subarray with equal number of 0 and 1.
+</pre>
+</p>
 
-Input: [0,1]
-Output: 2
-Explanation: [0, 1] is the longest contiguous subarray with equal number of 0 and 1.
+<p><b>Example 2:</b><br />
+<pre>
+<b>Input:</b> [0,1,0]
+<b>Output:</b> 2
+<b>Explanation:</b> [0, 1] (or [1, 0]) is a longest contiguous subarray with equal number of 0 and 1.
+</pre>
+</p>
 
-
-
-Example 2:
-
-Input: [0,1,0]
-Output: 2
-Explanation: [0, 1] (or [1, 0]) is a longest contiguous subarray with equal number of 0 and 1.
-
-
-
-Note:
+<p><b>Note:</b>
 The length of the given binary array will not exceed 50,000.
-```
+</p>
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Maximum Size Subarray Sum Equals k](maximum-size-subarray-sum-equals-k)
+
+
+
 
 ## Thought:

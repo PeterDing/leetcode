@@ -2,42 +2,50 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium |  | [Leetcode](https://leetcode.com/problems/monotone-increasing-digits/description/) |
+Medium | Greedy | [Leetcode](https://leetcode.com/problems/monotone-increasing-digits) | [solution](https://leetcode.com/problems/monotone-increasing-digits/solution/)
 
 
 -----------
 
-```
-Given a non-negative integer N, find the largest number that is less than or equal to N with monotone increasing digits.
+<p>
+Given a non-negative integer <code>N</code>, find the largest number that is less than or equal to <code>N</code> with monotone increasing digits.
+</p><p>
+(Recall that an integer has <i>monotone increasing digits</i> if and only if each pair of adjacent digits <code>x</code> and <code>y</code> satisfy <code>x <= y</code>.)
+</p><p>
 
-(Recall that an integer has monotone increasing digits if and only if each pair of adjacent digits x and y satisfy x <= y.)
+<p><b>Example 1:</b><br />
+<pre>
+<b>Input:</b> N = 10
+<b>Output:</b> 9
+</pre>
+</p>
 
+<p><b>Example 2:</b><br />
+<pre>
+<b>Input:</b> N = 1234
+<b>Output:</b> 1234
+</pre>
+</p>
 
-Example 1:
+<p><b>Example 3:</b><br />
+<pre>
+<b>Input:</b> N = 332
+<b>Output:</b> 299
+</pre>
+</p>
 
-Input: N = 10
-Output: 9
-
-
-
-Example 2:
-
-Input: N = 1234
-Output: 1234
-
-
-
-Example 3:
-
-Input: N = 332
-Output: 299
-
-
-
-Note:
-N is an integer in the range [0, 10^9].
-```
+<p><b>Note:</b>
+<code>N</code> is an integer in the range <code>[0, 10^9]</code>.
+</p>
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Remove K Digits](remove-k-digits)
+
+
+
 
 ## Thought:

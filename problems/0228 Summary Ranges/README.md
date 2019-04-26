@@ -2,31 +2,40 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Array | [Leetcode](https://leetcode.com/problems/summary-ranges/description/) |
+Medium | Array | [Leetcode](https://leetcode.com/problems/summary-ranges) | [solution](https://leetcode.com/problems/summary-ranges/solution/)
 
 
 -----------
 
-```
-Given a sorted integer array without duplicates, return the summary of its ranges.
+<p>Given a sorted integer array without duplicates, return the summary of its ranges.</p>
 
-Example 1:
+<p><b>Example 1:</b></p>
 
-Input: [0,1,2,4,5,7]
-Output: ["0->2","4->5","7"]
+<pre>
+<b>Input:</b>  [0,1,2,4,5,7]
+<b>Output:</b> [&quot;0-&gt;2&quot;,&quot;4-&gt;5&quot;,&quot;7&quot;]
+<strong>Explanation: </strong>0,1,2 form a continuous range;&nbsp;4,5 form a continuous range.
+</pre>
 
+<p><b>Example 2:</b></p>
 
+<pre>
+<b>Input:</b>  [0,2,3,4,6,8,9]
+<b>Output:</b> [&quot;0&quot;,&quot;2-&gt;4&quot;,&quot;6&quot;,&quot;8-&gt;9&quot;]
+<strong>Explanation: </strong>2,3,4 form a continuous range;&nbsp;8,9 form a continuous range.
+</pre>
 
-Example 2:
-
-Input: [0,2,3,4,6,8,9]
-Output: ["0","2->4","6","8->9"]
-
-
-
-Credits:Special thanks to @jianchao.li.fighter for adding this problem and creating all test cases.
-```
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Missing Ranges](missing-ranges)
+
+- [Hard] [Data Stream as Disjoint Intervals](data-stream-as-disjoint-intervals)
+
+
+
 
 ## Thought:

@@ -2,63 +2,60 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Hard | Math | [Leetcode](https://leetcode.com/problems/self-crossing/description/) |
+Hard | Math | [Leetcode](https://leetcode.com/problems/self-crossing) | [solution](https://leetcode.com/problems/self-crossing/solution/)
 
 
 -----------
 
-```
-You are given an array x of n positive numbers. You start at point (0,0) and moves x[0] metres to the north, then x[1] metres to the west,
-    x[2] metres to the south,
-    x[3] metres to the east and so on. In other words, after each move your direction changes
-    counter-clockwise.
+<p>You are given an array <i>x</i> of <code>n</code> positive numbers. You start at point <code>(0,0)</code> and moves <code>x[0]</code> metres to the north, then <code>x[1]</code> metres to the west, <code>x[2]</code> metres to the south, <code>x[3]</code> metres to the east and so on. In other words, after each move your direction changes counter-clockwise.</p>
 
+<p>Write a one-pass algorithm with <code>O(1)</code> extra space to determine, if your path crosses itself, or not.</p>
 
-    Write a one-pass algorithm with O(1) extra space to determine, if your path crosses itself, or not.
+<p>&nbsp;</p>
 
+<p><b>Example 1:</b></p>
 
+<pre>
+<strong>┌───┐
+│ &nbsp; │
+└───┼──&gt;
+&nbsp; &nbsp; │
 
-Example 1:
+Input: </strong><code>[2,1,1,2]</code>
+<strong>Output: </strong>true
+</pre>
 
-Given x = [2, 1, 1, 2],
-?????
-?   ?
-???????>
-    ?
+<p><b>Example 2:</b></p>
 
-Return true (self crossing)
+<pre>
+<strong>┌──────┐
+│ &nbsp; &nbsp; &nbsp;│
+│
+│
+└────────────&gt;
 
+Input:</strong> <code>[1,2,3,4]</code>
+<strong>Output: </strong>false 
+</pre>
 
+<p><b>Example 3:</b></p>
 
+<pre>
+<strong>┌───┐
+│ &nbsp; │
+└───┼&gt;
 
-Example 2:
+Input:</strong> <code>[1,1,1,1]</code>
+<strong>Output:</strong> true 
+</pre>
 
-Given x = [1, 2, 3, 4],
-????????
-?      ?
-?
-?
-?????????????>
-
-Return false (not self crossing)
-
-
-
-
-Example 3:
-
-Given x = [1, 1, 1, 1],
-?????
-?   ?
-?????>
-
-Return true (self crossing)
-
-
-
-Credits:Special thanks to @dietpepsi for adding this problem and creating all test cases.
-```
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

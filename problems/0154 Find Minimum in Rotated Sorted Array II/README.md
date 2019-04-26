@@ -2,27 +2,47 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Hard | Array, Binary Search | [Leetcode](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/description/) |
+Hard | Array, Binary Search | [Leetcode](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii) | [solution](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/solution/)
 
 
 -----------
 
-```
-Follow up for "Find Minimum in Rotated Sorted Array":
-What if duplicates are allowed?
+<p>Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand.</p>
 
-Would this affect the run-time complexity? How and why?
+<p>(i.e., &nbsp;<code>[0,1,2,4,5,6,7]</code>&nbsp;might become &nbsp;<code>[4,5,6,7,0,1,2]</code>).</p>
 
+<p>Find the minimum element.</p>
 
-Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand.
+<p>The array may contain duplicates.</p>
 
-(i.e., 0 1 2 4 5 6 7 might become 4 5 6 7 0 1 2).
+<p><strong>Example 1:</strong></p>
 
-Find the minimum element.
+<pre>
+<strong>Input:</strong> [1,3,5]
+<strong>Output:</strong> 1</pre>
 
-The array may contain duplicates.
-```
+<p><strong>Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> [2,2,2,0,1]
+<strong>Output:</strong> 0</pre>
+
+<p><strong>Note:</strong></p>
+
+<ul>
+	<li>This is a follow up problem to&nbsp;<a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/">Find Minimum in Rotated Sorted Array</a>.</li>
+	<li>Would allow duplicates affect the run-time complexity? How and why?</li>
+</ul>
+
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Find Minimum in Rotated Sorted Array](find-minimum-in-rotated-sorted-array)
+
+
+
 
 ## Thought:

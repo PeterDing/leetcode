@@ -2,31 +2,45 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | String | [Leetcode](https://leetcode.com/problems/longest-palindromic-substring/description/) |
+Medium | String, Dynamic Programming | [Leetcode](https://leetcode.com/problems/longest-palindromic-substring) | [solution](https://leetcode.com/problems/longest-palindromic-substring/solution/)
 
 
 -----------
 
-```
-Given a string s, find the longest palindromic substring in s. You may assume that the maximum length of s is 1000.
+<p>Given a string <strong>s</strong>, find the longest palindromic substring in <strong>s</strong>. You may assume that the maximum length of <strong>s</strong> is 1000.</p>
 
-Example:
+<p><strong>Example 1:</strong></p>
 
-Input: "babad"
+<pre>
+<strong>Input:</strong> &quot;babad&quot;
+<strong>Output:</strong> &quot;bab&quot;
+<strong>Note:</strong> &quot;aba&quot; is also a valid answer.
+</pre>
 
-Output: "bab"
+<p><strong>Example 2:</strong></p>
 
-Note: "aba" is also a valid answer.
+<pre>
+<strong>Input:</strong> &quot;cbbd&quot;
+<strong>Output:</strong> &quot;bb&quot;
+</pre>
 
-
-
-Example:
-
-Input: "cbbd"
-
-Output: "bb"
-```
 
 -----------
+
+
+## Similar Problems
+
+- [Hard] [Shortest Palindrome](shortest-palindrome)
+
+- [Easy] [Palindrome Permutation](palindrome-permutation)
+
+- [Hard] [Palindrome Pairs](palindrome-pairs)
+
+- [Medium] [Longest Palindromic Subsequence](longest-palindromic-subsequence)
+
+- [Medium] [Palindromic Substrings](palindromic-substrings)
+
+
+
 
 ## Thought:

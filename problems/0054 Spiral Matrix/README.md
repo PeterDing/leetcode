@@ -2,30 +2,44 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Array | [Leetcode](https://leetcode.com/problems/spiral-matrix/description/) |
+Medium | Array | [Leetcode](https://leetcode.com/problems/spiral-matrix) | [solution](https://leetcode.com/problems/spiral-matrix/solution/)
 
 
 -----------
 
-```
-Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order.
+<p>Given a matrix of <em>m</em> x <em>n</em> elements (<em>m</em> rows, <em>n</em> columns), return all elements of the matrix in spiral order.</p>
 
+<p><strong>Example 1:</strong></p>
 
-
-For example,
-Given the following matrix:
-
-
+<pre>
+<strong>Input:</strong>
 [
  [ 1, 2, 3 ],
  [ 4, 5, 6 ],
  [ 7, 8, 9 ]
 ]
+<strong>Output:</strong> [1,2,3,6,9,8,7,4,5]
+</pre>
 
-
-You should return [1,2,3,6,9,8,7,4,5].
-```
+<p><strong>Example 2:</strong></p>
+<pre>
+<strong>Input:</strong>
+[
+  [1, 2, 3, 4],
+  [5, 6, 7, 8],
+  [9,10,11,12]
+]
+<strong>Output:</strong> [1,2,3,4,8,12,11,10,9,5,6,7]
+</pre>
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Spiral Matrix II](spiral-matrix-ii)
+
+
+
 
 ## Thought:

@@ -2,27 +2,49 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy | Math | [Leetcode](https://leetcode.com/problems/palindrome-number/description/) |
+Easy | Math | [Leetcode](https://leetcode.com/problems/palindrome-number) | [solution](https://leetcode.com/problems/palindrome-number/solution/)
 
 
 -----------
 
-```
-Determine whether an integer is a palindrome. Do this without extra space.
+<p>Determine whether an integer is a palindrome. An integer&nbsp;is&nbsp;a&nbsp;palindrome when it&nbsp;reads the same backward as forward.</p>
 
-click to show spoilers.
+<p><strong>Example 1:</strong></p>
 
-Some hints:
+<pre>
+<strong>Input:</strong> 121
+<strong>Output:</strong> true
+</pre>
 
-Could negative integers be palindromes? (ie, -1)
+<p><strong>Example 2:</strong></p>
 
-If you are thinking of converting the integer to string, note the restriction of using extra space.
+<pre>
+<strong>Input:</strong> -121
+<strong>Output:</strong> false
+<strong>Explanation:</strong> From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.
+</pre>
 
-You could also try reversing an integer. However, if you have solved the problem "Reverse Integer", you know that the reversed integer might overflow. How would you handle such case?
+<p><strong>Example 3:</strong></p>
 
-There is a more generic way of solving this problem.
-```
+<pre>
+<strong>Input:</strong> 10
+<strong>Output:</strong> false
+<strong>Explanation:</strong> Reads 01 from right to left. Therefore it is not a palindrome.
+</pre>
+
+<p><strong>Follow up:</strong></p>
+
+<p>Coud you solve&nbsp;it without converting the integer to a string?</p>
+
 
 -----------
+
+
+## Similar Problems
+
+- [Easy] [Palindrome Linked List](palindrome-linked-list)
+
+
+
 
 ## Thought:

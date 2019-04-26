@@ -2,25 +2,24 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Tree | [Leetcode](https://leetcode.com/problems/delete-node-in-a-bst/description/) |
+Medium | Tree | [Leetcode](https://leetcode.com/problems/delete-node-in-a-bst) | [solution](https://leetcode.com/problems/delete-node-in-a-bst/solution/)
 
 
 -----------
 
-```
-Given a root node reference of a BST and a key, delete the node with the given key in the BST. Return the root node reference (possibly updated) of the BST.
+<p>Given a root node reference of a BST and a key, delete the node with the given key in the BST. Return the root node reference (possibly updated) of the BST.</p>
 
-Basically, the deletion can be divided into two stages:
+<p>Basically, the deletion can be divided into two stages:
+<ol>
+<li>Search for a node to remove.</li>
+<li>If the node is found, delete the node.</li>
+</ol>
+</p>
 
-Search for a node to remove.
-If the node is found, delete the node.
+<p><b>Note:</b> Time complexity should be O(height of tree).</p>
 
-
-
-Note: Time complexity should be O(height of tree).
-
-Example:
-
+<p><b>Example:</b>
+<pre>
 root = [5,3,6,2,4,null,7]
 key = 3
 
@@ -47,8 +46,17 @@ Another valid answer is [5,2,6,null,4,null,7].
   2   6
    \   \
     4   7
-```
+</pre>
+</p>
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Split BST](split-bst)
+
+
+
 
 ## Thought:

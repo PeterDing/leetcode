@@ -2,26 +2,63 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Hard | Divide and Conquer | [Leetcode](https://leetcode.com/problems/expression-add-operators/description/) |
+Hard | Divide and Conquer | [Leetcode](https://leetcode.com/problems/expression-add-operators) | [solution](https://leetcode.com/problems/expression-add-operators/solution/)
 
 
 -----------
 
-```
-Given a string that contains only digits 0-9 and a target value, return all possibilities to add binary operators (not unary) +, -, or * between the digits so they evaluate to the target value.
+<p>Given a string that contains only digits <code>0-9</code> and a target value, return all possibilities to add <b>binary</b> operators (not unary) <code>+</code>, <code>-</code>, or <code>*</code> between the digits so they evaluate to the target value.</p>
 
+<p><b>Example 1:</b></p>
 
-Examples: 
-"123", 6 -> ["1+2+3", "1*2*3"] 
-"232", 8 -> ["2*3+2", "2+3*2"]
-"105", 5 -> ["1*0+5","10-5"]
-"00", 0 -> ["0+0", "0-0", "0*0"]
-"3456237490", 9191 -> []
+<pre>
+<b>Input:</b> <code><em>num</em> = </code>&quot;123&quot;, <em>target</em> = 6
+<b>Output: </b>[&quot;1+2+3&quot;, &quot;1*2*3&quot;] 
+</pre>
 
+<p><b>Example 2:</b></p>
 
-Credits:Special thanks to @davidtan1890 for adding this problem and creating all test cases.
-```
+<pre>
+<b>Input:</b> <code><em>num</em> = </code>&quot;232&quot;, <em>target</em> = 8
+<b>Output: </b>[&quot;2*3+2&quot;, &quot;2+3*2&quot;]</pre>
+
+<p><b>Example 3:</b></p>
+
+<pre>
+<b>Input:</b> <code><em>num</em> = </code>&quot;105&quot;, <em>target</em> = 5
+<b>Output: </b>[&quot;1*0+5&quot;,&quot;10-5&quot;]</pre>
+
+<p><b>Example 4:</b></p>
+
+<pre>
+<b>Input:</b> <code><em>num</em> = </code>&quot;00&quot;, <em>target</em> = 0
+<b>Output: </b>[&quot;0+0&quot;, &quot;0-0&quot;, &quot;0*0&quot;]
+</pre>
+
+<p><b>Example 5:</b></p>
+
+<pre>
+<b>Input:</b> <code><em>num</em> = </code>&quot;3456237490&quot;, <em>target</em> = 9191
+<b>Output: </b>[]
+</pre>
+
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Evaluate Reverse Polish Notation](evaluate-reverse-polish-notation)
+
+- [Hard] [Basic Calculator](basic-calculator)
+
+- [Medium] [Basic Calculator II](basic-calculator-ii)
+
+- [Medium] [Different Ways to Add Parentheses](different-ways-to-add-parentheses)
+
+- [Medium] [Target Sum](target-sum)
+
+
+
 
 ## Thought:

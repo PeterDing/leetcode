@@ -2,7 +2,7 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium |  | [Leetcode](https://leetcode.com/problems/flip-game-ii/description/) |
+Medium |  | [Leetcode](https://leetcode.com/problems/flip-game-ii) | [solution](https://leetcode.com/problems/flip-game-ii/solution/)
 
 
 -----------
@@ -10,18 +10,19 @@ Medium |  | [Leetcode](https://leetcode.com/problems/flip-game-ii/description/) 
 ```
 You are playing the following Flip Game with your friend: Given a string that
 contains only these two characters: `+` and `-`, you and your friend take
-turns to flip twoconsecutive `"++"` into `"--"`. The game ends when a person
+turns to flip two consecutive `"++"` into `"--"`. The game ends when a person
 can no longer make a move and therefore the other person will be the winner.
-
 Write a function to determine if the starting player can guarantee a win.
-
-For example, given `s = "++++"`, return true. The starting player can
-guarantee a win by flipping the middle `"++"` to become `"+--+"`.
-
-Follow up:
-Derive your algorithm's runtime complexity.
-```
+Example: Input: s = "++++" Output: true Explanation: The starting player can
+guarantee a win by flipping the middle "++" to become "+--+". Follow up:
+Derive your algorithm's runtime complexity.```
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

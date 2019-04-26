@@ -2,32 +2,37 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Hard | Divide and Conquer, Binary Indexed Tree, Segment Tree, Binary Search Tree | [Leetcode](https://leetcode.com/problems/count-of-smaller-numbers-after-self/description/) |
+Hard | Binary Search, Divide and Conquer, Sort, Binary Indexed Tree, Segment Tree | [Leetcode](https://leetcode.com/problems/count-of-smaller-numbers-after-self) | [solution](https://leetcode.com/problems/count-of-smaller-numbers-after-self/solution/)
 
 
 -----------
 
-```
-You are given an integer array nums and you have to return a new counts array.
-The counts array has the property where counts[i] is 
-the number of smaller elements to the right of nums[i].
+<p>You are given an integer array <i>nums</i> and you have to return a new <i>counts</i> array. The <i>counts</i> array has the property where <code>counts[i]</code> is the number of smaller elements to the right of <code>nums[i]</code>.</p>
 
+<p><b>Example:</b></p>
 
-Example:
-
-
-Given nums = [5, 2, 6, 1]
-
-To the right of 5 there are 2 smaller elements (2 and 1).
-To the right of 2 there is only 1 smaller element (1).
-To the right of 6 there is 1 smaller element (1).
-To the right of 1 there is 0 smaller element.
-
-
-
-Return the array [2, 1, 1, 0].
-```
+<pre>
+<strong>Input:</strong> [5,2,6,1]
+<strong>Output:</strong> <code>[2,1,1,0] 
+<strong>Explanation:</strong></code>
+To the right of 5 there are <b>2</b> smaller elements (2 and 1).
+To the right of 2 there is only <b>1</b> smaller element (1).
+To the right of 6 there is <b>1</b> smaller element (1).
+To the right of 1 there is <b>0</b> smaller element.
+</pre>
 
 -----------
+
+
+## Similar Problems
+
+- [Hard] [Count of Range Sum](count-of-range-sum)
+
+- [Medium] [Queue Reconstruction by Height](queue-reconstruction-by-height)
+
+- [Hard] [Reverse Pairs](reverse-pairs)
+
+
+
 
 ## Thought:

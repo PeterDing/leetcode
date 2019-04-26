@@ -2,29 +2,35 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Hard | String | [Leetcode](https://leetcode.com/problems/find-the-closest-palindrome/description/) |
+Hard | String | [Leetcode](https://leetcode.com/problems/find-the-closest-palindrome) | [solution](https://leetcode.com/problems/find-the-closest-palindrome/solution/)
 
 
 -----------
 
-```
-Given an integer n, find the closest integer (not including itself), which is a palindrome. 
+<p>Given an integer n, find the closest integer (not including itself), which is a palindrome. </p>
 
-The 'closest' is defined as absolute difference minimized between two integers.
+<p>The 'closest' is defined as absolute difference minimized between two integers.</p>
 
-Example 1:
+<p><b>Example 1:</b><br />
+<pre>
+<b>Input:</b> "123"
+<b>Output:</b> "121"
+</pre>
+</p>
 
-Input: "123"
-Output: "121"
-
-
-
-Note:
-
-The input n is a positive integer represented by string, whose length will not exceed 18.
-If there is a tie, return the smaller one as answer.
-```
+<p><b>Note:</b><br>
+<ol>
+<li>The input <b>n</b> is a positive integer represented by string, whose length will not exceed 18.</li>
+<li>If there is a tie, return the smaller one as answer.</li>
+</ol>
+</p>
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

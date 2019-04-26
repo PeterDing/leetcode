@@ -2,25 +2,24 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Hard | Design | [Leetcode](https://leetcode.com/problems/lfu-cache/description/) |
+Hard | Design | [Leetcode](https://leetcode.com/problems/lfu-cache) | [solution](https://leetcode.com/problems/lfu-cache/solution/)
 
 
 -----------
 
-```
-Design and implement a data structure for Least Frequently Used (LFU) cache. It should support the following operations: get and put.
+<p>Design and implement a data structure for <a href="https://en.wikipedia.org/wiki/Least_frequently_used" target="_blank">Least Frequently Used (LFU)</a> cache. It should support the following operations: <code>get</code> and <code>put</code>.
+</p>
 
+<p>
+<code>get(key)</code> - Get the value (will always be positive) of the key if the key exists in the cache, otherwise return -1.<br>
+<code>put(key, value)</code> - Set or insert the value if the key is not already present. When the cache reaches its capacity, it should invalidate the least frequently used item before inserting a new item. For the purpose of this problem, when there is a tie (i.e., two or more keys that have the same frequency), the least <b>recently</b> used key would be evicted.
+</p>
 
+<p><b>Follow up:</b><br />
+Could you do both operations in <b>O(1)</b> time complexity?</p>
 
-get(key) - Get the value (will always be positive) of the key if the key exists in the cache, otherwise return -1.
-put(key, value) - Set or insert the value if the key is not already present. When the cache reaches its capacity, it should invalidate the least frequently used item before inserting a new item. For the purpose of this problem, when there is a tie (i.e., two or more keys that have the same frequency), the least recently used key would be evicted.
-
-
-Follow up:
-Could you do both operations in O(1) time complexity?
-
-Example:
-
+<p><b>Example:</b>
+<pre>
 LFUCache cache = new LFUCache( 2 /* capacity */ );
 
 cache.put(1, 1);
@@ -33,8 +32,19 @@ cache.put(4, 4);    // evicts key 1.
 cache.get(1);       // returns -1 (not found)
 cache.get(3);       // returns 3
 cache.get(4);       // returns 4
-```
+</pre>
+</p>
 
 -----------
+
+
+## Similar Problems
+
+- [Hard] [LRU Cache](lru-cache)
+
+- [Hard] [Design In-Memory File System](design-in-memory-file-system)
+
+
+
 
 ## Thought:

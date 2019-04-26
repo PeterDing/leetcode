@@ -2,45 +2,60 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Depth-first Search, Breadth-first Search, Graph, Topological Sort | [Leetcode](https://leetcode.com/problems/course-schedule-ii/description/) |
+Medium | Depth-first Search, Breadth-first Search, Graph, Topological Sort | [Leetcode](https://leetcode.com/problems/course-schedule-ii) | [solution](https://leetcode.com/problems/course-schedule-ii/solution/)
 
 
 -----------
 
-```
-There are a total of n courses you have to take, labeled from 0 to n - 1.
+<p>There are a total of <em>n</em> courses you have to take, labeled from <code>0</code> to <code>n-1</code>.</p>
 
-Some courses may have prerequisites, for example to take course 0 you have to first take course 1, which is expressed as a pair: [0,1]
+<p>Some courses may have prerequisites, for example to take course 0 you have to first take course 1, which is expressed as a pair: <code>[0,1]</code></p>
 
+<p>Given the total number of courses and a list of prerequisite <strong>pairs</strong>, return the ordering of courses you should take to finish all courses.</p>
 
-Given the total number of courses and a list of prerequisite pairs, return the ordering of courses you should take to finish all courses.
+<p>There may be multiple correct orders, you just need to return one of them. If it is impossible to finish all courses, return an empty array.</p>
 
-There may be multiple correct orders, you just need to return one of them. If it is impossible to finish all courses, return an empty array.
+<p><strong>Example 1:</strong></p>
 
+<pre>
+<strong>Input:</strong> 2, [[1,0]] 
+<strong>Output: </strong><code>[0,1]</code>
+<strong>Explanation:</strong>&nbsp;There are a total of 2 courses to take. To take course 1 you should have finished   
+&nbsp;            course 0. So the correct course order is <code>[0,1] .</code></pre>
 
-For example:
-2, [[1,0]]
-There are a total of 2 courses to take. To take course 1 you should have finished course 0. So the correct course order is [0,1]
+<p><strong>Example 2:</strong></p>
 
-4, [[1,0],[2,0],[3,1],[3,2]]
-There are a total of 4 courses to take. To take course 3 you should have finished both courses 1 and 2. Both courses 1 and 2 should be taken after you finished course 0. So one correct course order is [0,1,2,3]. Another correct ordering is[0,2,1,3].
+<pre>
+<strong>Input:</strong> 4, [[1,0],[2,0],[3,1],[3,2]]
+<strong>Output: </strong><code>[0,1,2,3] or [0,2,1,3]</code>
+<strong>Explanation:</strong>&nbsp;There are a total of 4 courses to take. To take course 3 you should have finished both     
+             courses 1 and 2. Both courses 1 and 2 should be taken after you finished course 0. 
+&nbsp;            So one correct course order is <code>[0,1,2,3]</code>. Another correct ordering is <code>[0,2,1,3] .</code></pre>
 
-Note:
+<p><strong>Note:</strong></p>
 
-The input prerequisites is a graph represented by a list of edges, not adjacency matrices. Read more about how a graph is represented.
-You may assume that there are no duplicate edges in the input prerequisites.
+<ol>
+	<li>The input prerequisites is a graph represented by <strong>a list of edges</strong>, not adjacency matrices. Read more about <a href="https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/representing-graphs" target="_blank">how a graph is represented</a>.</li>
+	<li>You may assume that there are no duplicate edges in the input prerequisites.</li>
+</ol>
 
-
-
-click to show more hints.
-
-Hints:
-
-This problem is equivalent to finding the topological order in a directed graph. If a cycle exists, no topological ordering exists and therefore it will be impossible to take all courses.
-Topological Sort via DFS - A great video tutorial (21 minutes) on Coursera explaining the basic concepts of Topological Sort.
-Topological sort could also be done via BFS.
-```
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Course Schedule](course-schedule)
+
+- [Hard] [Alien Dictionary](alien-dictionary)
+
+- [Medium] [Minimum Height Trees](minimum-height-trees)
+
+- [Medium] [Sequence Reconstruction](sequence-reconstruction)
+
+- [Hard] [Course Schedule III](course-schedule-iii)
+
+
+
 
 ## Thought:

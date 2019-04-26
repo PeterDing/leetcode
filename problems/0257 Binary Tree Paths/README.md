@@ -2,18 +2,19 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy | Tree, Depth-first Search | [Leetcode](https://leetcode.com/problems/binary-tree-paths/description/) |
+Easy | Tree, Depth-first Search | [Leetcode](https://leetcode.com/problems/binary-tree-paths) | [solution](https://leetcode.com/problems/binary-tree-paths/solution/)
 
 
 -----------
 
-```
-Given a binary tree, return all root-to-leaf paths.
+<p>Given a binary tree, return all root-to-leaf paths.</p>
 
+<p><strong>Note:</strong>&nbsp;A leaf is a node with no children.</p>
 
-For example, given the following binary tree:
+<p><strong>Example:</strong></p>
 
-
+<pre>
+<strong>Input:</strong>
 
    1
  /   \
@@ -21,15 +22,21 @@ For example, given the following binary tree:
  \
   5
 
+<strong>Output:</strong> [&quot;1-&gt;2-&gt;5&quot;, &quot;1-&gt;3&quot;]
 
-
-All root-to-leaf paths are:
-["1->2->5", "1->3"]
-
-
-Credits:Special thanks to @jianchao.li.fighter for adding this problem and creating all test cases.
-```
+<strong>Explanation:</strong> All root-to-leaf paths are: 1-&gt;2-&gt;5, 1-&gt;3
+</pre>
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Path Sum II](path-sum-ii)
+
+- [Medium] [Smallest String Starting From Leaf](smallest-string-starting-from-leaf)
+
+
+
 
 ## Thought:

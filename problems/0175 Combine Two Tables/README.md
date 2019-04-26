@@ -2,15 +2,14 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy |  | [Leetcode](https://leetcode.com/problems/combine-two-tables/description/) |
+Easy |  | [Leetcode](https://leetcode.com/problems/combine-two-tables) | [solution](https://leetcode.com/problems/combine-two-tables/solution/)
 
 
 -----------
 
-```
-Table: Person
+<p>Table: <code>Person</code></p>
 
-
+<pre>
 +-------------+---------+
 | Column Name | Type    |
 +-------------+---------+
@@ -19,11 +18,11 @@ Table: Person
 | LastName    | varchar |
 +-------------+---------+
 PersonId is the primary key column for this table.
+</pre>
 
+<p>Table: <code>Address</code></p>
 
-
-Table: Address
-
+<pre>
 +-------------+---------+
 | Column Name | Type    |
 +-------------+---------+
@@ -33,19 +32,25 @@ Table: Address
 | State       | varchar |
 +-------------+---------+
 AddressId is the primary key column for this table.
+</pre>
 
+<p>&nbsp;</p>
 
+<p>Write a SQL query for a report that provides the following information for each person in the Person table, regardless if there is an address for each of those people:</p>
 
-
-Write a SQL query for a report that provides the following information for 
-each person in the Person table, regardless if there is an address for each 
-of those people:
-
-
-
+<pre>
 FirstName, LastName, City, State
-```
+</pre>
+
 
 -----------
+
+
+## Similar Problems
+
+- [Easy] [Employee Bonus](employee-bonus)
+
+
+
 
 ## Thought:

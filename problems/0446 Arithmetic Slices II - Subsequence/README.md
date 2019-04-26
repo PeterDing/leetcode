@@ -2,38 +2,43 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Hard | Dynamic Programming | [Leetcode](https://leetcode.com/problems/arithmetic-slices-ii-subsequence/description/) |
+Hard | Dynamic Programming | [Leetcode](https://leetcode.com/problems/arithmetic-slices-ii-subsequence) | [solution](https://leetcode.com/problems/arithmetic-slices-ii-subsequence/solution/)
 
 
 -----------
 
-```
-A sequence of numbers is called arithmetic if it consists of at least three elements and if the difference between any two consecutive elements is the same.
+<p>A sequence of numbers is called arithmetic if it consists of at least three elements and if the difference between any two consecutive elements is the same.</p>
 
-For example, these are arithmetic sequences:
+<p>For example, these are arithmetic sequences:</p>
+
+<pre>
 1, 3, 5, 7, 9
 7, 7, 7, 7
-3, -1, -5, -9
+3, -1, -5, -9</pre>
 
-The following sequence is not arithmetic. 1, 1, 2, 5, 7 
+<p>The following sequence is not arithmetic.</p>
 
+<pre>
+1, 1, 2, 5, 7</pre>
+&nbsp;
 
-A zero-indexed array A consisting of N numbers is given. A subsequence slice of that array is any sequence of integers (P0, P1, ..., Pk) such that 0 ≤ P0 < P1 < ... < Pk < N.
+<p>A zero-indexed array A consisting of N numbers is given. A <b>subsequence</b> slice of that array is any sequence of integers (P<sub>0</sub>, P<sub>1</sub>, ..., P<sub>k</sub>) such that 0 &le; P<sub>0</sub> &lt; P<sub>1</sub> &lt; ... &lt; P<sub>k</sub> &lt; N.</p>
 
-A subsequence slice (P0, P1, ..., Pk) of array A is called arithmetic if the sequence A[P0], A[P1], ..., A[Pk-1], A[Pk] is arithmetic. In particular, this means that k ≥ 2.
+<p>A <b>subsequence</b> slice (P<sub>0</sub>, P<sub>1</sub>, ..., P<sub>k</sub>) of array A is called arithmetic if the sequence A[P<sub>0</sub>], A[P<sub>1</sub>], ..., A[P<sub>k-1</sub>], A[P<sub>k</sub>] is arithmetic. In particular, this means that k &ge; 2.</p>
 
-The function should return the number of arithmetic subsequence slices in the array A. 
+<p>The function should return the number of arithmetic subsequence slices in the array A.</p>
 
-The input contains N integers. Every integer is in the range of -231 and 231-1 and 0 ≤ N ≤ 1000. The output is guaranteed to be less than 231-1.
+<p>The input contains N integers. Every integer is in the range of -2<sup>31</sup> and 2<sup>31</sup>-1 and 0 &le; N &le; 1000. The output is guaranteed to be less than 2<sup>31</sup>-1.</p>
+&nbsp;
 
+<p><b>Example:</b></p>
 
-Example:
+<pre>
+<b>Input:</b> [2, 4, 6, 8, 10]
 
-Input: [2, 4, 6, 8, 10]
+<b>Output:</b> 7
 
-Output: 7
-
-Explanation:
+<b>Explanation:</b>
 All arithmetic subsequence slices are:
 [2,4,6]
 [4,6,8]
@@ -42,8 +47,17 @@ All arithmetic subsequence slices are:
 [4,6,8,10]
 [2,4,6,8,10]
 [2,6,10]
-```
+</pre>
+
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Arithmetic Slices](arithmetic-slices)
+
+
+
 
 ## Thought:

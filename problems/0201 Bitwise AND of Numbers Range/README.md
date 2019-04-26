@@ -2,21 +2,32 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Bit Manipulation | [Leetcode](https://leetcode.com/problems/bitwise-and-of-numbers-range/description/) |
+Medium | Bit Manipulation | [Leetcode](https://leetcode.com/problems/bitwise-and-of-numbers-range) | [solution](https://leetcode.com/problems/bitwise-and-of-numbers-range/solution/)
 
 
 -----------
 
-```
-Given a range [m, n] where 0 <= m <= n <= 2147483647, return the bitwise AND of all numbers in this range, inclusive.
+<p>Given a range [m, n] where 0 &lt;= m &lt;= n &lt;= 2147483647, return the bitwise AND of all numbers in this range, inclusive.</p>
 
+<p><strong>Example 1:</strong></p>
 
-For example, given the range [5, 7], you should return 4.
+<pre>
+<strong>Input:</strong> [5,7]
+<strong>Output:</strong> 4
+</pre>
 
+<p><strong>Example 2:</strong></p>
 
-Credits:Special thanks to @amrsaqr for adding this problem and creating all test cases.
-```
+<pre>
+<strong>Input:</strong> [0,1]
+<strong>Output:</strong> 0</pre>
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

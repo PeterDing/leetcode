@@ -2,35 +2,50 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Two Pointers | [Leetcode](https://leetcode.com/problems/permutation-in-string/description/) |
+Medium | Two Pointers, Sliding Window | [Leetcode](https://leetcode.com/problems/permutation-in-string) | [solution](https://leetcode.com/problems/permutation-in-string/solution/)
 
 
 -----------
 
-```
-Given two strings s1 and s2, write a function to return true if s2 contains the permutation of s1. In other words, one of the first string's permutations is the substring of the second string.
+<p>Given two strings <b>s1</b> and <b>s2</b>, write a function to return true if <b>s2</b> contains the permutation of <b>s1</b>. In other words, one of the first string&#39;s permutations is the <b>substring</b> of the second string.</p>
 
-Example 1:
+<p>&nbsp;</p>
 
-Input:s1 = "ab" s2 = "eidbaooo"
-Output:True
-Explanation: s2 contains one permutation of s1 ("ba").
+<p><b>Example 1:</b></p>
 
+<pre>
+<b>Input: </b>s1 = &quot;ab&quot; s2 = &quot;eidbaooo&quot;
+<b>Output: </b>True
+<b>Explanation:</b> s2 contains one permutation of s1 (&quot;ba&quot;).
+</pre>
 
+<p><b>Example 2:</b></p>
 
-Example 2:
+<pre>
+<b>Input:</b>s1= &quot;ab&quot; s2 = &quot;eidboaoo&quot;
+<b>Output:</b> False
+</pre>
 
-Input:s1= "ab" s2 = "eidboaoo"
-Output: False
+<p>&nbsp;</p>
 
+<p><b>Note:</b></p>
 
+<ol>
+	<li>The input strings only contain lower case letters.</li>
+	<li>The length of both given strings is in range [1, 10,000].</li>
+</ol>
 
-Note:
-
-The input strings only contain lower case letters.
-The length of both given strings is in range [1, 10,000].
-```
 
 -----------
+
+
+## Similar Problems
+
+- [Hard] [Minimum Window Substring](minimum-window-substring)
+
+- [Easy] [Find All Anagrams in a String](find-all-anagrams-in-a-string)
+
+
+
 
 ## Thought:

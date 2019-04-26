@@ -2,27 +2,23 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Binary Search, Divide and Conquer | [Leetcode](https://leetcode.com/problems/search-a-2d-matrix-ii/description/) |
+Medium | Binary Search, Divide and Conquer | [Leetcode](https://leetcode.com/problems/search-a-2d-matrix-ii) | [solution](https://leetcode.com/problems/search-a-2d-matrix-ii/solution/)
 
 
 -----------
 
-```
-Write an efficient algorithm that searches for a value in an m x n matrix. This matrix has the following properties:
+<p>Write an efficient algorithm that searches for a value in an <i>m</i> x <i>n</i> matrix. This matrix has the following properties:</p>
 
+<ul>
+	<li>Integers in each row are sorted in ascending from left to right.</li>
+	<li>Integers in each column are sorted in ascending from top to bottom.</li>
+</ul>
 
+<p><strong>Example:</strong></p>
 
-Integers in each row are sorted in ascending from left to right.
-Integers in each column are sorted in ascending from top to bottom.
+<p>Consider the following matrix:</p>
 
-
-
-
-For example,
-
-Consider the following matrix:
-
-
+<pre>
 [
   [1,   4,  7, 11, 15],
   [2,   5,  8, 12, 19],
@@ -30,12 +26,21 @@ Consider the following matrix:
   [10, 13, 14, 17, 24],
   [18, 21, 23, 26, 30]
 ]
+</pre>
 
+<p>Given&nbsp;target&nbsp;=&nbsp;<code>5</code>, return&nbsp;<code>true</code>.</p>
 
-Given target = 5, return true.
-Given target = 20, return false.
-```
+<p>Given&nbsp;target&nbsp;=&nbsp;<code>20</code>, return&nbsp;<code>false</code>.</p>
+
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Search a 2D Matrix](search-a-2d-matrix)
+
+
+
 
 ## Thought:

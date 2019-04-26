@@ -2,40 +2,62 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | String | [Leetcode](https://leetcode.com/problems/reverse-words-in-a-string/description/) |
+Medium | String | [Leetcode](https://leetcode.com/problems/reverse-words-in-a-string) | [solution](https://leetcode.com/problems/reverse-words-in-a-string/solution/)
 
 
 -----------
 
-```
-Given an input string, reverse the string word by word.
+<p>Given an input string, reverse the string word by word.</p>
 
+<p>&nbsp;</p>
 
+<p><strong>Example 1:</strong></p>
 
-For example,
-Given s = "the sky is blue",
-return "blue is sky the".
+<pre>
+<strong>Input:</strong> &quot;<code>the sky is blue</code>&quot;
+<strong>Output:&nbsp;</strong>&quot;<code>blue is sky the</code>&quot;
+</pre>
 
+<p><strong>Example 2:</strong></p>
 
+<pre>
+<strong>Input:</strong> &quot; &nbsp;hello world! &nbsp;&quot;
+<strong>Output:&nbsp;</strong>&quot;world! hello&quot;
+<strong>Explanation:</strong> Your reversed string should not contain leading or trailing spaces.
+</pre>
 
-Update (2015-02-12):
-For C programmers: Try to solve it in-place in O(1) space.
+<p><strong>Example 3:</strong></p>
 
+<pre>
+<strong>Input:</strong> &quot;a good &nbsp; example&quot;
+<strong>Output:&nbsp;</strong>&quot;example good a&quot;
+<strong>Explanation:</strong> You need to reduce multiple spaces between two words to a single space in the reversed string.
+</pre>
 
-click to show clarification.
+<p>&nbsp;</p>
 
-Clarification:
+<p><strong>Note:</strong></p>
 
+<ul>
+	<li>A word is defined as a sequence of non-space characters.</li>
+	<li>Input string may contain leading or trailing spaces. However, your reversed string should not contain leading or trailing spaces.</li>
+	<li>You need to reduce multiple spaces between two words to a single space in the reversed string.</li>
+</ul>
 
+<p>&nbsp;</p>
 
-What constitutes a word?
-A sequence of non-space characters constitutes a word.
-Could the input string contain leading or trailing spaces?
-Yes. However, your reversed string should not contain leading or trailing spaces.
-How about multiple spaces between two words?
-Reduce them to a single space in the reversed string.
-```
+<p><strong>Follow up:</strong></p>
+
+<p>For C programmers, try to solve it <em>in-place</em> in <em>O</em>(1) extra space.</p>
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Reverse Words in a String II](reverse-words-in-a-string-ii)
+
+
+
 
 ## Thought:

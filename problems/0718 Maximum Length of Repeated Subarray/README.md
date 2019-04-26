@@ -2,31 +2,44 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Array, Hash Table, Binary Search, Dynamic Programming | [Leetcode](https://leetcode.com/problems/maximum-length-of-repeated-subarray/description/) |
+Medium | Array, Hash Table, Binary Search, Dynamic Programming | [Leetcode](https://leetcode.com/problems/maximum-length-of-repeated-subarray) | [solution](https://leetcode.com/problems/maximum-length-of-repeated-subarray/solution/)
 
 
 -----------
 
-```
-Given two integer arrays A and B, return the maximum length of an subarray that appears in both arrays.
+<p>Given two integer arrays <code>A</code> and <code>B</code>, return the maximum length of an subarray that appears in both arrays.</p>
 
-Example 1:
+<p><b>Example 1:</b></p>
 
-Input:
+<pre>
+<b>Input:</b>
 A: [1,2,3,2,1]
 B: [3,2,1,4,7]
-Output: 3
-Explanation: 
+<b>Output:</b> 3
+<b>Explanation:</b> 
 The repeated subarray with maximum length is [3, 2, 1].
+</pre>
 
+<p>&nbsp;</p>
 
+<p><b>Note:</b></p>
 
-Note:
+<ol>
+	<li>1 &lt;= len(A), len(B) &lt;= 1000</li>
+	<li>0 &lt;= A[i], B[i] &lt; 100</li>
+</ol>
 
-1 <= len(A), len(B) <= 1000
-0 <= A[i], B[i] < 100
-```
+<p>&nbsp;</p>
+
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Minimum Size Subarray Sum](minimum-size-subarray-sum)
+
+
+
 
 ## Thought:

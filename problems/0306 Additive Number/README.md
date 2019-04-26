@@ -2,38 +2,47 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium |  | [Leetcode](https://leetcode.com/problems/additive-number/description/) |
+Medium | Backtracking | [Leetcode](https://leetcode.com/problems/additive-number) | [solution](https://leetcode.com/problems/additive-number/solution/)
 
 
 -----------
 
-```
-Additive number is a string whose digits can form additive sequence.
+<p>Additive number is a string whose digits can form additive sequence.</p>
 
-A valid additive sequence should contain at least three numbers. Except for the first two numbers, each subsequent number in the sequence must be the sum of the preceding two.
+<p>A valid additive sequence should contain <b>at least</b> three numbers. Except for the first two numbers, each subsequent number in the sequence must be the sum of the preceding two.</p>
 
+<p>Given a string containing only digits <code>&#39;0&#39;-&#39;9&#39;</code>, write a function to determine if it&#39;s an additive number.</p>
 
-For example:
-"112358" is an additive number because the digits can form an additive sequence: 1, 1, 2, 3, 5, 8.
-1 + 1 = 2, 1 + 2 = 3, 2 + 3 = 5, 3 + 5 = 8
-"199100199" is also an additive number, the additive sequence is: 1, 99, 100, 199.
-1 + 99 = 100, 99 + 100 = 199
+<p><b>Note:</b> Numbers in the additive sequence <b>cannot</b> have leading zeros, so sequence <code>1, 2, 03</code> or <code>1, 02, 3</code> is invalid.</p>
 
+<p><b>Example 1:</b></p>
 
+<pre>
+<b>Input:</b> <code>&quot;112358&quot;</code>
+<b>Output:</b> true 
+<strong>Explanation: </strong>The digits can form an additive sequence: <code>1, 1, 2, 3, 5, 8</code>. 
+&nbsp;            1 + 1 = 2, 1 + 2 = 3, 2 + 3 = 5, 3 + 5 = 8
+</pre>
 
-Note: Numbers in the additive sequence cannot have leading zeros, so sequence 1, 2, 03 or 1, 02, 3 is invalid.
+<p><b>Example 2:</b></p>
 
+<pre>
+<b>Input:</b> <code>&quot;199100199&quot;</code>
+<b>Output:</b> true 
+<strong>Explanation: </strong>The additive sequence is: <code>1, 99, 100, 199</code><span style="font-family: sans-serif, Arial, Verdana, &quot;Trebuchet MS&quot;;">.</span>&nbsp;
+&nbsp;            1 + 99 = 100, 99 + 100 = 199</pre>
 
-Given a string containing only digits '0'-'9', write a function to determine if it's an additive number.
-
-
-Follow up:
-How would you handle overflow for very large input integers?
-
-
-Credits:Special thanks to @jeantimex for adding this problem and creating all test cases.
-```
+<p><b>Follow up:</b><br />
+How would you handle overflow for very large input integers?</p>
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Split Array into Fibonacci Sequence](split-array-into-fibonacci-sequence)
+
+
+
 
 ## Thought:

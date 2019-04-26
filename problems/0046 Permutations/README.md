@@ -2,19 +2,18 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Backtracking | [Leetcode](https://leetcode.com/problems/permutations/description/) |
+Medium | Backtracking | [Leetcode](https://leetcode.com/problems/permutations) | [solution](https://leetcode.com/problems/permutations/solution/)
 
 
 -----------
 
-```
-Given a collection of distinct numbers, return all possible permutations.
+<p>Given a collection of <strong>distinct</strong> integers, return all possible permutations.</p>
 
+<p><strong>Example:</strong></p>
 
-
-For example,
-[1,2,3] have the following permutations:
-
+<pre>
+<strong>Input:</strong> [1,2,3]
+<strong>Output:</strong>
 [
   [1,2,3],
   [1,3,2],
@@ -23,8 +22,23 @@ For example,
   [3,1,2],
   [3,2,1]
 ]
-```
+</pre>
+
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Next Permutation](next-permutation)
+
+- [Medium] [Permutations II](permutations-ii)
+
+- [Medium] [Permutation Sequence](permutation-sequence)
+
+- [Medium] [Combinations](combinations)
+
+
+
 
 ## Thought:

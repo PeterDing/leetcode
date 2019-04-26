@@ -2,45 +2,52 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Hard | Backtracking, Trie | [Leetcode](https://leetcode.com/problems/word-search-ii/description/) |
+Hard | Backtracking, Trie | [Leetcode](https://leetcode.com/problems/word-search-ii) | [solution](https://leetcode.com/problems/word-search-ii/solution/)
 
 
 -----------
 
-```
-Given a 2D board and a list of words from the dictionary, find all words in the board.
+<p>Given a 2D board and a list of words from the dictionary, find all words in the board.</p>
 
+<p>Each word must be constructed from letters of sequentially adjacent cell, where &quot;adjacent&quot; cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once in a word.</p>
 
-Each word must be constructed from letters of sequentially adjacent cell, where "adjacent" cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once in a word.
+<p>&nbsp;</p>
 
+<p><strong>Example:</strong></p>
 
-
-For example,
-Given words = ["oath","pea","eat","rain"] and board = 
-
-[
-  ['o','a','a','n'],
-  ['e','t','a','e'],
-  ['i','h','k','r'],
-  ['i','f','l','v']
+<pre>
+<strong>Input:</strong> 
+<b>board </b>= [
+  [&#39;<span style="color:#d70">o</span>&#39;,&#39;<span style="color:#d70">a</span>&#39;,&#39;a&#39;,&#39;n&#39;],
+  [&#39;e&#39;,&#39;<span style="color:#d30">t</span>&#39;,&#39;<span style="color:#d00">a</span>&#39;,&#39;<span style="color:#d00">e</span>&#39;],
+  [&#39;i&#39;,&#39;<span style="color:#d70">h</span>&#39;,&#39;k&#39;,&#39;r&#39;],
+  [&#39;i&#39;,&#39;f&#39;,&#39;l&#39;,&#39;v&#39;]
 ]
+<b>words</b> = <code>[&quot;oath&quot;,&quot;pea&quot;,&quot;eat&quot;,&quot;rain&quot;]</code>
 
+<strong>Output:&nbsp;</strong><code>[&quot;eat&quot;,&quot;oath&quot;]</code>
+</pre>
 
-Return ["eat","oath"].
+<p>&nbsp;</p>
 
+<p><b>Note:</b></p>
 
+<ol>
+	<li>All inputs are consist of lowercase letters <code>a-z</code>.</li>
+	<li>The values of&nbsp;<code>words</code> are distinct.</li>
+</ol>
 
-Note:
-You may assume that all inputs are consist of lowercase letters a-z.
-
-
-click to show hint.
-
-You would need to optimize your backtracking to pass the larger test. Could you stop backtracking earlier?
-
-If the current candidate does not exist in all words' prefix, you could stop backtracking immediately. What kind of data structure could answer such query efficiently? Does a hash table work? Why or why not? How about a Trie? If you would like to learn how to implement a basic trie, please work on this problem: Implement Trie (Prefix Tree) first.
-```
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Word Search](word-search)
+
+- [Hard] [Unique Paths III](unique-paths-iii)
+
+
+
 
 ## Thought:

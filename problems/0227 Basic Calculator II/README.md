@@ -2,33 +2,55 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | String | [Leetcode](https://leetcode.com/problems/basic-calculator-ii/description/) |
+Medium | String | [Leetcode](https://leetcode.com/problems/basic-calculator-ii) | [solution](https://leetcode.com/problems/basic-calculator-ii/solution/)
 
 
 -----------
 
-```
-Implement a basic calculator to evaluate a simple expression string.
+<p>Implement a basic calculator to evaluate a simple expression string.</p>
 
-The expression string contains only non-negative integers, +, -, *, / operators and empty spaces  . The integer division should truncate toward zero.
+<p>The expression string contains only <b>non-negative</b> integers, <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code> operators and empty spaces <code> </code>. The integer division should truncate toward zero.</p>
 
-You may assume that the given expression is always valid.
+<p><strong>Example 1:</strong></p>
 
-Some examples:
+<pre>
+<strong>Input: </strong>&quot;3+2*2&quot;
+<strong>Output:</strong> 7
+</pre>
 
-"3+2*2" = 7
-" 3/2 " = 1
-" 3+5 / 2 " = 5
+<p><strong>Example 2:</strong></p>
 
+<pre>
+<strong>Input:</strong> &quot; 3/2 &quot;
+<strong>Output:</strong> 1</pre>
 
+<p><strong>Example 3:</strong></p>
 
+<pre>
+<strong>Input:</strong> &quot; 3+5 / 2 &quot;
+<strong>Output:</strong> 5
+</pre>
 
-Note: Do not use the eval built-in library function.
+<p><b>Note:</b></p>
 
+<ul>
+	<li>You may assume that the given expression is always valid.</li>
+	<li><b>Do not</b> use the <code>eval</code> built-in library function.</li>
+</ul>
 
-Credits:Special thanks to @ts for adding this problem and creating all test cases.
-```
 
 -----------
+
+
+## Similar Problems
+
+- [Hard] [Basic Calculator](basic-calculator)
+
+- [Hard] [Expression Add Operators](expression-add-operators)
+
+- [Hard] [Basic Calculator III](basic-calculator-iii)
+
+
+
 
 ## Thought:

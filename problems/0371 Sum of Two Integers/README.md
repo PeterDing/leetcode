@@ -2,21 +2,40 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy | Bit Manipulation | [Leetcode](https://leetcode.com/problems/sum-of-two-integers/description/) |
+Easy | Bit Manipulation | [Leetcode](https://leetcode.com/problems/sum-of-two-integers) | [solution](https://leetcode.com/problems/sum-of-two-integers/solution/)
 
 
 -----------
 
-```
-Calculate the sum of two integers a and b, but you are not allowed to use the operator + and -.
+<p>Calculate the sum of two integers <i>a</i> and <i>b</i>, but you are <b>not allowed</b> to use the operator <code>+</code> and <code>-</code>.</p>
 
-Example:
-Given a = 1 and b = 2, return 3.
+<div>
+<p><strong>Example 1:</strong></p>
 
+<pre>
+<strong>Input: </strong>a = <span id="example-input-1-1">1</span>, b = <span id="example-input-1-2">2</span>
+<strong>Output: </strong><span id="example-output-1">3</span>
+</pre>
 
-Credits:Special thanks to @fujiaozhu for adding this problem and creating all test cases.
-```
+<div>
+<p><strong>Example 2:</strong></p>
+
+<pre>
+<strong>Input: </strong>a = -<span id="example-input-2-1">2</span>, b = <span id="example-input-2-2">3</span>
+<strong>Output: </strong>1
+</pre>
+</div>
+</div>
+
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Add Two Numbers](add-two-numbers)
+
+
+
 
 ## Thought:

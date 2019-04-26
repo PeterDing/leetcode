@@ -2,20 +2,18 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Backtracking | [Leetcode](https://leetcode.com/problems/combinations/description/) |
+Medium | Backtracking | [Leetcode](https://leetcode.com/problems/combinations) | [solution](https://leetcode.com/problems/combinations/solution/)
 
 
 -----------
 
-```
-Given two integers n and k, return all possible combinations of k numbers out of 1 ... n.
+<p>Given two integers <em>n</em> and <em>k</em>, return all possible combinations of <em>k</em> numbers out of 1 ... <em>n</em>.</p>
 
+<p><strong>Example:</strong></p>
 
-For example,
-If n = 4 and k = 2, a solution is:
-
-
-
+<pre>
+<strong>Input:</strong>&nbsp;n = 4, k = 2
+<strong>Output:</strong>
 [
   [2,4],
   [3,4],
@@ -24,8 +22,19 @@ If n = 4 and k = 2, a solution is:
   [1,3],
   [1,4],
 ]
-```
+</pre>
+
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Combination Sum](combination-sum)
+
+- [Medium] [Permutations](permutations)
+
+
+
 
 ## Thought:

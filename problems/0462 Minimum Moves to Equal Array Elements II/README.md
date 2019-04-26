@@ -2,30 +2,40 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Math | [Leetcode](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/description/) |
+Medium | Math | [Leetcode](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii) | [solution](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/solution/)
 
 
 -----------
 
-```
-Given a non-empty integer array, find the minimum number of moves required to make all array elements equal, where a move is incrementing a selected element by 1 or decrementing a selected element by 1.
+<p><p>Given a <b>non-empty</b> integer array, find the minimum number of moves required to make all array elements equal, where a move is incrementing a selected element by 1 or decrementing a selected element by 1.</p>
 
-You may assume the array's length is at most 10,000.
+<p>You may assume the array's length is at most 10,000.</p>
 
-Example:
-
-Input:
+<p><b>Example:</b>
+<pre>
+<b>Input:</b>
 [1,2,3]
 
-Output:
+<b>Output:</b>
 2
 
-Explanation:
+<b>Explanation:</b>
 Only two moves are needed (remember each move increments or decrements one element):
 
 [1,2,3]  =>  [2,2,3]  =>  [2,2,2]
-```
+</pre>
+</p></p>
 
 -----------
+
+
+## Similar Problems
+
+- [Hard] [Best Meeting Point](best-meeting-point)
+
+- [Easy] [Minimum Moves to Equal Array Elements](minimum-moves-to-equal-array-elements)
+
+
+
 
 ## Thought:

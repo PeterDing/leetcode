@@ -2,20 +2,19 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy | Math, Binary Search | [Leetcode](https://leetcode.com/problems/arranging-coins/description/) |
+Easy | Math, Binary Search | [Leetcode](https://leetcode.com/problems/arranging-coins) | [solution](https://leetcode.com/problems/arranging-coins/solution/)
 
 
 -----------
 
-```
-You have a total of n coins that you want to form in a staircase shape, where every k-th row must have exactly k coins.
+<p>You have a total of <i>n</i> coins that you want to form in a staircase shape, where every <i>k</i>-th row must have exactly <i>k</i> coins.</p>
  
-Given n, find the total number of full staircase rows that can be formed.
+<p>Given <i>n</i>, find the total number of <b>full</b> staircase rows that can be formed.</p>
 
-n is a non-negative integer and fits within the range of a 32-bit signed integer.
+<p><i>n</i> is a non-negative integer and fits within the range of a 32-bit signed integer.</p>
 
-Example 1:
-
+<p><b>Example 1:</b>
+<pre>
 n = 5
 
 The coins can form the following rows:
@@ -24,11 +23,11 @@ The coins can form the following rows:
 ¤ ¤
 
 Because the 3rd row is incomplete, we return 2.
+</pre>
+</p>
 
-
-
-Example 2:
-
+<p><b>Example 2:</b>
+<pre>
 n = 8
 
 The coins can form the following rows:
@@ -38,8 +37,15 @@ The coins can form the following rows:
 ¤ ¤
 
 Because the 4th row is incomplete, we return 3.
-```
+</pre>
+</p>
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

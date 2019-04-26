@@ -2,24 +2,23 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Array, Hash Table, Design | [Leetcode](https://leetcode.com/problems/insert-delete-getrandom-o1/description/) |
+Medium | Array, Hash Table, Design | [Leetcode](https://leetcode.com/problems/insert-delete-getrandom-o1) | [solution](https://leetcode.com/problems/insert-delete-getrandom-o1/solution/)
 
 
 -----------
 
-```
-Design a data structure that supports all following operations in average O(1) time.
+<p>Design a data structure that supports all following operations in <i>average</i> <b>O(1)</b> time.</p>
 
+<p>
+<ol>
+<li><code>insert(val)</code>: Inserts an item val to the set if not already present.</li>
+<li><code>remove(val)</code>: Removes an item val from the set if present.</li>
+<li><code>getRandom</code>: Returns a random element from current set of elements. Each element must have the <b>same probability</b> of being returned.</li>
+</ol>
+</p>
 
-
-insert(val): Inserts an item val to the set if not already present.
-remove(val): Removes an item val from the set if present.
-getRandom: Returns a random element from current set of elements. Each element must have the same probability of being returned.
-
-
-
-Example:
-
+<p><b>Example:</b>
+<pre>
 // Init an empty set.
 RandomizedSet randomSet = new RandomizedSet();
 
@@ -43,8 +42,17 @@ randomSet.insert(2);
 
 // Since 2 is the only number in the set, getRandom always return 2.
 randomSet.getRandom();
-```
+</pre>
+</p>
 
 -----------
+
+
+## Similar Problems
+
+- [Hard] [Insert Delete GetRandom O(1) - Duplicates allowed](insert-delete-getrandom-o1-duplicates-allowed)
+
+
+
 
 ## Thought:

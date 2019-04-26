@@ -2,38 +2,38 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy | Tree | [Leetcode](https://leetcode.com/problems/subtree-of-another-tree/description/) |
+Easy | Tree | [Leetcode](https://leetcode.com/problems/subtree-of-another-tree) | [solution](https://leetcode.com/problems/subtree-of-another-tree/solution/)
 
 
 -----------
 
-```
-Given two non-empty binary trees s and t, check whether tree t has exactly the same structure and node values with a subtree of s. A subtree of s is a tree consists of a node in s and all of this node's descendants. The tree s could also be considered as a subtree of itself.
+<p>
+Given two non-empty binary trees <b>s</b> and <b>t</b>, check whether tree <b>t</b> has exactly the same structure and node values with a subtree of <b>s</b>. A subtree of <b>s</b> is a tree consists of a node in <b>s</b> and all of this node's descendants. The tree <b>s</b> could also be considered as a subtree of itself.
+</p>
 
-
-Example 1:
+<p><b>Example 1:</b><br>
 
 Given tree s:
-
+<pre>
      3
     / \
    4   5
   / \
  1   2
-
+</pre>
 Given tree t:
-
+<pre>
    4 
   / \
  1   2
+</pre>
+Return <b>true</b>, because t has the same structure and node values with a subtree of s.
+</p>
 
-Return true, because t has the same structure and node values with a subtree of s.
-
-
-Example 2:
+<p><b>Example 2:</b><br>
 
 Given tree s:
-
+<pre>
      3
     / \
    4   5
@@ -41,16 +41,26 @@ Given tree s:
  1   2
     /
    0
-
+</pre>
 Given tree t:
-
+<pre>
    4
   / \
  1   2
-
-Return false.
-```
+</pre>
+Return <b>false</b>.
+</p>
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Count Univalue Subtrees](count-univalue-subtrees)
+
+- [Medium] [Most Frequent Subtree Sum](most-frequent-subtree-sum)
+
+
+
 
 ## Thought:

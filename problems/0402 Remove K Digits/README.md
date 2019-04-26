@@ -2,46 +2,56 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Stack, Greedy | [Leetcode](https://leetcode.com/problems/remove-k-digits/description/) |
+Medium | Stack, Greedy | [Leetcode](https://leetcode.com/problems/remove-k-digits) | [solution](https://leetcode.com/problems/remove-k-digits/solution/)
 
 
 -----------
 
-```
-Given a non-negative integer num represented as a string, remove k digits from the number so that the new number is the smallest possible.
+<p>Given a non-negative integer <i>num</i> represented as a string, remove <i>k</i> digits from the number so that the new number is the smallest possible.
+</p>
 
+<p><b>Note:</b><br />
+<ul>
+<li>The length of <i>num</i> is less than 10002 and will be &ge; <i>k</i>.</li>
+<li>The given <i>num</i> does not contain any leading zero.</li>
+</ul>
+</b>
+</p>
 
-Note:
-
-The length of num is less than 10002 and will be ≥ k.
-The given num does not contain any leading zero.
-
-
-
-
-Example 1:
-
+<p><b>Example 1:</b>
+<pre>
 Input: num = "1432219", k = 3
 Output: "1219"
 Explanation: Remove the three digits 4, 3, and 2 to form the new number 1219 which is the smallest.
+</pre>
+</p>
 
-
-
-Example 2:
-
+<p><b>Example 2:</b>
+<pre>
 Input: num = "10200", k = 1
 Output: "200"
 Explanation: Remove the leading 1 and the number is 200. Note that the output must not contain leading zeroes.
+</pre>
+</p>
 
-
-
-Example 3:
-
+<p><b>Example 3:</b>
+<pre>
 Input: num = "10", k = 2
 Output: "0"
 Explanation: Remove all the digits from the number and it is left with nothing which is 0.
-```
+</pre>
+</p>
 
 -----------
+
+
+## Similar Problems
+
+- [Hard] [Create Maximum Number](create-maximum-number)
+
+- [Medium] [Monotone Increasing Digits](monotone-increasing-digits)
+
+
+
 
 ## Thought:

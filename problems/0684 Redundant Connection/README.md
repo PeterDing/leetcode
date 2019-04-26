@@ -2,51 +2,61 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Tree, Union Find, Graph | [Leetcode](https://leetcode.com/problems/redundant-connection/description/) |
+Medium | Tree, Union Find, Graph | [Leetcode](https://leetcode.com/problems/redundant-connection) | [solution](https://leetcode.com/problems/redundant-connection/solution/)
 
 
 -----------
 
-```
-In this problem, a tree is an undirected graph that is connected and has no cycles.
-
+<p>
+In this problem, a tree is an <b>undirected</b> graph that is connected and has no cycles.
+</p><p>
 The given input is a graph that started as a tree with N nodes (with distinct values 1, 2, ..., N), with one additional edge added.  The added edge has two different vertices chosen from 1 to N, and was not an edge that already existed.
-
-The resulting graph is given as a 2D-array of edges.  Each element of edges is a pair [u, v] with u < v, that represents an undirected edge connecting nodes u and v.
-
-Return an edge that can be removed so that the resulting graph is a tree of N nodes.  If there are multiple answers, return the answer that occurs last in the given 2D-array.  The answer edge [u, v] should be in the same format, with u < v.
-Example 1:
-
-Input: [[1,2], [1,3], [2,3]]
-Output: [2,3]
-Explanation: The given undirected graph will be like this:
+</p><p>
+The resulting graph is given as a 2D-array of <code>edges</code>.  Each element of <code>edges</code> is a pair <code>[u, v]</code> with <code>u < v</code>, that represents an <b>undirected</b> edge connecting nodes <code>u</code> and <code>v</code>.
+</p><p>
+Return an edge that can be removed so that the resulting graph is a tree of N nodes.  If there are multiple answers, return the answer that occurs last in the given 2D-array.  The answer edge <code>[u, v]</code> should be in the same format, with <code>u < v</code>.
+</p><p><b>Example 1:</b><br />
+<pre>
+<b>Input:</b> [[1,2], [1,3], [2,3]]
+<b>Output:</b> [2,3]
+<b>Explanation:</b> The given undirected graph will be like this:
   1
  / \
 2 - 3
-
-
-Example 2:
-
-Input: [[1,2], [2,3], [3,4], [1,4], [1,5]]
-Output: [1,4]
-Explanation: The given undirected graph will be like this:
+</pre>
+</p>
+<p><b>Example 2:</b><br />
+<pre>
+<b>Input:</b> [[1,2], [2,3], [3,4], [1,4], [1,5]]
+<b>Output:</b> [1,4]
+<b>Explanation:</b> The given undirected graph will be like this:
 5 - 1 - 2
     |   |
     4 - 3
+</pre>
+</p>
+<p><b>Note:</b><br />
+<li>The size of the input 2D-array will be between 3 and 1000.</li>
+<li>Every integer represented in the 2D-array will be between 1 and N, where N is the size of the input array.</li>
+</p>
 
+<br />
 
-Note:
-The size of the input 2D-array will be between 3 and 1000.
-Every integer represented in the 2D-array will be between 1 and N, where N is the size of the input array.
-
-
-
-
-
-Update (2017-09-26):
-We have overhauled the problem description + test cases and specified clearly the graph is an undirected graph. For the directed graph follow up please see Redundant Connection II). We apologize for any inconvenience caused.
-```
+<p>
+<b><font color="red">Update (2017-09-26):</font></b><br>
+We have overhauled the problem description + test cases and specified clearly the graph is an <b><i>undirected</i></b> graph. For the <b><i>directed</i></b> graph follow up please see <b><a href="https://leetcode.com/problems/redundant-connection-ii/description/">Redundant Connection II</a></b>). We apologize for any inconvenience caused.
+</p>
 
 -----------
+
+
+## Similar Problems
+
+- [Hard] [Redundant Connection II](redundant-connection-ii)
+
+- [Medium] [Accounts Merge](accounts-merge)
+
+
+
 
 ## Thought:

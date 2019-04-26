@@ -2,18 +2,18 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Dynamic Programming | [Leetcode](https://leetcode.com/problems/combination-sum-iv/description/) |
+Medium | Dynamic Programming | [Leetcode](https://leetcode.com/problems/combination-sum-iv) | [solution](https://leetcode.com/problems/combination-sum-iv/solution/)
 
 
 -----------
 
-```
-Given an integer array with all positive numbers and no duplicates, find the number of possible combinations that add up to a positive integer target.
+<p>Given an integer array with all positive numbers and no duplicates, find the number of possible combinations that add up to a positive integer target.</p>
 
-Example:
+<p><b>Example:</b></p>
 
-nums = [1, 2, 3]
-target = 4
+<pre>
+<i><b>nums</b></i> = [1, 2, 3]
+<i><b>target</b></i> = 4
 
 The possible combination ways are:
 (1, 1, 1, 1)
@@ -26,18 +26,28 @@ The possible combination ways are:
 
 Note that different sequences are counted as different combinations.
 
-Therefore the output is 7.
+Therefore the output is <i><b>7</b></i>.
+</pre>
 
+<p>&nbsp;</p>
 
+<p><b>Follow up:</b><br />
+What if negative numbers are allowed in the given array?<br />
+How does it change the problem?<br />
+What limitation we need to add to the question to allow negative numbers?</p>
 
-Follow up:
-What if negative numbers are allowed in the given array?
-How does it change the problem?
-What limitation we need to add to the question to allow negative numbers? 
+<p><b>Credits:</b><br />
+Special thanks to <a href="https://leetcode.com/pbrother/">@pbrother</a> for adding this problem and creating all test cases.</p>
 
-Credits:Special thanks to @pbrother for adding this problem and creating all test cases.
-```
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Combination Sum](combination-sum)
+
+
+
 
 ## Thought:

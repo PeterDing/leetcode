@@ -2,35 +2,42 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Hard | Linked List | [Leetcode](https://leetcode.com/problems/reverse-nodes-in-k-group/description/) |
+Hard | Linked List | [Leetcode](https://leetcode.com/problems/reverse-nodes-in-k-group) | [solution](https://leetcode.com/problems/reverse-nodes-in-k-group/solution/)
 
 
 -----------
 
-```
-Given a linked list, reverse the nodes of a linked list k at a time and return its modified list.
+<p>Given a linked list, reverse the nodes of a linked list <em>k</em> at a time and return its modified list.</p>
 
+<p><em>k</em> is a positive integer and is less than or equal to the length of the linked list. If the number of nodes is not a multiple of <em>k</em> then left-out nodes in the end should remain as it is.</p>
 
+<ul>
+</ul>
 
-k is a positive integer and is less than or equal to the length of the linked list. If the number of nodes is not a multiple of k then left-out nodes in the end should remain as it is.
+<p><strong>Example:</strong></p>
 
-You may not alter the values in the nodes, only nodes itself may be changed.
+<p>Given this linked list: <code>1-&gt;2-&gt;3-&gt;4-&gt;5</code></p>
 
-Only constant memory is allowed.
+<p>For <em>k</em> = 2, you should return: <code>2-&gt;1-&gt;4-&gt;3-&gt;5</code></p>
 
+<p>For <em>k</em> = 3, you should return: <code>3-&gt;2-&gt;1-&gt;4-&gt;5</code></p>
 
-For example,
-Given this linked list: 1->2->3->4->5
+<p><strong>Note:</strong></p>
 
+<ul>
+	<li>Only constant extra memory is allowed.</li>
+	<li>You may not alter the values in the list&#39;s nodes, only nodes itself may be changed.</li>
+</ul>
 
-
-For k = 2, you should return: 2->1->4->3->5
-
-
-
-For k = 3, you should return: 3->2->1->4->5
-```
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Swap Nodes in Pairs](swap-nodes-in-pairs)
+
+
+
 
 ## Thought:

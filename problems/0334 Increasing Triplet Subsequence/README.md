@@ -2,37 +2,46 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium |  | [Leetcode](https://leetcode.com/problems/increasing-triplet-subsequence/description/) |
+Medium |  | [Leetcode](https://leetcode.com/problems/increasing-triplet-subsequence) | [solution](https://leetcode.com/problems/increasing-triplet-subsequence/solution/)
 
 
 -----------
 
-```
-Given an unsorted array return whether an increasing subsequence of length 3 exists or not in the array.
+<p>Given an unsorted array return whether an increasing subsequence of length 3 exists or not in the array.</p>
 
+<p>Formally the function should:</p>
 
-Formally the function should:
-Return true if there exists i, j, k  
-such that arr[i] < arr[j] < arr[k] given 0 ≤ i < j < k ≤ n-1 
-else return false.
+<blockquote>Return true if there exists <i>i, j, k </i><br />
+such that <i>arr[i]</i> &lt; <i>arr[j]</i> &lt; <i>arr[k]</i> given 0 &le; <i>i</i> &lt; <i>j</i> &lt; <i>k</i> &le; <i>n</i>-1 else return false.</blockquote>
 
+<p><strong>Note: </strong>Your algorithm should run in O(<i>n</i>) time complexity and O(<i>1</i>) space complexity.</p>
 
+<div>
+<p><strong>Example 1:</strong></p>
 
-Your algorithm should run in O(n) time complexity and O(1) space complexity.
+<pre>
+<strong>Input: </strong><span id="example-input-1-1">[1,2,3,4,5]</span>
+<strong>Output: </strong><span id="example-output-1">true</span>
+</pre>
 
+<div>
+<p><strong>Example 2:</strong></p>
 
-Examples:
-Given [1, 2, 3, 4, 5],
-return true.
-
-
-Given [5, 4, 3, 2, 1],
-return false.
-
-
-Credits:Special thanks to @DjangoUnchained for adding this problem and creating all test cases.
-```
+<pre>
+<strong>Input: </strong><span id="example-input-2-1">[5,4,3,2,1]</span>
+<strong>Output: </strong><span id="example-output-2">false</span>
+</pre>
+</div>
+</div>
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Longest Increasing Subsequence](longest-increasing-subsequence)
+
+
+
 
 ## Thought:

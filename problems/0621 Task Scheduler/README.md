@@ -2,32 +2,47 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Array, Greedy, Queue | [Leetcode](https://leetcode.com/problems/task-scheduler/description/) |
+Medium | Array, Greedy, Queue | [Leetcode](https://leetcode.com/problems/task-scheduler) | [solution](https://leetcode.com/problems/task-scheduler/solution/)
 
 
 -----------
 
-```
-Given a char array representing tasks CPU need to do. It contains capital letters A to Z where different letters represent different tasks.Tasks could be done without original order. Each task could be done in one interval. For each interval, CPU could finish one task or just be idle.
+<p>Given a char array representing tasks CPU need to do. It contains capital letters A to Z where different letters represent different tasks. Tasks could be done without original order. Each task could be done in one interval. For each interval, CPU could finish one task or just be idle.</p>
 
-However, there is a non-negative cooling interval n that means between two same tasks, there must be at least n intervals that CPU are doing different tasks or just be idle. 
+<p>However, there is a non-negative cooling interval <b>n</b> that means between two <b>same tasks</b>, there must be at least n intervals that CPU are doing different tasks or just be idle.</p>
 
-You need to return the least number of intervals the CPU will take to finish all the given tasks.
+<p>You need to return the <b>least</b> number of intervals the CPU will take to finish all the given tasks.</p>
 
-Example 1:
+<p>&nbsp;</p>
 
-Input: tasks = ["A","A","A","B","B","B"], n = 2
-Output: 8
-Explanation: A -> B -> idle -> A -> B -> idle -> A -> B.
+<p><b>Example:</b></p>
 
+<pre>
+<b>Input:</b> tasks = [&quot;A&quot;,&quot;A&quot;,&quot;A&quot;,&quot;B&quot;,&quot;B&quot;,&quot;B&quot;], n = 2
+<b>Output:</b> 8
+<b>Explanation:</b> A -&gt; B -&gt; idle -&gt; A -&gt; B -&gt; idle -&gt; A -&gt; B.
+</pre>
 
+<p>&nbsp;</p>
 
-Note:
+<p><b>Note:</b></p>
 
-The number of tasks is in the range [1, 10000].
-The integer n is in the range [0, 100].
-```
+<ol>
+	<li>The number of tasks is in the range [1, 10000].</li>
+	<li>The integer n is in the range [0, 100].</li>
+</ol>
+
 
 -----------
+
+
+## Similar Problems
+
+- [Hard] [Rearrange String k Distance Apart](rearrange-string-k-distance-apart)
+
+- [Medium] [Reorganize String](reorganize-string)
+
+
+
 
 ## Thought:

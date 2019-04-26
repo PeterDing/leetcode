@@ -2,36 +2,48 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Hard | Backtracking | [Leetcode](https://leetcode.com/problems/n-queens/description/) |
+Hard | Backtracking | [Leetcode](https://leetcode.com/problems/n-queens) | [solution](https://leetcode.com/problems/n-queens/solution/)
 
 
 -----------
 
-```
-The n-queens puzzle is the problem of placing n queens on an n×n chessboard such that no two queens attack each other.
+<p>The <em>n</em>-queens puzzle is the problem of placing <em>n</em> queens on an <em>n</em>&times;<em>n</em> chessboard such that no two queens attack each other.</p>
 
+<p><img alt="" src="https://assets.leetcode.com/uploads/2018/10/12/8-queens.png" style="width: 258px; height: 276px;" /></p>
 
+<p>Given an integer <em>n</em>, return all distinct solutions to the <em>n</em>-queens puzzle.</p>
 
-Given an integer n, return all distinct solutions to the n-queens puzzle.
+<p>Each solution contains a distinct board configuration of the <em>n</em>-queens&#39; placement, where <code>&#39;Q&#39;</code> and <code>&#39;.&#39;</code> both indicate a queen and an empty space respectively.</p>
 
-Each solution contains a distinct board configuration of the n-queens' placement, where 'Q' and '.' both indicate a queen and an empty space respectively.
+<p><strong>Example:</strong></p>
 
-For example,
-There exist two distinct solutions to the 4-queens puzzle:
+<pre>
+<strong>Input:</strong> 4
+<strong>Output:</strong> [
+ [&quot;.Q..&quot;,  // Solution 1
+  &quot;...Q&quot;,
+  &quot;Q...&quot;,
+  &quot;..Q.&quot;],
 
-[
- [".Q..",  // Solution 1
-  "...Q",
-  "Q...",
-  "..Q."],
-
- ["..Q.",  // Solution 2
-  "Q...",
-  "...Q",
-  ".Q.."]
+ [&quot;..Q.&quot;,  // Solution 2
+  &quot;Q...&quot;,
+  &quot;...Q&quot;,
+  &quot;.Q..&quot;]
 ]
-```
+<strong>Explanation:</strong> There exist two distinct solutions to the 4-queens puzzle as shown above.
+</pre>
+
 
 -----------
+
+
+## Similar Problems
+
+- [Hard] [N-Queens II](n-queens-ii)
+
+- [Hard] [Grid Illumination](grid-illumination)
+
+
+
 
 ## Thought:

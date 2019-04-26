@@ -2,17 +2,16 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy |  | [Leetcode](https://leetcode.com/problems/customers-who-never-order/description/) |
+Easy |  | [Leetcode](https://leetcode.com/problems/customers-who-never-order) | [solution](https://leetcode.com/problems/customers-who-never-order/solution/)
 
 
 -----------
 
-```
-Suppose that a website contains two tables, the Customers table and the Orders table. Write a SQL query to find all customers who never order anything.
+<p>Suppose that a website contains two tables, the <code>Customers</code> table and the <code>Orders</code> table. Write a SQL query to find all customers who never order anything.</p>
 
+<p>Table: <code>Customers</code>.</p>
 
-Table: Customers.
-
+<pre>
 +----+-------+
 | Id | Name  |
 +----+-------+
@@ -21,29 +20,37 @@ Table: Customers.
 | 3  | Sam   |
 | 4  | Max   |
 +----+-------+
+</pre>
 
+<p>Table: <code>Orders</code>.</p>
 
-
-Table: Orders.
-
+<pre>
 +----+------------+
 | Id | CustomerId |
 +----+------------+
 | 1  | 3          |
 | 2  | 1          |
 +----+------------+
+</pre>
 
+<p>Using the above tables as example, return the following:</p>
 
-Using the above tables as example, return the following:
-
+<pre>
 +-----------+
 | Customers |
 +-----------+
 | Henry     |
 | Max       |
 +-----------+
-```
+</pre>
+
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

@@ -2,35 +2,43 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy | Math, Binary Search | [Leetcode](https://leetcode.com/problems/valid-perfect-square/description/) |
+Easy | Math, Binary Search | [Leetcode](https://leetcode.com/problems/valid-perfect-square) | [solution](https://leetcode.com/problems/valid-perfect-square/solution/)
 
 
 -----------
 
-```
-Given a positive integer num, write a function which returns True if num is a perfect square else False.
+<p>Given a positive integer <i>num</i>, write a function which returns True if <i>num</i> is a perfect square else False.</p>
 
+<p><b>Note:</b> <b>Do not</b> use any built-in library function such as <code>sqrt</code>.</p>
 
-Note: Do not use any built-in library function such as sqrt.
+<p><strong>Example 1:</strong></p>
 
+<div>
+<pre>
+<strong>Input: </strong><span id="example-input-1-1">16</span>
+<strong>Output: </strong><span id="example-output-1">true</span>
+</pre>
 
-Example 1:
+<div>
+<p><strong>Example 2:</strong></p>
 
-Input: 16
-Returns: True
-
-
-
-Example 2:
-
-Input: 14
-Returns: False
-
-
-
-Credits:Special thanks to @elmirap for adding this problem and creating all test cases.
-```
+<pre>
+<strong>Input: </strong><span id="example-input-2-1">14</span>
+<strong>Output: </strong><span id="example-output-2">false</span>
+</pre>
+</div>
+</div>
 
 -----------
+
+
+## Similar Problems
+
+- [Easy] [Sqrt(x)](sqrtx)
+
+- [Easy] [Sum of Square Numbers](sum-of-square-numbers)
+
+
+
 
 ## Thought:

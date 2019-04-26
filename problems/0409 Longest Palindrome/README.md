@@ -2,22 +2,21 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy | Hash Table | [Leetcode](https://leetcode.com/problems/longest-palindrome/description/) |
+Easy | Hash Table | [Leetcode](https://leetcode.com/problems/longest-palindrome) | [solution](https://leetcode.com/problems/longest-palindrome/solution/)
 
 
 -----------
 
-```
-Given a string which consists of lowercase or uppercase letters, find the length of the longest palindromes that can be built with those letters.
+<p>Given a string which consists of lowercase or uppercase letters, find the length of the longest palindromes that can be built with those letters.</p>
 
-This is case sensitive, for example "Aa" is not considered a palindrome here.
+<p>This is case sensitive, for example <code>"Aa"</code> is not considered a palindrome here.</p>
 
-Note:
+<p><b>Note:</b><br />
 Assume the length of given string will not exceed 1,010.
+</p>
 
-
-Example: 
-
+<p><b>Example: </b>
+<pre>
 Input:
 "abccccdd"
 
@@ -26,8 +25,17 @@ Output:
 
 Explanation:
 One longest palindrome that can be built is "dccaccd", whose length is 7.
-```
+</pre>
+</p>
 
 -----------
+
+
+## Similar Problems
+
+- [Easy] [Palindrome Permutation](palindrome-permutation)
+
+
+
 
 ## Thought:

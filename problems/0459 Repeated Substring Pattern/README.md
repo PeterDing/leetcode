@@ -2,41 +2,49 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy | String | [Leetcode](https://leetcode.com/problems/repeated-substring-pattern/description/) |
+Easy | String | [Leetcode](https://leetcode.com/problems/repeated-substring-pattern) | [solution](https://leetcode.com/problems/repeated-substring-pattern/solution/)
 
 
 -----------
 
-```
-Given a non-empty string check if it can be constructed by taking a substring of it and appending multiple copies of the substring together.  You may assume the given string consists of lowercase English letters only and its length  will not exceed 10000. 
+<p>Given a non-empty string check if it can be constructed by taking a substring of it and appending multiple copies of the substring together. You may assume the given string consists of lowercase English letters only and its length will not exceed 10000.</p>
 
-Example 1:
+<p>&nbsp;</p>
 
-Input: "abab"
+<p><b>Example 1:</b></p>
 
-Output: True
+<pre>
+<b>Input:</b> &quot;abab&quot;
+<b>Output:</b> True
+<b>Explanation:</b> It&#39;s the substring &quot;ab&quot; twice.
+</pre>
 
-Explanation: It's the substring "ab" twice.
+<p><b>Example 2:</b></p>
 
+<pre>
+<b>Input:</b> &quot;aba&quot;
+<b>Output:</b> False
+</pre>
 
+<p><b>Example 3:</b></p>
 
-Example 2:
+<pre>
+<b>Input:</b> &quot;abcabcabcabc&quot;
+<b>Output:</b> True
+<b>Explanation:</b> It&#39;s the substring &quot;abc&quot; four times. (And the substring &quot;abcabc&quot; twice.)
+</pre>
 
-Input: "aba"
-
-Output: False
-
-
-
-Example 3:
-
-Input: "abcabcabcabc"
-
-Output: True
-
-Explanation: It's the substring "abc" four times. (And the substring "abcabc" twice.)
-```
 
 -----------
+
+
+## Similar Problems
+
+- [Easy] [Implement strStr()](implement-strstr)
+
+- [Easy] [Repeated String Match](repeated-string-match)
+
+
+
 
 ## Thought:

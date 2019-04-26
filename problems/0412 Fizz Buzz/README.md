@@ -2,18 +2,17 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy |  | [Leetcode](https://leetcode.com/problems/fizz-buzz/description/) |
+Easy |  | [Leetcode](https://leetcode.com/problems/fizz-buzz) | [solution](https://leetcode.com/problems/fizz-buzz/solution/)
 
 
 -----------
 
-```
-Write a program that outputs the string representation of numbers from 1 to n.
+<p>Write a program that outputs the string representation of numbers from 1 to <i>n</i>.</p>
 
-But for multiples of three it should output “Fizz” instead of the number and for the multiples of five output “Buzz”. For numbers which are multiples of both three and five output “FizzBuzz”.
+<p>But for multiples of three it should output “Fizz” instead of the number and for the multiples of five output “Buzz”. For numbers which are multiples of both three and five output “FizzBuzz”.</p>
 
-Example:
-
+<p><b>Example:</b>
+<pre>
 n = 15,
 
 Return:
@@ -34,8 +33,15 @@ Return:
     "14",
     "FizzBuzz"
 ]
-```
+</pre>
+</p>
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

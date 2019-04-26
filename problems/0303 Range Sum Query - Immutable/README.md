@@ -2,30 +2,42 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy | Dynamic Programming | [Leetcode](https://leetcode.com/problems/range-sum-query-immutable/description/) |
+Easy | Dynamic Programming | [Leetcode](https://leetcode.com/problems/range-sum-query-immutable) | [solution](https://leetcode.com/problems/range-sum-query-immutable/solution/)
 
 
 -----------
 
-```
-Given an integer array nums, find the sum of the elements between indices i and j (i ≤ j), inclusive.
+<p>Given an integer array <i>nums</i>, find the sum of the elements between indices <i>i</i> and <i>j</i> (<i>i</i> &le; <i>j</i>), inclusive.</p>
 
-Example:
-
+<p><b>Example:</b><br>
+<pre>
 Given nums = [-2, 0, 3, -5, 2, -1]
 
 sumRange(0, 2) -> 1
 sumRange(2, 5) -> -1
 sumRange(0, 5) -> -3
+</pre>
+</p>
 
-
-
-Note:
-
-You may assume that the array does not change.
-There are many calls to sumRange function.
-```
+<p><b>Note:</b><br>
+<ol>
+<li>You may assume that the array does not change.</li>
+<li>There are many calls to <i>sumRange</i> function.</li>
+</ol>
+</p>
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Range Sum Query 2D - Immutable](range-sum-query-2d-immutable)
+
+- [Medium] [Range Sum Query - Mutable](range-sum-query-mutable)
+
+- [Medium] [Maximum Size Subarray Sum Equals k](maximum-size-subarray-sum-equals-k)
+
+
+
 
 ## Thought:

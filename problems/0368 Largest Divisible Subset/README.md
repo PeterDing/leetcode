@@ -2,37 +2,41 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Math, Dynamic Programming | [Leetcode](https://leetcode.com/problems/largest-divisible-subset/description/) |
+Medium | Math, Dynamic Programming | [Leetcode](https://leetcode.com/problems/largest-divisible-subset) | [solution](https://leetcode.com/problems/largest-divisible-subset/solution/)
 
 
 -----------
 
-```
-Given a set of distinct positive integers, find the largest subset such that every pair (Si, Sj) of elements in this subset satisfies: Si % Sj = 0 or Sj % Si = 0.
+<p>Given a set of <b>distinct</b> positive integers, find the largest subset such that every pair (S<sub>i</sub>, S<sub>j</sub>) of elements in this subset satisfies:</p>
 
+<p>S<sub>i</sub> % S<sub>j</sub> = 0 or S<sub>j</sub> % S<sub>i</sub> = 0.</p>
 
-If there are multiple solutions, return any subset is fine.
+<p>If there are multiple solutions, return any subset is fine.</p>
 
+<p><strong>Example 1:</strong></p>
 
-Example 1:
+<div>
+<pre>
+<strong>Input: </strong><span id="example-input-1-1">[1,2,3]</span>
+<strong>Output: </strong><span id="example-output-1">[1,2] </span>(of course, [1,3] will also be ok)
+</pre>
 
-nums: [1,2,3]
+<div>
+<p><strong>Example 2:</strong></p>
 
-Result: [1,2] (of course, [1,3] will also be ok)
-
-
-
-Example 2:
-
-nums: [1,2,4,8]
-
-Result: [1,2,4,8]
-
-
-
-Credits:Special thanks to @Stomach_ache for adding this problem and creating all test cases.
-```
+<pre>
+<strong>Input: </strong><span id="example-input-2-1">[1,2,4,8]</span>
+<strong>Output: </strong><span id="example-output-2">[1,2,4,8]</span>
+</pre>
+</div>
+</div>
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

@@ -2,32 +2,37 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Tree, Depth-first Search, Breadth-first Search | [Leetcode](https://leetcode.com/problems/binary-tree-right-side-view/description/) |
+Medium | Tree, Depth-first Search, Breadth-first Search | [Leetcode](https://leetcode.com/problems/binary-tree-right-side-view) | [solution](https://leetcode.com/problems/binary-tree-right-side-view/solution/)
 
 
 -----------
 
-```
-Given a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom.
+<p>Given a binary tree, imagine yourself standing on the <em>right</em> side of it, return the values of the nodes you can see ordered from top to bottom.</p>
 
+<p><strong>Example:</strong></p>
 
-For example:
-Given the following binary tree,
-
-   1            <---
+<pre>
+<strong>Input:</strong>&nbsp;[1,2,3,null,5,null,4]
+<strong>Output:</strong>&nbsp;[1, 3, 4]
+<strong>Explanation:
+</strong>
+   1            &lt;---
  /   \
-2     3         <---
+2     3         &lt;---
  \     \
-  5     4       <---
-
-
-
-You should return [1, 3, 4].
-
-
-Credits:Special thanks to @amrsaqr for adding this problem and creating all test cases.
-```
+  5     4       &lt;---
+</pre>
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Populating Next Right Pointers in Each Node](populating-next-right-pointers-in-each-node)
+
+- [Medium] [Boundary of Binary Tree](boundary-of-binary-tree)
+
+
+
 
 ## Thought:

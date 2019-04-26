@@ -2,19 +2,18 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Hard | Dynamic Programming | [Leetcode](https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/description/) |
+Hard | Dynamic Programming | [Leetcode](https://leetcode.com/problems/non-negative-integers-without-consecutive-ones) | [solution](https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/solution/)
 
 
 -----------
 
-```
-Given a positive integer n, find the number of non-negative integers less than or equal to n, whose binary representations do NOT contain consecutive ones.
+<p>Given a positive integer n, find the number of <b>non-negative</b> integers less than or equal to n, whose binary representations do NOT contain <b>consecutive ones</b>.</p>
 
-Example 1:
-
-Input: 5
-Output: 5
-Explanation: 
+<p><b>Example 1:</b><br />
+<pre>
+<b>Input:</b> 5
+<b>Output:</b> 5
+<b>Explanation:</b> 
 Here are the non-negative integers <= 5 with their corresponding binary representations:
 0 : 0
 1 : 1
@@ -23,13 +22,26 @@ Here are the non-negative integers <= 5 with their corresponding binary represen
 4 : 100
 5 : 101
 Among them, only integer 3 disobeys the rule (two consecutive ones) and the other 5 satisfy the rule. 
+</pre>
+</p>
 
+<p><b>Note:</b>
+1 <= n <= 10<sup>9</sup>
+</p>
 
-
-Note:
-1 <= n <= 109
-```
 
 -----------
+
+
+## Similar Problems
+
+- [Easy] [House Robber](house-robber)
+
+- [Medium] [House Robber II](house-robber-ii)
+
+- [Medium] [Ones and Zeroes](ones-and-zeroes)
+
+
+
 
 ## Thought:

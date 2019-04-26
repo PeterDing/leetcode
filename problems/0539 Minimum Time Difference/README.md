@@ -2,27 +2,33 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | String | [Leetcode](https://leetcode.com/problems/minimum-time-difference/description/) |
+Medium | String | [Leetcode](https://leetcode.com/problems/minimum-time-difference) | [solution](https://leetcode.com/problems/minimum-time-difference/solution/)
 
 
 -----------
 
-```
-Given a list of 24-hour clock time points in "Hour:Minutes" format, find the minimum minutes difference between any two time points in the list. 
+Given a list of 24-hour clock time points in "Hour:Minutes" format, find the minimum <b>minutes</b> difference between any two time points in the list. 
 
-Example 1:
+<p><b>Example 1:</b><br />
+<pre>
+<b>Input:</b> ["23:59","00:00"]
+<b>Output:</b> 1
+</pre>
+</p>
 
-Input: ["23:59","00:00"]
-Output: 1
-
-
-
-Note:
-
-The number of time points in the given list is at least 2 and won't exceed 20000.
-The input time is legal and ranges from 00:00 to 23:59.
-```
+<p><b>Note:</b><br>
+<ol>
+<li>The number of time points in the given list is at least 2 and won't exceed 20000.</li>
+<li>The input time is legal and ranges from 00:00 to 23:59.</li>
+</ol>
+</p>
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

@@ -2,29 +2,40 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | String | [Leetcode](https://leetcode.com/problems/delete-operation-for-two-strings/description/) |
+Medium | String | [Leetcode](https://leetcode.com/problems/delete-operation-for-two-strings) | [solution](https://leetcode.com/problems/delete-operation-for-two-strings/solution/)
 
 
 -----------
 
-```
-Given two words word1 and word2, find the minimum number of steps required to make word1 and word2 the same, where in each step you can delete one character in either string.
+<p>
+Given two words <i>word1</i> and <i>word2</i>, find the minimum number of steps required to make <i>word1</i> and <i>word2</i> the same, where in each step you can delete one character in either string.
+</p>
 
+<p><b>Example 1:</b><br />
+<pre>
+<b>Input:</b> "sea", "eat"
+<b>Output:</b> 2
+<b>Explanation:</b> You need one step to make "sea" to "ea" and another step to make "eat" to "ea".
+</pre>
+</p>
 
-Example 1:
-
-Input: "sea", "eat"
-Output: 2
-Explanation: You need one step to make "sea" to "ea" and another step to make "eat" to "ea".
-
-
-
-Note:
-
-The length of given words won't exceed 500.
-Characters in given words can only be lower-case letters.
-```
+<p><b>Note:</b><br>
+<ol>
+<li>The length of given words won't exceed 500.</li>
+<li>Characters in given words can only be lower-case letters.</li>
+</ol>
+</p>
 
 -----------
+
+
+## Similar Problems
+
+- [Hard] [Edit Distance](edit-distance)
+
+- [Medium] [Minimum ASCII Delete Sum for Two Strings](minimum-ascii-delete-sum-for-two-strings)
+
+
+
 
 ## Thought:

@@ -2,35 +2,39 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Dynamic Programming | [Leetcode](https://leetcode.com/problems/coin-change/description/) |
+Medium | Dynamic Programming | [Leetcode](https://leetcode.com/problems/coin-change) | [solution](https://leetcode.com/problems/coin-change/solution/)
 
 
 -----------
 
-```
-You are given coins of different denominations and a total amount of money amount. Write a function to compute the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1.
+<p>You are given coins of different denominations and a total amount of money <i>amount</i>. Write a function to compute the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return <code>-1</code>.</p>
 
+<p><b>Example 1:</b></p>
 
+<pre>
+<strong>Input: </strong>coins = <code>[1, 2, 5]</code>, amount = <code>11</code>
+<strong>Output: </strong><code>3</code> 
+<strong>Explanation:</strong> 11 = 5 + 5 + 1</pre>
 
-Example 1:
-coins = [1, 2, 5], amount = 11
-return 3 (11 = 5 + 5 + 1)
+<p><b>Example 2:</b></p>
 
+<pre>
+<strong>Input: </strong>coins = <code>[2]</code>, amount = <code>3</code>
+<strong>Output: </strong>-1
+</pre>
 
+<p><b>Note</b>:<br />
+You may assume that you have an infinite number of each kind of coin.</p>
 
-Example 2:
-coins = [2], amount = 3
-return -1.
-
-
-
-Note:
-You may assume that you have an infinite number of each kind of coin.
-
-
-Credits:Special thanks to @jianchao.li.fighter for adding this problem and creating all test cases.
-```
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Minimum Cost For Tickets](minimum-cost-for-tickets)
+
+
+
 
 ## Thought:

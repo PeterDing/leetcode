@@ -2,18 +2,17 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy | Binary Search Tree | [Leetcode](https://leetcode.com/problems/minimum-absolute-difference-in-bst/description/) |
+Easy | Tree | [Leetcode](https://leetcode.com/problems/minimum-absolute-difference-in-bst) | [solution](https://leetcode.com/problems/minimum-absolute-difference-in-bst/solution/)
 
 
 -----------
 
-```
-Given a binary search tree with non-negative values, find the minimum absolute difference between values of any two nodes.
+<p>Given a binary search tree with non-negative values, find the minimum <a href="https://en.wikipedia.org/wiki/Absolute_difference">absolute difference</a> between values of any two nodes.</p>
 
+<p><b>Example:</b></p>
 
-Example:
-
-Input:
+<pre>
+<b>Input:</b>
 
    1
     \
@@ -21,19 +20,25 @@ Input:
     /
    2
 
-Output:
+<b>Output:</b>
 1
 
-Explanation:
+<b>Explanation:</b>
 The minimum absolute difference is 1, which is the difference between 2 and 1 (or between 2 and 3).
+</pre>
 
+<p>&nbsp;</p>
 
-
-
-Note:
-There are at least two nodes in this BST.
-```
+<p><b>Note:</b> There are at least two nodes in this BST.</p>
 
 -----------
+
+
+## Similar Problems
+
+- [Easy] [K-diff Pairs in an Array](k-diff-pairs-in-an-array)
+
+
+
 
 ## Thought:

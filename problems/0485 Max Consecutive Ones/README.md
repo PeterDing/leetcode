@@ -2,29 +2,39 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy | Array | [Leetcode](https://leetcode.com/problems/max-consecutive-ones/description/) |
+Easy | Array | [Leetcode](https://leetcode.com/problems/max-consecutive-ones) | [solution](https://leetcode.com/problems/max-consecutive-ones/solution/)
 
 
 -----------
 
-```
-Given a binary array, find the maximum number of consecutive 1s in this array.
+<p>Given a binary array, find the maximum number of consecutive 1s in this array.</p>
 
-Example 1:
-
-Input: [1,1,0,1,1,1]
-Output: 3
-Explanation: The first two digits or the last three digits are consecutive 1s.
+<p><b>Example 1:</b><br />
+<pre>
+<b>Input:</b> [1,1,0,1,1,1]
+<b>Output:</b> 3
+<b>Explanation:</b> The first two digits or the last three digits are consecutive 1s.
     The maximum number of consecutive 1s is 3.
+</pre>
+</p>
 
-
-
-Note:
-
-The input array will only contain 0 and 1.
-The length of input array is a positive integer and will not exceed 10,000
-```
+<p><b>Note:</b>
+<ul>
+<li>The input array will only contain <code>0</code> and <code>1</code>.</li>
+<li>The length of input array is a positive integer and will not exceed 10,000</li>
+</ul>
+</p>
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Max Consecutive Ones II](max-consecutive-ones-ii)
+
+- [Medium] [Max Consecutive Ones III](max-consecutive-ones-iii)
+
+
+
 
 ## Thought:

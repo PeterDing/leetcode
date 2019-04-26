@@ -2,20 +2,18 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Tree | [Leetcode](https://leetcode.com/problems/find-duplicate-subtrees/description/) |
+Medium | Tree | [Leetcode](https://leetcode.com/problems/find-duplicate-subtrees) | [solution](https://leetcode.com/problems/find-duplicate-subtrees/solution/)
 
 
 -----------
 
-```
-Given a binary tree, return all duplicate subtrees. For each kind of duplicate subtrees, you only need to return the root node of any one of them. 
+<p>Given a binary tree, return all duplicate subtrees. For each kind of duplicate subtrees, you only need to return the root node of any <b>one</b> of them.</p>
 
+<p>Two trees are duplicate if they have the same structure with same node values.</p>
 
-Two trees are duplicate if they have the same structure with same node values.
+<p><b>Example 1: </b></p>
 
-
-Example 1: 
-
+<pre>
         1
        / \
       2   3
@@ -23,20 +21,35 @@ Example 1:
     4   2   4
        /
       4
+</pre>
 
-The following are two duplicate subtrees:
+<p>The following are two duplicate subtrees:</p>
 
+<pre>
       2
      /
     4
+</pre>
 
-and
+<p>and</p>
 
+<pre>
     4
-
-Therefore, you need to return above trees' root in the form of a list.
-```
+</pre>
+Therefore, you need to return above trees&#39; root in the form of a list.
 
 -----------
+
+
+## Similar Problems
+
+- [Hard] [Serialize and Deserialize Binary Tree](serialize-and-deserialize-binary-tree)
+
+- [Medium] [Serialize and Deserialize BST](serialize-and-deserialize-bst)
+
+- [Easy] [Construct String from Binary Tree](construct-string-from-binary-tree)
+
+
+
 
 ## Thought:

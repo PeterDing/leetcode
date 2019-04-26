@@ -2,55 +2,58 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Easy | Tree, Depth-first Search | [Leetcode](https://leetcode.com/problems/same-tree/description/) |
+Easy | Tree, Depth-first Search | [Leetcode](https://leetcode.com/problems/same-tree) | [solution](https://leetcode.com/problems/same-tree/solution/)
 
 
 -----------
 
-```
-Given two binary trees, write a function to check if they are the same or not.
+<p>Given two binary trees, write a function to check if they are the same or not.</p>
 
+<p>Two binary trees are considered the same if they are structurally identical and the nodes have the same value.</p>
 
-Two binary trees are considered the same if they are structurally identical and the nodes have the same value.
+<p><strong>Example 1:</strong></p>
 
-
-
-
-Example 1:
-
-Input:     1         1
+<pre>
+<strong>Input:</strong>     1         1
           / \       / \
          2   3     2   3
 
         [1,2,3],   [1,2,3]
 
-Output: true
+<strong>Output:</strong> true
+</pre>
 
+<p><strong>Example 2:</strong></p>
 
-
-Example 2:
-
-Input:     1         1
+<pre>
+<strong>Input:</strong>     1         1
           /           \
          2             2
 
         [1,2],     [1,null,2]
 
-Output: false
+<strong>Output:</strong> false
+</pre>
 
+<p><strong>Example 3:</strong></p>
 
-
-Example 3:
-
-Input:     1         1
+<pre>
+<strong>Input:</strong>     1         1
           / \       / \
          2   1     1   2
 
         [1,2,1],   [1,1,2]
 
-Output: false
-```
+<strong>Output:</strong> false
+</pre>
+
 
 -----------
+
+
+## Similar Problems
+
+
+
 
 ## Thought:

@@ -2,31 +2,44 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Hard | Hash Table, String, Trie | [Leetcode](https://leetcode.com/problems/palindrome-pairs/description/) |
+Hard | Hash Table, String, Trie | [Leetcode](https://leetcode.com/problems/palindrome-pairs) | [solution](https://leetcode.com/problems/palindrome-pairs/solution/)
 
 
 -----------
 
-```
-Given a list of unique words, find all pairs of distinct indices (i, j) in the given list, so that the concatenation of the two words, i.e. words[i] + words[j] is a palindrome.
+<p>Given a list of <b>unique</b> words, find all pairs of <b><i>distinct</i></b> indices <code>(i, j)</code> in the given list, so that the concatenation of the two words, i.e. <code>words[i] + words[j]</code> is a palindrome.</p>
 
+<p><strong>Example 1:</strong></p>
 
+<div>
+<pre>
+<strong>Input: </strong><span id="example-input-1-1">[&quot;abcd&quot;,&quot;dcba&quot;,&quot;lls&quot;,&quot;s&quot;,&quot;sssll&quot;]</span>
+<strong>Output: </strong><span id="example-output-1">[[0,1],[1,0],[3,2],[2,4]] 
+<strong>E</strong></span><strong>xplanation<span>: </span></strong>The palindromes are <code>[&quot;dcbaabcd&quot;,&quot;abcddcba&quot;,&quot;slls&quot;,&quot;llssssll&quot;]</code>
+</pre>
 
-    Example 1:
-    Given words = ["bat", "tab", "cat"]
-    Return [[0, 1], [1, 0]]
-    The palindromes are ["battab", "tabbat"]
+<div>
+<p><strong>Example 2:</strong></p>
 
+<pre>
+<strong>Input: </strong><span id="example-input-2-1">[&quot;bat&quot;,&quot;tab&quot;,&quot;cat&quot;]</span>
+<strong>Output: </strong><span id="example-output-2">[[0,1],[1,0]] 
+</span><span id="example-output-1"><strong>E</strong></span><strong>xplanation<span>: </span></strong>The palindromes are <code>[&quot;battab&quot;,&quot;tabbat&quot;]</code>
+</pre>
+</div>
+</div>
 
-    Example 2:
-    Given words = ["abcd", "dcba", "lls", "s", "sssll"]
-    Return [[0, 1], [1, 0], [3, 2], [2, 4]]
-    The palindromes are ["dcbaabcd", "abcddcba", "slls", "llssssll"]
-
-
-Credits:Special thanks to @dietpepsi for adding this problem and creating all test cases.
-```
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Longest Palindromic Substring](longest-palindromic-substring)
+
+- [Hard] [Shortest Palindrome](shortest-palindrome)
+
+
+
 
 ## Thought:

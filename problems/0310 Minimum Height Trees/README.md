@@ -2,50 +2,36 @@
 
 Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
-Medium | Breadth-first Search, Graph | [Leetcode](https://leetcode.com/problems/minimum-height-trees/description/) |
+Medium | Breadth-first Search, Graph | [Leetcode](https://leetcode.com/problems/minimum-height-trees) | [solution](https://leetcode.com/problems/minimum-height-trees/solution/)
 
 
 -----------
 
-```
-For a undirected graph with tree characteristics, we can choose any node as the root. The result graph is then a rooted tree. Among all possible rooted trees, those with minimum height are called minimum height trees (MHTs).
-    Given such a graph, write a function to find all the MHTs and return a list of their root labels.
+<p>For an undirected graph with tree characteristics, we can choose any node as the root. The result graph is then a rooted tree. Among all possible rooted trees, those with minimum height are called minimum height trees (MHTs). Given such a graph, write a function to find all the MHTs and return a list of their root labels.</p>
 
+<p><b>Format</b><br />
+The graph contains <code>n</code> nodes which are labeled from <code>0</code> to <code>n - 1</code>. You will be given the number <code>n</code> and a list of undirected <code>edges</code> (each edge is a pair of labels).</p>
 
+<p>You can assume that no duplicate edges will appear in <code>edges</code>. Since all edges are undirected, <code>[0, 1]</code> is the same as <code>[1, 0]</code> and thus will not appear together in <code>edges</code>.</p>
 
-    Format
-    The graph contains n nodes which are labeled from 0 to n - 1.
-    You will be given the number n and a list of undirected edges (each edge is a pair of labels).
+<p><b>Example 1 :</b></p>
 
- 
-You can assume that no duplicate edges will appear in edges. Since all edges are
-    undirected, [0, 1] is the same as [1, 0] and thus will not appear together in
-    edges.
-
-
-    Example 1:
-
-
-    Given n = 4, edges = [[1, 0], [1, 2], [1, 3]]
-
-
+<pre>
+<strong>Input:</strong> <code>n = 4</code>, <code>edges = [[1, 0], [1, 2], [1, 3]]</code>
 
         0
         |
         1
        / \
-      2   3
+      2   3 
 
+<strong>Output:</strong> <code>[1]</code>
+</pre>
 
-    return  [1]
+<p><b>Example 2 :</b></p>
 
-
-
-    Example 2:
-
-
-    Given n = 6, edges = [[0, 3], [1, 3], [2, 3], [4, 3], [5, 4]]
-
+<pre>
+<strong>Input:</strong> <code>n = 6</code>, <code>edges = [[0, 3], [1, 3], [2, 3], [4, 3], [5, 4]]</code>
 
      0  1  2
       \ | /
@@ -53,28 +39,28 @@ You can assume that no duplicate edges will appear in edges. Since all edges are
         |
         4
         |
-        5
+        5 
 
+<strong>Output:</strong> <code>[3, 4]</code></pre>
 
-    return  [3, 4]
+<p><b>Note</b>:</p>
 
+<ul>
+	<li>According to the <a href="https://en.wikipedia.org/wiki/Tree_(graph_theory)" target="_blank">definition of tree on Wikipedia</a>: &ldquo;a tree is an undirected graph in which any two vertices are connected by <i>exactly</i> one path. In other words, any connected graph without simple cycles is a tree.&rdquo;</li>
+	<li>The height of a rooted tree is the number of edges on the longest downward path between the root and a leaf.</li>
+</ul>
 
-
-    Note:
-
-
-    (1) According to the definition
-    of tree on Wikipedia: “a tree is an undirected graph in which any two vertices are connected by
-    exactly one path. In other words, any connected graph without simple cycles is a tree.”
-
-
-    (2) The height of a rooted tree is the number of edges on the longest downward path between the root and a
-    leaf.
-
-
-Credits:Special thanks to @dietpepsi for adding this problem and creating all test cases.
-```
 
 -----------
+
+
+## Similar Problems
+
+- [Medium] [Course Schedule](course-schedule)
+
+- [Medium] [Course Schedule II](course-schedule-ii)
+
+
+
 
 ## Thought:
