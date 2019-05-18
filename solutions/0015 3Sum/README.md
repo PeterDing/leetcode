@@ -37,24 +37,18 @@ A solution set is:
 
 
 
-
 ## Thought:
+
+This problem has its general version, target is T.
 
 1. Sort the array O(nlogn)
 
-2. Find 0 by binary search O(logn)
+2. Find T/3 as the pointer as A by binary search O(logn)
 
 3. Iterate O(n) = O(2n)
 
-   1. First O(n)
-
-      1. one point for negative
-      2. 2 point for zero and positive, move these pointer to next big, then match the negative.
-
-   2. Second O(n)
-
-      1. one point for positive
-      2. 2 point for zero and negative, move these pointer to next small, then match the positive.
+   1. Select [A] point and use 2sum at [A+1 … n], then select [A-1]
+   2. Select [A] point and use 2sum at [0 … A-1], then select [A+1]
 
 So, the total O is O(nlogn + logn + n) < O(n^3)
 
