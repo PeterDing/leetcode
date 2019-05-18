@@ -50,13 +50,19 @@ Iterate the array twice, $O = n^2$.
 
 ### Solution 2
 
-Iterate the sorted array, $O(n logn)​$
+Iterate the sorted array, $O(n logn) + O(n)​$ 
 
 ```
 ls = sort(ls)
-index = binary_search(target, ls)
+index = binary_search(target / 2, ls)
 
-iterate(target, ls[:index + 1])
+iterate(target, index, ls):
+    p1 is at ls[:index]
+    p2 is at ls[index:]
+    p1 -= 1
+    p2 += 1
+    untill reaching ls[p1] + ls[p2] == target
 ```
 
 Done.
+
