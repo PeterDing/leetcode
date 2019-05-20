@@ -61,3 +61,8 @@ for i in sorted(rs):
     print(i)
 ```
 
+------
+
+We must know that the backtrack is not as same as recursion.
+
+The backtrack algorithm needs to use previous result to calculate the current result, but the recursion algorithm doesn't need the previous result.
