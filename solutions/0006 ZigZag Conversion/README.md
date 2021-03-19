@@ -4,6 +4,7 @@ Difficulty  | Tags | Links | Solutions
 ----------- | ---- | ----- | -----
 Medium | String | [Leetcode](https://leetcode.com/problems/zigzag-conversion) | [solution](https://leetcode.com/problems/zigzag-conversion/solution/)
 
+
 -----------
 
 <p>The string <code>&quot;PAYPALISHIRING&quot;</code> is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)</p>
@@ -30,16 +31,17 @@ string convert(string s, int numRows);</pre>
 
 <p><strong>Example 2:</strong></p>
 
+<pre>
 <strong>Input:</strong> s = &quot;PAYPALISHIRING&quot;, numRows =&nbsp;4
 <strong>Output:</strong>&nbsp;&quot;PINALSIGYAHRPI&quot;
 <strong>Explanation:</strong>
 
-<pre>
 P     I    N
 A   L S  I G
 Y A   H R
-P     I
-</pre>
+P     I</pre>
+
+
 -----------
 
 
@@ -49,19 +51,3 @@ P     I
 
 
 ## Thought:
-
-We can find the first row index of each element ei for giving n row.
-
-e0
-
-e1 = e0 + (n-1)*2
-
-ei = e(i-1) +  (n-1)*2
-
-The index of second row elements are:
-
-(e0 + 1, e1 - 1) | (e1 + 1, e2 - 1) | ….
-
-The index of j row elements are:
-
-( e0 + (j - 1), e1 - (j - 1) ) | (e1 + (j - 1), e2 - (j - 1) ) | ….
